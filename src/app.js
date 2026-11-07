@@ -1,7 +1,7 @@
 import * as D from './catalog.js';
 import * as E from './explorer.js';
-import * as Sales from './sales-workspace.js';
-import * as Workbench from './workbench.js';
+import * as Sales from './sales-workspace.js?v=20261107-winter';
+import * as Workbench from './workbench.js?v=20261107-winter';
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money = n => Number.isFinite(n) ? new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0}).format(n) : 'Price pending';
