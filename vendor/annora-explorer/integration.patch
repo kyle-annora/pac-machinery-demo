@@ -10,14 +10,6 @@ diff --git a/vite.config.js b/vite.config.js
    publicDir: false,
    esbuild: { jsx: 'automatic' },
    plugins: [presentationAssetsPlugin(root), spatialGuidesPlugin(root), {
-@@ -43,7 +43,6 @@
-         drawingPreview: fileURLToPath(new URL('./drawing-preview/index.html', import.meta.url)),
-         designPreview: fileURLToPath(new URL('./design-preview/index.html', import.meta.url)),
-         walkthrough: fileURLToPath(new URL('./walkthrough/index.html', import.meta.url)),
--        workflows: fileURLToPath(new URL('./workflows/index.html', import.meta.url)),
-         presentationMedia: fileURLToPath(new URL('./presentation-media/index.html', import.meta.url)),
-       },
-       output: { manualChunks: id => id.includes('/node_modules/three/') ? 'three' : undefined },
 diff --git a/src/host/departure.js b/src/host/departure.js
 new file mode 100644
 --- /dev/null
@@ -403,3 +395,369 @@ new file mode 100644
 +    assert.equal(opened,0,reason);
 +  }
 +});
+diff --git a/src/shared/foreground-deadline.js b/src/shared/foreground-deadline.js
+new file mode 100644
+--- /dev/null
++++ b/src/shared/foreground-deadline.js
+@@ -0,0 +1,63 @@
++/** Startup deadlines spend budget only while this document can make progress.
++ * Success/error delivery is never gated; callers still own cancellation/failure.
++ */
++export function createForegroundDeadlineScope({ document: doc = globalThis.document,
++  window: win = globalThis.window, now = () => globalThis.performance?.now?.() ?? Date.now() } = {}) {
++  let disposed = false, cached = false, frozen = false, printing = false;
++  const deadlines = new Set(), subscribers = new Set(), removers = [];
++  const eligible = () => !disposed && !doc?.hidden && !cached && !frozen && !printing;
++  let active = eligible();
++  function stop(record, spend = true) {
++    ++record.generation;
++    if (record.timer !== null) clearTimeout(record.timer);
++    record.timer = null;
++    if (spend && record.started !== null) record.remaining = Math.max(0, record.remaining - Math.max(0, now() - record.started));
++    record.started = null;
++  }
++  function arm(record) {
++    if (!active || disposed || !deadlines.has(record)) return;
++    const generation = ++record.generation;
++    record.started = now();
++    record.timer = setTimeout(() => {
++      if (!deadlines.has(record) || generation !== record.generation || !active || !eligible()) return;
++      record.timer = null; record.started = null; deadlines.delete(record);
++      record.callback();
++    }, record.remaining);
++  }
++  function sync() {
++    const next = eligible();
++    if (next === active) return;
++    active = next;
++    for (const record of deadlines) { if (active) arm(record); else stop(record); }
++    for (const subscriber of subscribers) subscriber(active);
++  }
++  function listen(target, name, callback) {
++    target?.addEventListener?.(name, callback);
++    removers.push(() => target?.removeEventListener?.(name, callback));
++  }
++  listen(doc, 'visibilitychange', sync);
++  listen(doc, 'freeze', () => { frozen = true; sync(); });
++  listen(doc, 'resume', () => { frozen = false; sync(); });
++  listen(win, 'pagehide', event => { if (!event.persisted) dispose(); else { cached = true; sync(); } });
++  listen(win, 'pageshow', () => { cached = false; sync(); });
++  listen(win, 'beforeprint', () => { printing = true; sync(); });
++  listen(win, 'afterprint', () => { printing = false; sync(); });
++  function dispose() {
++    if (disposed) return;
++    disposed = true; sync();
++    for (const record of deadlines) stop(record, false);
++    deadlines.clear(); subscribers.clear();
++    for (const remove of removers) remove();
++  }
++  return {
++    isActive: () => active && !disposed,
++    subscribe(callback) { subscribers.add(callback); return () => subscribers.delete(callback); },
++    deadline(callback, milliseconds) {
++      if (!Number.isFinite(milliseconds) || milliseconds < 0) throw new TypeError('A deadline needs a non-negative finite budget.');
++      const record = { callback, remaining: milliseconds, timer: null, started: null, generation: 0 };
++      if (!disposed) { deadlines.add(record); arm(record); }
++      return () => { stop(record, false); deadlines.delete(record); };
++    },
++    dispose,
++  };
++}
+diff --git a/src/product-room/viewer.js b/src/product-room/viewer.js
+--- a/src/product-room/viewer.js
++++ b/src/product-room/viewer.js
+@@ -1,6 +1,7 @@
+ /** Product Room owns one iframe; the unchanged Explorer owns its renderer and UI. */
+ import { createExplorerClient } from '../explorer/embed-client.js';
+ import { exactOrigin } from '../explorer/embed-bridge.js';
++import { createForegroundDeadlineScope } from '../shared/foreground-deadline.js';
+ 
+ const problem = (code, message) => Object.assign(new Error(message), { code });
+ const stale = () => problem('SUPERSEDED', 'The product changed before this Explorer action finished.');
+@@ -32,8 +33,9 @@
+   const baseURL = new URL(explorerURL, win?.location?.href);
+   if (!parentOrigin || !exactOrigin(baseURL.origin)) throw new TypeError('Product Room and Explorer need exact HTTP(S) origins.');
+ 
++  const startupDeadlineScope = createForegroundDeadlineScope({ document: doc, window: win });
+   let current = null, generation = 0, disposed = false, retirement = Promise.resolve();
+-  const active = (record, connection = record?.connection) => Boolean(record) && !disposed && current === record && record.generation === generation && record.connection === connection;
++  const active = (record, connection = record?.connection) => Boolean(record) && !record.failed && !disposed && current === record && record.generation === generation && record.connection === connection;
+ 
+   function publish(record, connection, state) {
+     if (!active(record, connection) || !state?.lifecycle) return;
+@@ -45,10 +47,12 @@
+ 
+   function fail(record, connection, error) {
+     if (!active(record, connection) || connection?.failed) return;
++    record.failed = true;
+     if (connection) connection.failed = true;
+-    clearTimeout(record.timer);
++    record.cancelDeadline?.();
+     record.ready.reject(error);
+     record.currentReady.reject(error);
++    closeConnection(connection);
+     notify(onError, error);
+   }
+ 
+@@ -61,13 +65,13 @@
+     if (!connection || connection.hydrating || connection.hydrated || connection.failed || !active(record, connection)) return;
+     connection.hydrating = true;
+     try {
+-      const capabilities = await invoke(connection, 'getCapabilities');
+-      const state = await invoke(connection, 'getState');
++      const capabilities = await invoke(connection, 'getCapabilities', {}, { deadlineScope: startupDeadlineScope });
++      const state = await invoke(connection, 'getState', {}, { deadlineScope: startupDeadlineScope });
+       if (!active(record, connection)) return;
+       if (state.lifecycle !== 'ready') { publish(record, connection, state); return; }
+       record.capabilities = clone(capabilities);
+       connection.hydrated = true;
+-      clearTimeout(record.timer);
++      record.cancelDeadline?.();
+       publish(record, connection, state);
+       const payload = { state: clone(state), capabilities: clone(capabilities) };
+       record.ready.resolve(payload);
+@@ -95,17 +99,17 @@
+     record.state = { lifecycle: 'loading', model: null };
+     record.capabilities = null;
+     notify(onState, clone(record.state));
+-    clearTimeout(record.timer);
++    record.cancelDeadline?.();
+     // A load also fires when a visitor changes the model inside the unchanged iframe.
+     // The new document receives a fresh nonce/session; the prior session is never reused.
+     const connection = { client: null, handshaken: false, hydrated: false, hydrating: false, failed: false, closed: false };
+     record.connection = connection;
+-    record.timer = setTimeout(() => {
++    record.cancelDeadline = startupDeadlineScope.deadline(() => {
+       fail(record, connection, problem('LOAD_TIMEOUT', 'The 3D Explorer took too long to load. Try loading it again.'));
+       closeConnection(connection);
+     }, readyTimeoutMs);
+     try {
+-      connection.client = clientFactory({ iframe: record.frame, origin: baseURL.origin, window: win });
++      connection.client = clientFactory({ iframe: record.frame, origin: baseURL.origin, window: win, startupDeadlineScope });
+       connection.unsubscribe = connection.client.subscribe(event => {
+         if (!active(record, connection) || connection.failed) return;
+         if (['stateChanged', 'ready', 'helloAck'].includes(event.type)) publish(record, connection, event.payload?.state || event.payload);
+@@ -126,7 +130,7 @@
+     if (!record) return;
+     record.ready.reject(stale());
+     record.currentReady.reject(stale());
+-    clearTimeout(record.timer);
++    record.cancelDeadline?.();
+     record.frame.removeEventListener('load', record.onLoad);
+     record.frame.removeEventListener('error', record.onError);
+     const connection = record.connection;
+@@ -163,13 +167,13 @@
+     frame.title = 'Interactive 3D product explorer';
+     frame.allow = 'fullscreen';
+     frame.src = url.href;
+-    const record = { generation: version, frame, state: null, capabilities: null, connection: null, timer: null, ready: deferred(), currentReady: deferred() };
++    const record = { generation: version, frame, state: null, capabilities: null, connection: null, failed: false, cancelDeadline: null, ready: deferred(), currentReady: deferred() };
+     record.onLoad = () => connect(record);
+     record.onError = () => fail(record, record.connection, problem('LOAD_FAILED', 'The 3D Explorer could not be opened. Try loading it again.'));
+     current = record;
+     frame.addEventListener('load', record.onLoad);
+     frame.addEventListener('error', record.onError);
+-    record.timer = setTimeout(() => fail(record, record.connection, problem('LOAD_TIMEOUT', 'The 3D Explorer took too long to open. Try loading it again.')), readyTimeoutMs);
++    record.cancelDeadline = startupDeadlineScope.deadline(() => fail(record, record.connection, problem('LOAD_TIMEOUT', 'The 3D Explorer took too long to open. Try loading it again.')), readyTimeoutMs);
+     mount.replaceChildren(frame);
+     return record.ready.promise;
+   }
+@@ -291,6 +295,7 @@
+   function dispose() {
+     if (disposed) return retirement;
+     disposed = true;
++    startupDeadlineScope.dispose();
+     generation++;
+     win.removeEventListener('pagehide', onPageHide);
+     const previous = current;
+diff --git a/src/explorer/embed-client.js b/src/explorer/embed-client.js
+--- a/src/explorer/embed-client.js
++++ b/src/explorer/embed-client.js
+@@ -4,15 +4,17 @@
+ const uid=prefix=>`${prefix}-${globalThis.crypto?.randomUUID?.()||`${Date.now().toString(36)}-${++serial}`}`;
+ const problem=(code,message)=>Object.assign(new Error(message),{code});
+ 
+-export function createExplorerClient({iframe,origin,window:win=globalThis.window,timeoutMs=30000,handshakeTimeoutMs=12000,retryMs=300}) {
++export function createExplorerClient({iframe,origin,window:win=globalThis.window,timeoutMs=30000,handshakeTimeoutMs=12000,retryMs=300,startupDeadlineScope=null}) {
+   if(!iframe?.contentWindow||!exactOrigin(origin))throw new TypeError('An iframe and exact HTTP(S) Explorer origin are required.');
+   const peer=iframe.contentWindow,nonce=uid('hello'),listeners=new Set(),pending=new Map();
+-  let sessionId=null,instanceId=null,disposed=false,handshakeTimer,retryTimer,lastEventSequence=0;
++  let sessionId=null,instanceId=null,disposed=false,handshakeTimer,retryTimer,unsubscribeActivity,lastEventSequence=0;
+   let resolveReady,rejectReady;
+   const ready=new Promise((resolve,reject)=>{resolveReady=resolve;rejectReady=reject;});
+   const post=message=>{if(!disposed)peer.postMessage({...message,protocolVersion:EMBED_PROTOCOL},origin);};
+   const emit=event=>{for(const listener of listeners)try{listener(event);}catch{/* A consumer listener cannot break transport. */}};
+-  const failAll=(code,message)=>{for(const entry of pending.values()){clearTimeout(entry.timer);entry.reject(problem(code,message));}pending.clear();};
++  const deadline=(callback,ms,scope)=>scope?scope.deadline(callback,ms):(()=>{const timer=setTimeout(callback,ms);return()=>clearTimeout(timer);})();
++  const stopHello=()=>{handshakeTimer?.();clearInterval(retryTimer);unsubscribeActivity?.();unsubscribeActivity=null;};
++  const failAll=(code,message)=>{for(const entry of pending.values()){entry.cancelDeadline();entry.reject(problem(code,message));}pending.clear();};
+   function onMessage(event){
+     if(disposed||event.origin!==origin||event.source!==peer||!event.data||typeof event.data!=='object')return;
+     const data=event.data;
+@@ -21,22 +23,28 @@
+       if(data.nonce!==nonce||typeof data.sessionId!=='string'||!data.sessionId||typeof data.instanceId!=='string'||!data.instanceId||!data.payload?.state)return;
+       if(sessionId&&sessionId!==data.sessionId)return;
+       if(sessionId)return;
+-      sessionId=data.sessionId;instanceId=data.instanceId;clearTimeout(handshakeTimer);clearInterval(retryTimer);
++      sessionId=data.sessionId;instanceId=data.instanceId;stopHello();
+       resolveReady(data.payload);emit(data);return;
+     }
+     if(!sessionId||data.sessionId!==sessionId||data.instanceId!==instanceId)return;
+     if(data.type==='commandResult'){
+       const entry=pending.get(data.requestId);if(!entry||!['completed','failed','cancelled'].includes(data.payload?.status))return;
+-      pending.delete(data.requestId);clearTimeout(entry.timer);entry.resolve(data);emit(data);return;
++      pending.delete(data.requestId);entry.cancelDeadline();entry.resolve(data);emit(data);return;
+     }
+     if(!Number.isSafeInteger(data.eventSequence)||data.eventSequence<=lastEventSequence)return;
+     lastEventSequence=data.eventSequence;emit(data);
+   }
+   win.addEventListener('message',onMessage);
+   const hello=()=>post({type:'hello',nonce});
+-  retryTimer=setInterval(hello,retryMs);
+-  handshakeTimer=setTimeout(()=>{rejectReady(problem('HANDSHAKE_TIMEOUT','The Explorer connection did not respond.'));close();},handshakeTimeoutMs);
+-  hello();
++  const retryHello=()=>{
++    clearInterval(retryTimer);
++    if(disposed||sessionId||startupDeadlineScope&&!startupDeadlineScope.isActive())return;
++    hello();if(!disposed&&!sessionId)retryTimer=setInterval(hello,retryMs);
++  };
++  if(startupDeadlineScope)unsubscribeActivity=startupDeadlineScope.subscribe(retryHello);
++  handshakeTimer=deadline(()=>{rejectReady(problem('HANDSHAKE_TIMEOUT','The Explorer connection did not respond.'));close();},handshakeTimeoutMs,startupDeadlineScope);
++  // One initial hello can succeed while hidden; only retry work is suspended.
++  if(startupDeadlineScope&&!startupDeadlineScope.isActive())hello();else retryHello();
+   async function request(method,params={},options={}){
+     if(disposed)throw problem('DISPOSED','This connection has been closed.');
+     await ready;
+@@ -46,18 +54,18 @@
+     if(pending.has(requestId))throw problem('INVALID_REQUEST','This request ID is already pending.');
+     if(pending.size>=32&&!['cancel','dispose'].includes(method))throw problem('INVALID_REQUEST','Too many requests are pending.');
+     return new Promise((resolve,reject)=>{
+-      const timer=setTimeout(()=>{
++      const cancelDeadline=deadline(()=>{
+         pending.delete(requestId);
+         post({type:'command',sessionId,requestId:uid('timeout-cancel'),method:'cancel',params:{requestId}});
+         reject(problem('REQUEST_TIMEOUT','The request timed out; cancellation was requested. Its final state is unknown until refreshed.'));
+-      },options.timeoutMs??timeoutMs);
+-      pending.set(requestId,{resolve,reject,timer});
++      },options.timeoutMs??timeoutMs,options.deadlineScope);
++      pending.set(requestId,{resolve,reject,cancelDeadline});
+       try{post({type:'command',sessionId,requestId,method,params});}
+-      catch{clearTimeout(timer);pending.delete(requestId);reject(problem('INVALID_REQUEST','The request must contain cloneable JSON data.'));}
++      catch{cancelDeadline();pending.delete(requestId);reject(problem('INVALID_REQUEST','The request must contain cloneable JSON data.'));}
+     });
+   }
+   function close(){
+-    if(disposed)return;disposed=true;clearTimeout(handshakeTimer);clearInterval(retryTimer);win.removeEventListener('message',onMessage);
++    if(disposed)return;disposed=true;stopHello();win.removeEventListener('message',onMessage);
+     rejectReady(problem('DISPOSED','The connection closed before the handshake completed.'));failAll('DISPOSED','The Explorer connection has been closed.');listeners.clear();
+   }
+   return {ready,request,subscribe(listener){listeners.add(listener);return()=>listeners.delete(listener);},close,get sessionId(){return sessionId;},get instanceId(){return instanceId;}};
+diff --git a/tests/runtime/startup-deadlines.test.js b/tests/runtime/startup-deadlines.test.js
+new file mode 100644
+--- /dev/null
++++ b/tests/runtime/startup-deadlines.test.js
+@@ -0,0 +1,92 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { createForegroundDeadlineScope } from '../../src/shared/foreground-deadline.js';
++import { createRoomViewer } from '../../src/product-room/viewer.js';
++import { EMBED_PROTOCOL } from '../../src/explorer/embed-bridge.js';
++class Target {
++  listeners = new Map();
++  addEventListener(type, callback) { if (!this.listeners.has(type)) this.listeners.set(type,new Set()); this.listeners.get(type).add(callback); }
++  removeEventListener(type, callback) { this.listeners.get(type)?.delete(callback); }
++  emit(type,event={}) { for (const callback of [...(this.listeners.get(type)||[])]) callback(event); }
++  count() { return [...this.listeners.values()].reduce((sum,set)=>sum+set.size,0); }
++}
++const flush=async()=>{for(let i=0;i<30;i++)await Promise.resolve();};
++async function virtual(run) {
++  const saved={setTimeout,clearTimeout,setInterval,clearInterval,performance:globalThis.performance};
++  let now=0,serial=0;const timers=new Map();
++  const schedule=(callback,ms=0,repeat=false)=>{const id=++serial;timers.set(id,{callback,due:now+ms,ms,repeat});return id;};
++  globalThis.setTimeout=(fn,ms)=>schedule(fn,ms);globalThis.setInterval=(fn,ms)=>schedule(fn,ms,true);
++  globalThis.clearTimeout=globalThis.clearInterval=id=>timers.delete(id);globalThis.performance={now:()=>now};
++  const advance=async ms=>{const end=now+ms;let n=0;for(;;){const next=[...timers].filter(([,t])=>t.due<=end).sort((a,b)=>a[1].due-b[1].due)[0];if(!next)break;assert.ok(++n<20000,'timer loop');const [id,t]=next;now=t.due;if(t.repeat)t.due+=t.ms;else timers.delete(id);t.callback();await flush();}now=end;await flush();};
++  try {await run({advance,timers,now:()=>now});} finally {Object.assign(globalThis,saved);}
++}
++async function fixture(stage,{hidden=false,disposeHeld=false}={}) {
++  const win=new Target(),doc=new Target(),messages=[],held=[];doc.hidden=hidden;win.document=doc;
++  win.location={origin:'https://host.test',href:'https://host.test/room/'};
++  let state={lifecycle:stage==='model'?'loading':'ready',model:{id:'kinetic-01',revision:'1'}},sequence=0;
++  const deliver=data=>win.emit('message',{origin:'https://viewer.test',source:peer,data:{protocolVersion:EMBED_PROTOCOL,instanceId:'instance',sessionId:'session',...data}});
++  const peer={postMessage(message){messages.push(message);if(message.method==='cancel'||message.method==='never'||disposeHeld&&message.method==='dispose')return;
++    const response=message.type==='hello'?{type:'helloAck',nonce:message.nonce,payload:{state}}:{type:'commandResult',requestId:message.requestId,payload:{status:'completed',result:message.method==='getState'?state:{}}};
++    if(message.type===stage||message.method===stage)held.push(response);else queueMicrotask(()=>deliver(response));
++  }};
++  doc.createElement=()=>{const frame=new Target();frame.contentWindow=peer;frame.remove=()=>{};return frame;};
++  const events={ready:0,errors:[]};
++  const viewer=createRoomViewer({mount:{replaceChildren(){}},window:win,document:doc,explorerURL:'https://viewer.test/',readyTimeoutMs:['opening','model'].includes(stage)?45000:1e9,onReady(){events.ready++;},onError(e){events.errors.push(e.code);}});
++  let outcome='pending';const mounting=viewer.mountModel('kinetic-01').then(()=>{outcome='ready';},e=>{outcome=e.code;});await flush();
++  const frame=viewer.iframe;if(stage!=='opening'){frame.emit('load');await flush();}
++  return {win,doc,viewer,frame,events,messages,mounting,get outcome(){return outcome;},hide(){doc.hidden=true;doc.emit('visibilitychange');},show(){doc.hidden=false;doc.emit('visibilitychange');},async success(){
++    if(stage==='opening')frame.emit('load');
++    else if(stage==='model'){state={...state,lifecycle:'ready'};deliver({type:'stateChanged',eventSequence:++sequence,payload:state});}
++    else for(const response of held.splice(0))deliver(response);
++    await flush();
++  },async fail(kind='runtime'){
++    if(kind==='iframe')frame.emit('error');
++    else if(kind==='lifecycle')deliver({type:'stateChanged',eventSequence:++sequence,payload:{...state,lifecycle:'error'}});
++    else if(kind==='cancelled'||kind==='command'){const response=held.shift();assert.ok(response);deliver({...response,payload:{status:kind==='cancelled'?'cancelled':'failed',error:{code:'SOURCE_INVALID',message:'Original source failure'}}});}
++    else deliver({type:'error',eventSequence:++sequence,payload:{error:{code:'SOURCE_INVALID',message:'Original source failure'}}});
++    await flush();
++  }};
++}
++const stages=['opening','model','hello','getCapabilities','getState'];
++for(const stage of stages){
++ test(`${stage}: initially hidden startup outlives old deadline and accepts valid success while hidden`,()=>virtual(async clock=>{
++  const f=await fixture(stage,{hidden:true});const budget=stage==='hello'?12000:['opening','model'].includes(stage)?45000:30000;
++  const messages=f.messages.length;await clock.advance(budget*3);assert.equal(f.outcome,'pending');assert.equal(f.messages.length,messages,'hello retries must stop while hidden');
++  await f.success();assert.equal(f.outcome,'ready');assert.equal(f.events.ready,1);assert.deepEqual(f.events.errors,[]);assert.equal(f.messages.filter(m=>m.method==='cancel').length,0);
++  await f.viewer.dispose();assert.equal(clock.timers.size,0);assert.equal(f.win.count(),0);assert.equal(f.doc.count(),0);
++ }));
++ test(`${stage}: pause/resume preserves cumulative foreground budget and terminal late delivery cannot revive`,()=>virtual(async clock=>{
++  const f=await fixture(stage);const budget=stage==='hello'?12000:['opening','model'].includes(stage)?45000:30000;
++  await clock.advance(1000);f.hide();await clock.advance(budget*2);assert.equal(f.outcome,'pending');f.show();await clock.advance(1000);f.hide();await clock.advance(budget*2);assert.equal(f.outcome,'pending');f.show();
++  await clock.advance(budget-2001);assert.equal(f.outcome,'pending');await clock.advance(1);
++  const code=stage==='hello'?'HANDSHAKE_TIMEOUT':['opening','model'].includes(stage)?'LOAD_TIMEOUT':'REQUEST_TIMEOUT';assert.equal(f.outcome,code);assert.deepEqual(f.events.errors,[code]);
++  await f.success();assert.equal(f.outcome,code);assert.equal(f.events.ready,0);assert.equal(await f.viewer.whenReady().then(()=>'',e=>e.code),code);
++  assert.equal(f.messages.filter(m=>m.method==='cancel').length,['getCapabilities','getState'].includes(stage)?1:0);await f.viewer.dispose();assert.equal(clock.timers.size,0);
++ }));
++ test(`${stage}: hidden disposal rejects the mount and removes all startup work immediately`,()=>virtual(async clock=>{
++  const f=await fixture(stage);f.hide();await f.viewer.dispose();await flush();assert.equal(f.outcome,'SUPERSEDED');assert.equal(f.events.ready,0);assert.equal(f.win.count(),0);assert.equal(f.doc.count(),0);assert.equal(clock.timers.size,0);
++  await f.success();assert.equal(f.events.ready,0);assert.deepEqual(f.events.errors,[]);
++ }));
++}
++test('queued stale timer callbacks cannot fire after suspension, resumption or cancellation',()=>virtual(async clock=>{
++ const doc=new Target(),win=new Target();doc.hidden=false;const scope=createForegroundDeadlineScope({document:doc,window:win});let fired=0;
++ const cancel=scope.deadline(()=>fired++,1000),old=[...clock.timers.values()][0].callback;await clock.advance(300);doc.hidden=true;doc.emit('visibilitychange');old();assert.equal(fired,0);
++ await clock.advance(10000);doc.hidden=false;doc.emit('visibilitychange');old();await clock.advance(699);assert.equal(fired,0);cancel();old();await clock.advance(1);assert.equal(fired,0);scope.dispose();assert.equal(doc.count()+win.count(),0);
++}));
++for(const stage of ['hello','getCapabilities','getState'])test(`${stage}: bfcache, freeze and print suspension compose without spending deadline`,()=>virtual(async clock=>{
++ const f=await fixture(stage);await clock.advance(1000);f.win.emit('pagehide',{persisted:true});f.doc.emit('freeze');f.win.emit('beforeprint');await clock.advance(60000);
++ f.win.emit('pageshow',{persisted:true});await clock.advance(60000);f.doc.emit('resume');await clock.advance(60000);assert.equal(f.outcome,'pending');
++ f.win.emit('afterprint');await f.success();assert.equal(f.outcome,'ready');assert.equal(f.events.ready,1);await f.viewer.dispose();assert.equal(clock.timers.size,0);
++}));
++for(const [stage,kind,code] of [['opening','iframe','LOAD_FAILED'],['model','lifecycle','ASSET_LOAD_FAILED'],['model','runtime','SOURCE_INVALID'],['getCapabilities','command','SOURCE_INVALID'],['getState','cancelled','CANCELLED']])test(`${stage}: concrete ${kind} failure remains terminal while hidden`,()=>virtual(async clock=>{
++ const f=await fixture(stage);f.hide();await f.fail(kind);assert.equal(f.outcome,code);assert.deepEqual(f.events.errors,[code]);await f.success();assert.equal(f.events.ready,0);assert.equal(f.outcome,code);await f.viewer.dispose();assert.equal(clock.timers.size,0);
++}));
++test('ordinary post-ready commands and bounded renderer disposal retain wall-clock deadlines while hidden',()=>virtual(async clock=>{
++ const f=await fixture('ready',{disposeHeld:true});assert.equal(f.outcome,'ready');f.hide();
++ const request=f.viewer.request('never').then(()=>'',e=>e.code);await flush();await clock.advance(30000);assert.equal(await request,'REQUEST_TIMEOUT');assert.equal(f.messages.filter(m=>m.method==='cancel').length,1);
++ let disposed=false;const closing=f.viewer.dispose().then(()=>{disposed=true;});await flush();assert.equal(disposed,false);await clock.advance(1500);await closing;assert.equal(disposed,true);assert.equal(clock.timers.size,0);
++}));
++test('hidden supersession retires a pending session without waiting for foreground',()=>virtual(async clock=>{
++ const f=await fixture('hello');f.hide();const replacement=f.viewer.mountModel('apollo').then(()=>'',e=>e.code);await flush();assert.equal(f.outcome,'SUPERSEDED');assert.equal(f.events.ready,0);
++ await f.viewer.dispose();assert.equal(await replacement,'SUPERSEDED');assert.equal(clock.timers.size,0);assert.equal(f.win.count()+f.doc.count(),0);
++}));
+diff --git a/tests/runtime/room-viewer.test.js b/tests/runtime/room-viewer.test.js
+--- a/tests/runtime/room-viewer.test.js
++++ b/tests/runtime/room-viewer.test.js
+@@ -307,7 +307,7 @@
+ test('cached history retains its iframe and listener; ordinary navigation cleans up idempotently', async () => {
+   const f = fixture(); const { client, frame } = await f.open();
+   f.win.emit('pagehide', { persisted: true });
+-  assert.equal(client.closed, 0); assert.equal(f.viewer.iframe, frame); assert.equal(f.win.count('pagehide'), 1);
++  assert.equal(client.closed, 0); assert.equal(f.viewer.iframe, frame); assert.equal(f.win.count('pagehide'), 2); // viewer disposal plus its startup deadline scope
+   f.win.emit('pagehide', { persisted: false });
+   await f.viewer.dispose(); await f.viewer.close();
+   assert.equal(client.closed, 1); assert.equal(client.listeners.size, 0); assert.equal(f.mount.children.length, 0);

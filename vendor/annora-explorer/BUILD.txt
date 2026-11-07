@@ -1,8 +1,20 @@
-Reproduce the PAC local Explorer integration
+Reproduce the PAC Explorer integration and startup stability fix
 
-Start from Annora Explorer source Git HEAD 8977d5cd4e314f344bcdd086684550b827efc8cb. The copied working tree contained documentation edits; they are not part of this patch.
-Apply the accompanying integration.patch from that checkout's root (git apply /path/to/integration.patch). Install pinned dependencies from package-lock.json, then run npm run verify. Copy dist/ into the PAC demo assets/explorer directory and serve it at /explorer/. For GitHub Pages, the PAC project's static exporter adapts the deployment prefix and browser-storage namespace in the generated copy.
+Upstream: https://github.com/kyle-annora/annora-explorer
+Exact starting commit: 8977d5cd4e314f344bcdd086684550b827efc8cb
+Use a clean checkout of that commit. Apply the accompanying integration.patch ONCE from its root with git apply /absolute/path/to/integration.patch. This is the complete cumulative patch; do not first apply an earlier PAC patch. Local upstream README/pilot documentation changes are excluded.
 
-Changes: /explorer/ build base; same-origin annoraDemoHost lifecycle hook for parent iframe removal; seller native unsaved-edits dialog handoff; buyer save/leave lifecycle and dirty status; no-wrap Changed label; route-aware retry after initial viewer timeout; eight regression tests. Original renderer, geometry, quotation/review permissions and upstream source are unchanged.
+With Node 22.13 or newer, install the pinned package-lock dependencies using npm ci, then run npm run verify. Copy the complete dist/ directory to the PAC project's assets/explorer/ directory and serve at /explorer/. Retain all model and third-party license files. For GitHub Pages, the PAC project's static exporter adapts only the generated deployment prefix and browser-storage namespace. It does not modify this upstream checkout.
 
-The parent PAC shell must await iframe.contentWindow.annoraDemoHost.beforeLeave() before removing or replacing the frame. Only true permits removal. isDirty() and isBusy() are synchronous and can support the parent beforeunload prompt. No hook on read-only/loading entry is safe to leave. No network delivery or real quotations are introduced.
+Cumulative changes
+- /explorer/ build base.
+- Same-origin annoraDemoHost departure hook: await beforeLeave() before removing the iframe; only true permits removal. Seller uses its native Keep editing / Discard edits / Save & continue dialog; buyer saves through its existing lifecycle. isDirty() and isBusy() are synchronous.
+- Mobile Changed label stays on one line.
+- Route-aware viewer Retry resumes the pending saved inquiry without confirming or duplicating records.
+- Startup-only foreground budgets cover iframe opening/readiness (45 seconds), handshake (12 seconds), and the two hydration queries (30 seconds). Hidden, persisted pagehide, freeze and print events suspend these budgets without resetting them. Initial valid messages/errors are still accepted while hidden; retries resume with an immediate hello. Ordinary commands and bounded disposal keep their wall-clock deadlines.
+- Terminal viewer failure rejects late iframe loads; it cannot emit a contradictory ready callback.
+- Eight departure/retry regression cases plus 26 startup cases; the existing lifecycle listener assertion reflects the added scope.
+
+Actual rendered-frame readiness, renderer, model geometry, quote permissions and review/confirmation gates are unchanged. The startup fix corrects reproduced mechanisms; it does not establish a cause or universal fix for every historical visible cold-start stall. Native print lifecycle behavior still needs target-browser verification. No network delivery or real quotation is introduced.
+
+Verification for this source: npm run verify passed 1,036 tests, zero failures, one existing skip (1,037 total), with all three builds successful. Source/model/license provenance and final artifact hashes are in build-provenance.json. The prior public release remains preserved in PAC Git main 98f014a56695c0308c0460e4fb8fb09cacb2b757 and gh-pages 39039e3189b823789a96d2468122bc5162c99ed7. This task does not push or deploy.

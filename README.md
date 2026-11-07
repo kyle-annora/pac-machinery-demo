@@ -40,7 +40,9 @@ The published catalog contains runtime product records and referenced media. Its
 
 ## Scope and verification
 
-The local combined workflow was rehearsed at desktop and mobile viewport sizes, including reference restoration, quote revisions, save/reopen and unsaved-edit protection. The focused repository tests cover catalog rules, reference/requirements history and parent navigation. An intermittent initial viewer-loading timeout was observed during rehearsal; route-aware Retry recovery has regression coverage.
+The local combined workflow was rehearsed at desktop and mobile viewport sizes, including reference restoration, quote revisions, save/reopen and unsaved-edit protection. The focused repository tests cover catalog rules, reference/requirements history, parent navigation and the static exporter.
+
+Explorer startup deadlines now preserve their remaining budget while the document is hidden or suspended. A terminal startup failure cannot later report readiness from a stale frame. The renderer still requires its actual first frame; ordinary commands and teardown retain their existing deadlines. The isolated Explorer verification passed 1,036 tests with one existing conditional skip, including 26 new startup regressions. This fixes the reproduced lifecycle failures; it does not establish that every earlier loading stall had the same cause. Route-aware Retry recovery remains available.
 
 PAC engineering, brand and commercial approval remain separate from this demo. The intended review establishes the first use case, required PAC assets, quotation ownership and pilot acceptance criteria.
 
