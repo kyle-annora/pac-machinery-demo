@@ -48,7 +48,8 @@
       "explorer/assets/workspace-entry-BZTseFc7.js",
       "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
       "src/app.js",
-      "src/sales-workspace.js"
+      "src/sales-workspace.js",
+      "src/workbench.js"
     ],
     "protocolUnchanged": "annora.explorer/0.1-draft"
   },
@@ -602,11 +603,12 @@
     "src/app.js",
     "src/catalog.js",
     "src/deal-explorer.js",
-    "src/sales-workspace.js"
+    "src/sales-workspace.js",
+    "src/workbench.js"
   ],
   "audit": {
-    "htmlReferences": 136,
-    "distinctResourcePaths": 377,
+    "htmlReferences": 137,
+    "distinctResourcePaths": 382,
     "errors": []
   },
   "files": [
@@ -614,6 +616,41 @@
       "path": ".nojekyll",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/fonts/jetbrains-mono-latin-400.woff2",
+      "bytes": 21168,
+      "sha256": "14425ba9c695763c1547f48a206b7aa60350a33ae23de09f0407877f3fcd89eb"
+    },
+    {
+      "path": "assets/fonts/jetbrains-mono-latin-500.woff2",
+      "bytes": 21832,
+      "sha256": "cb182feeed4d798ff6961d3c79f7026279448fca0676438aaecb21f3fc39553a"
+    },
+    {
+      "path": "assets/fonts/jetbrains-mono-latin-600.woff2",
+      "bytes": 21860,
+      "sha256": "400c6bfda18d5d14acad1c15d6dcb9f8e13c015e7286317e0b9a482539bef147"
+    },
+    {
+      "path": "assets/fonts/jetbrains-mono-OFL.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "path": "assets/fonts/source-sans-3-latin-variable.woff2",
+      "bytes": 28740,
+      "sha256": "7a19a7027e125257d310c6dbd78ae3a30b5ea1e3794d60b12bb28227a003bfda"
+    },
+    {
+      "path": "assets/fonts/source-sans-3-OFL.txt",
+      "bytes": 4486,
+      "sha256": "56af9b9c6715597e458284a474dc118a50a4150e9d547c70f7b4a33c3e6a9328"
+    },
+    {
+      "path": "assets/fonts/sources.json",
+      "bytes": 1762,
+      "sha256": "218cd2b2f0c4a16345fe9cb1fe9cc9219560b164522b0640459040a439cebcd4"
     },
     {
       "path": "assets/pac-machinery-logo.png",
@@ -2692,8 +2729,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 790,
-      "sha256": "cea36c0c1146bad053597c526c547942f26ea1a9b633d29b0a7ac2c28b656e6f"
+      "bytes": 877,
+      "sha256": "6eb555033aeb401e548c506a365039afbd7ea206c70c2bb112864913d41140f0"
     },
     {
       "path": "source/catalog/commercial_terms.json",
@@ -3347,8 +3384,8 @@
     },
     {
       "path": "src/app.js",
-      "bytes": 54871,
-      "sha256": "827e24ca5acd05398a4a29a1e51548db8fe05c684a9fe1ffd0b4c9b3981e3245"
+      "bytes": 55583,
+      "sha256": "14e3a493eecb61aa0b6f9c4b974e3f07a1896624c6c0dc5d50f517f65331ccc6"
     },
     {
       "path": "src/catalog.js",
@@ -3372,8 +3409,8 @@
     },
     {
       "path": "src/sales-workspace.js",
-      "bytes": 61397,
-      "sha256": "5f7443d089e12992b5ccf8849377fc3284263c6aa0330b4546012629393752d3"
+      "bytes": 84082,
+      "sha256": "bb7722a24d8b34fa5d3bf4da439e5a51c915ecd4e4d8a08f62b1871f4bbe27e3"
     },
     {
       "path": "src/sales.css",
@@ -3384,6 +3421,16 @@
       "path": "src/style.css",
       "bytes": 63254,
       "sha256": "dfbe38f4ef87c5f8c16f316d898dd46fc954e747bf3c4cbda4dc779d91f78e56"
+    },
+    {
+      "path": "src/winter.css",
+      "bytes": 45403,
+      "sha256": "cd3202ca9c2f6667b14c7f9295c8e9a89906ada2449dfbe781e28185bdbc9f9b"
+    },
+    {
+      "path": "src/workbench.js",
+      "bytes": 10974,
+      "sha256": "2b26fe6f94b5e564baccecfbad4678cb89544d887f54871576988adf1c56fa7f"
     },
     {
       "path": "src/workspace.css",
