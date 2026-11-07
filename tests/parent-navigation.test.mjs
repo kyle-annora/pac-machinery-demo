@@ -5,13 +5,13 @@ import {readFileSync} from 'node:fs';
 const source=readFileSync(new URL('../src/app.js',import.meta.url),'utf8');
 const code=source.slice(source.indexOf('const PARENT_HISTORY_KEY='),source.indexOf("window.addEventListener('beforeunload'"));
 function setup(){
- const entries=[{hash:'#demo',state:null}], listeners={};let at=0, renders=0, decision=true, iframe={dirty:999}, prompts=0;
+ const entries=[{hash:'#demo',state:null}], listeners={};let at=0, renders=0, decision=true, iframe={dirty:999}, prompts=0, scrolls=0;
  const location={get hash(){return entries[at].hash;},get href(){return 'http://localhost/'+entries[at].hash;}};
  const history={get state(){return entries[at].state;},replaceState(state,_title,url){entries[at]={hash:new URL(url,'http://localhost/').hash,state};},pushState(state,_title,url){entries.splice(at+1);entries.push({hash:new URL(url,'http://localhost/').hash,state});at++;},go(delta){at+=delta;queueMicrotask(()=>listeners.hashchange?.());}};
- const context=vm.createContext({history,location,renderedView:'demo',renderedHash:'#demo',navigationPending:false,toast(){},document:{addEventListener(){}},window:{addEventListener(k,fn){listeners[k]=fn;},scrollTo(){}},explorerHost:()=>({beforeLeave:async()=>{prompts++;return typeof decision==='function'?decision():decision;}}),render(){renders++;context.renderedHash=location.hash;context.renderedView=location.hash.slice(1).split('/')[0];iframe={dirty:185};}});
+ const context=vm.createContext({history,location,renderedView:'demo',renderedHash:'#demo',navigationPending:false,toast(){},document:{addEventListener(){},querySelector(selector){return selector==='.winter-content'?{scrollTo({top}){assert.equal(top,0);scrolls++;}}:null;}},window:{addEventListener(k,fn){listeners[k]=fn;},scrollTo(){}},explorerHost:()=>({beforeLeave:async()=>{prompts++;return typeof decision==='function'?decision():decision;}}),render(){renders++;context.renderedHash=location.hash;context.renderedView=location.hash.slice(1).split('/')[0];iframe={dirty:185};}});
  vm.runInContext(code,context);
  const settle=()=>new Promise(resolve=>setImmediate(resolve));
- return {context,entries,get at(){return at;},get iframe(){return iframe;},get renders(){return renders;},get prompts(){return prompts;},setDecision(v){decision=v;},edit(){iframe.dirty=999;},async hash(hash){history.pushState(null,'',hash);await listeners.hashchange();await settle();},async back(){history.go(-1);await settle();await settle();},async forward(){history.go(1);await settle();await settle();},async click(hash){await context.navigateParentLink(hash);await settle();},history,settle};
+ return {context,entries,get at(){return at;},get iframe(){return iframe;},get renders(){return renders;},get prompts(){return prompts;},get scrolls(){return scrolls;},setDecision(v){decision=v;},edit(){iframe.dirty=999;},async hash(hash){history.pushState(null,'',hash);await listeners.hashchange();await settle();},async back(){history.go(-1);await settle();await settle();},async forward(){history.go(1);await settle();await settle();},async click(hash){await context.navigateParentLink(hash);await settle();},history,settle};
 }
 async function discovery(){const h=setup();await h.hash('#detail/r3200');await h.hash('#discovery');h.edit();return h;}
 test('cancel Back restores index and original detail entry without replacing iframe or dirty value',async()=>{
@@ -42,6 +42,6 @@ test('direct hash change cancellation restores original entry without overwritin
 });
 
 test('unchanged parent hash never remounts or guards embedded viewer history',async()=>{
- const h=await discovery(),frame=h.iframe,renders=h.renders,prompts=h.prompts;
- await h.context.renderNavigation();assert.equal(h.iframe,frame);assert.equal(h.renders,renders);assert.equal(h.prompts,prompts);assert.equal(h.iframe.dirty,999);
+ const h=await discovery(),frame=h.iframe,renders=h.renders,prompts=h.prompts,scrolls=h.scrolls;
+ await h.context.renderNavigation();assert.equal(h.iframe,frame);assert.equal(h.renders,renders);assert.equal(h.prompts,prompts);assert.equal(h.iframe.dirty,999);assert.equal(h.scrolls,scrolls);assert.equal(scrolls,renders);
 });

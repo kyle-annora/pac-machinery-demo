@@ -14,6 +14,8 @@ PAC sales representatives configure standard machines and options, work with eng
 
 The user approved a complete connected demonstration on November 7, 2026: one deal contains alternative quotes, each with its own revisions, review, proposal and evidence. Monday starts with the customer proposal, then shows the workspace that produced it. All content is English. 3D Explorer feeds evidence into that same deal.
 
+The subsequent design correction makes Mr Winter the primary reference. Match its Workbench shell, compact quote management, tabbed configurator, numbered workflow and customer document-review layout while retaining PAC's branding and deal/alternative hierarchy.
+
 ## Evidence and constraints
 
 - The supplied catalog contains 13 Rollbag machine records and 97 canonical options. Existing catalog snapshots and compatibility logic remain authoritative for these records.

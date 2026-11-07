@@ -10,4 +10,6 @@ The isolated integration patch is included in vendor/annora-explorer/. The build
 
 The default Kinetic 01 crank-slider mechanism is by Pradeep Kaushik and is a reference demonstration model, not manufacturer CAD. Its source and MIT notice are included with the Explorer model files.
 
+Source Sans 3 and JetBrains Mono are distributed under the SIL Open Font License 1.1. Their complete license notices and the font-file provenance manifest are included in assets/fonts/.
+
 The public runtime catalog manifest is a projection of the supplied catalog manifest: run_id, status, signed_off and catalog_sha256. The hash identifies the original signed-off source catalog; it is not a checksum of the reduced manifest or this repository. Runtime catalog records and media are copied from that source without changing product or pricing values.

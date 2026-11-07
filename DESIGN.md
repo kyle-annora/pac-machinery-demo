@@ -1,33 +1,37 @@
-# PAC workspace design reference
+# PAC workspace — Mr Winter alignment
 
-This is an extension of the existing PAC interface, not a rebrand. The existing `src/style.css` and `src/workspace.css` are the primary visual authority.
+## Primary reference
+
+The user requested on November 7, 2026 that the PAC experience match Mr Winter as closely as possible. Mr Winter's Workbench implementation now governs navigation, page structure, density and interaction. PAC supplies the brand, product catalog and business content.
+
+Reference: `wes-teskey/winter-cpq`, inspected checkout `9633f6c`. Relevant sources are `frontend/client/src/components/shell/{PageLayout,Sidebar,TopBar}.tsx`, `styles/workbench.css`, `pages/win-hub.tsx`, `pages/quotes.tsx`, `components/quote/configuration-tabs.tsx`, `pages/workflow.tsx`, and `pages/review.tsx`.
+
+The production address, https://www.winquote.ai/, requires sign-in. The available isolated homepage integration preview was inspected for shell proportions; its refreshed homepage is not the target for PAC's quote editor. The current source establishes the quote and workflow structure. No production customer data is copied.
 
 ## Reference lock
 
-Preserve white surfaces, PAC blue `#004c97` for navigation and primary workspace actions, PAC gold `#f6ac12` for the existing brand emphasis, ink `#182d3f`, legible system sans text, thin gray rules and real machine photographs. Product media is contained and captioned, never substituted with unverified model imagery. No decorative gradients, invented statistics or dark dashboard theme.
-
-Secondary references reviewed through Refero:
-
-- Attio company activity screen, https://refero.design/pages/dc6815b4-b871-4434-b336-eec3f08dec4c — compact entity context, central activity and a stable details rail.
-- Monday quotes panel, https://refero.design/pages/c1243215-a449-4e72-a6cf-7c23cfc89cca — aligned item/quantity/price/total columns and owner/due-date context.
-- Attio style `9f0c028b-6b11-415e-ab92-f32e4597cbe2` — border-led separation, compact operational typography. Its marketing serif and monochrome primary buttons are not adopted.
-- Orderful style `9c657624-4aa8-4688-a6be-4eb3d6f2ce57` — clear light-surface hierarchy and 16/24px component padding. Its red CTA token is not adopted.
-
-Flow research did not provide a closer quoting reference than the supplied PAC brief and the inspected MPI/Mr Winter applications; those define the journey.
+- 212px sidebar, 56px collapsed rail, 60px topbar with breadcrumbs and working navigation search. Mobile uses a keyboard-accessible drawer.
+- Source Sans 3 for UI text; JetBrains Mono for IDs, money and counts. Compact operational headings, small labels, aligned table columns, restrained 8px corners and border-led separation.
+- Workbench neutrals: canvas `#f6f7f4`, document/surface `#fdfdfb`, secondary `#e8ebe4`, border `#d4d8ce`, text `#2a2e26`, secondary text `#6b7164`.
+- PAC blue `#004c97` occupies the interactive brand slot; PAC gold remains a restrained brand accent. Status colors retain semantic roles.
+- Customer review is separate from the application shell: issued proposal document on the left, feedback and follow-up in a 420px rail on the right. Monday still opens here.
+- Real PAC photographs and qualified reference 3D evidence remain the only product imagery. The generic assembly is never represented as PAC CAD.
 
 ## Decision ledger
 
-| Decision | Source | Role and reason |
+| Decision | Source | Adaptation |
 | --- | --- | --- |
-| Proposal first, workspace second | User instruction; PAC brief §10.2 | Demonstrate the customer conversation before the mechanics |
-| Deal → alternative → revision | PAC brief §4.1.3/4.3.6 | Prevent revisions from appearing as competing machine choices |
-| Main work area plus summary rail | Attio/Monday screens | Keep price and status available while editing |
-| Tabular numerals and right-aligned amounts | Monday quote panel | Make quantity and total changes easy to compare |
-| Compact labels, 14–16px body, 28–38px headings | Existing PAC UI | Improve density while preserving readable operational text |
-| Blue interactive, amber pending, green reviewed | Existing PAC tokens | Keep brand and semantic status roles separate |
-| Real photo with configuration qualification | PAC brief §4.4.6 | Avoid implying a photograph proves the exact configured build |
-| Explorer evidence inside the deal | User instruction | A discovery branch returns to the same application and quote |
+| Sidebar and topbar application frame | Mr Winter shell components | PAC branding; working local navigation, with no simulated authentication or CRM sync control |
+| Compact Sales hub with Deals / Quotes views | Mr Winter Win Hub and quote table | Preserve PAC's deal → alternative → revision hierarchy |
+| Persistent quote context and category tabs | Mr Winter configuration-tabs | PAC machine/options, engineering, special orders and review tasks |
+| Numbered workflow sections | Mr Winter workflow and workflow-section | Application, alternatives, review evidence, discussion and next action |
+| Proposal document with feedback rail | Mr Winter review page | HTML issued snapshot instead of pretending a pre-generated PDF exists; retain alternative comparison |
+| Revision and price protection | Existing PAC sales domain and requirements | Preserve authoritative source prices, review invalidation, immutable issued versions and revision-bound feedback |
+| Explorer attached to the same deal | User instruction | Discovery remains an evidence-producing branch within this workspace |
+| Proposal-first demonstration | User instruction | Internal workspace appears when the presenter opens Sales workspace |
 
-## Responsive behavior
+Earlier Attio/Monday/Orderful research is historical context, not a competing design authority for this revision.
 
-At narrow widths the summary follows the main content, forms collapse to one column and alternative cards stack. Wide comparison/option tables scroll inside a labeled region, never the whole page. Focus remains visible after actions; reduced-motion users receive immediate transitions. Print removes workspace controls and includes only the issued customer proposal.
+## Validation
+
+Compare the rendered PAC shell against the captured local Mr Winter shell and the cited source dimensions. Check desktop and mobile navigation, table readability, tab behavior and form retention, then repeat the connected quote/evidence/revision flow. Print removes application chrome and keeps issued source terms. Changes to page layout must not alter catalog prices or previously issued snapshots.

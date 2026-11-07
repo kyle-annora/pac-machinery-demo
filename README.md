@@ -2,6 +2,8 @@
 
 An English, proposal-first demonstration of PAC's sales workflow: one deal contains alternative quotes, reviewed revisions, customer feedback, a next action and captured 3D evidence.
 
+The interface follows Mr Winter's Workbench: persistent sidebar and topbar, compact Deals/Quotes tables, category tabs in the quote editor, and a customer proposal with a separate feedback panel. PAC branding and the existing deal → alternative → revision model remain in place. Unapplied form edits survive tab changes and reload; they must be saved or discarded before review or issue.
+
 [Open the customer proposal](https://kyle-annora.github.io/pac-machinery-demo/) · [Open the sales workspace](https://kyle-annora.github.io/pac-machinery-demo/#workspace)
 
 ## Monday walkthrough
@@ -57,7 +59,7 @@ PAC engineering, brand and commercial approval remain separate from this demo. T
 
 The product, requirements, configuration and proposal screens use a scoped PAC workspace style in `src/workspace.css`. Option rows keep price and selection controls aligned, while disclosures retain the full source description and conditions. Proposal pricing uses a semantic four-column table with a separate mobile layout and print rules.
 
-The visual refinement retains PAC blue, navy and gold. References include [Programa](https://programa.design/) for restrained surfaces, [Ramp purchase orders](https://support.ramp.com/purchases-orders-in-ramp/) for the working area and review panel, and [Stripe’s invoice sample](https://stripe.com/files/docs/billing/taxes/example-reverse-charge.pdf) for numeric column alignment. The sales workspace extends this system with the bounded references documented in [DESIGN.md](DESIGN.md). Explorer bundles remain unchanged; the new host adapter uses the public capture/restore API.
+The current workspace follows Mr Winter's implementation, with PAC blue in the brand color slot and Source Sans 3 / JetBrains Mono typography. Earlier Programa, Ramp and Stripe studies are historical references for the original catalog screens. The current reference and adaptation decisions are recorded in [DESIGN.md](DESIGN.md). Explorer bundles remain unchanged; the host adapter uses the public capture/restore API.
 
 ## Attribution
 
