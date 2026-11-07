@@ -1,0 +1,380 @@
+{
+  "run_id": "20261107T025439Z-b89403",
+  "status": "passed",
+  "machines": [
+    {
+      "machine_id": "r3200",
+      "title": "Rollbag™ R3200 Automatic Bagger",
+      "family": "floor_standing",
+      "layout": "A",
+      "base_price_usd": 27580,
+      "variants": [],
+      "priced_options": 42,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 60,
+      "lead_time_weeks": [
+        12,
+        16
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": false,
+      "unique_images": 61,
+      "last_saved": "2025-01-29"
+    },
+    {
+      "machine_id": "r3200_bag_maker",
+      "title": "Rollbag™ R3200 Automatic Bagger",
+      "family": "floor_standing",
+      "layout": "A",
+      "base_price_usd": 20040,
+      "variants": [],
+      "priced_options": 9,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        12,
+        16
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": false,
+      "unique_images": 27,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r3200_fulfillment",
+      "title": "Rollbag™ R3200 Fulfillment Bagger",
+      "family": "floor_standing",
+      "layout": "A",
+      "base_price_usd": 42890,
+      "variants": [],
+      "priced_options": 0,
+      "included_features": 10,
+      "services": 0,
+      "one_offs": 1,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        null,
+        null
+      ],
+      "startup_price_usd": 12600,
+      "engineering_approval_required": false,
+      "unique_images": 26,
+      "last_saved": "2025-11-07"
+    },
+    {
+      "machine_id": "r3200_hs_hybrid",
+      "title": "Rollbag™ R3200 HS Hybrid Automatic Bagger",
+      "family": "floor_standing",
+      "layout": "A",
+      "base_price_usd": 47125,
+      "variants": [],
+      "priced_options": 35,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        16,
+        18
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": false,
+      "unique_images": 57,
+      "last_saved": "2026-08-17"
+    },
+    {
+      "machine_id": "r3200xl",
+      "title": "Rollbag™ R3200XL Automatic Bagger",
+      "family": "floor_standing",
+      "layout": "A",
+      "base_price_usd": 71340,
+      "variants": [],
+      "priced_options": 7,
+      "included_features": 6,
+      "services": 0,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        12,
+        16
+      ],
+      "startup_price_usd": 3840,
+      "engineering_approval_required": false,
+      "unique_images": 27,
+      "last_saved": "2026-08-17"
+    },
+    {
+      "machine_id": "kit_conveyor",
+      "title": "Rollbag™ Kit Conveyor",
+      "family": "feeding",
+      "layout": "B",
+      "base_price_usd": 17520,
+      "variants": [],
+      "priced_options": 1,
+      "included_features": 13,
+      "services": 0,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        8,
+        12
+      ],
+      "startup_price_usd": null,
+      "engineering_approval_required": true,
+      "unique_images": 5,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r1275_vision",
+      "title": "Rollbag™ R1275 Vision Automatic Bagger",
+      "family": "feeding",
+      "layout": "B",
+      "base_price_usd": 98100,
+      "variants": [
+        {
+          "item_id": "r1275_vision:body:47.1#0",
+          "price_usd": 109210
+        }
+      ],
+      "priced_options": 5,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        24,
+        30
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": true,
+      "unique_images": 5,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r3200_vision",
+      "title": "Rollbag™ R3200 Vision Automatic Bagger",
+      "family": "feeding",
+      "layout": "A",
+      "base_price_usd": 146945,
+      "variants": [],
+      "priced_options": 0,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        16,
+        20
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": true,
+      "unique_images": 22,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "weigh_count_sorting_table",
+      "title": "Rollbag™ Weigh Count Sorting Table",
+      "family": "feeding",
+      "layout": "B",
+      "base_price_usd": 26530,
+      "variants": [],
+      "priced_options": 1,
+      "included_features": 0,
+      "services": 0,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        16,
+        24
+      ],
+      "startup_price_usd": null,
+      "engineering_approval_required": true,
+      "unique_images": 6,
+      "last_saved": "2026-07-27"
+    },
+    {
+      "machine_id": "magnum_horizontal_med",
+      "title": "Rollbag™ Magnum Medical Automatic Bagger",
+      "family": "medical",
+      "layout": "B",
+      "base_price_usd": 59660,
+      "variants": [],
+      "priced_options": 15,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        8,
+        12
+      ],
+      "startup_price_usd": 5480,
+      "engineering_approval_required": false,
+      "unique_images": 6,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r1275_med",
+      "title": "Rollbag™ R1275 Med Automatic Bagger",
+      "family": "medical",
+      "layout": "B",
+      "base_price_usd": 21640,
+      "variants": [
+        {
+          "item_id": "r1275_med:body:45.1#0",
+          "price_usd": 33155
+        }
+      ],
+      "priced_options": 22,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        8,
+        12
+      ],
+      "startup_price_usd": 3830,
+      "engineering_approval_required": false,
+      "unique_images": 6,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r1285_med",
+      "title": "Rollbag® R1285 Med Automatic Bagger",
+      "family": "medical",
+      "layout": "B",
+      "base_price_usd": 36555,
+      "variants": [],
+      "priced_options": 14,
+      "included_features": 0,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        12,
+        16
+      ],
+      "startup_price_usd": 3830,
+      "engineering_approval_required": false,
+      "unique_images": 6,
+      "last_saved": "2026-05-28"
+    },
+    {
+      "machine_id": "r3200_hs_med",
+      "title": "Rollbag® R3200 Med Automatic Bagger",
+      "family": "medical",
+      "layout": "A",
+      "base_price_usd": 105655,
+      "variants": [],
+      "priced_options": 4,
+      "included_features": 9,
+      "services": 1,
+      "one_offs": 0,
+      "quote_valid_days": 30,
+      "lead_time_weeks": [
+        16,
+        20
+      ],
+      "startup_price_usd": 5830,
+      "engineering_approval_required": false,
+      "unique_images": 29,
+      "last_saved": "2025-09-15"
+    }
+  ],
+  "kits": [
+    {
+      "kit_id": "items_included_in_level_1_spare_parts_kit_720",
+      "applies_to": "Magnum Series",
+      "machine_ids": [
+        "magnum_horizontal_med"
+      ],
+      "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+      "price_usd": 720,
+      "parts": 16
+    },
+    {
+      "kit_id": "items_included_in_level_2_spare_parts_kit_6_385",
+      "applies_to": "Magnum Series",
+      "machine_ids": [
+        "magnum_horizontal_med"
+      ],
+      "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+      "price_usd": 6385,
+      "parts": 23
+    },
+    {
+      "kit_id": "items_included_in_kit_330",
+      "applies_to": "R1275",
+      "machine_ids": [
+        "r1275_med"
+      ],
+      "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+      "price_usd": 330,
+      "parts": 6
+    }
+  ],
+  "options": {
+    "count": 97,
+    "conflicts": {
+      "price": 20,
+      "inclusion": 14,
+      "name": 3
+    }
+  },
+  "rule_sets": {
+    "bag_min_length": {
+      "rows": 11,
+      "internal_use_only": true
+    },
+    "roll_calculator": {
+      "inputs": 16,
+      "outputs": 12,
+      "constants": 6,
+      "winding_configurations": 13
+    },
+    "routing": {
+      "records": 5,
+      "contacts": 11,
+      "stale_risk": true
+    }
+  },
+  "media": {
+    "unique_images": 121,
+    "agreed": 44,
+    "not_sent": 5
+  },
+  "review_totals": {
+    "needs_human": 0,
+    "adjudicated": 398,
+    "reviewed": 505,
+    "one_offs": 1,
+    "unlabeled": 16,
+    "included_lists_diff": 3,
+    "media_confirm": 0,
+    "changes_since_signoff": 0,
+    "other_amounts": 21,
+    "option_review": 72,
+    "attachment_terms_diff": 9,
+    "price_scope_numbers": 8,
+    "routing_email_links": 1
+  },
+  "gates": {
+    "G1": "passed",
+    "G2": "passed",
+    "G3": "passed",
+    "G4": "passed",
+    "G5": "passed",
+    "G6": "passed",
+    "G7": "passed",
+    "G8": "passed",
+    "G9": "passed",
+    "G10": "passed",
+    "G11": "passed",
+    "G12": "passed"
+  }
+}

@@ -1,0 +1,2139 @@
+[
+  {
+    "narrative_id": "narr:r3200:body:76",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Foot Switch",
+      "line_id": "r3200:body:76.0"
+    },
+    "body": [
+      {
+        "text": "Instead of using the start button, the cycle is activated via a foot switch. With this option the operator can have both hands free during filling of the bag.",
+        "block_id": "r3200:body:77"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:229.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:79",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Fixed Funnel",
+      "line_id": "r3200:body:79.0"
+    },
+    "body": [
+      {
+        "text": "The funnel guides the product into the bag. The funnel is mounted above the seal bars and can be used for manual or automatic filling. It is made of stainless steel and comes in a range of sizes.",
+        "block_id": "r3200:body:80"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:230.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:82",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Accumulating Funnel",
+      "line_id": "r3200:body:82.0"
+    },
+    "body": [
+      {
+        "text": "The stainless steel accumulating funnel is designed to accumulate parts prior to being dropped into the bag. This type of funnel is optimal when a feeder is used. The accumulating funnel allows the feeder to keep feeding parts while the bagger cycles. It also ensures that multiple parts get dropped into the bag at one time, as the funnel only opens when the bag is in position.",
+        "block_id": "r3200:body:83"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:231.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:85",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Seal Flattener Fingers",
+      "line_id": "r3200:body:85.0"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretch it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one side of the bag when it is filled.",
+        "block_id": "r3200:body:86"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:232.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:88",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Product Detection Activation Sensor",
+      "line_id": "r3200:body:88.0"
+    },
+    "body": [
+      {
+        "text": "A sensor detects when the product is in the bag. When the sensor detects the product, the seal bar closes and seals the bag. The sensor is mounted underneath the seal bar and can be moved along the load shelf.",
+        "block_id": "r3200:body:89"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:233.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:92",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Hand Activation Sensor",
+      "line_id": "r3200:body:92.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects the presence of the operator’s hand above the loading area. Once the operator drops in the product and removes their hand from the loading area then the machine automatically cycles. This sensor eliminates a step in the packaging process, as the operator does not need to press a button or activate a foot switch to cycle the bagger.",
+        "block_id": "r3200:body:93"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:234.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:96",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Interface Port",
+      "line_id": "r3200:body:96.0"
+    },
+    "body": [
+      {
+        "text": "Allows the bagger to communicate to external devices. When integrating the bagger, it can be set to either master or slave mode. This option includes the integration cable.",
+        "block_id": "r3200:body:97"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:235.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:100",
+    "machine_id": "r3200",
+    "title": {
+      "text": "End of Roll Sensor",
+      "line_id": "r3200:body:100.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects when the roll of bags is nearly empty and stops the bagger in order to allow changeover to a new roll of film.",
+        "block_id": "r3200:body:101"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:236.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:105",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Bag Maker Assembly",
+      "line_id": "r3200:body:105.0"
+    },
+    "body": [
+      {
+        "text": "The bag maker assembly allows the R3200 bagger to use poly tubing, in addition to pre-opened bags on a roll. With poly tubing the user can change the desired bag length at the push of a button, since the bag is made on-demand. The assembly applies a bottom seal to the tubing, as well as perforates and opens the material, prior to loading. When using poly tubing the R3200 will run up to 40 bags/min (dependent on bag size, gauge, and product)",
+        "block_id": "r3200:body:106"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:237.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:110",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Easy Load Bag Opener",
+      "line_id": "r3200:body:110.0"
+    },
+    "body": [
+      {
+        "text": "The easy load bag opener includes several features in one. First off, this system creates a square or rectangular opening for ease of loading product into the bag. Secondly, the system physically grips the bag, in order to support heavier products. Third, the bag is stretched tight prior to sealing, to minimize wrinkles in the seal area. This option includes a sensor that detects that the film is in the fingers as well as film guides to assist in set-up. The easy load bag opener is designed for bags that are 10” or wider. This option requires the Seal Flattener Fingers to be ordered along with it.",
+        "block_id": "r3200:body:111"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:238.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:114",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Bag Open Sensor",
+      "line_id": "r3200:body:114.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects if a bag is in the load position, open, and ready to accept product. It is primarily designed for automatic packaging applications in order to prevent product from being dumped into a bag that is not open.",
+        "block_id": "r3200:body:115"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:239.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:120",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Adjustable Seal Bar Opening",
+      "line_id": "r3200:body:120.0"
+    },
+    "body": [
+      {
+        "text": "The adjustable seal bar opening reduces the stroke of the seal bar. A stroke that is slightly greater than the bag opening increases the packaging speed. This feature is ideal when using small bags.",
+        "block_id": "r3200:body:121"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:240.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:124",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Bag Holder",
+      "line_id": "r3200:body:124.0"
+    },
+    "body": [
+      {
+        "text": "The bag holder is useful for getting a straight seal when packing free flowing bulk products. It can also be used as an anti-stick device to prevent light bags the bags from sticking to the sealing bar.",
+        "block_id": "r3200:body:125"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:241.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:127",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Static Eliminator",
+      "line_id": "r3200:body:127.0"
+    },
+    "body": [
+      {
+        "text": "The static eliminator is designed to remove static electricitythat could be in the bags, The elimantor neutralizes the static charge, and is especially beneficial with thin bags.",
+        "block_id": "r3200:body:128"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:242.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:130",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Bag Support Outfeed Conveyor",
+      "line_id": "r3200:body:130.0"
+    },
+    "body": [
+      {
+        "text": "This conveyor supports and lifts the bag during sealing, after which the sealed bags are transported to the left or right side of the bagger. This conveyor allows the operator to comfortably stand or sit in front of the bagger during packaging.",
+        "block_id": "r3200:body:131"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:243.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:134",
+    "machine_id": "r3200",
+    "title": {
+      "text": "7.25” Pass-Through",
+      "line_id": "r3200:body:134.0"
+    },
+    "body": [
+      {
+        "text": "For packaging items requiring an opening larger than the standard pass-through of 6”, the R3200 can be ordered with an increased pass-through size of 7.25”. (Requires the use of Light Curtains)",
+        "block_id": "r3200:body:135"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:252.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:139",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Adjustable Hole Punch",
+      "line_id": "r3200:body:139.0"
+    },
+    "body": [
+      {
+        "text": "Pneumatic punch that puts a small perforated hole (flutter vent) in the bag, allowing for excess air to escape.",
+        "block_id": "r3200:body:140"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:244.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:143",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Print Registration",
+      "line_id": "r3200:body:143.0"
+    },
+    "body": [
+      {
+        "text": "Print Registration allows the machine to run pre-printed poly tubing that requies the print to be in the same position on every bag. The machine uses a photo eye to detect the registration mark on the film and align it to the bag-making position.",
+        "block_id": "r3200:body:144"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:245.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:147",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Air Expeller",
+      "line_id": "r3200:body:147.0"
+    },
+    "body": [
+      {
+        "text": "The air expeller is a plate with a foam pad. This device presses against the bag prior to sealing, removing excess air.",
+        "block_id": "r3200:body:148"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:246.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:151",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Articulating Bag Support",
+      "line_id": "r3200:body:151.0"
+    },
+    "body": [
+      {
+        "text": "This option supports the bag during the sealing process. At the end of the cycle the load shelf tilts down at an angle, dispensing the bag to the next step of the packaging operation. The maximum bag length with the standard articulating bag support is 18”. This load shelf is also available with a pneumatic lifting function to settle groups of items placed into the bag.",
+        "block_id": "r3200:body:152"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:247.0#0",
+      "r3200:body:248.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:154",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Elevated Machine Frame",
+      "line_id": "r3200:body:154.0"
+    },
+    "body": [
+      {
+        "text": "The elevated machine frame is designed for those that have bags longer than 24” and want to put a conveyor underneath it. This option is also used for tall operators that want to pack products while standing, as the loading height would be great than 36”.",
+        "block_id": "r3200:body:155"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:249.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:157",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Stainless Steel Frame",
+      "line_id": "r3200:body:157.0"
+    },
+    "body": [
+      {
+        "text": "This option is for medical, food, or other enviroments that require a stainless steel frame for cleaning and hygiene purposes. Please note that ordering this option will require an extended lead time.",
+        "block_id": "r3200:body:158"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:250.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:160",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Film Perforator",
+      "line_id": "r3200:body:160.0"
+    },
+    "body": [
+      {
+        "text": "The film perforator has an upper and lower assembly which creates a vertical perforation along the complete length of the bag. This perforation allows air to vent out of the bag after it has been sealed.",
+        "block_id": "r3200:body:161"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:251.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:164",
+    "machine_id": "r3200",
+    "title": {
+      "text": "220V Operation",
+      "line_id": "r3200:body:164.0"
+    },
+    "body": [
+      {
+        "text": "With this option the bagger will work with 220V single-phase electricity. This is designed for packaging locations that do not have 120V available, or those that want to use a lower amperage circuit in conjunction with 220V.",
+        "block_id": "r3200:body:165"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:253.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:169",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Touchscreen Cover",
+      "line_id": "r3200:body:169.0"
+    },
+    "body": [
+      {
+        "text": "A clear plastic cover that protects the touchscreen from dirt, dust, and damage.",
+        "block_id": "r3200:body:170"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:255.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:174",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Sorting Table",
+      "line_id": "r3200:body:174.0"
+    },
+    "body": [
+      {
+        "text": "A prep area placed on top of the machine, allowing the operator to prepare the products that will be packaged.",
+        "block_id": "r3200:body:175"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:256.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:180",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Sorting Table with Frame",
+      "line_id": "r3200:body:180.0"
+    },
+    "body": [
+      {
+        "text": "A prep area that is placed over the top of the machine. This provides a space for the operator to prepare the products that will be packaged.",
+        "block_id": "r3200:body:181"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:257.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:186",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Weigh Count Sorting Table",
+      "line_id": "r3200:body:186.0"
+    },
+    "body": [
+      {
+        "text": "The Weigh Count Sorting table automatically dispenses product into the bagger once the target count has been reached. The Weigh Count Sorting Table has an accuracy of 0.003 oz (0.1 g) and a max bucket weight of 6.6 lbs (3 kg).",
+        "block_id": "r3200:body:187"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:258.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:191",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Film Guides",
+      "line_id": "r3200:body:191.0"
+    },
+    "body": [
+      {
+        "text": "The film guides assure that the packaging material goes straight into the bagger by keeping the film in a fixed position. This option is ideal for narrow bags and poly tubing.",
+        "block_id": "r3200:body:192"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:259.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:197",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Fan Folded Bag Handler",
+      "line_id": "r3200:body:197.0"
+    },
+    "body": [
+      {
+        "text": "This fan folded bag handler is designed for use with large bags folded in a box. A benefit of boxed bags is reduced changeover as more bags fit in a box when compared with bags on a roll.",
+        "block_id": "r3200:body:198"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:260.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:202",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Thermal Transfer Printer",
+      "line_id": "r3200:body:202.0"
+    },
+    "body": [
+      {
+        "text": "If you need to print large text, images, or barcodes on your bag, then a thermal transfer printer is the the right solution. Our Videojet thermal transfer printer is available with a 4” wide print head, has a print resolution of up to 300 dpi, and can print at a blazing rate of up to 24 inches per second. Additionally, printing software is available in order to make print set-up a breeze.",
+        "block_id": "r3200:body:203"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:261.0#0",
+      "r3200:body:262.0#0",
+      "r3200:body:263.0#0",
+      "r3200:body:265.0#0"
+    ],
+    "decided_by": "adjudicator"
+  },
+  {
+    "narrative_id": "narr:r3200:body:206",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Label Printer Applicator",
+      "line_id": "r3200:body:206.0"
+    },
+    "body": [
+      {
+        "text": "Integrated label printer applicator ties into IT network to print and apply a label directly on the outside of the bag. The printer works with labels up to 4” wide for printing and applying 4” x 6” shipping labels. It works with labels as small as 2” x 1.5” for printing and applying a barcode or other product identifying information.",
+        "block_id": "r3200:body:207"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:264.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:209",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Dual Touch Start Switches",
+      "line_id": "r3200:body:209.0"
+    },
+    "body": [
+      {
+        "text": "Two switches that must be touched simultaneously in order for the machine to cycle. This prevents an operator from putting their hand in the seal area while the machine is cycling.",
+        "block_id": "r3200:body:210"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:266.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:212",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200:body:212.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200:body:213"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:267.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:215",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Incline Outfeed Conveyor",
+      "line_id": "r3200:body:215.0"
+    },
+    "body": [
+      {
+        "text": "The incline outfeed conveyor transports bags from the bagger up to table height. With every cycle of the bagger, the conveyor indexes one step. It consists of a horizontal section where the bag is dropped, and an inclined section which has a height of approximately 35”. The height and angle of the inclined section are adjustable. The conveyor is made of stainless steel and equipped with casters. The outfeed conveyor is available in 16” conveyor width. The conveyor can be put in front of the bagger, like in the picture, or to the side of the machine.",
+        "block_id": "r3200:body:216"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:268.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200:body:218",
+    "machine_id": "r3200",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200:body:218.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts fo the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200:body:219"
+      }
+    ],
+    "item_ids": [
+      "r3200:body:269.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:65",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Adjustable Hole Punch",
+      "line_id": "r3200_bag_maker:body:65.0"
+    },
+    "body": [
+      {
+        "text": "Pneumatic punch that puts a small perforated hole (flutter vent) in the bag, allowing for excess air to escape.",
+        "block_id": "r3200_bag_maker:body:66"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:106.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:69",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Print Registration",
+      "line_id": "r3200_bag_maker:body:69.0"
+    },
+    "body": [
+      {
+        "text": "Print Registration allows the machine to run pre-printed poly tubing that requies the print to be in the same position on every bag. The machine uses a photo eye to detect the registration mark on the film and align it to the bag-making position.",
+        "block_id": "r3200_bag_maker:body:70"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:107.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:73",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Film Perforator",
+      "line_id": "r3200_bag_maker:body:73.0"
+    },
+    "body": [
+      {
+        "text": "The film perforator has an upper and lower assembly which creates a vertical perforation along the complete length of the bag. This perforation allows air to vent out of the bag after it has been sealed.",
+        "block_id": "r3200_bag_maker:body:74"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:108.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:77",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "220V Operation",
+      "line_id": "r3200_bag_maker:body:77.0"
+    },
+    "body": [
+      {
+        "text": "With this option the bagger will work with 220V single-phase electricity. This is designed for packaging locations that do not have 120V available, or those that want to use a lower amperage circuit in conjunction with 220V.",
+        "block_id": "r3200_bag_maker:body:78"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:109.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:83",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Thermal Transfer Printer",
+      "line_id": "r3200_bag_maker:body:83.0"
+    },
+    "body": [
+      {
+        "text": "If you need to print large text, images, or barcodes on your bag, then a thermal transfer printer is the the right solution. Our Videojet thermal transfer printer is available with a 4” wide print head, has a print resolution of up to 300 dpi, and can print at a blazing rate of up to 24 inches per second. Additionally, printing software is available in order to make print set-up a breeze.",
+        "block_id": "r3200_bag_maker:body:84"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:110.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:87",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Label Printer Applicator",
+      "line_id": "r3200_bag_maker:body:87.0"
+    },
+    "body": [
+      {
+        "text": "Integrated label printer applicator ties into IT network to print and apply a label directly on the outside of the bag. The printer works with labels up to 4” wide for printing and applying 4” x 6” shipping labels. It works with labels as small as 2” x 1.5” for printing and applying a barcode or other product identifying information.",
+        "block_id": "r3200_bag_maker:body:88"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:111.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:91",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200_bag_maker:body:91.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200_bag_maker:body:92"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:112.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_bag_maker:body:95",
+    "machine_id": "r3200_bag_maker",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200_bag_maker:body:95.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts fo the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200_bag_maker:body:96"
+      }
+    ],
+    "item_ids": [
+      "r3200_bag_maker:body:113.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:104",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Top-Mount Label Printer Applicator",
+      "line_id": "r3200_fulfillment:body:104.0"
+    },
+    "body": [
+      {
+        "text": "Integrated label printer applicator ties into warehouse management system to print and apply a label directly on the outside of the bag. The printer works with labels up to 4” wide for printing and applying 4” x 6” shipping labels. It works with labels as small as 2” x 1.5” for printing and applying a barcode or other product identifying information.",
+        "block_id": "r3200_fulfillment:body:105"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:146.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:107",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Seal Flattener Fingers - Shifting",
+      "line_id": "r3200_fulfillment:body:107.0"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretch it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one side of the bag when it is filled.",
+        "block_id": "r3200_fulfillment:body:108"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:147.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:110",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Interface Port",
+      "line_id": "r3200_fulfillment:body:110.0"
+    },
+    "body": [
+      {
+        "text": "Allows the bagger to communicate to external devices. When integrating the bagger, it can be set to either master or slave mode. This option includes the integration cable.",
+        "block_id": "r3200_fulfillment:body:111"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:148.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:114",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Easy Touch Start Sensor",
+      "line_id": "r3200_fulfillment:body:114.0"
+    },
+    "body": [
+      {
+        "text": "Start the sealing cycle with an optical sensor for improved ergonomics. This sensor detects the presence of the operator’s hand and then the machines starts its cycle. This sensor features a magnetic backing so that the operator can place it in the most ergonomic position for them.",
+        "block_id": "r3200_fulfillment:body:115"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:149.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:118",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200_fulfillment:body:118.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200_fulfillment:body:119"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:150.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:124",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Bag Maker Assembly (with hole punch and end of roll)",
+      "line_id": "r3200_fulfillment:body:124.0"
+    },
+    "body": [
+      {
+        "text": "The bag maker assembly allows the R3200 bagger to use poly tubing, in addition to pre-opened bags on a roll. With poly tubing the user can change the desired bag length at the push of a button, since the bag is made on-demand. The assembly applies a bottom seal to the tubing, as well as perforates and opens the material, prior to loading.",
+        "block_id": "r3200_fulfillment:body:125"
+      },
+      {
+        "text": "The bag maker assembly includes a pneumatic punch that can put a small perforated hole (flutter vent) in the bag, allowing for excess air to escape. It also includes an end of roll sensor when the roll of material is nearly empty, to allow fast changeover.",
+        "block_id": "r3200_fulfillment:body:127"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:151.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:129",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Easy Load Bag Opener",
+      "line_id": "r3200_fulfillment:body:129.0"
+    },
+    "body": [
+      {
+        "text": "The easy load bag opener includes several features in one. First off, this system creates a square or rectangular opening for ease of loading product into the bag. Secondly, the system physically grips the bag, in order to support heavier products. Third, the bag is stretched tight prior to sealing, to minimize wrinkles in the seal area. This option includes a sensor that detects that the film is in the fingers as well as film guides to assist in set-up. The easy load bag opener is designed for bags that are 10” or wider.",
+        "block_id": "r3200_fulfillment:body:130"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:152.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:133",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Bag Support Outfeed Conveyor",
+      "line_id": "r3200_fulfillment:body:133.0"
+    },
+    "body": [
+      {
+        "text": "This conveyor supports and lifts the bag during sealing, after which the sealed bags are transported to the left or right side of the bagger. This conveyor allows the operator to comfortably stand or sit in front of the bagger during packaging.",
+        "block_id": "r3200_fulfillment:body:134"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:153.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_fulfillment:body:136",
+    "machine_id": "r3200_fulfillment",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200_fulfillment:body:136.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts for the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200_fulfillment:body:137"
+      }
+    ],
+    "item_ids": [
+      "r3200_fulfillment:body:154.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:72",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Foot Switch",
+      "line_id": "r3200_hs_hybrid:body:72.0"
+    },
+    "body": [
+      {
+        "text": "Instead of using the start button, the cycle is activated via a foot switch. With this option the operator can have both hands free during filling of the bag.",
+        "block_id": "r3200_hs_hybrid:body:73"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:209.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:75",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Fixed Funnel",
+      "line_id": "r3200_hs_hybrid:body:75.0"
+    },
+    "body": [
+      {
+        "text": "The funnel guides the product into the bag. The funnel is mounted above the seal bars and can be used for manual or automatic filling. It is made of stainless steel and comes in a range of sizes.",
+        "block_id": "r3200_hs_hybrid:body:76"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:210.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:77",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Accumulating Funnel",
+      "line_id": "r3200_hs_hybrid:body:77.1"
+    },
+    "body": [
+      {
+        "text": "The stainless steel accumulating funnel is designed to accumulate parts prior to being dropped into the bag. This type of funnel is optimal when a feeder is used. The accumulating funnel allows the feeder to keep feeding parts while the bagger cycles. It also ensures that multiple parts get dropped into the bag at one time, as the funnel only opens when the bag is in position.",
+        "block_id": "r3200_hs_hybrid:body:78"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:211.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:79",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Seal Flattener Fingers",
+      "line_id": "r3200_hs_hybrid:body:79.1"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretche it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one side of the bag when it is filled.",
+        "block_id": "r3200_hs_hybrid:body:80"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:212.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:82",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Product Detection Activation Sensor",
+      "line_id": "r3200_hs_hybrid:body:82.0"
+    },
+    "body": [
+      {
+        "text": "A sensor detects when the product is in the bag. When the sensor detects the product, the seal bar closes and seals the bag. The sensor is mounted underneath the seal bar and can be moved along the load shelf.",
+        "block_id": "r3200_hs_hybrid:body:83"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:213.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:86",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Hand Activation Sensor",
+      "line_id": "r3200_hs_hybrid:body:86.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects the presence of the operator’s hand above the loading area. Once the operator drops in the product and removes their hand from the loading area then the machine automatically cycles. This sensor eliminates a step in the packaging process, as the operator does not need to press a button or activate a foot switch to cycle the bagger.",
+        "block_id": "r3200_hs_hybrid:body:87"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:214.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:90",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Interface Port",
+      "line_id": "r3200_hs_hybrid:body:90.0"
+    },
+    "body": [
+      {
+        "text": "Allows the bagger to communicate to external devices. When integrating the bagger, it can be set to either master or slave mode. This option includes the integration cable.",
+        "block_id": "r3200_hs_hybrid:body:91"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:215.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:94",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "End of Roll Sensor",
+      "line_id": "r3200_hs_hybrid:body:94.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects when the roll of bags is nearly empty and stops the bagger in order to allow changeover to a new roll of film.",
+        "block_id": "r3200_hs_hybrid:body:95"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:216.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:97",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Easy Load Bag Opener",
+      "line_id": "r3200_hs_hybrid:body:97.0"
+    },
+    "body": [
+      {
+        "text": "The easy load bag opener includes several features in one. First off, this system creates a square or rectangular opening for ease of loading product into the bag. Secondly, the system physically grips the bag, in order to support heavier products. Third, the bag is stretched tight prior to sealing, to minimize wrinkles in the seal area. This option includes a sensor that detects that the film is in the fingers as well as film guides to assist in set-up. The easy load bag opener is designed for bags that are 10” or wider. This option requires the Seal Flattener Fingers to be ordered along with it.",
+        "block_id": "r3200_hs_hybrid:body:98"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:217.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:101",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Bag Open Sensor",
+      "line_id": "r3200_hs_hybrid:body:101.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects if a bag is in the load position, open, and ready to accept product. It is primarily designed for automatic packaging applications in order to prevent product from being dumped into a bag that is not open.",
+        "block_id": "r3200_hs_hybrid:body:102"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:218.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:107",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Adjustable Seal Bar Opening",
+      "line_id": "r3200_hs_hybrid:body:107.0"
+    },
+    "body": [
+      {
+        "text": "The adjustable seal bar opening reduces the stroke of the seal bar. A stroke that is slightly greater than the bag opening increases the packaging speed. This feature is ideal when using small bags.",
+        "block_id": "r3200_hs_hybrid:body:108"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:219.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:111",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Bag Holder",
+      "line_id": "r3200_hs_hybrid:body:111.0"
+    },
+    "body": [
+      {
+        "text": "The bag holder is useful for getting a straight seal when packing free flowing bulk products. It can also be used as an anti-stick device to prevent light bags the bags from sticking to the sealing bar.",
+        "block_id": "r3200_hs_hybrid:body:112"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:220.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:114",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Static Eliminator",
+      "line_id": "r3200_hs_hybrid:body:114.0"
+    },
+    "body": [
+      {
+        "text": "The static eliminator is designed to remove static electricitythat could be in the bags, The elimantor neutralizes the static charge, and is especially beneficial with thin bags.",
+        "block_id": "r3200_hs_hybrid:body:115"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:221.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:117",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Bag Support Outfeed Conveyor",
+      "line_id": "r3200_hs_hybrid:body:117.0"
+    },
+    "body": [
+      {
+        "text": "This conveyor supports and lifts the bag during sealing, after which the sealed bags are transported to the left or right side of the bagger. This conveyor allows the operator to comfortably stand or sit in front of the bagger during packaging.",
+        "block_id": "r3200_hs_hybrid:body:118"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:222.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:121",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "7.25” Pass-Through",
+      "line_id": "r3200_hs_hybrid:body:121.0"
+    },
+    "body": [
+      {
+        "text": "For packaging items requiring an opening larger than the standard pass-through of 6”, the R3200 can be ordered with an increased pass-through size of 7.25”. (Requires the use of Light Curtains)",
+        "block_id": "r3200_hs_hybrid:body:122"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:229.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:126",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Adjustable Hole Punch",
+      "line_id": "r3200_hs_hybrid:body:126.0"
+    },
+    "body": [
+      {
+        "text": "Pneumatic punch that puts a small perforated hole (flutter vent) in the bag, allowing for excess air to escape.",
+        "block_id": "r3200_hs_hybrid:body:127"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:223.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:130",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Print Registration",
+      "line_id": "r3200_hs_hybrid:body:130.0"
+    },
+    "body": [
+      {
+        "text": "Print Registration allows the machine to run pre-printed poly tubing that requies the print to be in the same position on every bag. The machine uses a photo eye to detect the registration mark on the film and align it to the bag-making position.",
+        "block_id": "r3200_hs_hybrid:body:131"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:224.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:134",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Air Expeller",
+      "line_id": "r3200_hs_hybrid:body:134.0"
+    },
+    "body": [
+      {
+        "text": "The air expeller is a plate with a foam pad. This device presses against the bag prior to sealing, removing excess air.",
+        "block_id": "r3200_hs_hybrid:body:135"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:225.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:138",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Articulating Bag Support",
+      "line_id": "r3200_hs_hybrid:body:138.0"
+    },
+    "body": [
+      {
+        "text": "This option supports the bag during the sealing process. At the end of the cycle the load shelf tilts down at an angle, dispensing the bag to the next step of the packaging operation. The maximum bag length with the standard articulating bag support is 18”.",
+        "block_id": "r3200_hs_hybrid:body:139"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:226.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:142",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Stainless Steel Frame",
+      "line_id": "r3200_hs_hybrid:body:142.0"
+    },
+    "body": [
+      {
+        "text": "This option is for medical, food, or other enviroments that require a stainless steel frame for cleaning and hygiene purposes. Please note that ordering this option will require an extended lead time.",
+        "block_id": "r3200_hs_hybrid:body:143"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:227.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:145",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Film Perforator",
+      "line_id": "r3200_hs_hybrid:body:145.0"
+    },
+    "body": [
+      {
+        "text": "The film perforator has an upper and lower assembly which creates a vertical perforation along the complete length of the bag. This perforation allows air to vent out of the bag after it has been sealed.",
+        "block_id": "r3200_hs_hybrid:body:146"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:228.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:149",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "220V Operation",
+      "line_id": "r3200_hs_hybrid:body:149.0"
+    },
+    "body": [
+      {
+        "text": "With this option the bagger will work with 220V single-phase electricity. This is designed for packaging locations that do not have 120V available, or those that want to use a lower amperage circuit in conjunction with 220V.",
+        "block_id": "r3200_hs_hybrid:body:150"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:230.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:154",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Touchscreen Cover",
+      "line_id": "r3200_hs_hybrid:body:154.0"
+    },
+    "body": [
+      {
+        "text": "A clear plastic cover that protects the touchscreen from dirt, dust, and damage.",
+        "block_id": "r3200_hs_hybrid:body:155"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:232.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:159",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Sorting Table",
+      "line_id": "r3200_hs_hybrid:body:159.0"
+    },
+    "body": [
+      {
+        "text": "A prep area placed on top of the machine, allowing the operator to prepare the products that will be packaged.",
+        "block_id": "r3200_hs_hybrid:body:160"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:233.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:165",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Sorting Table with Frame",
+      "line_id": "r3200_hs_hybrid:body:165.0"
+    },
+    "body": [
+      {
+        "text": "A prep area that is placed over the top of the machine. This provides a space for the operator to prepare the products that will be packaged.",
+        "block_id": "r3200_hs_hybrid:body:166"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:234.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:171",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Weigh Count Sorting Table",
+      "line_id": "r3200_hs_hybrid:body:171.0"
+    },
+    "body": [
+      {
+        "text": "The Weigh Count Sorting table automatically dispenses product into the bagger once the target count has been reached. The Weigh Count Sorting Table has an accuracy of 0.003 oz (0.1 g) and a max bucket weight of 6.6 lbs (3 kg).",
+        "block_id": "r3200_hs_hybrid:body:172"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:235.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:176",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Film Guides",
+      "line_id": "r3200_hs_hybrid:body:176.0"
+    },
+    "body": [
+      {
+        "text": "The film guides assure that the packaging material goes straight into the bagger by keeping the film in a fixed position. This option is ideal for narrow bags and poly tubing.",
+        "block_id": "r3200_hs_hybrid:body:177"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:236.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:181",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Thermal Transfer Printer",
+      "line_id": "r3200_hs_hybrid:body:181.0"
+    },
+    "body": [
+      {
+        "text": "If you need to print large text, images, or barcodes on your bag, then a thermal transfer printer is the the right solution. Our Videojet thermal transfer printer is available with a 4” wide print head, has a print resolution of up to 300 dpi, and can print at a blazing rate of up to 24 inches per second. Additionally, printing software is available in order to make print set-up a breeze.",
+        "block_id": "r3200_hs_hybrid:body:182"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:237.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:185",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Label Printer Applicator",
+      "line_id": "r3200_hs_hybrid:body:185.0"
+    },
+    "body": [
+      {
+        "text": "Integrated label printer applicator ties into IT network to print and apply a label directly on the outside of the bag. The printer works with labels up to 4” wide for printing and applying 4” x 6” shipping labels. It works with labels as small as 2” x 1.5” for printing and applying a barcode or other product identifying information.",
+        "block_id": "r3200_hs_hybrid:body:186"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:238.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:188",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Dual Touch Start Switches",
+      "line_id": "r3200_hs_hybrid:body:188.0"
+    },
+    "body": [
+      {
+        "text": "Two switches that must be touched simultaneously in order for the machine to cycle. This prevents an operator from putting their hand in the seal area while the machine is cycling.",
+        "block_id": "r3200_hs_hybrid:body:189"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:239.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:191",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200_hs_hybrid:body:191.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200_hs_hybrid:body:192"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:240.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:194",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Incline Outfeed Conveyor",
+      "line_id": "r3200_hs_hybrid:body:194.0"
+    },
+    "body": [
+      {
+        "text": "The incline outfeed conveyor transports bags from the bagger up to table height. With every cycle of the bagger, the conveyor indexes one step. It consists of a horizontal section where the bag is dropped, and an inclined section which has a height of approximately 35”. The height and angle of the inclined section are adjustable. The conveyor is made of stainless steel and equipped with casters. The outfeed conveyor is available in 16” conveyor width. The conveyor can be put in front of the bagger, like in the picture, or to the side of the machine.",
+        "block_id": "r3200_hs_hybrid:body:195"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:241.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_hybrid:body:197",
+    "machine_id": "r3200_hs_hybrid",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200_hs_hybrid:body:197.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts fo the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200_hs_hybrid:body:198"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_hybrid:body:242.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:75",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200xl:body:75.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200xl:body:76"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:119.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:79",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Bag Maker Assembly",
+      "line_id": "r3200xl:body:79.0"
+    },
+    "body": [
+      {
+        "text": "The bag maker assembly allows the R3200 bagger to use poly tubing, in addition to pre-opened bags on a roll. With poly tubing the user can change the desired bag length at the push of a button, since the bag is made on-demand. The assembly applies a bottom seal to the tubing, as well as perforates and opens the material, prior to loading. When using poly tubing the R3200 will run up to 40 bags/min (dependent on bag size, gauge, and product)",
+        "block_id": "r3200xl:body:80"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:120.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:83",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Seal Flattener Fingers",
+      "line_id": "r3200xl:body:83.0"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretche it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one size of the bag when it is filled.",
+        "block_id": "r3200xl:body:84"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:121.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:86",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Easy Load Bag Opener",
+      "line_id": "r3200xl:body:86.0"
+    },
+    "body": [
+      {
+        "text": "The easy load bag opener includes several features in one. First off, this system creates a square or rectangular opening for ease of loading product into the bag. Secondly, the system physically grips the bag, in order to support heavier products in the bag. Third, the easy load bag opener works in conjunction with the seal flattener fingers, which stretch the bag tight prior to sealing, minimizing wrinkles in the seal area. Lastly, the system detects if a bag is in the load position, open and ready to accept product. If the bag has not been squared open, it will be repositioned up to 3 times in order to be grabbed by the clamps. The easy load bag opener includes film guides to properly position the film. This system is designed for bags that are 10” or wider.",
+        "block_id": "r3200xl:body:87"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:122.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:89",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Interface Port",
+      "line_id": "r3200xl:body:89.0"
+    },
+    "body": [
+      {
+        "text": "Allows the bagger to communicate to external devices. When integrating the bagger, it can be set to either master or slave mode. This option includes the integration cable.",
+        "block_id": "r3200xl:body:90"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:123.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:95",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Foot Switch",
+      "line_id": "r3200xl:body:95.0"
+    },
+    "body": [
+      {
+        "text": "Instead of using the start button, the cycle is activated via a foot switch. With this option the operator can have both hands free during filling of the bag.",
+        "block_id": "r3200xl:body:96"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:127.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:99",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Adjustable Hole Punch",
+      "line_id": "r3200xl:body:99.0"
+    },
+    "body": [
+      {
+        "text": "Pneumatic punch that puts a small perforated hole (flutter vent) in the bag, allowing for excess air to escape.",
+        "block_id": "r3200xl:body:100"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:128.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:102",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Air Expeller",
+      "line_id": "r3200xl:body:102.0"
+    },
+    "body": [
+      {
+        "text": "The air expeller is a plate with a foam pad. This device presses against the bag prior to sealing, removing excess air.",
+        "block_id": "r3200xl:body:103"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:129.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:105",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Articulating Bag Support",
+      "line_id": "r3200xl:body:105.0"
+    },
+    "body": [
+      {
+        "text": "This option supports the bag during the sealing process. At the end of the cycle the load shelf tilts down at an angle, dispensing the bag to the next step of the packaging operation. The maximum bag length with the standard articulating bag support is 36”. A multi-position automatic version of this support is also available. The multi-position articulating bag support automatically adjusts the vertical position of the support, in function of the bag length.",
+        "block_id": "r3200xl:body:106"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:130.0#0",
+      "r3200xl:body:131.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:108",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Incline Outfeed Conveyor",
+      "line_id": "r3200xl:body:108.0"
+    },
+    "body": [
+      {
+        "text": "The incline outfeed conveyor transports bags from the bagger up to table height. With every cycle of the bagger, the conveyor indexes one step. It consists of a horizontal section where the bag is dropped, and an inclined section which has a height of approximately 35”. The height and angle of the inclined section are adjustable. The conveyor is made of stainless steel and equipped with casters. The outfeed conveyor is available in 16” conveyor width. The conveyor can be put in front of the bagger, like in the picture, or to the side of the machine.",
+        "block_id": "r3200xl:body:109"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:132.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200xl:body:111",
+    "machine_id": "r3200xl",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200xl:body:111.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts fo the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200xl:body:112"
+      }
+    ],
+    "item_ids": [
+      "r3200xl:body:133.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:65",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Accumulating Funnel",
+      "line_id": "r3200_vision:body:65.0"
+    },
+    "body": [
+      {
+        "text": "The stainless steel accumulating funnel is designed to accumulate parts prior to being dropped into the bag. This type of funnel is optimal when a feeder is used. The accumulating funnel allows the feeder to keep feeding parts while the bagger cycles. It also ensures that multiple parts get dropped into the bag at one time, as the funnel only opens when the bag is in position.",
+        "block_id": "r3200_vision:body:66"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:68",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Seal Flattener Fingers",
+      "line_id": "r3200_vision:body:68.0"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretche it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one size of the bag when it is filled.",
+        "block_id": "r3200_vision:body:69"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:71",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "End of Roll Sensor",
+      "line_id": "r3200_vision:body:71.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects when the roll of bags is nearly empty and stops the bagger in order to allow changeover to a new roll of film.",
+        "block_id": "r3200_vision:body:72"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:75",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Bag Maker Assembly",
+      "line_id": "r3200_vision:body:75.0"
+    },
+    "body": [
+      {
+        "text": "The bag maker assembly allows the R3200 bagger to use poly tubing, in addition to pre-opened bags on a roll. With poly tubing the user can change the desired bag length at the push of a button, since the bag is made on-demand. The assembly applies a bottom seal to the tubing, as well as perforates and opens the material, prior to loading. When using poly tubing the R3200 will run up to 40 bags/min (dependent on bag size, gauge, and product)",
+        "block_id": "r3200_vision:body:76"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:79",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Bag Open Sensor",
+      "line_id": "r3200_vision:body:79.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects if a bag is in the load position, open, and ready to accept product. It is primarily designed for automatic packaging applications in order to prevent product from being dumped into a bag that is not open. When the machine has the Easy Load Bag Opener option on it then the bag will be repositioned up to 3 times in order to be grabbed by the bag clamps.",
+        "block_id": "r3200_vision:body:80"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:82",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Adjustable Hole Punch",
+      "line_id": "r3200_vision:body:82.0"
+    },
+    "body": [
+      {
+        "text": "Pneumatic punch that puts a small perforated hole (flutter vent) in the bag, allowing for excess air to escape.",
+        "block_id": "r3200_vision:body:83"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:86",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Air Expeller",
+      "line_id": "r3200_vision:body:86.0"
+    },
+    "body": [
+      {
+        "text": "The air expeller is a plate with a foam pad. This device presses against the bag prior to sealing, removing excess air.",
+        "block_id": "r3200_vision:body:87"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:93",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Articulating Bag Support",
+      "line_id": "r3200_vision:body:93.0"
+    },
+    "body": [
+      {
+        "text": "This option supports the bag during the sealing process. At the end of the cycle the load shelf tilts down at an angle, dispensing the bag to the next step of the packaging operation. The maximum bag length with the standard articulating bag support is 18”.",
+        "block_id": "r3200_vision:body:94"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_vision:body:97",
+    "machine_id": "r3200_vision",
+    "title": {
+      "text": "Thermal Transfer Printer",
+      "line_id": "r3200_vision:body:97.0"
+    },
+    "body": [
+      {
+        "text": "If you need to print large text, images, or barcodes on your bag, then a thermal transfer printer is the the right solution. Our Videojet thermal transfer printers are available in various widths (2” and 4”), to accommodate different printing requirements. Standard print length is 3”, for longer lengths please order continuous motion print option. Additionally, printing software is available in order to make print set-up a breeze. Outfeed Conveyor",
+        "block_id": "r3200_vision:body:98"
+      },
+      {
+        "text": "The outfeed conveyor transports bags from the bagger up to table height. With every cycle of the bagger, the conveyor indexes one step. It consists of a horizontal section where the bag is dropped, and an inclined section which has a height of approximately 35”. The height and angle of the inclined section are adjustable. The conveyor is made of stainless steel and equipped with casters. The outfeed conveyor is available in 10” and 16” widths. The conveyor can be put in front of the bagger, like in the picture, or to the side of the machine.\n",
+        "block_id": "r3200_vision:body:99"
+      }
+    ],
+    "item_ids": [],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:75",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Foot Switch",
+      "line_id": "r3200_hs_med:body:75.0"
+    },
+    "body": [
+      {
+        "text": "Instead of using the start button, the cycle is activated via a foot switch. With this option the operator can have both hands free during filling of the bag.",
+        "block_id": "r3200_hs_med:body:76"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:130.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:78",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Bagmaker Assembly",
+      "line_id": "r3200_hs_med:body:78.0"
+    },
+    "body": [
+      {
+        "text": "The bagmaker assembly is equipped with a perforating and opening assembly for running material with a pre-made chevron seal.",
+        "block_id": "r3200_hs_med:body:79"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:134.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:81",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Seal Flattener Fingers",
+      "line_id": "r3200_hs_med:body:81.0"
+    },
+    "body": [
+      {
+        "text": "The seal flattener fingers go into the bag and stretche it taught prior to sealing, to minimize wrinkles in the seal area. This feature is ideal for bags that are filled with heavy products or ones that tend to pull on one size of the bag when it is filled.",
+        "block_id": "r3200_hs_med:body:82"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:131.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:84",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Interface Port",
+      "line_id": "r3200_hs_med:body:84.0"
+    },
+    "body": [
+      {
+        "text": "Allows the bagger to communicate to external devices. When integrating the bagger, it can be set to either master or slave mode. This option includes the integration cable.",
+        "block_id": "r3200_hs_med:body:85"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:132.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:87",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "End of Roll Sensor",
+      "line_id": "r3200_hs_med:body:87.0"
+    },
+    "body": [
+      {
+        "text": "This sensor detects when the roll of bags is nearly empty and stops the bagger in order to allow changeover to a new roll of film.",
+        "block_id": "r3200_hs_med:body:88"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:133.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:92",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Air Expeller",
+      "line_id": "r3200_hs_med:body:92.0"
+    },
+    "body": [
+      {
+        "text": "The air expeller is a plate with a foam pad. This device presses against the bag prior to sealing, removing excess air.",
+        "block_id": "r3200_hs_med:body:93"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:136.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:95",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Articulating Bag Support",
+      "line_id": "r3200_hs_med:body:95.0"
+    },
+    "body": [
+      {
+        "text": "This option supports the bag during the sealing process. At the end of the cycle the load shelf tilts down at an angle, dispensing the bag to the next step of the packaging operation. The maximum bag length with the standard articulating bag support is 18\".",
+        "block_id": "r3200_hs_med:body:96"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:137.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:99",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Stainless Steel Frame",
+      "line_id": "r3200_hs_med:body:99.0"
+    },
+    "body": [
+      {
+        "text": "This feature is for medical enviroments that require a stainless steel frame for cleaning and hygiene purposes.",
+        "block_id": "r3200_hs_med:body:100"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:138.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:103",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Thermal Transfer Printer",
+      "line_id": "r3200_hs_med:body:103.0"
+    },
+    "body": [
+      {
+        "text": "If you need to print large text, images, or barcodes on your bag, then a 4” wide thermal transfer printer is the the right solution.",
+        "block_id": "r3200_hs_med:body:104"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:135.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:110",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Light Curtain",
+      "line_id": "r3200_hs_med:body:110.0"
+    },
+    "body": [
+      {
+        "text": "Prevents the operation of the bagger when the optical detection field is obstructed. Can also be used to trigger the start of the cycle, once the obstruction is no longer detected.",
+        "block_id": "r3200_hs_med:body:111"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:142.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:114",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Bag Support Outfeed Conveyor",
+      "line_id": "r3200_hs_med:body:114.0"
+    },
+    "body": [
+      {
+        "text": "Instead of a load shelf to support the bag, it is possible to use a bag support outfeed conveyor. This conveyor supports and lifts the bags during sealing, after which the sealed bags are transported to the left or right side of the bagger. This conveyor allows the operator to comfortably stand or sit in front of the bagger during packaging.",
+        "block_id": "r3200_hs_med:body:115"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:143.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:118",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Incline Outfeed Conveyor",
+      "line_id": "r3200_hs_med:body:118.0"
+    },
+    "body": [
+      {
+        "text": "The outfeed conveyor transports bags from the bagger up to table height. With every cycle of the bagger, the conveyor indexes one step. It consists of a horizontal section where the bag is dropped, and an inclined section. The height and angle of the inclined section are adjustable. The conveyor is made of stainless steel and equipped with casters. The conveyor can be put in front of the bagger, like in the picture, or to the side of the machine.",
+        "block_id": "r3200_hs_med:body:119"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:144.0#0"
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "narrative_id": "narr:r3200_hs_med:body:121",
+    "machine_id": "r3200_hs_med",
+    "title": {
+      "text": "Spare Parts Kit",
+      "line_id": "r3200_hs_med:body:121.0"
+    },
+    "body": [
+      {
+        "text": "This kit includes basic consumable and replacement parts fo the machine. These parts include PTFE seal bar cover, pressure rubber, and perforation knife.",
+        "block_id": "r3200_hs_med:body:122"
+      }
+    ],
+    "item_ids": [
+      "r3200_hs_med:body:145.0#0"
+    ],
+    "decided_by": "agreement"
+  }
+]

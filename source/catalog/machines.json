@@ -1,0 +1,3285 @@
+[
+  {
+    "machine_id": "r3200",
+    "family": "floor_standing",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/2 - Floor Standing/Rollbag R3200 Automatic Bagger Quote 25.docx",
+    "last_saved": "2025-01-29",
+    "title": {
+      "text": "Rollbag™ R3200 Automatic Bagger",
+      "line_id": "r3200:body:20.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System",
+      "line_id": "r3200:body:21.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 automatic bagger is a high production capacity automatic poly bagging machine that can cycle at speeds of up to 80 bags per minute using Rollbag pre-opened bags on a roll. The Rollbag R3200 bagger features a compact design and is assembled with high quality off-the-shelf components. This sleek automatic bagger is designed to withstand rigorous manufacturing environments and maximize uptime. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200:body:23"
+      }
+    ],
+    "base_price_usd": 27580,
+    "base_item_id": "r3200:body:226.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "up to 80 bags/minute (dependent on bag size, gauge and product)",
+        "line_id": "r3200:body:64.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\"‒16\"",
+        "line_id": "r3200:body:65.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3” – 32”",
+        "line_id": "r3200:body:66.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "6”",
+        "line_id": "r3200:body:67.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thickness",
+        "value": "1 – 5 mil (14” max roll diameter)",
+        "line_id": "r3200:body:68.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "34” W x 44” D x 38” – 44” H",
+        "line_id": "r3200:body:69.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200:body:70.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V @ 15A",
+        "line_id": "r3200:body:71.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200:body:40"
+        },
+        {
+          "text": "PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200:body:41"
+        },
+        {
+          "text": "Built in self-help diagnostics for troubleshooting",
+          "block_id": "r3200:body:42"
+        },
+        {
+          "text": "Compact design takes up minimal footprint in the packaging area",
+          "block_id": "r3200:body:43"
+        },
+        {
+          "text": "Standard operating height of 34.5” (4 height settings – 30.5”, 32.5”, 34.5”, 36.5” )",
+          "block_id": "r3200:body:44"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r3200:body:46"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200:body:47"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200:body:48"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200:body:49"
+        },
+        {
+          "text": "Comprehensive 5 year warranty (optional) which includes consumable parts & labor",
+          "block_id": "r3200:body:50"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Utilizes Rollbag pre-opened bags-on-a-roll for quick bag size changes and easy set-up",
+          "block_id": "r3200:body:52"
+        },
+        {
+          "text": "Use with poly tubing (optional), for lower material costs and ability to set bag length on the fly",
+          "block_id": "r3200:body:53"
+        },
+        {
+          "text": "Adjustable height load shelf (optional) to support the bag during packaging",
+          "block_id": "r3200:body:54"
+        },
+        {
+          "text": "Interface ports to integrate counters, scales, and robotics",
+          "block_id": "r3200:body:55"
+        },
+        {
+          "text": "Ceramic heating element for fast start-up",
+          "block_id": "r3200:body:56"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing",
+          "block_id": "r3200:body:58"
+        },
+        {
+          "text": "Low power consumption design (1100 Watts)",
+          "block_id": "r3200:body:59"
+        },
+        {
+          "text": "Safety cover protects access to the seal bar (when using a funnel)",
+          "block_id": "r3200:body:60"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200:body:61"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200:body:4.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200:body:5.0",
+        "value_line_id": "r3200:body:5.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xXYZ",
+        "kind": "placeholder",
+        "line_id": "r3200:body:5.2",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "yourname@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200:body:5.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200:body:6.0",
+        "value_line_id": "r3200:body:6.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Project Name",
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200:body:7.0",
+        "value_line_id": "r3200:body:7.1",
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r3200:body:23/l0",
+      "r3200:body:275/l0",
+      "r3200:body:276/l0",
+      "r3200:body:277/l0",
+      "r3200:body:278/l0",
+      "r3200:body:342/l0",
+      "r3200:body:361/l0",
+      "r3200:body:378/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200_bag_maker",
+    "family": "floor_standing",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/2 - Floor Standing/Rollbag R3200 Bag Maker Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ R3200 Automatic Bagger",
+      "line_id": "r3200_bag_maker:body:20.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bag Maker",
+      "line_id": "r3200_bag_maker:body:21.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 Automatic Bag Maker is a high production capacity automatic bag maker that can produce bags at a rate of up to 40 bags/min. The Rollbag R3200 bag maker features a compact design and is assembled with high quality off-the-shelf components. This sleek automatic bag maker is designed to withstand rigorous manufacturing environments and maximize uptime. Click here for videos and more details on this packaging machine – bag maker version as well as automatic bagger version.",
+        "block_id": "r3200_bag_maker:body:23"
+      }
+    ],
+    "base_price_usd": 20040,
+    "base_item_id": "r3200_bag_maker:body:103.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "up to 40 bags/minute (dependent on bag size, gauge and product)",
+        "line_id": "r3200_bag_maker:body:53.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\"‒16\"",
+        "line_id": "r3200_bag_maker:body:54.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3” – 32”",
+        "line_id": "r3200_bag_maker:body:55.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thickness",
+        "value": "1 – 5 mil (14” max roll diameter)",
+        "line_id": "r3200_bag_maker:body:56.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "34” W x 44” D x 38” – 44” H",
+        "line_id": "r3200_bag_maker:body:57.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200_bag_maker:body:58.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V @ 15A",
+        "line_id": "r3200_bag_maker:body:59.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200_bag_maker:body:36"
+        },
+        {
+          "text": "PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200_bag_maker:body:37"
+        },
+        {
+          "text": "Built in self-help diagnostics for troubleshooting",
+          "block_id": "r3200_bag_maker:body:38"
+        },
+        {
+          "text": "Compact design takes up minimal footprint in the packaging area",
+          "block_id": "r3200_bag_maker:body:39"
+        },
+        {
+          "text": "Standard operating height of 34.5” (4 height settings – 30.5”, 32.5”, 34.5”, 36.5” )",
+          "block_id": "r3200_bag_maker:body:40"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r3200_bag_maker:body:42"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200_bag_maker:body:43"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200_bag_maker:body:44"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200_bag_maker:body:45"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Use poly tubing to be able to make bags to length",
+          "block_id": "r3200_bag_maker:body:47"
+        },
+        {
+          "text": "Ceramic heating element for fast start-up",
+          "block_id": "r3200_bag_maker:body:48"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low power consumption design (1100 Watts)",
+          "block_id": "r3200_bag_maker:body:50"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200_bag_maker:body:51"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:4.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:5.0",
+        "value_line_id": "r3200_bag_maker:body:5.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xXYZ",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:5.2",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "yourname@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:5.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:6.0",
+        "value_line_id": "r3200_bag_maker:body:6.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Project Name",
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200_bag_maker:body:7.0",
+        "value_line_id": "r3200_bag_maker:body:7.1",
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r3200_bag_maker:body:23/l0",
+      "r3200_bag_maker:body:119/l0",
+      "r3200_bag_maker:body:120/l0",
+      "r3200_bag_maker:body:121/l0",
+      "r3200_bag_maker:body:122/l0",
+      "r3200_bag_maker:body:186/l0",
+      "r3200_bag_maker:body:205/l0",
+      "r3200_bag_maker:body:222/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200_fulfillment",
+    "family": "floor_standing",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/2 - Floor Standing/Rollbag R3200 Fulfillment v2 Automatic Bagger Quote 25.docx",
+    "last_saved": "2025-11-07",
+    "title": {
+      "text": "Rollbag™ R3200 Fulfillment Bagger",
+      "line_id": "r3200_fulfillment:body:16.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System",
+      "line_id": "r3200_fulfillment:body:17.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 is an elite poly bagging fulfillment systems. This automatic bagger works with poly tubing (optional) as well as pre-made bags. The benefits of poly tubing include lower material costs as well as right-sizing of the bag to the product by changing bag length on the fly, lowering shipping costs, and less roll changeover. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200_fulfillment:body:18"
+      },
+      {
+        "text": "Rollbag R3200 shown with options",
+        "block_id": "r3200_fulfillment:body:20"
+      }
+    ],
+    "base_price_usd": 42890,
+    "base_item_id": "r3200_fulfillment:body:144.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "~6-9 bags/min (without loading)",
+        "line_id": "r3200_fulfillment:body:76.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Max Bag Width",
+        "value": "16\"",
+        "line_id": "r3200_fulfillment:body:77.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Min Bag Length",
+        "value": "~14.25” with 4” wide x 6” long label",
+        "line_id": "r3200_fulfillment:body:78.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Max Bag Length",
+        "value": "27.5”",
+        "line_id": "r3200_fulfillment:body:79.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "~6”",
+        "line_id": "r3200_fulfillment:body:80.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thickness",
+        "value": "1 – 4 mil (14” max roll diameter)",
+        "line_id": "r3200_fulfillment:body:81.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Printer Type",
+        "value": "Sato Label Printer",
+        "line_id": "r3200_fulfillment:body:82.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Label Size",
+        "value": "4” max width, 2” min height",
+        "line_id": "r3200_fulfillment:body:83.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200_fulfillment:body:84.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "220V, 50/60 Hz, 1,800 Watts",
+        "line_id": "r3200_fulfillment:body:85.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "34” W x 44” D x 44” H (final dimensions dependent on exact configuration)",
+        "line_id": "r3200_fulfillment:body:87.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "Works with poly tubing as well as pre-opened bags on a roll",
+          "block_id": "r3200_fulfillment:body:46"
+        },
+        {
+          "text": "Lower material cost when using poly tubing, by making bags inline before they are filled and sealed",
+          "block_id": "r3200_fulfillment:body:47"
+        },
+        {
+          "text": "Load shelf outfeed conveyor for transporting bags away from the machine",
+          "block_id": "r3200_fulfillment:body:48"
+        },
+        {
+          "text": "Large diameter rolls and variable bag length enables machine to bag products of practically any length when using the optional bag maker assembly",
+          "block_id": "r3200_fulfillment:body:49"
+        },
+        {
+          "text": "Easy load bag opener squares the bag up for ease of loading and supporting heavier products",
+          "block_id": "r3200_fulfillment:body:50"
+        },
+        {
+          "text": "Bag open sensor detects that the bag is in position and ready to accept product",
+          "block_id": "r3200_fulfillment:body:51"
+        },
+        {
+          "text": "Integrated label printer applicator ties into warehouse management system to print and apply shipping label directly on the outside of the bag",
+          "block_id": "r3200_fulfillment:body:52"
+        },
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200_fulfillment:body:53"
+        },
+        {
+          "text": "B&R PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200_fulfillment:body:54"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Designed to minimize preventative maintenance costs by using off-the-shelf components",
+          "block_id": "r3200_fulfillment:body:64"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200_fulfillment:body:65"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200_fulfillment:body:66"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200_fulfillment:body:67"
+        },
+        {
+          "text": "Print head uses direct thermal printing, eliminating the need for costly printer ribbon",
+          "block_id": "r3200_fulfillment:body:68"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Interface ports to integrate robotics and other feeding systems",
+          "block_id": "r3200_fulfillment:body:57"
+        },
+        {
+          "text": "When using poly tubing, change bag length on the fly, manually or via external integration",
+          "block_id": "r3200_fulfillment:body:58"
+        },
+        {
+          "text": "Store different bag length settings for quick job set-up",
+          "block_id": "r3200_fulfillment:body:59"
+        },
+        {
+          "text": "Stand with casters and a compact design provides portability",
+          "block_id": "r3200_fulfillment:body:60"
+        },
+        {
+          "text": "Quick roll change feature to facilitate easy and fast changeover",
+          "block_id": "r3200_fulfillment:body:61"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing",
+          "block_id": "r3200_fulfillment:body:71"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200_fulfillment:body:72"
+        },
+        {
+          "text": "Readily accessible emergency stop button",
+          "block_id": "r3200_fulfillment:body:73"
+        }
+      ],
+      "packaging": [
+        {
+          "text": "Cost-savings when compared to pre-made bags",
+          "block_id": "r3200_fulfillment:body:90"
+        },
+        {
+          "text": "Reduction in material usage by sizing bag to the product being packaged",
+          "block_id": "r3200_fulfillment:body:91"
+        },
+        {
+          "text": "Reduced shipping costs due to dimensional weight pricing and minimal excess bag material",
+          "block_id": "r3200_fulfillment:body:92"
+        },
+        {
+          "text": "Enhanced brand association by having the right size package for the product inside",
+          "block_id": "r3200_fulfillment:body:93"
+        },
+        {
+          "text": "Less material changeover time due to larger size of rolls compared to pre-made bags (1.5-2x)",
+          "block_id": "r3200_fulfillment:body:94"
+        },
+        {
+          "text": "Less material SKUs to inventory, as only the poly tubing width matters",
+          "block_id": "r3200_fulfillment:body:95"
+        },
+        {
+          "text": "Less packaging material to dispose of (no boxes, sideplates, etc)",
+          "block_id": "r3200_fulfillment:body:96"
+        },
+        {
+          "text": "No need to print an additional color (white block) to ensure a scannable barcode (when not a white bag)",
+          "block_id": "r3200_fulfillment:body:97"
+        },
+        {
+          "text": "Direct thermal labels don’t require thermal transfer printer ribbon",
+          "block_id": "r3200_fulfillment:body:98"
+        },
+        {
+          "text": "Label printers are more reliable, simpler, and have a lower maintenance cost",
+          "block_id": "r3200_fulfillment:body:99"
+        }
+      ]
+    },
+    "cover_fields": [
+      {
+        "label": null,
+        "value": "Ken Park",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "CMES",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "11/07/2025",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:4.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Greg Berguig",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:5.0",
+        "value_line_id": "r3200_fulfillment:body:5.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "253379-1",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:6.0",
+        "value_line_id": "r3200_fulfillment:body:6.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Project Name",
+        "value": "Coupang",
+        "kind": "example_fill",
+        "line_id": "r3200_fulfillment:body:7.0",
+        "value_line_id": "r3200_fulfillment:body:7.1",
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r3200_fulfillment:body:18/l0",
+      "r3200_fulfillment:body:160/l0",
+      "r3200_fulfillment:body:161/l0",
+      "r3200_fulfillment:body:162/l0",
+      "r3200_fulfillment:body:163/l0",
+      "r3200_fulfillment:body:174/l0",
+      "r3200_fulfillment:body:194/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200_hs_hybrid",
+    "family": "floor_standing",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/2 - Floor Standing/Rollbag R3200 HS Hybrid Automatic Bagger Quote 25.docx",
+    "last_saved": "2026-08-17",
+    "title": {
+      "text": "Rollbag™ R3200 HS Hybrid Automatic Bagger",
+      "line_id": "r3200_hs_hybrid:body:20.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System",
+      "line_id": "r3200_hs_hybrid:body:21.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 HS Hybrid automatic bagger is a high production capacity automatic poly bagging machine that can cycle at speeds of up to 80 bags per minute using Rollbag pre-opened bags on a roll and up to 40 bags per minute with poly tubing using the high speed bag maker assembly. The Rollbag R3200 bagger features a compact design and is assembled with high quality off-the-shelf components. This sleek automatic bagger is designed to withstand rigorous manufacturing environments and maximize uptime. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200_hs_hybrid:body:23"
+      },
+      {
+        "text": "Rollbag R3200 HS shown with optional Stainless Steel Frame",
+        "block_id": "r3200_hs_hybrid:body:25"
+      }
+    ],
+    "base_price_usd": 47125,
+    "base_item_id": "r3200_hs_hybrid:body:205.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "up to 80 bags/minute (dependent on bag size, gauge and product)",
+        "line_id": "r3200_hs_hybrid:body:61.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\"‒16\"",
+        "line_id": "r3200_hs_hybrid:body:62.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3” – 32”",
+        "line_id": "r3200_hs_hybrid:body:63.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "6”",
+        "line_id": "r3200_hs_hybrid:body:64.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thicnkness",
+        "value": "1 – 5 mil (14” max roll diameter)",
+        "line_id": "r3200_hs_hybrid:body:65.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "34” W x 44” D x 38” – 44” H",
+        "line_id": "r3200_hs_hybrid:body:66.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200_hs_hybrid:body:67.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V @ 15A",
+        "line_id": "r3200_hs_hybrid:body:68.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200_hs_hybrid:body:38"
+        },
+        {
+          "text": "PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200_hs_hybrid:body:39"
+        },
+        {
+          "text": "Built in self-help diagnostics for troubleshooting",
+          "block_id": "r3200_hs_hybrid:body:40"
+        },
+        {
+          "text": "Compact design takes up minimal footprint in the packaging area",
+          "block_id": "r3200_hs_hybrid:body:41"
+        },
+        {
+          "text": "Standard operating height of 34.5”",
+          "block_id": "r3200_hs_hybrid:body:42"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r3200_hs_hybrid:body:44"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200_hs_hybrid:body:45"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200_hs_hybrid:body:46"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200_hs_hybrid:body:47"
+        },
+        {
+          "text": "Comprehensive 5 year warranty (optional)",
+          "block_id": "r3200_hs_hybrid:body:48"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Utilizes Rollbag pre-opened bags-on-a-roll for quick bag size changes and easy set-up",
+          "block_id": "r3200_hs_hybrid:body:50"
+        },
+        {
+          "text": "Use with poly tubing for lower material costs and ability to set bag length on the fly",
+          "block_id": "r3200_hs_hybrid:body:51"
+        },
+        {
+          "text": "Adjustable height load shelf (optional) to support the bag during packaging",
+          "block_id": "r3200_hs_hybrid:body:52"
+        },
+        {
+          "text": "Interface ports to integrate counters, scales, and robotics",
+          "block_id": "r3200_hs_hybrid:body:53"
+        },
+        {
+          "text": "Ceramic heating element for fast start-up",
+          "block_id": "r3200_hs_hybrid:body:54"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing",
+          "block_id": "r3200_hs_hybrid:body:56"
+        },
+        {
+          "text": "Low power consumption design (1100 Watts)",
+          "block_id": "r3200_hs_hybrid:body:57"
+        },
+        {
+          "text": "Safety cover protects access to the seal bar (when using a funnel)",
+          "block_id": "r3200_hs_hybrid:body:58"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200_hs_hybrid:body:59"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:4.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:5.0",
+        "value_line_id": "r3200_hs_hybrid:body:5.1",
+        "decided_by": "review"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xXYZ",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:5.2",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "yourname@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:5.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:6.0",
+        "value_line_id": "r3200_hs_hybrid:body:6.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Project Name",
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_hybrid:body:7.0",
+        "value_line_id": "r3200_hs_hybrid:body:7.1",
+        "decided_by": "adjudicator"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r3200_hs_hybrid:body:23/l0",
+      "r3200_hs_hybrid:body:248/l0",
+      "r3200_hs_hybrid:body:249/l0",
+      "r3200_hs_hybrid:body:250/l0",
+      "r3200_hs_hybrid:body:251/l0",
+      "r3200_hs_hybrid:body:315/l0",
+      "r3200_hs_hybrid:body:334/l0",
+      "r3200_hs_hybrid:body:349/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200xl",
+    "family": "floor_standing",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/2 - Floor Standing/Rollbag R3200XL Automatic Bagger Quote 25.docx",
+    "last_saved": "2026-08-17",
+    "title": {
+      "text": "Rollbag™ R3200XL Automatic Bagger",
+      "line_id": "r3200xl:body:16.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System",
+      "line_id": "r3200xl:body:17.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200XL automatic bagger is a high production capacity automatic poly bagging machine that can cycle at speeds of up to 60 bags per minute using Rollbag pre-opened bags on a roll. The Rollbag R3200 bagger features a compact design and is assembled with high quality off-the-shelf components. This sleek automatic bagger is designed to withstand rigorous manufacturing environments and maximize uptime. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200xl:body:19"
+      }
+    ],
+    "base_price_usd": 71340,
+    "base_item_id": "r3200xl:body:117.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed (bags)",
+        "value": "up to 60/min (dependent on bag size, gauge product, and print)",
+        "line_id": "r3200xl:body:62.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Speed (poly tubing)",
+        "value": "up to 30/min (dependent on length, thickness, product, and print)",
+        "line_id": "r3200xl:body:63.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Max Bag Width",
+        "value": "22\"",
+        "line_id": "r3200xl:body:64.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Max Bag Length",
+        "value": "36”",
+        "line_id": "r3200xl:body:65.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "10” max",
+        "line_id": "r3200xl:body:66.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thickness",
+        "value": "1 – 5 mil (14” max roll diameter)",
+        "line_id": "r3200xl:body:67.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 7.5CFM of clean dry air",
+        "line_id": "r3200xl:body:68.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V, 50/60 Hz, 2400 Watts (may vary depending on final configuration)",
+        "line_id": "r3200xl:body:69.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "48” W x 60” D x48” H (final dimensions dependent on exact configuration)",
+        "line_id": "r3200xl:body:71.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "Works with poly tubing as well as pre-opened bags on a roll",
+          "block_id": "r3200xl:body:35"
+        },
+        {
+          "text": "Lower material cost when using poly tubing, by making bags inline before they are filled and sealed",
+          "block_id": "r3200xl:body:36"
+        },
+        {
+          "text": "Large diameter rolls and variable bag length enables machine to bag products of practically any length",
+          "block_id": "r3200xl:body:37"
+        },
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200xl:body:38"
+        },
+        {
+          "text": "B&R PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200xl:body:39"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Designed to minimize preventative maintenance costs by using off-the-shelf components",
+          "block_id": "r3200xl:body:49"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200xl:body:50"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200xl:body:51"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200xl:body:52"
+        },
+        {
+          "text": "Warranty extendable up to 5 years when exclusively using Rollbag brand material",
+          "block_id": "r3200xl:body:53"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Interface ports to integrate robotics and other feeding systems",
+          "block_id": "r3200xl:body:42"
+        },
+        {
+          "text": "When using poly tubing, change bag length on the fly, manually or via integration to warehouse management system",
+          "block_id": "r3200xl:body:43"
+        },
+        {
+          "text": "Store different bag length settings for quick job set-up",
+          "block_id": "r3200xl:body:44"
+        },
+        {
+          "text": "Stand with casters and a compact design provides portability",
+          "block_id": "r3200xl:body:45"
+        },
+        {
+          "text": "Quick roll change feature to facilitate easy and fast changeover",
+          "block_id": "r3200xl:body:46"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing with safety light curtain",
+          "block_id": "r3200xl:body:56"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200xl:body:57"
+        },
+        {
+          "text": "Readily accessible emergency stop button",
+          "block_id": "r3200xl:body:58"
+        },
+        {
+          "text": "Safety light curtains above the seal area",
+          "block_id": "r3200xl:body:59"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:4.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:5.0",
+        "value_line_id": "r3200xl:body:5.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xXXX",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:5.2",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "email@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:5.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:6.0",
+        "value_line_id": "r3200xl:body:6.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Project Name",
+        "value": "Enter Here",
+        "kind": "placeholder",
+        "line_id": "r3200xl:body:7.0",
+        "value_line_id": "r3200xl:body:7.1",
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [],
+    "link_ids": [
+      "r3200xl:body:19/l0",
+      "r3200xl:body:138/l0",
+      "r3200xl:body:139/l0",
+      "r3200xl:body:140/l0",
+      "r3200xl:body:141/l0",
+      "r3200xl:body:231/l0",
+      "r3200xl:body:241/l0",
+      "r3200xl:body:253/l0"
+    ]
+  },
+  {
+    "machine_id": "kit_conveyor",
+    "family": "feeding",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/3 - Feeding/Rollbag Kit Conveyor Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ Kit Conveyor",
+      "line_id": "kit_conveyor:body:3.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Infeed Counting Device",
+      "line_id": "kit_conveyor:body:4.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Kit Conveyor is designed for guaranteed packaging rates, or pace rate for operators. Package faster, easier and safer. This equipment allows you to package hardware kits, appliance kits, craft kits and various parts directly into an 8” x 10” Rollbag brand pre-opened bag-on-a-roll.",
+        "block_id": "kit_conveyor:body:5"
+      }
+    ],
+    "base_price_usd": 17520,
+    "base_item_id": "kit_conveyor:body:29.1#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": true,
+    "engineering_approval_line_id": "kit_conveyor:body:30.0",
+    "specs": [
+      {
+        "name": "Dimensions (W x D x H)",
+        "value": "77” x 30” x 36”",
+        "line_id": "kit_conveyor:body:22.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V 15A",
+        "line_id": "kit_conveyor:body:23.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [],
+      "setup": [],
+      "safety": [],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Date",
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:0.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "To",
+        "value": "Client Name",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:0.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quote #",
+        "value": "xxxxxxx",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:1.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:48.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:49.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:50.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "kit_conveyor:body:51.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "kit_conveyor:body:46/l0",
+      "kit_conveyor:body:53/l0"
+    ]
+  },
+  {
+    "machine_id": "r1275_vision",
+    "family": "feeding",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/3 - Feeding/Rollbag R1275 Vision Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ R1275 Vision Automatic Bagger",
+      "line_id": "r1275_vision:body:4.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bulk Counting & Bagging System",
+      "line_id": "r1275_vision:body:5.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R1275 Vision is an accurate and compact automatic bulk counting and bagging system for small parts. The R1275 Vision is designed to count and fill large quantities of small parts. In a matter of seconds the vision counter can bulk count parts 0.25\" – 1\" in size at up to 99.9% accuracy. The high speed Rollbag R1275 bagger in this system can seal bags significantly faster than manual packaging, delivering exceptional speed and value. With the use of pre-opened bags on a roll, fast packaging speeds and rapid bag size changeover can be achieved. Click here for videos and more details on this packaging machine.",
+        "block_id": "r1275_vision:body:7"
+      }
+    ],
+    "base_price_usd": 98100,
+    "base_item_id": "r1275_vision:body:44.1#0",
+    "variant_item_ids": [
+      "r1275_vision:body:47.1#0"
+    ],
+    "engineering_approval_required": true,
+    "engineering_approval_line_id": "r1275_vision:body:45.0",
+    "specs": [
+      {
+        "name": "Product Size",
+        "value": "0.25\" – 1\"",
+        "line_id": "r1275_vision:body:33.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Counting Rate",
+        "value": "Up to 25,000 objects/min",
+        "line_id": "r1275_vision:body:34.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Accuracy",
+        "value": "Up to 99.9%",
+        "line_id": "r1275_vision:body:35.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\" ‒ 10\"",
+        "line_id": "r1275_vision:body:36.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3\" – 20\"",
+        "line_id": "r1275_vision:body:37.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Gauge",
+        "value": "1 – 5 mil",
+        "line_id": "r1275_vision:body:38.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Width",
+        "value": "1/8\"",
+        "line_id": "r1275_vision:body:39.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r1275_vision:body:40.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "220V, 10A",
+        "line_id": "r1275_vision:body:41.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "Touchscreen interface with clear readable prompts and alarms",
+          "block_id": "r1275_vision:body:11"
+        },
+        {
+          "text": "3D imaging technology results in up to 99.9% accuracy on parts that are 0.25\" – 1\" in size",
+          "block_id": "r1275_vision:body:12"
+        },
+        {
+          "text": "Double track feeding for product separation prior to counting",
+          "block_id": "r1275_vision:body:13"
+        },
+        {
+          "text": "Articulating funnel ensures product drops directly in the bag",
+          "block_id": "r1275_vision:body:14"
+        },
+        {
+          "text": "Bag support stabilizes bag during loading and removes it from packaging area at the end of cycle",
+          "block_id": "r1275_vision:body:15"
+        },
+        {
+          "text": "Bag open sensor ensures every bag is open prior to filling the product",
+          "block_id": "r1275_vision:body:16"
+        },
+        {
+          "text": "Print directly on each bag via thermal transfer printer (optional)",
+          "block_id": "r1275_vision:body:17"
+        },
+        {
+          "text": "Product overfill reject system (optional)",
+          "block_id": "r1275_vision:body:18"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r1275_vision:body:21"
+        },
+        {
+          "text": "Remote network access for improved troubleshooting",
+          "block_id": "r1275_vision:body:22"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r1275_vision:body:23"
+        },
+        {
+          "text": "Reliable components designed for multi-shift production",
+          "block_id": "r1275_vision:body:24"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Tool less changeover to easily count different parts",
+          "block_id": "r1275_vision:body:27"
+        },
+        {
+          "text": "PLC with multiple job storage, batch counters, packaging statistics & process paramater control",
+          "block_id": "r1275_vision:body:28"
+        },
+        {
+          "text": "Uses Rollbag pre-opened bags on a roll for rapid bag size changeover",
+          "block_id": "r1275_vision:body:29"
+        },
+        {
+          "text": "Integrated system frame with casters for moving around the production facility",
+          "block_id": "r1275_vision:body:30"
+        }
+      ],
+      "safety": [],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "To",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:125.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:126.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:127.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:128.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": "Client Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Date",
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:3.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quote #",
+        "value": "xxxxxxx",
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:3.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_vision:body:3.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "attachments": [],
+    "link_ids": [
+      "r1275_vision:body:7/l0",
+      "r1275_vision:body:103/l0",
+      "r1275_vision:body:123/l0",
+      "r1275_vision:body:130/l0",
+      "r1275_vision:body:137/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200_vision",
+    "family": "feeding",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/3 - Feeding/Rollbag R3200 Vision Automatic Bagger Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ R3200 Vision Automatic Bagger",
+      "line_id": "r3200_vision:body:16.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bulk Counting and Bagging System",
+      "line_id": "r3200_vision:body:17.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 Vision is an accurate automatic bulk counting and bagging system for small parts. The R3200 Vision is designed to count and fill large quantities of small parts. In a matter of seconds the vision counter can bulk count parts 0.25\" – 1\" in size at up to 99.9% accuracy. The high speed Rollbag R3200 bagger in this system can seal bags significantly faster than manual packaging, delivering exceptional speed and value. With the use of pre-opened bags on a roll, fast packaging speeds and rapid bag size changeover can be achieved. With the use of our optional bag maker assembly, poly tubing can be used for increased flexibility and lower material cost. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200_vision:body:19"
+      }
+    ],
+    "base_price_usd": 146945,
+    "base_item_id": "r3200_vision:body:102.1#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": true,
+    "engineering_approval_line_id": "r3200_vision:body:103.0",
+    "specs": [
+      {
+        "name": "Product Size",
+        "value": "0.25” – 1”",
+        "line_id": "r3200_vision:body:52.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Counting Rate",
+        "value": "Up to 25,000 objects/min",
+        "line_id": "r3200_vision:body:53.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Accuracy",
+        "value": "Up to 99.9%",
+        "line_id": "r3200_vision:body:54.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\"‒16\"",
+        "line_id": "r3200_vision:body:55.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3” – 32”",
+        "line_id": "r3200_vision:body:56.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "6”",
+        "line_id": "r3200_vision:body:57.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thicnkness",
+        "value": "1 – 5 mil",
+        "line_id": "r3200_vision:body:58.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200_vision:body:59.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "220V @ 10A",
+        "line_id": "r3200_vision:body:60.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200_vision:body:22"
+        },
+        {
+          "text": "3D imaging technology results in up to 99.9% accuracy on parts that are 0.25\" – 1\" in size",
+          "block_id": "r3200_vision:body:23"
+        },
+        {
+          "text": "Double track feeding for product separation prior to counting",
+          "block_id": "r3200_vision:body:24"
+        },
+        {
+          "text": "Bag support stabilizes bag during loading and removes it from packaging area at the end of cycle",
+          "block_id": "r3200_vision:body:25"
+        },
+        {
+          "text": "PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200_vision:body:26"
+        },
+        {
+          "text": "Built in self-help diagnostics for troubleshooting",
+          "block_id": "r3200_vision:body:27"
+        },
+        {
+          "text": "Compact design takes up minimal footprint in the packaging area",
+          "block_id": "r3200_vision:body:28"
+        },
+        {
+          "text": "Product overfill reject system",
+          "block_id": "r3200_vision:body:29"
+        },
+        {
+          "text": "Print directly on each bag via thermal transfer printer (optional)",
+          "block_id": "r3200_vision:body:30"
+        }
+      ],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r3200_vision:body:33"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200_vision:body:34"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200_vision:body:35"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200_vision:body:36"
+        },
+        {
+          "text": "Comprehensive 5 year warranty (optional) which includes consumable parts & labor",
+          "block_id": "r3200_vision:body:37"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Utilizes Rollbag pre-opened bags-on-a-roll for quick bag size changes and easy set-up",
+          "block_id": "r3200_vision:body:40"
+        },
+        {
+          "text": "Use with poly tubing (optional), for lower material costs and ability to set bag length on the fly",
+          "block_id": "r3200_vision:body:41"
+        },
+        {
+          "text": "Ceramic heating element for fast start-up",
+          "block_id": "r3200_vision:body:42"
+        },
+        {
+          "text": "Tool less changeover to easily count different parts",
+          "block_id": "r3200_vision:body:43"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing",
+          "block_id": "r3200_vision:body:46"
+        },
+        {
+          "text": "Low power consumption design",
+          "block_id": "r3200_vision:body:47"
+        },
+        {
+          "text": "Safety cover protects access to the seal bar (when using a funnel)",
+          "block_id": "r3200_vision:body:48"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200_vision:body:49"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:2.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:4.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:5.0",
+        "value_line_id": "r3200_vision:body:5.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xYOUR EXTENSION",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:5.2",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "YOUREMAIL@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:5.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "12345679",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:6.0",
+        "value_line_id": "r3200_vision:body:6.1",
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Project Name",
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200_vision:body:7.0",
+        "value_line_id": "r3200_vision:body:7.1",
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [],
+    "link_ids": [
+      "r3200_vision:body:19/l0",
+      "r3200_vision:body:162/l0",
+      "r3200_vision:body:185/l0",
+      "r3200_vision:body:198/l0",
+      "r3200_vision:body:210/l0"
+    ]
+  },
+  {
+    "machine_id": "weigh_count_sorting_table",
+    "family": "feeding",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/3 - Feeding/Rollbag R3200 Weigh Count Sorting Table Quote 25.docx",
+    "last_saved": "2026-07-27",
+    "title": {
+      "text": "Rollbag™ Weigh Count Sorting Table",
+      "line_id": "weigh_count_sorting_table:body:4.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Infeed Device for Rollbag R3200 Automatic Bagger",
+      "line_id": "weigh_count_sorting_table:body:5.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag Weigh Count Sorting Table is designed to seamlessly integrates to the Rollbag R3200 Automatic Bagger for an all-in-one weigh count bagging solution. The operator places a product into the weigh bucket to set the per piece weight and then chooses the target count per bag. The Weigh Count Sorting table automatically dispenses product into the Rollbag R3200 once the target count has bee reached. The Weigh Count Sorting Table has an accuracy of 0.003 oz (0.1 g) and a max bucket weight of 6.6 lbs (3 kg). Click here for videos and more details on this packaging machine.",
+        "block_id": "weigh_count_sorting_table:body:6"
+      },
+      {
+        "text": "Rollbag Weigh Count Sorting Table shown with Rollbag R3200, optional Remote HMI mount and Outfeed Conveyor",
+        "block_id": "weigh_count_sorting_table:body:9"
+      }
+    ],
+    "base_price_usd": 26530,
+    "base_item_id": "weigh_count_sorting_table:body:34.1#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": true,
+    "engineering_approval_line_id": "weigh_count_sorting_table:body:35.0",
+    "specs": [
+      {
+        "name": "Stainless steel adjustable height sorting table",
+        "value": "Stainless steel adjustable height sorting table",
+        "line_id": "weigh_count_sorting_table:body:26.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Weighing resolution",
+        "value": "0.003 oz (0.1 g)",
+        "line_id": "weigh_count_sorting_table:body:27.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Max bucket weight",
+        "value": "6.6 lbs (3 kg)",
+        "line_id": "weigh_count_sorting_table:body:28.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions (W x D x H)",
+        "value": "42” x 46” x 62”",
+        "line_id": "weigh_count_sorting_table:body:29.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "120V 15A Electrical",
+        "value": "120V 15A Electrical",
+        "line_id": "weigh_count_sorting_table:body:30.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "name": "Warranty",
+        "value": "1 year limited warranty, extendable up to 5 years with Comprehensive Warranty",
+        "line_id": "weigh_count_sorting_table:body:31.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [],
+      "sealing": [],
+      "printing": [],
+      "maintenance": [],
+      "setup": [],
+      "safety": [],
+      "packaging": [
+        {
+          "text": "Automatically loads product into a bag once the target count has been reached",
+          "block_id": "weigh_count_sorting_table:body:11"
+        },
+        {
+          "text": "Ergonomic design allows the operator to easily stand or sit in a high chair in front of the machine",
+          "block_id": "weigh_count_sorting_table:body:12"
+        },
+        {
+          "text": "The next bag is fed out while the weigh bucket is being loaded, for a short cycle time",
+          "block_id": "weigh_count_sorting_table:body:13"
+        },
+        {
+          "text": "Ideal for products that can stick or tangle together and require manual weigh counting",
+          "block_id": "weigh_count_sorting_table:body:14"
+        },
+        {
+          "text": "Works will in operations that need to weigh count short runs of many different types of products",
+          "block_id": "weigh_count_sorting_table:body:15"
+        },
+        {
+          "text": "Compact packaging solution when used in conjunction with the Rollbag R3200 Automatic Bagger",
+          "block_id": "weigh_count_sorting_table:body:16"
+        }
+      ]
+    },
+    "cover_fields": [
+      {
+        "label": "To",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:0.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Client Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Date",
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quote #",
+        "value": "xxxxxxx",
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:2.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:48.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:49.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:50.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "weigh_count_sorting_table:body:51.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "weigh_count_sorting_table:body:6/l0",
+      "weigh_count_sorting_table:body:45/l0",
+      "weigh_count_sorting_table:body:53/l0"
+    ]
+  },
+  {
+    "machine_id": "magnum_horizontal_med",
+    "family": "medical",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/4 - Medical Baggers/Rollbag Magnum Horizontal Medical Auto Bagger Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ Magnum Medical Automatic Bagger",
+      "line_id": "magnum_horizontal_med:body:5.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System for the Medical Industry",
+      "line_id": "magnum_horizontal_med:body:5.1",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag Magnum Medical automatic bagger is designed for demanding cleanroom use, and for packaging products that will be processed in an autoclave or sterilizer. The Magnum Medical features validation ports, enabling the user to reliably conduct and document the sealing parameter validation process. To ensure 100% compliant seals, pressure and temperature sensors trigger alarms and halt sealing in the event these parameters drift out of predetermined values. The Magnum Medical is a revolutionary compact form/fill/seal system that creates pouches from tubing, Tyvek® rollstock, Medical Peel Paper, barrier material, and can be used with Rollbag™ pre-opened bags on a roll. Size changes and setup are a breeze using the job storage feature and large color touchscreen.",
+        "block_id": "magnum_horizontal_med:body:6"
+      }
+    ],
+    "base_price_usd": 59660,
+    "base_item_id": "magnum_horizontal_med:body:64.1#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "Up to 40 bags/min with poly tubing",
+        "line_id": "magnum_horizontal_med:body:51.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Speed",
+        "value": "Up to 20 bags/min with Tyvek/poly rollstock",
+        "line_id": "magnum_horizontal_med:body:52.0",
+        "name_line_id": "magnum_horizontal_med:body:51.0",
+        "decided_by": "adjudicator"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\" ‒ 15\" (12” when using optional chevron seal)",
+        "line_id": "magnum_horizontal_med:body:53.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3” – 38”",
+        "line_id": "magnum_horizontal_med:body:54.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Gauge",
+        "value": "1 – 5 mil",
+        "line_id": "magnum_horizontal_med:body:55.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Width",
+        "value": "3/8” Straight (3/8” chevron optional)",
+        "line_id": "magnum_horizontal_med:body:56.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "38” W x 46” D x 33” – 41” H",
+        "line_id": "magnum_horizontal_med:body:57.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "magnum_horizontal_med:body:58.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "115V, 15A, 50/60 Hz",
+        "line_id": "magnum_horizontal_med:body:59.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Made in USA",
+        "value": "Made in USA",
+        "line_id": "magnum_horizontal_med:body:61.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "Uses tubing in a simple to operate, low maintenance design that provides lower material costs by forming pouches in-line as they are filled and sealed (also works with pre-opened bags on a roll, Tyvek®, Medical Peel Paper and other barrier materials)",
+          "block_id": "magnum_horizontal_med:body:23"
+        },
+        {
+          "text": "7.5” color touchscreen with clear readable prompts and alarms",
+          "block_id": "magnum_horizontal_med:body:24"
+        },
+        {
+          "text": "PLC with 20 job storage, batch & maintenance counters, packaging rate statistics & temperature control",
+          "block_id": "magnum_horizontal_med:body:25"
+        },
+        {
+          "text": "Constant heat 3/8″ wide seal bars or 3/8″ wide chevron and straight seal",
+          "block_id": "magnum_horizontal_med:body:26"
+        },
+        {
+          "text": "1-micron filter protects pouch interior and contents from airborne particulate matter",
+          "block_id": "magnum_horizontal_med:body:27"
+        },
+        {
+          "text": "Height adjustable stand for improved operator ergonomics",
+          "block_id": "magnum_horizontal_med:body:28"
+        }
+      ],
+      "sealing": [
+        {
+          "text": "External validation ports for time, temperature, and pressure",
+          "block_id": "magnum_horizontal_med:body:31"
+        },
+        {
+          "text": "Controls provide calibrations fo temperature and pressure",
+          "block_id": "magnum_horizontal_med:body:32"
+        },
+        {
+          "text": "Pressure and temperature sensors trigger alrm and stop operation when out of preset band",
+          "block_id": "magnum_horizontal_med:body:33"
+        }
+      ],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "magnum_horizontal_med:body:36"
+        },
+        {
+          "text": "Remote network access for improved troubleshooting",
+          "block_id": "magnum_horizontal_med:body:37"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "magnum_horizontal_med:body:38"
+        },
+        {
+          "text": "Warranty extendable up to 5 years when exclusively using Rollbag brand material",
+          "block_id": "magnum_horizontal_med:body:39"
+        }
+      ],
+      "setup": [
+        {
+          "text": "When using poly tubing, change bag length on the fly",
+          "block_id": "magnum_horizontal_med:body:42"
+        },
+        {
+          "text": "Built-in interface ports, integrate counters, scales, and robotics",
+          "block_id": "magnum_horizontal_med:body:43"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing with obstruction detection",
+          "block_id": "magnum_horizontal_med:body:46"
+        },
+        {
+          "text": "Safety light curtains for added operator safety during manual loading (optional)",
+          "block_id": "magnum_horizontal_med:body:47"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "To",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:141.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:142.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:143.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:144.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Client Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": "Date",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:3.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quote #",
+        "value": "xxxxxxx",
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:3.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "magnum_horizontal_med:body:3.1",
+        "value_line_id": null,
+        "decided_by": "review"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "magnum_horizontal_med:body:8/l0",
+      "magnum_horizontal_med:body:129/l0",
+      "magnum_horizontal_med:body:139/l0",
+      "magnum_horizontal_med:body:146/l0"
+    ]
+  },
+  {
+    "machine_id": "r1275_med",
+    "family": "medical",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/4 - Medical Baggers/Rollbag R1275 Med Automatic Bagger Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag™ R1275 Med Automatic Bagger",
+      "line_id": "r1275_med:body:3.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System for the Medical Industry",
+      "line_id": "r1275_med:body:4.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R1275 Med is our smallest medical validatable bagger. The Rollbag R1275 Med bagger can outpace hand packaging in either manual or automated feeding modes. Perfect for a growing facility, the compact Rollbag R1275 Med can be the perfect fit between inefficient hand packaging and larger, highly automated production systems. The R1275 features validation ports, allowing the user to reliably conduct the validation process for sealing. Click here for videos and more details on this packaging machine.",
+        "block_id": "r1275_med:body:5"
+      }
+    ],
+    "base_price_usd": 21640,
+    "base_item_id": "r1275_med:body:44.1#0",
+    "variant_item_ids": [
+      "r1275_med:body:45.1#0"
+    ],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "Up to 60 bags/min (up 40 bags/min with thermal transfer printer)",
+        "line_id": "r1275_med:body:30.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\" ‒ 10\"",
+        "line_id": "r1275_med:body:31.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3\" – 20\"",
+        "line_id": "r1275_med:body:32.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Gauge",
+        "value": "1 – 5 mil",
+        "line_id": "r1275_med:body:33.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Width",
+        "value": "1/8\"",
+        "line_id": "r1275_med:body:34.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "24\" W x 28\" D x 22\" H",
+        "line_id": "r1275_med:body:35.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Weight",
+        "value": "75 lbs",
+        "line_id": "r1275_med:body:36.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r1275_med:body:37.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V, 5A",
+        "line_id": "r1275_med:body:38.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Shipping Weight & Dimensions",
+        "value": "180 lbs, 30\" W x 26\" D x 34” \" H",
+        "line_id": "r1275_med:body:39.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Made in USA",
+        "value": "Made in USA",
+        "line_id": "r1275_med:body:41.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "4.3” color touchscreen with clear readable prompts and alarms",
+          "block_id": "r1275_med:body:11"
+        },
+        {
+          "text": "Electric foot switch, photo eye (optional), or fully automatic cycle start",
+          "block_id": "r1275_med:body:12"
+        }
+      ],
+      "sealing": [
+        {
+          "text": "External validation ports for time, temperature, and pressure",
+          "block_id": "r1275_med:body:14"
+        },
+        {
+          "text": "Controls provide calibrations of temperature and pressure",
+          "block_id": "r1275_med:body:15"
+        },
+        {
+          "text": "Pressure and temperature sensors trigger alarm and stop operation when out of preset band",
+          "block_id": "r1275_med:body:16"
+        }
+      ],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r1275_med:body:18"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r1275_med:body:19"
+        },
+        {
+          "text": "Reliable components designed for multi-shift production",
+          "block_id": "r1275_med:body:20"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Utilizes Rollbag pre-opened bags-on-a-roll for quick bag size changes and easy set-up",
+          "block_id": "r1275_med:body:22"
+        },
+        {
+          "text": "PLC with 20 job storage, batch counters, packaging statistics & temperature control",
+          "block_id": "r1275_med:body:23"
+        },
+        {
+          "text": "Built-in interface ports, integrate counters, scales, and robotics",
+          "block_id": "r1275_med:body:24"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing with obstruction detection",
+          "block_id": "r1275_med:body:26"
+        },
+        {
+          "text": "Dual palm buttons for added operator safety (optional)",
+          "block_id": "r1275_med:body:27"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "To",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:0.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Date",
+        "value": "1/15/2025",
+        "kind": "example_fill",
+        "line_id": "r1275_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Client Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:137.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:138.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:139.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:140.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quote #",
+        "value": "xxxxxxx",
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1275_med:body:2.1",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "attachments": [],
+    "link_ids": [
+      "r1275_med:body:5/l0",
+      "r1275_med:body:117/l0",
+      "r1275_med:body:135/l0",
+      "r1275_med:body:142/l0",
+      "r1275_med:body:156/l0"
+    ]
+  },
+  {
+    "machine_id": "r1285_med",
+    "family": "medical",
+    "layout": "B",
+    "path": "docs/Rollbag Baggers/4 - Medical Baggers/Rollbag R1285 Med Automatic Bagger Quote 25.docx",
+    "last_saved": "2026-05-28",
+    "title": {
+      "text": "Rollbag® R1285 Med Automatic Bagger",
+      "line_id": "r1285_med:body:4.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Bagging System with Next-Bag-Out Printing",
+      "line_id": "r1285_med:body:5.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R1285 Med is a compact, feature-rich, validatable automatic bagger with high-resolution printing capabilities that can be used with Rollbags (pre-opened bags on a roll). Equipped with a reliable 4” thermal transfer printer (203 dpi), the R1285 Med bagger is designed for “next-bag-out” printing—perfect for high volume printing and bagging. The thermal printer provides a broad range of connectivity to meet diverse application requirements and easily integrates into any network. The Rollbag R1285 Med Bagge features validation ports, allowing the user to reliably conduct the validation process for sealing. Click here for videos and more details on this packaging machine.",
+        "block_id": "r1285_med:body:6"
+      }
+    ],
+    "base_price_usd": 36555,
+    "base_item_id": "r1285_med:body:64.1#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed",
+        "value": "Up to 60 bags/min (up to 40 bags/min with thermal transfer printer)",
+        "line_id": "r1285_med:body:51.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\" ‒ 12\"",
+        "line_id": "r1285_med:body:52.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "4” – 20”",
+        "line_id": "r1285_med:body:53.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Gauge",
+        "value": "1 – 5 mil",
+        "line_id": "r1285_med:body:54.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Width",
+        "value": "1/8”",
+        "line_id": "r1285_med:body:55.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "29.75” W x 30” D x 24” H",
+        "line_id": "r1285_med:body:56.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Weight",
+        "value": "85 lbs",
+        "line_id": "r1285_med:body:57.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Air",
+        "value": "80psi @ 2–5CFM",
+        "line_id": "r1285_med:body:58.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V, 7A",
+        "line_id": "r1285_med:body:59.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Shipping Weight & Dimensions",
+        "value": "180 lbs, 34” W x 34” D x 28” H",
+        "line_id": "r1285_med:body:60.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Made in USA",
+        "value": "Made in USA",
+        "line_id": "r1285_med:body:61.0",
+        "name_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "7” color touchscreen with clear readable prompts and alarms",
+          "block_id": "r1285_med:body:27"
+        },
+        {
+          "text": "Electric foot switch, product detection sensor (optional), or fully automatic cycle start",
+          "block_id": "r1285_med:body:28"
+        },
+        {
+          "text": "Includes load shelf with bag support (up to 13” bag length)",
+          "block_id": "r1285_med:body:29"
+        }
+      ],
+      "sealing": [
+        {
+          "text": "External validation ports for time, temperature, and pressure",
+          "block_id": "r1285_med:body:31"
+        },
+        {
+          "text": "Controls provide calibrations of temperature and pressure",
+          "block_id": "r1285_med:body:32"
+        },
+        {
+          "text": "Pressure and temperature sensors trigger alarm and stop operation when out of preset band",
+          "block_id": "r1285_med:body:33"
+        }
+      ],
+      "printing": [
+        {
+          "text": "High-resolution reliable printing performance for 24/7 operation",
+          "block_id": "r1285_med:body:35"
+        },
+        {
+          "text": "Large graphic display for quick navigation and printer notifications",
+          "block_id": "r1285_med:body:36"
+        },
+        {
+          "text": "Broad range of connectivity for use with applications and networks",
+          "block_id": "r1285_med:body:37"
+        }
+      ],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r1285_med:body:39"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r1285_med:body:40"
+        },
+        {
+          "text": "Reliable components designed for multi-shift production",
+          "block_id": "r1285_med:body:41"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Utilizes Rollbag pre-opened bags-on-a-roll for quick bag size changes and easy set-up",
+          "block_id": "r1285_med:body:43"
+        },
+        {
+          "text": "PLC with 20 job storage, batch counters, packaging statistics & temperature control",
+          "block_id": "r1285_med:body:44"
+        },
+        {
+          "text": "Built-in interface ports, integrate counters, scales, and robotics",
+          "block_id": "r1285_med:body:45"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Low pressure seal bar closing with obstruction detection",
+          "block_id": "r1285_med:body:47"
+        },
+        {
+          "text": "Dual palm buttons for added operator safety (optional)",
+          "block_id": "r1285_med:body:48"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "To",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:0.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Client Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Date",
+        "value": "xx/xx/yyyy",
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Quoted By",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:157.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "First Last",
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:158.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Phone",
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:159.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": null,
+        "value": "Email",
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:160.0",
+        "value_line_id": null,
+        "decided_by": "review"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Quote #",
+        "value": "######",
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:2.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Email",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r1285_med:body:2.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r1285_med:body:6/l0",
+      "r1285_med:body:135/l0",
+      "r1285_med:body:155/l0",
+      "r1285_med:body:162/l0"
+    ]
+  },
+  {
+    "machine_id": "r3200_hs_med",
+    "family": "medical",
+    "layout": "A",
+    "path": "docs/Rollbag Baggers/4 - Medical Baggers/Rollbag R3200 HS Med Automatic Bagger Quote 25.docx",
+    "last_saved": "2025-09-15",
+    "title": {
+      "text": "Rollbag® R3200 Med Automatic Bagger",
+      "line_id": "r3200_hs_med:body:15.0",
+      "decided_by": "agreement"
+    },
+    "subtitle": {
+      "text": "Automatic Pouching System for Medical Products",
+      "line_id": "r3200_hs_med:body:16.0",
+      "decided_by": "agreement"
+    },
+    "summary": [
+      {
+        "text": "The Rollbag R3200 Med is a validatable pouching system for automatic packaging. The version of this machine will be designed to work with Tyvek/Poly rollstock with a pre-made chevron bottom seal. The machine will print identifying information on the Tyvek side, perforate and open the bag for loading, apply an 8mm wide top seal, and separate the finisehd pouch. Dry cycle speed estimate is around 15 bags/min. The R3200 Med automates the process of labeling, filling, and sealing medical products that are packaged in Tyvek pouches with a chevron seal and need to be sterilized. Click here for videos and more details on this packaging machine.",
+        "block_id": "r3200_hs_med:body:18"
+      }
+    ],
+    "base_price_usd": 105655,
+    "base_item_id": "r3200_hs_med:body:127.0#0",
+    "variant_item_ids": [],
+    "engineering_approval_required": false,
+    "engineering_approval_line_id": null,
+    "specs": [
+      {
+        "name": "Speed Estimate",
+        "value": "15 bags/minute (dependent on bag size, thickness and product)",
+        "line_id": "r3200_hs_med:body:63.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Width",
+        "value": "2\"‒14\"",
+        "line_id": "r3200_hs_med:body:64.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Length",
+        "value": "3\" – 32\"",
+        "line_id": "r3200_hs_med:body:65.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Seal Bar Opening",
+        "value": "6\"",
+        "line_id": "r3200_hs_med:body:66.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Bag Thickness",
+        "value": "1 – 5 mil",
+        "line_id": "r3200_hs_med:body:67.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Dimensions",
+        "value": "34\" W x 52\" D x 44\" H",
+        "line_id": "r3200_hs_med:body:68.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Compressed Air",
+        "value": "80psi @ 5CFM",
+        "line_id": "r3200_hs_med:body:69.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "name": "Electrical",
+        "value": "120V @ 15A",
+        "line_id": "r3200_hs_med:body:70.0",
+        "name_line_id": null,
+        "decided_by": "agreement"
+      }
+    ],
+    "system_footprint": [],
+    "benefits": {
+      "operating": [
+        {
+          "text": "Uses tubing in a simple to operate, low maintenance design that provides lower material costs by opening pouches inline prior to being filled and sealed",
+          "block_id": "r3200_hs_med:body:33"
+        },
+        {
+          "text": "7” color touchscreen with user-friendly interface and clear prompts",
+          "block_id": "r3200_hs_med:body:34"
+        },
+        {
+          "text": "PLC with job storage, batch counters, packaging statistics, and login-in levels",
+          "block_id": "r3200_hs_med:body:35"
+        },
+        {
+          "text": "5/16” (8mm) wide straight impulse top seal",
+          "block_id": "r3200_hs_med:body:36"
+        },
+        {
+          "text": "Particle filter protects pouch interior and contents from airborne particulate matter",
+          "block_id": "r3200_hs_med:body:37"
+        },
+        {
+          "text": "Compact design takes up minimal footprint in the packaging area",
+          "block_id": "r3200_hs_med:body:38"
+        },
+        {
+          "text": "Standard operating height of 34”",
+          "block_id": "r3200_hs_med:body:39"
+        }
+      ],
+      "sealing": [
+        {
+          "text": "Validation of time, temperature, and pressure",
+          "block_id": "r3200_hs_med:body:42"
+        },
+        {
+          "text": "Controls provide calibrations for temperature and pressure",
+          "block_id": "r3200_hs_med:body:43"
+        },
+        {
+          "text": "Pressure and temperature sensors trigger alrm and stop operation when out of preset band",
+          "block_id": "r3200_hs_med:body:44"
+        }
+      ],
+      "printing": [],
+      "maintenance": [
+        {
+          "text": "Off the shelf modular components for easy replacement",
+          "block_id": "r3200_hs_med:body:47"
+        },
+        {
+          "text": "Remote networking capability for improved troubleshooting",
+          "block_id": "r3200_hs_med:body:48"
+        },
+        {
+          "text": "Self-diagnostics ensure quick problem solving",
+          "block_id": "r3200_hs_med:body:49"
+        },
+        {
+          "text": "Quick service access to all pneumatic and electrical components",
+          "block_id": "r3200_hs_med:body:50"
+        },
+        {
+          "text": "Stainless steel frame for cleaning and hygiene",
+          "block_id": "r3200_hs_med:body:51"
+        }
+      ],
+      "setup": [
+        {
+          "text": "Adjustable height load shelf to support the bag during packaging",
+          "block_id": "r3200_hs_med:body:54"
+        },
+        {
+          "text": "Interface ports to integrate counters, scales, and robotics",
+          "block_id": "r3200_hs_med:body:55"
+        }
+      ],
+      "safety": [
+        {
+          "text": "Safety light curtains for added operator safety during manual loading",
+          "block_id": "r3200_hs_med:body:58"
+        },
+        {
+          "text": "Low power consumption design (1500 Watts)",
+          "block_id": "r3200_hs_med:body:59"
+        },
+        {
+          "text": "CE compliant design for improved safety and troubleshooting",
+          "block_id": "r3200_hs_med:body:60"
+        }
+      ],
+      "packaging": []
+    },
+    "cover_fields": [
+      {
+        "label": "Contact Name",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:0.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Company",
+        "value": null,
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:1.0",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "MM/DD/YY",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:3.0",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Prepared by",
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:4.0",
+        "value_line_id": "r3200_hs_med:body:4.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "Your Name",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:4.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "1-234-222-1000 xXYZ",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:4.2",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": null,
+        "value": "yourname@pacmachinery.com",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:4.3",
+        "value_line_id": null,
+        "decided_by": "agreement"
+      },
+      {
+        "label": "Proposal #",
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:5.0",
+        "value_line_id": "r3200_hs_med:body:5.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "123456",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:5.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": "Project Name",
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:6.0",
+        "value_line_id": "r3200_hs_med:body:6.1",
+        "decided_by": "adjudicator"
+      },
+      {
+        "label": null,
+        "value": "GIVE IT ONE",
+        "kind": "placeholder",
+        "line_id": "r3200_hs_med:body:6.1",
+        "value_line_id": null,
+        "decided_by": "adjudicator"
+      }
+    ],
+    "attachments": [
+      "attachment_bd8c1d4c"
+    ],
+    "link_ids": [
+      "r3200_hs_med:body:18/l0",
+      "r3200_hs_med:body:160/l0",
+      "r3200_hs_med:body:181/l0",
+      "r3200_hs_med:body:183/l0"
+    ]
+  }
+]
