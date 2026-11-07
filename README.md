@@ -46,6 +46,12 @@ Explorer startup deadlines now preserve their remaining budget while the documen
 
 PAC engineering, brand and commercial approval remain separate from this demo. The intended review establishes the first use case, required PAC assets, quotation ownership and pilot acceptance criteria.
 
+## Path 01 interface
+
+The product, requirements, configuration and proposal screens use a scoped PAC workspace style in `src/workspace.css`. Option rows keep price and selection controls aligned, while disclosures retain the full source description and conditions. Proposal pricing uses a semantic four-column table with a separate mobile layout and print rules.
+
+The visual refinement retains PAC blue, navy and gold. References include [Programa](https://programa.design/) for restrained surfaces, [Ramp purchase orders](https://support.ramp.com/purchases-orders-in-ramp/) for the working area and review panel, and [Stripe’s invoice sample](https://stripe.com/files/docs/billing/taxes/example-reverse-charge.pdf) for numeric column alignment. These are design references, not affiliations. The 3D Explorer is unchanged by this interface update.
+
 ## Attribution
 
 See [NOTICE.txt](NOTICE.txt) and the complete [Explorer license bundle](assets/explorer/LICENSES.txt). PAC product content and branding are not relicensed under the Explorer software license. The upstream Explorer and the reproducible integration changes are identified in `vendor/annora-explorer/`.
