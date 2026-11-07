@@ -602,7 +602,7 @@
     "src/catalog.js"
   ],
   "audit": {
-    "htmlReferences": 134,
+    "htmlReferences": 135,
     "distinctResourcePaths": 374,
     "errors": []
   },
@@ -2689,8 +2689,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 578,
-      "sha256": "6678e33436bb441e48bcba734c6579463213c57a2f3fc14cbd66e6ceced64e78"
+      "bytes": 646,
+      "sha256": "179d35fe7c7c4b3348b34847355dffc97ae5ce0dee7f09a93cdbbf40e27c0b98"
     },
     {
       "path": "source/catalog/commercial_terms.json",
@@ -3344,8 +3344,8 @@
     },
     {
       "path": "src/app.js",
-      "bytes": 49178,
-      "sha256": "e5f10cc94b47b394657109f41da3caa99be1bacb0de85fcc9993d7911e9467ba"
+      "bytes": 51150,
+      "sha256": "c5bf75173c23f214a7d023c4dbdddb3d1416ba9e1a02649be62ec70df558f975"
     },
     {
       "path": "src/catalog.js",
@@ -3361,6 +3361,11 @@
       "path": "src/style.css",
       "bytes": 63254,
       "sha256": "dfbe38f4ef87c5f8c16f316d898dd46fc954e747bf3c4cbda4dc779d91f78e56"
+    },
+    {
+      "path": "src/workspace.css",
+      "bytes": 35081,
+      "sha256": "e8dfb1554c85a2a054c96c32f988a8bf389710bb3dbfd4422071e65e9ee61dfc"
     }
   ]
 }
