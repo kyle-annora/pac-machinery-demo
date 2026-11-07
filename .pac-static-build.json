@@ -47,7 +47,8 @@
       "explorer/assets/studio-V03qXlMX.js",
       "explorer/assets/workspace-entry-BZTseFc7.js",
       "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
-      "src/app.js"
+      "src/app.js",
+      "src/sales-workspace.js"
     ],
     "protocolUnchanged": "annora.explorer/0.1-draft"
   },
@@ -599,11 +600,13 @@
     "explorer/walkthrough/index.html",
     "index.html",
     "src/app.js",
-    "src/catalog.js"
+    "src/catalog.js",
+    "src/deal-explorer.js",
+    "src/sales-workspace.js"
   ],
   "audit": {
-    "htmlReferences": 135,
-    "distinctResourcePaths": 374,
+    "htmlReferences": 136,
+    "distinctResourcePaths": 377,
     "errors": []
   },
   "files": [
@@ -2689,8 +2692,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 646,
-      "sha256": "179d35fe7c7c4b3348b34847355dffc97ae5ce0dee7f09a93cdbbf40e27c0b98"
+      "bytes": 790,
+      "sha256": "cea36c0c1146bad053597c526c547942f26ea1a9b633d29b0a7ac2c28b656e6f"
     },
     {
       "path": "source/catalog/commercial_terms.json",
@@ -3344,8 +3347,8 @@
     },
     {
       "path": "src/app.js",
-      "bytes": 53201,
-      "sha256": "cdd0b2114a5586fe26b19969fea8c12f123380fd135e220669b10cf53ae1bb32"
+      "bytes": 54871,
+      "sha256": "827e24ca5acd05398a4a29a1e51548db8fe05c684a9fe1ffd0b4c9b3981e3245"
     },
     {
       "path": "src/catalog.js",
@@ -3353,9 +3356,29 @@
       "sha256": "09661a120f8e2a79a1f8df42f5dc083a9e06bc413bb2d98257a2a06a5bf8f417"
     },
     {
+      "path": "src/deal-explorer.js",
+      "bytes": 21996,
+      "sha256": "e7001adff31a0675b666f7e2ffaba60aac7284106be9c81d1b76c61d17edba57"
+    },
+    {
       "path": "src/explorer.js",
       "bytes": 8153,
       "sha256": "95f46f863b33dd694200f5a8c3c38a7a825d39764a543e3394cf2ee91c221590"
+    },
+    {
+      "path": "src/sales-domain.js",
+      "bytes": 33239,
+      "sha256": "e61060307ecbf98dd92cdb99768109b4655f083d7698f66df0c87606c90933c8"
+    },
+    {
+      "path": "src/sales-workspace.js",
+      "bytes": 61397,
+      "sha256": "5f7443d089e12992b5ccf8849377fc3284263c6aa0330b4546012629393752d3"
+    },
+    {
+      "path": "src/sales.css",
+      "bytes": 35907,
+      "sha256": "62437a2f84b3f26892a3a8e2efb47837d785c6ea8b83a9e3b164b25cb7db62de"
     },
     {
       "path": "src/style.css",
