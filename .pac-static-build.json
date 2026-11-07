@@ -33,19 +33,19 @@
       "pac.rollbag."
     ],
     "generatedFiles": [
-      "explorer/assets/chrome-CTSapeSs.js",
+      "explorer/assets/chrome-CY-rkB5I.js",
       "explorer/assets/drawing-inquiry-CYCcaZuq.js",
-      "explorer/assets/drawing-repository-_8kswXiD.js",
+      "explorer/assets/drawing-repository-ChmVUuIm.js",
       "explorer/assets/exploration-handoff-8V3bw1KV.js",
       "explorer/assets/explorer-DjmcOZCN.js",
-      "explorer/assets/navigation-Yl9NAkrG.js",
-      "explorer/assets/project-questions-CKGjBvz0.js",
+      "explorer/assets/navigation-Dixfjpnk.js",
+      "explorer/assets/project-questions-DXwwyXyD.js",
       "explorer/assets/project-repository-CYNAz0jU.js",
       "explorer/assets/repository-DpAkRqkc.js",
-      "explorer/assets/room-DWVfv0MY.js",
+      "explorer/assets/room-BpmhkMWX.js",
       "explorer/assets/session-y2OLoiKa.js",
-      "explorer/assets/studio-BhASoBDS.js",
-      "explorer/assets/workspace-entry-DQEwY2mK.js",
+      "explorer/assets/studio-V03qXlMX.js",
+      "explorer/assets/workspace-entry-BZTseFc7.js",
       "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
       "src/app.js"
     ],
@@ -571,23 +571,23 @@
   ],
   "relocatedTextFiles": [
     "explorer/assets/catalog-CzfLWeeC.js",
-    "explorer/assets/chrome-CTSapeSs.js",
+    "explorer/assets/chrome-CY-rkB5I.js",
     "explorer/assets/content-9XbS8-lr.js",
     "explorer/assets/drawing-inquiry-CYCcaZuq.js",
-    "explorer/assets/drawing-repository-_8kswXiD.js",
+    "explorer/assets/drawing-repository-ChmVUuIm.js",
     "explorer/assets/exploration-handoff-8V3bw1KV.js",
     "explorer/assets/explorer-DjmcOZCN.js",
-    "explorer/assets/navigation-Yl9NAkrG.js",
+    "explorer/assets/navigation-Dixfjpnk.js",
     "explorer/assets/pdf-runtime-DbtpsllH.js",
     "explorer/assets/preload-helper-CGtVbSlw.js",
     "explorer/assets/presentation-assets-BdjQ2E0C.js",
-    "explorer/assets/project-questions-CKGjBvz0.js",
+    "explorer/assets/project-questions-DXwwyXyD.js",
     "explorer/assets/project-repository-CYNAz0jU.js",
     "explorer/assets/repository-DpAkRqkc.js",
-    "explorer/assets/room-DWVfv0MY.js",
+    "explorer/assets/room-BpmhkMWX.js",
     "explorer/assets/session-y2OLoiKa.js",
-    "explorer/assets/studio-BhASoBDS.js",
-    "explorer/assets/workspace-entry-DQEwY2mK.js",
+    "explorer/assets/studio-V03qXlMX.js",
+    "explorer/assets/workspace-entry-BZTseFc7.js",
     "explorer/design-preview/index.html",
     "explorer/drawing-preview/index.html",
     "explorer/examples/embed/index.html",
@@ -933,9 +933,9 @@
       "sha256": "be9efa3160ad361b399e5fc95d5eca0a0ec398f923a733b1603a084a3043ce2f"
     },
     {
-      "path": "explorer/assets/chrome-CTSapeSs.js",
+      "path": "explorer/assets/chrome-CY-rkB5I.js",
       "bytes": 82284,
-      "sha256": "5db57baee97375d969ad47143fcc3680a2b94b7009d970b374b528b7bb5c4198"
+      "sha256": "2c3a000981a9e174011450765c9aecb0106d9f1d481c73cbd8cd2c5273d94b32"
     },
     {
       "path": "explorer/assets/chrome-DJ_7TkpI.css",
@@ -1048,9 +1048,9 @@
       "sha256": "a00814cc5ea27f390841735ac1ed21ab369d3f380ff7042775064006c40ece72"
     },
     {
-      "path": "explorer/assets/drawing-repository-_8kswXiD.js",
+      "path": "explorer/assets/drawing-repository-ChmVUuIm.js",
       "bytes": 12268,
-      "sha256": "ea6ec46e9b7dbfd0aeb0cb8469dc93218999d716d69b862eec07763bef1a0797"
+      "sha256": "b8944095c850b1e858aed2aac85536eb7f5d72f1bec5b37022664b49e22f2765"
     },
     {
       "path": "explorer/assets/drawing-view-BeK9CbXd.js",
@@ -1058,9 +1058,9 @@
       "sha256": "f76e132ce3b0129ff605d40523f1eac366e7c7b9908ebe118fe789bba6075b00"
     },
     {
-      "path": "explorer/assets/DrawingPreview-Cx2acxKr.js",
+      "path": "explorer/assets/DrawingPreview-10NyX5R-.js",
       "bytes": 6767,
-      "sha256": "052ba9221f2b8e9f4fafdfdcd3c5e5b899c9d081ee966cc93a07213531c68088"
+      "sha256": "65ef51bb39046a7eb29ac1e5074ff8cacbfcdff986252776f142ac06138eac2c"
     },
     {
       "path": "explorer/assets/drawingPreview-Dgn7XFo2.css",
@@ -1068,9 +1068,9 @@
       "sha256": "5c6b1473ffc7c52d86f1a541333db6f48deb86c51e0b06e5606ea76fa048688f"
     },
     {
-      "path": "explorer/assets/drawingPreview-NogNDU7b.js",
+      "path": "explorer/assets/drawingPreview-irKraAPn.js",
       "bytes": 27519,
-      "sha256": "339ac978a9f22828ce323c02b189774e7a6f09b9931716d3590dc4734387dcd4"
+      "sha256": "352e6a5df63a2bc802c45861ca7aa2400ea661755319f1085f7267cd3e6c356c"
     },
     {
       "path": "explorer/assets/DrawingPreview-WnUK3xeZ.css",
@@ -1213,14 +1213,14 @@
       "sha256": "13c2fb77d7a788348c73ad8345593b63b407c10138eeaa5718f9a179e30994f9"
     },
     {
-      "path": "explorer/assets/embed-client-DXDGIrLO.js",
-      "bytes": 2953,
-      "sha256": "b0e1c88d8a36aafcf600c69e5e900a86621e136d49c07e0d1c756a5433cb760a"
+      "path": "explorer/assets/embed-client-DZNJSvOD.js",
+      "bytes": 3160,
+      "sha256": "a88faba0f95227fcb6ad2f204f1868c8a8e102bf80db54e906b1f05aa60840dc"
     },
     {
-      "path": "explorer/assets/embed-JvTrcMgQ.js",
+      "path": "explorer/assets/embed-Dos4chtU.js",
       "bytes": 10322,
-      "sha256": "b9cb9cc000a044c41c466761a44aaea50c8e2a549ec3ad42cb8b1f8e1da1e954"
+      "sha256": "5c7ab130386691448f4a0bc74a197c04886921fb405c900900b7493cdba858d6"
     },
     {
       "path": "explorer/assets/embedded-inquiry-BEa8JKfE.css",
@@ -1928,9 +1928,9 @@
       "sha256": "d2a32840421496e872ade591618d2fa5c33797605d1aec04301717e5a90757d0"
     },
     {
-      "path": "explorer/assets/navigation-Yl9NAkrG.js",
-      "bytes": 1886700,
-      "sha256": "4a3feccd920e319e7dca8cfb2049700d8fff63032d47c9c2ea81ef9bcf6516e3"
+      "path": "explorer/assets/navigation-Dixfjpnk.js",
+      "bytes": 1888326,
+      "sha256": "41ea61dc6a0ec8919468369d25edc4885f86c64c0794210194b0d1544aaa6e15"
     },
     {
       "path": "explorer/assets/nema17-bracket-DGqaNylF.step",
@@ -2028,9 +2028,9 @@
       "sha256": "25e9002976be6872a3ba4f63f85a917d1804faf9ec8dfa06c2c0621ac4f5ab8a"
     },
     {
-      "path": "explorer/assets/project-questions-CKGjBvz0.js",
+      "path": "explorer/assets/project-questions-DXwwyXyD.js",
       "bytes": 45542,
-      "sha256": "823bfe4fa5ba8f43f2dc7dd0f4dd603b36f09d4ceab4c3999105ebb48a67efc8"
+      "sha256": "c86e14a7510148d995f1347de7e79852e03f8c8ac9e00febae7de95b01d6da95"
     },
     {
       "path": "explorer/assets/project-repository-CYNAz0jU.js",
@@ -2093,9 +2093,9 @@
       "sha256": "1c6b3ef9d9e5cb1aa329142ce9414b90f9b6d7f9182a2a9e927378dab8f0d43f"
     },
     {
-      "path": "explorer/assets/room-DWVfv0MY.js",
+      "path": "explorer/assets/room-BpmhkMWX.js",
       "bytes": 57289,
-      "sha256": "7f857f6c44bbd2d1094a002030e0e09e171d40e174571e2d5ec3e357a75114db"
+      "sha256": "6a24dc65186a91fa5a57d0a4101c3a869c8d8d608f3cdd4548cfbdb0b8250310"
     },
     {
       "path": "explorer/assets/room-mGhdifxp.css",
@@ -2258,9 +2258,9 @@
       "sha256": "27466fb32d5761b83ca3c563d6dcad3c671eeb5f9da9bd504294099b3ed64c14"
     },
     {
-      "path": "explorer/assets/studio-BhASoBDS.js",
+      "path": "explorer/assets/studio-V03qXlMX.js",
       "bytes": 271152,
-      "sha256": "c6312b55e69fb8e5bc31bd195456d98b3418234f9b1f8a88c9a804f4c5eebfe9"
+      "sha256": "01e416ea9b6602aaf9876bcd7596e182c22fdf7392ed2be9af61f601e057fee3"
     },
     {
       "path": "explorer/assets/studio-zCYpyPT_.css",
@@ -2298,9 +2298,9 @@
       "sha256": "6297475a43c91b8e752d3229419c15ea667c51e7f47f4b120e157e2bdf4d46f2"
     },
     {
-      "path": "explorer/assets/technical-story-panel-CutTcsAY.js",
+      "path": "explorer/assets/technical-story-panel-BfYQmh0C.js",
       "bytes": 1984,
-      "sha256": "5cc0f4addf5792869af7f400c2b8a903edb161feb1342fbf5a36a3fefb968ed8"
+      "sha256": "27a046ace1c01f3c2b4f753958ae9a29e077e4aaba35cea4c0ec9a460f88b554"
     },
     {
       "path": "explorer/assets/technical-story-panel-h1UM1CAL.css",
@@ -2308,9 +2308,9 @@
       "sha256": "6df3aa4e96c29495cf92b15bd15902639d94fb5bc017a1d733d5d9ddbd08393b"
     },
     {
-      "path": "explorer/assets/technical-story-preview-gI79P6Eu.js",
+      "path": "explorer/assets/technical-story-preview-DSLjW4Gh.js",
       "bytes": 2732,
-      "sha256": "c2950724a9ec1db8c6887c64d0563e5ca805bb2cb331993fc868612ea55a6631"
+      "sha256": "ee66821eeaab1390e85f40244c24f369bf1ecb20558ce392844961587b031dad"
     },
     {
       "path": "explorer/assets/technical-top-Bs8ecLxq.svg",
@@ -2578,14 +2578,14 @@
       "sha256": "0d268003b417271bf4cf5c7d4b3d0c4b56140679f06cca43335f0296990190fc"
     },
     {
+      "path": "explorer/assets/workspace-entry-BZTseFc7.js",
+      "bytes": 81825,
+      "sha256": "1ed5b2372e3ba6bde191972be9c0f1b08ba22b930b508b79895a5a2da73b9405"
+    },
+    {
       "path": "explorer/assets/workspace-entry-DEC6zhTD.css",
       "bytes": 37220,
       "sha256": "f5a848b98a7744cbc85edaa915b8e55fe9ba726b3fe5da4c934b0bbbfddb9500"
-    },
-    {
-      "path": "explorer/assets/workspace-entry-DQEwY2mK.js",
-      "bytes": 81825,
-      "sha256": "49eeefb659183a9e97c8ad5e3ebc45fb83deab5d739f4cdb9a2e4556a7c49d75"
     },
     {
       "path": "explorer/assets/WP-Symbol-C3zzKJnO.bcmap",
@@ -2600,12 +2600,12 @@
     {
       "path": "explorer/drawing-preview/index.html",
       "bytes": 12630,
-      "sha256": "54c738fa4082a1b162fe5f1f162b4575e34c6825cab05f69a84b93e837364a9c"
+      "sha256": "f0dcc1759fbbf38088fcc51cd799eb69c81d982b658664cda0cb4d54dd59cb1a"
     },
     {
       "path": "explorer/examples/embed/index.html",
       "bytes": 5049,
-      "sha256": "04df6c668a7ed30843afb22eb6b20683b9dca05c73487d5ab48d9504ba1ccd4e"
+      "sha256": "61cecc1980b6e5856faef0806b1605eae71bde71b581741cf22d39b1edbf3dcc"
     },
     {
       "path": "explorer/index.html",
@@ -2619,13 +2619,13 @@
     },
     {
       "path": "explorer/integration-kit/annora-integration-kit-0.2.0.tgz",
-      "bytes": 105020,
-      "sha256": "70c1a504c0b365c4d3ed1341ea56117a2ff6dc6237bdb03d95184dbc9f90870e"
+      "bytes": 104952,
+      "sha256": "412d5457b31ffc5843b7e81d9cf95f9a7386104cfa040c959713a8ef4e5852bb"
     },
     {
       "path": "explorer/integration-kit/release.json",
-      "bytes": 471,
-      "sha256": "5974de2c3234499e76c669e59f049a0b60cfc6ef59259dfbf660695835a4019e"
+      "bytes": 509,
+      "sha256": "2fd054781adb79e795d6455c47088520b67539e3e7b0d1b95fa522ad8d78ec9c"
     },
     {
       "path": "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
@@ -2675,12 +2675,12 @@
     {
       "path": "explorer/product-room/index.html",
       "bytes": 5087,
-      "sha256": "cb968da738bcaf57a17ab7fca945624117b6a8aa9e0eb330aebf78317b766e91"
+      "sha256": "8dfab5a2b7930b5832b9f5656c9b019935087385a8da9d8b95e365faad9e0eeb"
     },
     {
       "path": "explorer/studio/index.html",
       "bytes": 4623,
-      "sha256": "ab988164e99cdc72eb678eb849530142a44a60b3e346e843f3309191dc85e799"
+      "sha256": "d763854cb423c85072c9edecbdbd9d49b82b493b1350dabe2bc7951eb96794f8"
     },
     {
       "path": "explorer/walkthrough/index.html",
