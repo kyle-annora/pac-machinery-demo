@@ -193,6 +193,12 @@
 .proposal-workspace .proposal-requirements { padding: 24px 0; }
 .proposal-workspace .proposal-request-grid { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.4fr); gap: 32px; border-bottom: 1px solid var(--rule); }
 .proposal-workspace .proposal-request-grid > .proposal-requirements { border: 0; }
+.proposal-workspace .proposal-request-grid .reference-card { display: block; padding: 16px; margin: 18px 0; }
+.proposal-workspace .proposal-request-grid .reference-image { width: 90px; height: 80px; margin-bottom: 12px; }
+.proposal-workspace .proposal-request-grid .reference-copy { width: 100%; }
+.proposal-workspace .proposal-request-grid .reference-copy h3 { font-size: 15px; }
+.proposal-workspace .proposal-request-grid .reference-copy p, .proposal-workspace .proposal-request-grid .reference-copy .fine-print { font-size: 11px; line-height: 1.6; }
+.proposal-workspace .proposal-request-grid .reference-actions { margin-top: 12px; align-items: flex-start; }
 .proposal-workspace .proposal-requirements h2 { font-size: 18px; margin-bottom: 14px; }
 .proposal-workspace .proposal-requirements dl { gap: 18px 28px; }
 .proposal-workspace .proposal-requirements dt { font-size: 11px; }
