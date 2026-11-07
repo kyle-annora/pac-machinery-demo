@@ -3344,8 +3344,8 @@
     },
     {
       "path": "src/app.js",
-      "bytes": 51150,
-      "sha256": "c5bf75173c23f214a7d023c4dbdddb3d1416ba9e1a02649be62ec70df558f975"
+      "bytes": 53201,
+      "sha256": "cdd0b2114a5586fe26b19969fea8c12f123380fd135e220669b10cf53ae1bb32"
     },
     {
       "path": "src/catalog.js",
