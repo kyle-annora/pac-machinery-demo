@@ -1,0 +1,405 @@
+diff --git a/vite.config.js b/vite.config.js
+--- a/vite.config.js
++++ b/vite.config.js
+@@ -9,7 +9,7 @@
+ const root = fileURLToPath(new URL('./', import.meta.url));
+ 
+ export default defineConfig({
+-  base: './',
++  base: '/explorer/',
+   publicDir: false,
+   esbuild: { jsx: 'automatic' },
+   plugins: [presentationAssetsPlugin(root), spatialGuidesPlugin(root), {
+@@ -43,7 +43,6 @@
+         drawingPreview: fileURLToPath(new URL('./drawing-preview/index.html', import.meta.url)),
+         designPreview: fileURLToPath(new URL('./design-preview/index.html', import.meta.url)),
+         walkthrough: fileURLToPath(new URL('./walkthrough/index.html', import.meta.url)),
+-        workflows: fileURLToPath(new URL('./workflows/index.html', import.meta.url)),
+         presentationMedia: fileURLToPath(new URL('./presentation-media/index.html', import.meta.url)),
+       },
+       output: { manualChunks: id => id.includes('/node_modules/three/') ? 'three' : undefined },
+diff --git a/src/host/departure.js b/src/host/departure.js
+new file mode 100644
+--- /dev/null
++++ b/src/host/departure.js
+@@ -0,0 +1,27 @@
++/** Same-origin shell lifecycle only; never exposes renderer or draft internals. */
++export function installHostDepartureGuard({ window: win = globalThis.window, beforeLeave,
++  isDirty = () => false, isBusy = () => false } = {}) {
++  if (!win || typeof beforeLeave !== 'function') throw new TypeError('A host departure guard needs a window and beforeLeave callback.');
++  const previous = win.annoraDemoHost;
++  let disposed = false, pending = null;
++  const api = Object.freeze({
++    version: 1,
++    isDirty: () => !disposed && Boolean(isDirty()),
++    isBusy: () => !disposed && Boolean(isBusy()),
++    beforeLeave() {
++      if (disposed || win.annoraDemoHost !== api) return Promise.resolve(false);
++      if (!pending) pending = Promise.resolve().then(beforeLeave)
++        .then(allowed => !disposed && win.annoraDemoHost === api && allowed === true, () => false)
++        .finally(() => { pending = null; });
++      return pending;
++    },
++  });
++  win.annoraDemoHost = api;
++  return () => {
++    disposed = true;
++    if (win.annoraDemoHost === api) {
++      if (previous === undefined) delete win.annoraDemoHost;
++      else win.annoraDemoHost = previous;
++    }
++  };
++}
+diff --git a/src/studio/customer-workspace.jsx b/src/studio/customer-workspace.jsx
+--- a/src/studio/customer-workspace.jsx
++++ b/src/studio/customer-workspace.jsx
+@@ -1,3 +1,4 @@
++import { installHostDepartureGuard } from '../host/departure.js';
+ import { ProjectEvidencePanel } from "./project-evidence-panel.jsx";
+ import { projectEvidenceController } from "../product-room/evidence-host.js";
+ import { QuoteScopeEditor } from "./quote-scope-editor.jsx";
+@@ -102,6 +103,7 @@
+     [leave, setLeave] = useState(null);
+   const busyRef = useRef("loading"),
+     dirtyRef = useRef(false),
++    hostDeparture = useRef(null),
+     currentRef = useRef({}),
+     dialog = useRef(null),
+     errorRef = useRef(null),
+@@ -479,11 +481,25 @@
+         setError(problem.message);
+       }
+     };
++    const uninstallHostGuard = installHostDepartureGuard({
++      isDirty: () => dirtyRef.current,
++      isBusy: () => Boolean(busyRef.current || drawingBusy.current || questionBusy.current),
++      beforeLeave: () => {
++        if (busyRef.current || drawingBusy.current || questionBusy.current) return false;
++        if (!dirtyRef.current) return true;
++        return new Promise(resolve => {
++          hostDeparture.current = resolve;
++          setLeave({ host: true });
++        });
++      },
++    });
+     window.addEventListener("beforeunload", unload);
+     window.addEventListener("storage", update);
+     window.addEventListener("focus", update);
+     return () => {
+       guardRef.current = null;
++      hostDeparture.current?.(false); hostDeparture.current = null;
++      uninstallHostGuard();
+       window.removeEventListener("beforeunload", unload);
+       window.removeEventListener("storage", update);
+       window.removeEventListener("focus", update);
+@@ -501,6 +517,10 @@
+     }
+     action();
+   }
++  function cancelLeave() {
++    hostDeparture.current?.(false); hostDeparture.current = null;
++    setLeave(null);
++  }
+   function finishLeave() {
+     const target = leave;
+     setLeave(null);
+@@ -508,6 +528,7 @@
+       if (project) sessionStorage.removeItem(workKey(project.id));
+     } catch {}
+     resetEditor();
++    hostDeparture.current?.(true); hostDeparture.current = null;
+     if (target.route) onGo(target.route);
+     else target.action?.();
+   }
+@@ -1734,7 +1755,7 @@
+         ref={dialog}
+         onCancel={(e) => {
+           e.preventDefault();
+-          if (!busy) setLeave(null);
++          if (!busy) cancelLeave();
+         }}
+         aria-labelledby="customer-leave-title"
+       >
+@@ -1747,7 +1768,7 @@
+         <ActionGroup>
+           <Button
+             variant="quiet"
+-            onClick={() => setLeave(null)}
++            onClick={cancelLeave}
+             disabled={Boolean(busy)}
+           >
+             Keep editing
+diff --git a/src/product-room/app.js b/src/product-room/app.js
+--- a/src/product-room/app.js
++++ b/src/product-room/app.js
+@@ -1,7 +1,9 @@
++import { installHostDepartureGuard } from '../host/departure.js';
+ import './styles.css';
+ import { ROOM_CONTENT, DEFAULT_ROOM_ID } from './content.js';
+ import { MODEL_CATALOG } from '../generated/catalog.js';
+ import { createRoomViewer } from './viewer.js';
++import { createRoomViewerRetry } from './viewer-retry.js';
+ import { createRequestFlow } from './request.js';
+ import { createStudioRepository } from '../studio/repository.js';
+ import { readBuyerRoute, buyerRouteHash, projectReturnURL } from './navigation.js';
+@@ -322,6 +324,11 @@
+       }
+     },
+   });
++  const uninstallHostGuard = installHostDepartureGuard({
++    beforeLeave: () => beforeHostLeave(),
++    isDirty: () => Boolean(inquiryHost.hasUnsavedChanges() || workspace?.hasUnsavedChanges?.()),
++    isBusy: () => Boolean(inquiryState?.busy || inquiryRouting),
++  });
+   if (walkthrough && walkthroughViewerKind(walkthrough) !== 'independent' && !releaseState.preview && !followUpRelease) walkthroughViewer = createWalkthroughViewerAction({
+     viewer, sessionId:walkthrough, isActive:()=>page === 'explore' && !walkthroughProject,
+     openInquiry:()=>openRequest(undefined,{opener:document.querySelector('.wt-handoff')}),
+@@ -823,7 +830,14 @@
+     void switchRoomProduct(selected).catch(error => { $('room-product').value = productId; notice(error.message); });
+   });
+   $('room-discuss').addEventListener('click',()=>void openRequest(undefined,{opener:$('room-discuss')}));
+-  $('room-retry').addEventListener('click',()=>void (retrySavedContext ? showSavedContext(retrySavedContext,{record:false}) : ensureViewer(true)).catch(error=>notice(error.message)));
++  const retryViewer = createRoomViewerRetry({
++    capture: () => ({route:{...currentRoute},navigation}),
++    isCurrent: saved => saved.navigation === navigation && saved.route.view === page,
++    hasInquiry: () => Boolean(inquiryState?.hasDraft || inquiryState?.projectId),
++    reload: () => ensureViewer(true),
++    resumeInquiry: route => showPage('inquiry',{record:false,route}),
++  });
++  $('room-retry').addEventListener('click',()=>void (retrySavedContext ? showSavedContext(retrySavedContext,{record:false}) : retryViewer()).catch(error=>notice(error.message)));
+   window.addEventListener('annora:walkthrough-navigate',event=> {
+     const detail = event.detail;
+     if (!walkthrough || !detail?.url) return;
+@@ -851,7 +865,7 @@
+   });
+   document.addEventListener('visibilitychange',()=> { if (document.hidden) void viewer.pause().catch(()=>{}); });
+   window.addEventListener('resize',updateInquiryLayout);
+-  window.addEventListener('pagehide',event=> { if (!event.persisted) { storyPlayer?.dispose(); technicalPanel?.dispose(); walkthroughViewer?.dispose(); hostSize.disconnect(); flow.dispose(); workspace?.dispose(); void inquiryHost.dispose(); void viewer.dispose(); } else void viewer.pause().catch(()=>{}); });
++  window.addEventListener('pagehide',event=> { if (!event.persisted) { uninstallHostGuard(); storyPlayer?.dispose(); technicalPanel?.dispose(); walkthroughViewer?.dispose(); hostSize.disconnect(); flow.dispose(); workspace?.dispose(); void inquiryHost.dispose(); void viewer.dispose(); } else void viewer.pause().catch(()=>{}); });
+   if (walkthrough && !releaseState.preview) {
+     walkthroughProject = (await walkthroughRepository.listProjects())[0] || null;
+     window.addEventListener('annora:walkthrough-change',()=> { void walkthroughRepository.listProjects().then(items=> { walkthroughProject=items[0] || null; renderContent(); }).catch(error=>notice(error.message)); });
+diff --git a/src/product-room/inquiry-host.js b/src/product-room/inquiry-host.js
+--- a/src/product-room/inquiry-host.js
++++ b/src/product-room/inquiry-host.js
+@@ -21,6 +21,7 @@
+   }
+   return {
+     get state() { return state; },
++    hasUnsavedChanges() { return panel?.hasUnsavedChanges?.() || false; },
+     getContext() { return panel?.getContext() || null; },
+     async open(options) {
+       if (disposed) throw new Error('This inquiry host has closed.');
+diff --git a/src/product-room/embedded-inquiry.jsx b/src/product-room/embedded-inquiry.jsx
+--- a/src/product-room/embedded-inquiry.jsx
++++ b/src/product-room/embedded-inquiry.jsx
+@@ -282,6 +282,7 @@
+       updateUI({ leaving: false, ...(!saved ? { open: true, expanded: true } : {}) });
+       return saved;
+     },
++    hasUnsavedChanges: () => session.hasUnsavedChanges(),
+     getContext: () => state.draft || state.project ? session.getContext() : null,
+     resume: controls.expand,
+     openProject: controls.openProject,
+diff --git a/src/product-room/workspace-entry.jsx b/src/product-room/workspace-entry.jsx
+--- a/src/product-room/workspace-entry.jsx
++++ b/src/product-room/workspace-entry.jsx
+@@ -15,6 +15,7 @@
+     async beforeLeave(route) {
+       return projectHost?.beforeLeave ? projectHost.beforeLeave(route) : true;
+     },
++    hasUnsavedChanges() { return projectHost?.hasUnsavedChanges?.() || false; },
+     getContext() { return projectHost?.getContext() || null; },
+     cancelLeave() { projectHost?.cancelLeave(); },
+     open(route) {
+diff --git a/src/product-room/project-workspace.jsx b/src/product-room/project-workspace.jsx
+--- a/src/product-room/project-workspace.jsx
++++ b/src/product-room/project-workspace.jsx
+@@ -424,6 +424,7 @@
+     const next = typeof value === 'function' ? value(allComparisonFields) : value;
+     setAllComparisonFieldsState(next); updateBuyerLocation({compare:next ? 'all' : undefined});
+   };
++  lifecycle.hasUnsavedChanges = () => Boolean(lifecycle.requestDirty || ["Unsaved changes", "Saving draft…", "Draft not saved"].includes(saveState));
+   lifecycle.route = route;
+   lifecycle.requestDirty = Boolean(
+     questionDirty || questionBusy || optionDirty || mode &&
+@@ -2247,6 +2248,7 @@
+         />,
+       );
+     },
++    hasUnsavedChanges() { return lifecycle.hasUnsavedChanges?.() || false; },
+     beforeLeave(nextRoute) {
+       return lifecycle.beforeLeave
+         ? lifecycle.beforeLeave(nextRoute)
+diff --git a/src/product-room/ui/components.css b/src/product-room/ui/components.css
+--- a/src/product-room/ui/components.css
++++ b/src/product-room/ui/components.css
+@@ -427,6 +427,9 @@
+   background: #efede7;
+ }
+ .room-ui .ar-change-label {
++  white-space: nowrap;
++  overflow-wrap: normal;
++  word-break: normal;
+   display: block;
+   margin-top: 4px;
+   font: 10px/1.5 var(--ar-mono);
+diff --git a/tests/runtime/host-departure.test.js b/tests/runtime/host-departure.test.js
+new file mode 100644
+--- /dev/null
++++ b/tests/runtime/host-departure.test.js
+@@ -0,0 +1,57 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { installHostDepartureGuard } from '../../src/host/departure.js';
++import { createInquirySession } from '../../src/product-room/inquiry-session.js';
++import { createDemoProjectRepository } from '../../src/product-room/project-repository.js';
++const deferred = () => { let resolve, reject; const promise = new Promise((a,b) => { resolve=a; reject=b; }); return {promise,resolve,reject}; };
++
++test('outer navigation leaves clean work immediately without inventing a dirty warning', async () => {
++  const win={}; const remove=installHostDepartureGuard({window:win,beforeLeave:()=>true});
++  assert.equal(win.annoraDemoHost.isDirty(),false); assert.equal(win.annoraDemoHost.isBusy(),false);
++  assert.equal(await win.annoraDemoHost.beforeLeave(),true); remove(); assert.equal(win.annoraDemoHost,undefined);
++});
++
++test('pending seller choice retains iframe and repeated outer clicks share one decision', async () => {
++  const win={}, decision=deferred(); let prompts=0, removed=false;
++  installHostDepartureGuard({window:win,isDirty:()=>true,beforeLeave:()=>{prompts++;return decision.promise;}});
++  const first=win.annoraDemoHost.beforeLeave(), second=win.annoraDemoHost.beforeLeave();
++  assert.equal(first,second); first.then(allowed=>{removed=allowed;}); await Promise.resolve();
++  assert.equal(prompts,1); assert.equal(removed,false); assert.equal(win.annoraDemoHost.isDirty(),true);
++  decision.resolve(false); assert.equal(await first,false); assert.equal(removed,false);
++});
++
++test('explicit discard permits removal, while failed save never grants departure', async () => {
++  const win={}; let mode='save';
++  installHostDepartureGuard({window:win,isDirty:()=>true,beforeLeave:()=>{if(mode==='save')throw new Error('Storage full');return true;}});
++  assert.equal(await win.annoraDemoHost.beforeLeave(),false);
++  assert.equal(win.annoraDemoHost.isDirty(),true);
++  mode='discard'; assert.equal(await win.annoraDemoHost.beforeLeave(),true);
++});
++
++test('save approval waits for persistence and exposes dirty separately from busy', async () => {
++  const win={}, save=deferred(); let stored=185, edited=999, dirty=true, busy=false;
++  installHostDepartureGuard({window:win,isDirty:()=>dirty,isBusy:()=>busy,beforeLeave:async()=>{busy=true;await save.promise;stored=edited;dirty=false;busy=false;return true;}});
++  const departure=win.annoraDemoHost.beforeLeave(); await Promise.resolve();
++  assert.equal(stored,185); assert.equal(win.annoraDemoHost.isBusy(),true); assert.equal(win.annoraDemoHost.isDirty(),true);
++  save.resolve(); assert.equal(await departure,true); assert.equal(stored,999); assert.equal(win.annoraDemoHost.isDirty(),false);
++});
++
++test('a retired frame or replaced guard cannot approve a later parent departure', async () => {
++  const win={}, decision=deferred();
++  const remove=installHostDepartureGuard({window:win,beforeLeave:()=>decision.promise});
++  const old=win.annoraDemoHost, pending=old.beforeLeave(); await Promise.resolve(); remove();
++  installHostDepartureGuard({window:win,beforeLeave:()=>false}); decision.resolve(true);
++  assert.equal(await pending,false); assert.equal(await old.beforeLeave(),false); assert.equal(await win.annoraDemoHost.beforeLeave(),false);
++});
++
++test('buyer host departure flushes a real unsaved inquiry before outer iframe removal', async () => {
++  const win={}, data=new Map();let id=0;
++  const repository=createDemoProjectRepository({storage:{getItem:k=>data.get(k)??null,setItem:(k,v)=>data.set(k,v)},locks:null,makeId:prefix=>`${prefix}-${++id}`});
++  const session=createInquirySession({repository,autosaveDelay:60000});
++  const context={productId:'kinetic-01',productTitle:'Crank-slider',modelId:'kinetic-01',modelRevision:'test-r1',part:{id:'rod',title:'Connecting rod'}};
++  await session.open({context});session.updateValues({application:'Unsaved packing-line discussion',quantity:'30'});
++  installHostDepartureGuard({window:win,isDirty:()=>session.hasUnsavedChanges(),beforeLeave:()=>session.beforeLeave()});
++  assert.equal(win.annoraDemoHost.isDirty(),true);assert.equal(await win.annoraDemoHost.beforeLeave(),true);
++  const saved=await repository.getDraft(context);assert.equal(saved.values.quantity,'30');assert.equal(saved.values.application,'Unsaved packing-line discussion');assert.equal(saved.context.part.id,'rod');
++  assert.equal(win.annoraDemoHost.isDirty(),false);session.dispose();
++});
+diff --git a/src/product-room/viewer-retry.js b/src/product-room/viewer-retry.js
+new file mode 100644
+--- /dev/null
++++ b/src/product-room/viewer-retry.js
+@@ -0,0 +1,16 @@
++/** Recover the route that was waiting for 3D, without advancing a review. */
++export function createRoomViewerRetry({ capture, isCurrent, hasInquiry, reload, resumeInquiry }) {
++  let pending = null;
++  return function retry() {
++    if (pending) return pending;
++    const snapshot = capture();
++    pending = Promise.resolve().then(reload).then(async () => {
++      // A timeout can occur before the inquiry host mounts. Loading the model
++      // alone cannot register its next action; reopen that same saved route.
++      // Existing editors and navigation during recovery remain authoritative.
++      if (snapshot.route.view === 'inquiry' && isCurrent(snapshot) && !hasInquiry())
++        await resumeInquiry(snapshot.route);
++    }).finally(() => { pending = null; });
++    return pending;
++  };
++}
+diff --git a/tests/runtime/room-viewer-retry.test.js b/tests/runtime/room-viewer-retry.test.js
+new file mode 100644
+--- /dev/null
++++ b/tests/runtime/room-viewer-retry.test.js
+@@ -0,0 +1,71 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import { createRoomViewerRetry } from '../../src/product-room/viewer-retry.js';
++import { createRoomInquiryHost } from '../../src/product-room/inquiry-host.js';
++import { createInquirySession } from '../../src/product-room/inquiry-session.js';
++import { createWalkthroughActions } from '../../src/walkthrough/actions.js';
++import { createWalkthroughRepository } from '../../src/walkthrough/session.js';
++
++const context = {productId:'kinetic-01',productTitle:'Crank-slider mechanism',modelId:'kinetic-01',modelRevision:'kinetic-r1',part:{id:'rod',title:'Connecting rod'}};
++const deferred = () => { let resolve; const promise = new Promise(yes => { resolve = yes; }); return {promise,resolve}; };
++
++test('retry after an inquiry startup timeout restores its saved editor and action without confirming or duplicating records', async () => {
++  const data = new Map(); let serial = 0;
++  const storage = {getItem:key=>data.get(key)??null,setItem:(key,value)=>data.set(key,value)};
++  const repository = createWalkthroughRepository('WT-retry-inquiry-001',{storage,locks:null,makeId:prefix=>`${prefix}-${++serial}`});
++  const original = createInquirySession({repository,schedule:()=>0,cancel:()=>{}});
++  await original.open({context,suggestedIntent:'application-review'});
++  original.updateValues({application:'Discuss the connecting rod mounting interface.'});
++  assert.equal(await original.beforeLeave(),true);
++  const saved = (await repository.listDrafts())[0]; original.dispose();
++
++  const actions = createWalkthroughActions(); let session, opened = 0, fail = true, loaded = 0;
++  const host = createRoomInquiryHost({element:{},repository,register:(...args)=>actions.register(...args),loadPanel:async()=>({mountEmbeddedInquiry:async(_,options)=>{
++    session = createInquirySession({repository,schedule:()=>0,cancel:()=>{}});
++    return {
++      open:async input=>{opened++;await session.open(input);options.onState({open:true,expanded:true,busy:false,hasDraft:true,stage:session.getState().stage});},
++      beforeLeave:()=>session.beforeLeave(),getContext:()=>session.getContext(),
++      dispose:async()=>{session.dispose();return true;},
++    };
++  }})});
++  const route = {view:'inquiry',stage:'details'};
++  const retry = createRoomViewerRetry({
++    capture:()=>({route}),isCurrent:()=>true,hasInquiry:()=>Boolean(host.state?.hasDraft),
++    reload:async()=>{loaded++;if(fail)throw new Error('Explorer timed out');},
++    // A newly loaded viewer may show the whole assembly. The repository must
++    // still resume the original Connecting rod draft and its edited values.
++    resumeInquiry:async resumed=>{assert.deepEqual(resumed,route);await host.open({context:{...context,part:undefined},stage:resumed.stage});},
++  });
++  await assert.rejects(retry(),/timed out/);
++  assert.equal(actions.get('buyer-workspace'),null);
++  assert.equal((await repository.listDrafts()).length,1);
++  fail = false;
++  await Promise.all([retry(),retry()]);
++  assert.equal(loaded,2);assert.equal(opened,1);
++  assert.equal(actions.get('buyer-workspace').id,'inquiry-review');
++  assert.equal(session.getState().draft.id,saved.id);
++  assert.equal(session.getState().draft.values.application,saved.values.application);
++  assert.deepEqual(session.getContext(),saved.context);
++  assert.equal((await repository.listDrafts()).length,1);
++  assert.equal((await repository.listProjects()).length,0);
++  await session.review();const project = await session.confirm();
++  await retry();
++  assert.equal(opened,1);
++  assert.equal((await repository.listProjects()).length,1);
++  assert.equal((await repository.listProjects())[0].id,project.id);
++  assert.equal((await repository.listDrafts()).length,0);
++  await host.dispose();
++});
++
++test('a completed retry cannot reopen an inquiry after navigation or replace an existing editor', async () => {
++  for (const reason of ['navigation','existing editor','other route']) {
++    const gate = deferred();let current = true, existing = false, opened = 0;
++    const retry = createRoomViewerRetry({capture:()=>({route:{view:reason==='other route'?'explore':'inquiry'}}),
++      isCurrent:()=>current,hasInquiry:()=>existing,reload:()=>gate.promise,resumeInquiry:()=>{opened++;}});
++    const recovering = retry();
++    if (reason==='navigation') current = false;
++    if (reason==='existing editor') existing = true;
++    gate.resolve();await recovering;
++    assert.equal(opened,0,reason);
++  }
++});

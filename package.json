@@ -1,0 +1,13 @@
+{
+  "name": "pac-machinery-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node tests/catalog-domain.test.mjs && node tests/explorer-domain.test.mjs && node --test tests/parent-navigation.test.mjs && node --test scripts/build-static.test.mjs",
+    "build": "node scripts/build-static.mjs --base /pac-machinery-demo/ --out dist"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

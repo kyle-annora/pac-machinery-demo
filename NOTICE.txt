@@ -1,0 +1,13 @@
+PAC Machinery demo
+
+PAC Machinery product photographs, names, branding, catalog descriptions and supplied pricing remain subject to their respective owners' rights. This repository does not grant a blanket open-source license to that content or imply PAC production approval.
+
+The embedded Annora Explorer is based on:
+https://github.com/kyle-annora/annora-explorer
+Copied source revision: 8977d5cd4e314f344bcdd086684550b827efc8cb
+
+The isolated integration patch is included in vendor/annora-explorer/. The build contains third-party software and models under multiple licenses. Retain the complete assets/explorer/LICENSES.txt, all companion license files and model attribution files with redistributed copies. Those notices identify applicable licenses, authors and source references.
+
+The default Kinetic 01 crank-slider mechanism is by Pradeep Kaushik and is a reference demonstration model, not manufacturer CAD. Its source and MIT notice are included with the Explorer model files.
+
+The public runtime catalog manifest is a projection of the supplied catalog manifest: run_id, status, signed_off and catalog_sha256. The hash identifies the original signed-off source catalog; it is not a checksum of the reduced manifest or this repository. Runtime catalog records and media are copied from that source without changing product or pricing values.

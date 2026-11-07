@@ -1,0 +1,13 @@
+{
+  "package": {
+    "name": "@annora/integration-kit",
+    "version": "0.2.0"
+  },
+  "sourceRevision": null,
+  "sourceTreeSha256": "5a35ce6d33914738a3be58510983729b2125fe7e6cddf1b005a5a24795706ef2",
+  "file": "annora-integration-kit-0.2.0.tgz",
+  "sha256": "70c1a504c0b365c4d3ed1341ea56117a2ff6dc6237bdb03d95184dbc9f90870e",
+  "bytes": 105020,
+  "installation": "npm install ./annora-integration-kit-0.2.0.tgz react@19.3.1 react-dom@19.3.1",
+  "assetsIncluded": false
+}

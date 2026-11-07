@@ -1,0 +1,501 @@
+[
+  {
+    "kit_id": "items_included_in_level_1_spare_parts_kit_720",
+    "doc_id": "spare_parts_magnum",
+    "path": "docs/Rollbag Baggers/5 - Spare Parts Kits/Spare Parts Kit - Magnum Series Level 1 and 2 - 25.docx",
+    "title": {
+      "text": "Items Included in Level 1 Spare Parts Kit :\t\t\t\t\t\t\t$720",
+      "line_id": "spare_parts_magnum:body:6.0"
+    },
+    "applies_to": "Magnum Series",
+    "applies_to_line_id": "spare_parts_magnum:body:2.0",
+    "machine_ids": [
+      "magnum_horizontal_med"
+    ],
+    "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+    "price_usd": 720,
+    "price_text": "$720",
+    "price_line_id": "spare_parts_magnum:body:6.0",
+    "lines": [
+      {
+        "line_id": "spare_parts_magnum:body:8.0",
+        "description": "Anti-Slip Tape, 1”",
+        "part_number": "228-26",
+        "source_line": "Anti-Slip Tape, 1” \t\t228-26",
+        "split_by": "code",
+        "decided_by": "adjudicator"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:9.0",
+        "description": "BOA Roller",
+        "part_number": "2-0195",
+        "source_line": "BOA Roller\t\t2-0195",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:10.0",
+        "description": "Fuse, .25 x 1.25, F20A, Ceramic",
+        "part_number": "216-212",
+        "source_line": "Fuse, .25 x 1.25, F20A, Ceramic\t\t216-212",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:11.0",
+        "description": "Fuse, 5mm x 20mm, F2.5A",
+        "part_number": "216-93",
+        "source_line": "Fuse, 5mm x 20mm, F2.5A\t\t216-93",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:12.0",
+        "description": "Fuse, 5mm x 20mm, F6.3A",
+        "part_number": "216-13",
+        "source_line": "Fuse, 5mm x 20mm, F6.3A\t\t216-13",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:13.0",
+        "description": "Fuse, 5mm x 20mm, F3A",
+        "part_number": "216-161",
+        "source_line": "Fuse, 5mm x 20mm, F3A\t\t216-161",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:14.0",
+        "description": "Fuse, .2 amp (Fast)",
+        "part_number": "216-117",
+        "source_line": "Fuse, .2 amp (Fast)\t\t216-117",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:15.0",
+        "description": "Fuse, .25 x 1.25, F8A Ceramic",
+        "part_number": "216-56",
+        "source_line": "Fuse, .25 x 1.25, F8A Ceramic\t\t216-56",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:16.0",
+        "description": "Fuse, 5mm x 20mm, F.5A",
+        "part_number": "216-19",
+        "source_line": "Fuse, 5mm x 20mm, F.5A\t\t216-19",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:17.0",
+        "description": "Fuse, 2 amp (Fast)",
+        "part_number": "216-135",
+        "source_line": "Fuse, 2 amp (Fast)\t\t216-135",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:18.0",
+        "description": "Fuse, .25 x 1.25, F2.5A",
+        "part_number": "216-211",
+        "source_line": "Fuse, .25 x 1.25, F2.5A\t\t216-211",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:19.0",
+        "description": "Fuse, .25 x 1.25, T10A",
+        "part_number": "216-213",
+        "source_line": "Fuse, .25 x 1.25, T10A\t\t216-213",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:20.0",
+        "description": "PTFE Tape, 1” x 18 yrds",
+        "part_number": "228-11",
+        "source_line": "PTFE Tape, 1” x 18 yrds\t\t228-11",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:21.0",
+        "description": "Rubber Pad, Peel and Stick, 2 Layer w/Mesh",
+        "part_number": "818-56",
+        "source_line": "Rubber Pad, Peel and Stick, 2 Layer w/Mesh\t\t818-56",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:22.0",
+        "description": "Silicone Sponge, 1/16 x ¾”",
+        "part_number": "818-12",
+        "source_line": "Silicone Sponge, 1/16 x ¾”\t\t818-12",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:23.0",
+        "description": "Brake Strap",
+        "part_number": "2-0224",
+        "source_line": "Brake Strap\t\t2-0224",
+        "split_by": "code",
+        "decided_by": "agreement"
+      }
+    ],
+    "document_notes": [
+      {
+        "line_id": "spare_parts_magnum:body:2.0",
+        "text": "Spare Parts Kit – Magnum Series Automatic Baggers",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:28.0",
+        "text": "All items from the Level 1 Kit are included, in addition to the following items.",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:3.0",
+        "text": "Level 1 and Level 2",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:54.0",
+        "text": "Part numbers:",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:55.0",
+        "text": "Level 1\t(970-000329)",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:56.0",
+        "text": "Level 2\t(970-000348)",
+        "label": "note"
+      }
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "kit_id": "items_included_in_level_2_spare_parts_kit_6_385",
+    "doc_id": "spare_parts_magnum",
+    "path": "docs/Rollbag Baggers/5 - Spare Parts Kits/Spare Parts Kit - Magnum Series Level 1 and 2 - 25.docx",
+    "title": {
+      "text": "Items Included in Level 2 Spare Parts Kit:\t\t$6,385",
+      "line_id": "spare_parts_magnum:body:26.0"
+    },
+    "applies_to": "Magnum Series",
+    "applies_to_line_id": "spare_parts_magnum:body:2.0",
+    "machine_ids": [
+      "magnum_horizontal_med"
+    ],
+    "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+    "price_usd": 6385,
+    "price_text": "$6,385",
+    "price_line_id": "spare_parts_magnum:body:26.0",
+    "lines": [
+      {
+        "line_id": "spare_parts_magnum:body:29.0",
+        "description": "Sensor, Proximity, 4mm Rng, NPN 24VDC",
+        "part_number": "215-269",
+        "source_line": "Sensor, Proximity, 4mm Rng, NPN 24VDC\t\t215-269",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:30.0",
+        "description": "Cartridge Heater (600W, 120V) ¼”OD x 14”",
+        "part_number": "225-82",
+        "source_line": "Cartridge Heater (600W, 120V) ¼”OD x 14”\t\t225-82",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:31.0",
+        "description": "Cartridge Heater (600W, 120V) 3/8”OD x 14”",
+        "part_number": "225-81",
+        "source_line": "Cartridge Heater (600W, 120V) 3/8”OD x 14”\t\t225-81",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:32.0",
+        "description": "BOA Stop Roller",
+        "part_number": "2-0223",
+        "source_line": "BOA Stop Roller\t\t2-0223",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:33.0",
+        "description": "Relay (120 VAC 2 Contacts)",
+        "part_number": "231-118",
+        "source_line": "Relay (120 VAC 2 Contacts)\t\t231-118",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:34.0",
+        "description": "4) Relay (24 VDC 2 Contacts)",
+        "part_number": "231-115",
+        "source_line": "4) Relay (24 VDC 2 Contacts)\t\t231-115",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:35.0",
+        "description": "2) Compression Spring",
+        "part_number": "769-133",
+        "source_line": "2) Compression Spring\t\t769-133",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:36.0",
+        "description": "2) Valve, Solenoid (manifold assy)",
+        "part_number": "825-175",
+        "source_line": "2) Valve, Solenoid (manifold assy)\t\t825-175",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:37.0",
+        "description": "2) Solid State Relay, 15 amp",
+        "part_number": "232-28",
+        "source_line": "2) Solid State Relay, 15 amp\t\t232-28",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:38.0",
+        "description": "1) OBS Perf Knife (sls use 2-0037)",
+        "part_number": "2-0003",
+        "source_line": "1) OBS Perf Knife (sls use 2-0037)\t\t2-0003",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:39.0",
+        "description": "1) Main Seal Knife",
+        "part_number": "2-0038",
+        "source_line": "1) Main Seal Knife\t\t2-0038",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:40.0",
+        "description": "1) Upper Heater Bar",
+        "part_number": "2-0015",
+        "source_line": "1) Upper Heater Bar\t\t2-0015",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:41.0",
+        "description": "1) Rectifier",
+        "part_number": "233-5",
+        "source_line": "1) Rectifier\t\t\t233-5",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:42.0",
+        "description": "1) Transformer, Seal 110V Pri, 44Sec",
+        "part_number": "200-4",
+        "source_line": "1) Transformer, Seal 110V Pri, 44Sec\t\t200-4",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:43.0",
+        "description": "1) Stepper Motor",
+        "part_number": "230-119",
+        "source_line": "1) Stepper Motor\t\t230-119",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:44.0",
+        "description": "1) Thermocouple",
+        "part_number": "206-28",
+        "source_line": "1) Thermocouple\t\t206-28",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:45.0",
+        "description": "1) Timing Belt",
+        "part_number": "809-28",
+        "source_line": "1) Timing Belt\t\t809-28",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:46.0",
+        "description": "1) Bottom Seal Plate, Assy",
+        "part_number": "2-0210",
+        "source_line": "1) Bottom Seal Plate, Assy\t\t2-0210",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:47.0",
+        "description": "2) Compression Spring",
+        "part_number": "769-137",
+        "source_line": "2) Compression Spring\t\t769-137",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:48.0",
+        "description": "2) Bushing, Flanged 3/8ID x 1/2OD x 3/8LG",
+        "part_number": "793-195",
+        "source_line": "2) Bushing, Flanged 3/8ID x 1/2OD x 3/8LG\t\t793-195",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:49.0",
+        "description": "1) Modified Cylinder",
+        "part_number": "825-173",
+        "source_line": "1) Modified Cylinder\t\t825-173",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:50.0",
+        "description": "1) Air Cylinder",
+        "part_number": "825-171",
+        "source_line": "1) Air Cylinder\t\t825-171",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:51.0",
+        "description": "1) Cylinder, 20mm Bore",
+        "part_number": "825-169",
+        "source_line": "1) Cylinder, 20mm Bore\t\t825-169",
+        "split_by": "code",
+        "decided_by": "agreement"
+      }
+    ],
+    "document_notes": [
+      {
+        "line_id": "spare_parts_magnum:body:2.0",
+        "text": "Spare Parts Kit – Magnum Series Automatic Baggers",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:28.0",
+        "text": "All items from the Level 1 Kit are included, in addition to the following items.",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:3.0",
+        "text": "Level 1 and Level 2",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:54.0",
+        "text": "Part numbers:",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:55.0",
+        "text": "Level 1\t(970-000329)",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_magnum:body:56.0",
+        "text": "Level 2\t(970-000348)",
+        "label": "note"
+      }
+    ],
+    "decided_by": "agreement"
+  },
+  {
+    "kit_id": "items_included_in_kit_330",
+    "doc_id": "spare_parts_r1275",
+    "path": "docs/Rollbag Baggers/5 - Spare Parts Kits/Spare Parts Kit - R1275 - 25.docx",
+    "title": {
+      "text": "Items Included in Kit:\t\t\t\t\t\t\t\t\t\t$330",
+      "line_id": "spare_parts_r1275:body:4.0"
+    },
+    "applies_to": "R1275",
+    "applies_to_line_id": "spare_parts_r1275:body:2.0",
+    "machine_ids": [
+      "r1275_med"
+    ],
+    "machine_ids_decided_by": "human: Wes Teskey (delegated to Claude)",
+    "price_usd": 330,
+    "price_text": "$330",
+    "price_line_id": "spare_parts_r1275:body:4.0",
+    "lines": [
+      {
+        "line_id": "spare_parts_r1275:body:6.0",
+        "description": "Seal Pad, ¾” x 13.25”",
+        "part_number": "009841",
+        "source_line": "Seal Pad, ¾” x 13.25”\t\t009841",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:7.0",
+        "description": "Grip Tape, ¼”, 13.25”",
+        "part_number": "710036",
+        "source_line": "Grip Tape, ¼”, 13.25”\t\t710036",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:8.0",
+        "description": "Fuse, 5mm x 20mm, F6.3A",
+        "part_number": "216-13",
+        "source_line": "Fuse, 5mm x 20mm, F6.3A\t\t216-13",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:9.0",
+        "description": "Fuse, 5mm x 20mm, F3A",
+        "part_number": "216-161",
+        "source_line": "Fuse, 5mm x 20mm, F3A\t\t216-161",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:10.0",
+        "description": "Fuse, 5mm x 20mm, F4A",
+        "part_number": "216-6",
+        "source_line": "Fuse, 5mm x 20mm, F4A\t\t216-6",
+        "split_by": "code",
+        "decided_by": "agreement"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:11.0",
+        "description": "Fuse, 5mm x 20mm, F2.5A",
+        "part_number": "216-93",
+        "source_line": "Fuse, 5mm x 20mm, F2.5A\t\t216-93",
+        "split_by": "code",
+        "decided_by": "agreement"
+      }
+    ],
+    "document_notes": [
+      {
+        "line_id": "spare_parts_r1275:body:14.0",
+        "text": "Part number: (970-000173)",
+        "label": "note"
+      },
+      {
+        "line_id": "spare_parts_r1275:body:2.0",
+        "text": "Spare Parts Kit - R1275 Automatic Baggers",
+        "label": "note"
+      }
+    ],
+    "decided_by": "agreement"
+  }
+]
