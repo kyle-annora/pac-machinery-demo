@@ -4,10 +4,10 @@
   "type": "module",
   "scripts": {
     "start": "node server.mjs",
-    "test": "node tests/catalog-domain.test.mjs && node tests/explorer-domain.test.mjs && node --test tests/parent-navigation.test.mjs tests/sales-domain.test.mjs tests/sales-workspace.test.mjs tests/deal-explorer.test.mjs && node --test scripts/build-static.test.mjs",
+    "test": "node --test tests/*.test.mjs scripts/*.test.mjs",
     "build": "node scripts/build-static.mjs --base /pac-machinery-demo/ --out dist"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.13"
   }
 }

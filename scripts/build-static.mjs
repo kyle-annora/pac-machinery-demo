@@ -8,13 +8,17 @@ const markerName = '.pac-static-build.json';
 const textExtensions = new Set(['.html', '.js', '.css', '.json', '.svg']);
 const catalogFiles = ['overview.json', ...['machines', 'price_lines', 'narratives', 'media', 'commercial_terms', 'spare_parts', 'options'].map(name => `catalog/${name}.json`)];
 const manifestFields = ['run_id', 'status', 'signed_off', 'catalog_sha256'];
+const serverOnlySources = new Set(['src/catalog-admin.js']);
+const pitchRuntimeFiles = new Set(['pitch/index.html', 'pitch/pitch.js', 'pitch/runtime-config.js', 'pitch/pitch.css', 'pitch/refinement.css', 'pitch/content.json']);
+const serviceRequiredFor = ['shared workspace persistence', 'account permissions', 'customer review links and feedback', 'catalog administration', 'website inquiry submission'];
+const staticNotice = '<aside aria-label="Static preview notice" data-static-preview style="padding:10px 20px;background:#fff6cf;color:#34332d;border-bottom:1px solid #e7dca5;font:13px/1.5 system-ui,sans-serif">Static preview. Product browsing and local sample quotes are available. Shared customer review, account permissions, catalog administration and inquiry submission require the local service.</aside>';
 export const storageFamilies = Object.freeze([
   'annora.walkthrough.', 'annora.product-room.', 'annora.studio.',
   'annora.seller.work.', 'annora.question.selection.buyer.',
   'annora.exploration-handoff.', 'annora.evidence.', 'annora.onboarding.',
   'annora.drawing-preview.', 'annora.integration-example.', 'annora.prepared-product.',
   'annora.follow-up.demo.', 'annora.options.demo.', 'annora.impact.demo.',
-  'annora-explorer:', 'pac.rollbag.',
+  'annora-explorer:', 'pac.rollbag.', 'pac.website.', 'pac.customer.',
 ]);
 const digest = bytes => createHash('sha256').update(bytes).digest('hex');
 const inside = (parent, child) => child === parent || child.startsWith(parent + path.sep);
@@ -29,7 +33,9 @@ export function normalizeBase(value = '/') {
 export function relocateURLs(text, base) {
   if (base === '/') return text;
   // Rewrite only known root URL literals, never external URLs, model IDs or geometry.
-  return text.replace(/(["'`(])\/(explorer|source|src|assets)(?=[\/"'`?#)])/g, (_, delimiter, folder) => `${delimiter}${base}${folder}`);
+  return text
+    .replace(/(["'`(])\/(explorer|source|src|assets|website|pitch|api|review\.html)(?=[\/"'`?#)])/g, (_, delimiter, folder) => `${delimiter}${base}${folder}`)
+    .replace(/(["'`])\/#(?=(?:workspace|deal|quote|present|demo|reviews|catalog-admin|machines)(?:[\/"'`?#]|$))/g, (_, delimiter) => `${delimiter}${base}#`);
 }
 
 export function isolateStorage(text, namespace = 'pac-machinery-demo.') {
@@ -68,7 +74,8 @@ async function safeInput(source, relative) {
 
 async function prepareOutput(root, source, out) {
   if (inside(out, root) || inside(source, out) || inside(out, source)) throw new Error('Output cannot replace the project or catalog input.');
-  for (const name of ['src', 'assets', 'data', 'scripts', 'tests', 'outputs']) {
+  if (out === path.join(root, 'work')) throw new Error('Output must be separate from the work directory itself.');
+  for (const name of ['src', 'assets', 'website', 'pitch', 'server', 'work/runtime', 'data', 'scripts', 'tests', 'outputs']) {
     if (inside(path.join(root, name), out)) throw new Error(`Output must be separate from ${name}.`);
   }
   const stat = await existing(out);
@@ -109,7 +116,8 @@ export async function auditStaticSite(out, base) {
     const ext = path.extname(file);
     if (!['.html', '.js', '.css'].includes(ext)) continue;
     const text = await fs.readFile(file, 'utf8');
-    if (base !== '/' && /["'`(]\/(?:explorer|source|src|assets)(?=[\/"'`?#)])/.test(text)) errors.push({ file: relative, reason: 'unprefixed runtime URL' });
+    if (base !== '/' && /["'`(]\/(?:explorer|source|src|assets|website|pitch|api|review\.html)(?=[\/"'`?#)])/.test(text)) errors.push({ file: relative, reason: 'unprefixed runtime URL' });
+    if (base !== '/' && /["'`]\/#(?:workspace|deal|quote|present|demo|reviews|catalog-admin|machines)(?:[\/"'`?#]|$)/.test(text)) errors.push({ file: relative, reason: 'unprefixed application entry' });
     if (ext === '.html') {
       for (const match of text.matchAll(/(?:src|href)\s*=\s*["']([^"']+)["']/g)) await check(match[1], relative, 'html');
     } else {
@@ -151,14 +159,31 @@ export async function buildStatic({ root = projectRoot, source = process.env.ROL
     let output = bytes;
     if (relocate && textExtensions.has(path.extname(file))) {
       const text = bytes.toString('utf8'), relocated = relocateURLs(text, base);
-      const result = path.extname(file) === '.js' ? isolateStorage(relocated, storageNamespace) : relocated;
+      let result = path.extname(file) === '.js' ? isolateStorage(relocated, storageNamespace) : relocated;
+      if (relative === 'pitch/runtime-config.js') result += '\nwindow.PAC_PITCH_RUNTIME = Object.freeze({...window.PAC_PITCH_RUNTIME, staticPreview: true});\n';
+      if (['index.html', 'website/index.html', 'review.html'].includes(relative)) {
+        result = /<body\b[^>]*>/i.test(result) ? result.replace(/<body\b[^>]*>/i, match => match + staticNotice) : staticNotice + result;
+      }
       if (result !== relocated) storageIsolatedFiles.push(relative);
       if (text !== result) { output = Buffer.from(result); transformed.push(relative); }
     }
     await write(relative, output);
   }
   await copy(path.join(root, 'index.html'), 'index.html');
-  for (const file of await filesIn(path.join(root, 'src'))) await copy(file, path.relative(root, file).split(path.sep).join('/'));
+  if (await existing(path.join(root, 'NOTICE.txt'))) await copy(path.join(root, 'NOTICE.txt'), 'NOTICE.txt', false);
+  if (await existing(path.join(root, 'review.html'))) await copy(path.join(root, 'review.html'), 'review.html');
+  for (const file of await filesIn(path.join(root, 'src'))) {
+    const relative = path.relative(root, file).split(path.sep).join('/');
+    if (!serverOnlySources.has(relative)) await copy(file, relative);
+  }
+  if (await existing(path.join(root, 'website'))) for (const file of await filesIn(path.join(root, 'website'))) {
+    const relative = path.relative(root, file).split(path.sep).join('/');
+    if (relative !== 'website/build-data.mjs') await copy(file, relative);
+  }
+  if (await existing(path.join(root, 'pitch'))) for (const file of await filesIn(path.join(root, 'pitch'))) {
+    const relative = path.relative(root, file).split(path.sep).join('/');
+    if (pitchRuntimeFiles.has(relative) || relative.startsWith('pitch/assets/') || relative.startsWith('pitch/downloads/')) await copy(file, relative);
+  }
   for (const file of await filesIn(path.join(root, 'assets'))) {
     const relative = path.relative(path.join(root, 'assets'), file).split(path.sep).join('/');
     await copy(file, relative.startsWith('explorer/') ? relative : `assets/${relative}`);
@@ -174,6 +199,7 @@ export async function buildStatic({ root = projectRoot, source = process.env.ROL
   const audit = await auditStaticSite(out, base);
   const receipt = {
     builder: 'pac-static/1', base, catalogRun: originalManifest.run_id,
+    deliveryMode: 'static-preview', serviceRequiredFor,
     catalogManifest: { mode: 'runtime field projection', fields: manifestFields, originalUnmodified: true },
     browserStorage: { namespace: storageNamespace, families: storageFamilies, generatedFiles: storageIsolatedFiles.sort(), protocolUnchanged: 'annora.explorer/0.1-draft' },
     catalogByteIdenticalCopies: catalogCopies, relocatedTextFiles: transformed.sort(), audit,

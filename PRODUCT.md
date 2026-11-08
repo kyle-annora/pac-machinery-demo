@@ -14,14 +14,16 @@ PAC sales representatives configure standard machines and options, work with eng
 
 The user approved a complete connected demonstration on November 7, 2026: one deal contains alternative quotes, each with its own revisions, review, proposal and evidence. Monday starts with the customer proposal, then shows the workspace that produced it. All content is English. 3D Explorer feeds evidence into that same deal.
 
-The subsequent design correction makes Mr Winter the primary reference. Match its Workbench shell, compact quote management, tabbed configurator, numbered workflow and customer document-review layout while retaining PAC's branding and deal/alternative hierarchy.
+The latest user correction supersedes copying Mr Winter's appearance. WinQuote and MPI are capability and domain references. Architect a coherent sales application first, then customize its UI for PAC's product, users, brand and relevant competitors. The existing Winter-style release is a preserved functional baseline, not the visual target for the next build.
+
+The proposed product architecture is documented in `docs/product/ARCHITECTURE.md`. PAC is the first implementation; reusable domain boundaries are a recommendation, not a commitment to build a multi-tenant platform in this iteration. All product UI and delivery artifacts remain English.
 
 ## Evidence and constraints
 
 - The supplied catalog contains 13 Rollbag machine records and 97 canonical options. Existing catalog snapshots and compatibility logic remain authoritative for these records.
 - PAC's logo, blue/gold palette and actual product photographs are already bundled.
 - A verified PAC 3D model is unavailable. The bundled reference mechanism demonstrates interaction and must never be represented as PAC CAD or a machine-fit validation.
-- This repository is a static, browser-local demo on GitHub Pages. Role switching demonstrates workflow rules; it is not authentication or server authorization. CRM, SSO, email, signatures, payment and multi-user synchronization are not connected.
+- GitHub Pages provides a static, browser-local preview. The same repository also contains a Node/SQLite service with authenticated demo roles, durable saves, revision-bound customer links and server-enforced permissions. Those service capabilities are available when running the backend, not on GitHub Pages. PAC CRM, SSO, email, signatures and payment are not connected.
 - The customer in the staged proposal is fictional. Catalog prices are source-backed; any engineering labor rate or custom estimate is explicitly illustrative.
 
 ## Open decisions

@@ -1,66 +1,74 @@
-# PAC Machinery demo
+# PAC Website and Sales Workspace
 
-An English, proposal-first demonstration of PAC's sales workflow: one deal contains alternative quotes, reviewed revisions, customer feedback, a next action and captured 3D evidence.
+Two independently usable English-language products in one repository:
 
-The interface follows Mr Winter's Workbench: persistent sidebar and topbar, compact Deals/Quotes tables, category tabs in the quote editor, and a customer proposal with a separate feedback panel. PAC branding and the existing deal → alternative → revision model remain in place. Unapplied form edits survive tab changes and reload; they must be saved or discarded before review or issue.
+- **Website**: equipment discovery, 13 Rollbag product pages, solutions, photo/qualified 3D Explorer, resources and an independent inquiry receipt.
+- **Sales Workspace**: authenticated deals, quote alternatives, engineering and commercial review, immutable issued revisions, explicit proposal composition and recipient-scoped customer collaboration.
 
-[Open the customer proposal](https://kyle-annora.github.io/pac-machinery-demo/) · [Open the sales workspace](https://kyle-annora.github.io/pac-machinery-demo/#workspace)
+The outer Annora pitch explains the business value of each product. The Website does not create a Workspace deal or require its session. Customer proposals are outputs of the Workspace.
 
-## Monday walkthrough
+## GitHub Pages
 
-1. Present the staged customer proposal: R3200 standard loading ($33,060) and assisted loading ($40,810), both including the source-priced training line. These are alternatives under one deal, each starting at Rev 0.
-2. Open the sales workspace and the same deal: owner, scope, CRM reference, stage, comments and next action.
-3. Create a revision, configure options, request engineering work and enter hours/materials under the Engineering demo role.
-4. Open 3D Explorer from that deal, select a component, capture its actual view, review the evidence and attach it. Restore the saved view from the same deal.
-5. Complete the required reviews, issue the revised quote, then return to the proposal to review revision-bound comments and print the customer-facing snapshot.
+- [Website](https://kyle-annora.github.io/pac-machinery-demo/website/#/)
+- [Sales Workspace](https://kyle-annora.github.io/pac-machinery-demo/#workspace)
+- [Pitch](https://kyle-annora.github.io/pac-machinery-demo/pitch/?view=present#opportunity)
 
-See [the English presenter guide and PAC decision checklist](docs/MONDAY-DEMO.md). The original product catalog and standalone reference walkthrough remain available for supporting exploration; the main demo uses the connected deal workflow.
+These public entries are static demonstrations. Website browsing, Explorer and sample quotes work in the browser; workspace changes stay in that browser. Shared customer links, account permissions, catalog administration and inquiry submission require the Node service below. No local database, session, recipient link or inquiry is included in this public repository or the Pages build.
 
-The crank-slider is a licensed reference assembly, not PAC or R3200 CAD. Customer details, CRM references, approvals and the configurable $150/hour engineering rate are illustrative. PAC catalog prices come from the supplied November 6, 2026 snapshot and do not constitute a binding offer. No request, email, order or payment is sent.
+Workspace design follows the approved Mercury composition and Linear interaction details, with neutral text, PAC yellow and the PAC logo. Website uses a separate equipment-led layout and public content projection. WinQuote's visual language is not a design dependency.
 
 ## Run locally
 
-Requires Node.js 20 or newer. No dependency installation is needed.
+Requires Node.js **22.13 or newer** with `node:sqlite` (verified on Node 26). No dependency installation is needed.
 
 ```sh
 npm start
 ```
 
-Open the local URL printed by the server. The runtime catalog is included in `data/catalog`. Set `ROLLBAG_SOURCE` to use another compatible snapshot.
+- Website: `http://127.0.0.1:4361/website/`
+- Workspace: `http://127.0.0.1:4361/#workspace`
+- Customer review: a recipient-specific `/review.html#…` link created from a published proposal.
+- Pitch: run `python3 -m http.server 4362 --bind 127.0.0.1 --directory pitch`, then open `http://127.0.0.1:4362/?view=present#opportunity`.
+
+Local test accounts are `sales@pac.demo`, `engineering@pac.demo`, and `manager@pac.demo`, with default password `pac-demo-2026`. They have real server-enforced permissions but are development identities, not PAC SSO. `PAC_DEMO_PASSWORD` customizes passwords when a database is first created. The server binds to loopback only.
+
+The SQLite database is `work/runtime/pac.sqlite`. `PAC_DB_PATH` selects another database; `PORT` changes the port. Existing browser-local workspace records are preserved in browser storage, but are not silently imported as trusted server records.
+
+## Daily workflow
+
+1. Open a deal with a CRM reference; enter application scope, contacts and follow-up.
+2. Create or revise an alternative; configure options, required companions, engineering and special orders; explicitly save edits.
+3. Review the saved revision with the permitted account. Required review and pricing gaps block issue.
+4. Issue a frozen revision. Choose the exact alternatives/revisions in **Prepare customer proposal**, then publish.
+5. Create a recipient link for a fixed proposal version. Customer feedback and preference are saved to that version; preference is not acceptance.
+6. Start a revision from a change request. Earlier proposals retain their prices, scope and evidence.
+7. Inspect/capture a reference in the deal's Explorer. Attachments do not change pricing; review and issue them in a new proposal version.
+
+Catalog administration has a separate Manager draft/review/publish workflow. Publication changes prices for new quotes. Existing drafts require a reviewed repricing preview; issued revisions remain unchanged.
+
+## Persistence and access
+
+The service accepts typed commands with optimistic concurrency and retry identities. A save is acknowledged only after its transaction commits. Failed/conflicting edits remain recoverable. Customer endpoints expose only a public fixed-version projection, with recipient attribution, expiry and revocation. Internal engineering costs and approvals are excluded. Website inquiries have separate storage and do not create deals.
+
+See [service contracts](server/COMMANDS.md), [recovery](server/RECOVERY.md), and the [delivery plan](docs/product/PAC-DELIVERY-PLAN.md).
+
+## Verify and package
 
 ```sh
 npm test
 npm run build
 ```
 
-The build creates `dist/` for the `/pac-machinery-demo/` GitHub Pages path. The exporter can also accept explicit `--base`, `--out`, and `--source` arguments. It rewrites deployment paths in copied text files, preserves binary assets and licenses, and gives the hosted Explorer its own browser-storage namespace.
+The static build includes Website, Workspace and Pitch under `/pac-machinery-demo/`, with explicit static-preview messaging. Source is maintained on `main`; the verified `dist/` output is published through the `gh-pages` branch. GitHub Pages cannot run the SQLite service, authenticate accounts, submit inquiries or host shared recipient review. Run the Node service to demonstrate those capabilities.
 
-## Hosting and data
+Server code, runtime databases, source documents and development evidence are excluded from the static package. Runtime source catalog and licensed media remain included.
 
-`main` contains the source and prebuilt Explorer. `gh-pages` contains the static site, published from its root with `.nojekyll`. GitHub Pages serves the application without a server process.
+## Scope and remaining inputs
 
-Deals, quotes, issued revisions, comments and captured views are stored in the current browser. The public site has separate storage from localhost and the standalone Annora Explorer. Existing product drafts are retained. Workspace export provides a JSON backup. Cross-device synchronization, multi-user access, CRM integration, SSO, approval email, e-signature and payment processing are not connected. Demo role switching illustrates workflow rules and is not an authentication boundary.
+The crank-slider is a licensed reference assembly, not PAC/R3200 CAD. Sample customers, CRM references and engineering policy/rates are illustrative. Catalog prices come from supplied PAC source records; they are not a binding offer.
 
-The published catalog contains runtime product records and referenced media. Its manifest retains source identity and approval-status fields; extraction logs, internal source documents, local paths, exported customer drafts, and development evidence are excluded.
-
-## Workflow rules and verification
-
-The sales domain requires a deal reference before assigning quote numbers. Missing application information, unresolved pricing and required reviews block issuance. Commercial, scope and evidence edits invalidate reviews of the affected draft. Issued revisions are copied independently; editing requires a new revision. The customer proposal uses an explicit issued-snapshot projection that excludes internal labor/material/rate fields and internal comments. All source workspace data still lives in the same demo browser; this projection is not a server-enforced access boundary.
-
-Tests cover catalog constraints, review invalidation, pricing and role gates, immutable revisions, customer projection, comment/version binding, evidence ownership, reload retention, iframe origin/session validation, navigation and static deployment paths. Current rehearsal evidence is kept separately from the earlier discovery-demo baseline.
-
-The original discovery workflow was rehearsed at desktop and mobile sizes, including reference restoration, quote revisions, save/reopen and unsaved-edit protection. Its historical acceptance does not establish acceptance of subsequent sales-workspace changes.
-
-Explorer startup deadlines now preserve their remaining budget while the document is hidden or suspended. A terminal startup failure cannot later report readiness from a stale frame. The renderer still requires its actual first frame; ordinary commands and teardown retain their existing deadlines. The isolated Explorer verification passed 1,036 tests with one existing conditional skip, including 26 new startup regressions. This fixes the reproduced lifecycle failures; it does not establish that every earlier loading stall had the same cause. Route-aware Retry recovery remains available.
-
-PAC engineering, brand and commercial approval remain separate from this demo. The intended review establishes the first use case, required PAC assets, quotation ownership and pilot acceptance criteria.
-
-## Path 01 interface
-
-The product, requirements, configuration and proposal screens use a scoped PAC workspace style in `src/workspace.css`. Option rows keep price and selection controls aligned, while disclosures retain the full source description and conditions. Proposal pricing uses a semantic four-column table with a separate mobile layout and print rules.
-
-The current workspace follows Mr Winter's implementation, with PAC blue in the brand color slot and Source Sans 3 / JetBrains Mono typography. Earlier Programa, Ramp and Stripe studies are historical references for the original catalog screens. The current reference and adaptation decisions are recorded in [DESIGN.md](DESIGN.md). Explorer bundles remain unchanged; the host adapter uses the public capture/restore API.
+PAC CRM/number authority, SSO, email/approval notifications, the Website receiving channel, signature and payment providers are not connected. Inquiry confirmation states that it is stored locally and has not been emailed. General document uploads, legacy browser-record migration, full user administration and more advanced review routing remain separate delivery packages. See the [implementation receipt](docs/product/PAC-IMPLEMENTATION-RECEIPT.md) for verified paths and remaining work; the complete plan is not being represented as fully delivered.
 
 ## Attribution
 
-See [NOTICE.txt](NOTICE.txt) and the complete [Explorer license bundle](assets/explorer/LICENSES.txt). PAC product content and branding are not relicensed under the Explorer software license. The upstream Explorer and the reproducible integration changes are identified in `vendor/annora-explorer/`.
+See [NOTICE.txt](NOTICE.txt) and [Explorer licenses](assets/explorer/LICENSES.txt). PAC product content and branding are not relicensed under the Explorer software license. Upstream Explorer integration is retained in `vendor/annora-explorer/`.

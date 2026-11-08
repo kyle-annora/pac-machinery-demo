@@ -1,0 +1,41 @@
+{
+  "content_sha256": "4e9760d9b943af7d402246ae0517cd4541fad141f6a8a4a62c4de62e5fb07091",
+  "asset_sha256": {
+    "pitch/assets/current-proposal-content.png": "8a3e33357850225083c74df56c11eb07f0601fa136a539b27d961424df1dee39",
+    "pitch/assets/current-website.png": "fe0ef9bac89b60751eac02bebe66c38255d7aba2b24cbe4ce54817b26f92c8dd",
+    "pitch/assets/current-workspace.png": "6b2ae897c2b92bd7df0f38b033afbc69ffe2fc301ed6b00ecb6a57a49fc5a573",
+    "pitch/assets/customer-proposal.png": "0b2f3383c90c08c4a5fb000f0d114270992dc27aa8cdc79c7c4c5b4f8dac36ff",
+    "pitch/assets/pac-logo.png": "9a2384eb10abad987ae7803483a36f3ac0a581557d05eea1b15aae7482b8a195",
+    "pitch/assets/published-proposal.png": "9ed3b42c455b439fc7d349b40a828dbf6438cb6c08a0df729335c5989c0dfdf2",
+    "pitch/assets/saved-revision.png": "23380afadb4828209cef0d8502157f5dca962997eef9683345024f8a3a8011e8",
+    "pitch/assets/website-explorer.png": "37eb243ca73d1049c018fb74d8af9769610479bcab324676396bf5330b71167a",
+    "pitch/assets/website-home.png": "463b152a6fda930811c654a26e3d56d87e67d58cb47d12a81af1f0485d4562f4",
+    "pitch/assets/website-inquiry.png": "c76001acfac9e7b97139d185b58293081f3b87e8e4950c08a85f3db4a485f715"
+  },
+  "pdfs": [
+    {
+      "file": "pitch/downloads/annora-for-pac.pdf",
+      "pages": 7,
+      "text_characters": [
+        807,
+        1026,
+        1058,
+        1122,
+        1136,
+        1326,
+        1507
+      ],
+      "bytes": 2464917,
+      "sha256": "e198d7ef11a3248cbd0da42d2fe30b49bae73be0eed1f69eefba30f0bd0be27f"
+    },
+    {
+      "file": "pitch/downloads/pac-trial-brief.pdf",
+      "pages": 1,
+      "text_characters": [
+        1940
+      ],
+      "bytes": 35975,
+      "sha256": "7fa10cbc67ae93f88cae2c4176b080be25306a8be1284437037607a4b7626fbd"
+    }
+  ]
+}

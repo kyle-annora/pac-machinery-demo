@@ -89,6 +89,33 @@ test('view only offers evidence from the current deal and escapes customer text'
   assert.ok(!html.includes('Not a 3D reference'));
 });
 
+test('quote-scoped Explorer exposes one truthful return destination and names its target', () => {
+  const deal={id:'deal-demo-1',number:'D-001',title:'Hardware kits',quotes:[{id:'quote-demo-1',label:'Assisted loading',working:{revision:2,status:'draft'}}],evidence:[]};
+  const html=renderDealExplorer({deal,quoteId:'quote-demo-1',returnHash:'#quote/foreign-deal/foreign-quote'});
+  assert.match(html,/Return to quote/);assert.doesNotMatch(html,/Continue the quote|Back to deal/);
+  assert.match(html,/Assisted loading/);assert.match(html,/Rev 2/);assert.match(html,/Draft/);
+  assert.equal([...html.matchAll(/href="#quote\/deal-demo-1\/quote-demo-1(?:\/working)?"/g)].length,1);
+  assert.doesNotMatch(html,/foreign-deal|foreign-quote/,'the return destination cannot escape the evidence context');
+});
+
+test('deal-wide Explorer identifies all alternatives without pretending to return to a quote', () => {
+  const deal={id:'deal-demo-1',number:'D-001',title:'Hardware kits',quotes:[],evidence:[]};
+  const html=renderDealExplorer({deal,returnHash:'#quote/foreign-deal/foreign-quote'});
+  assert.match(html,/All alternatives/);assert.match(html,/Back to deal/);
+  assert.doesNotMatch(html,/Return to quote|Continue the quote/);
+  assert.equal([...html.matchAll(/href="#deal\/deal-demo-1"/g)].length,1);
+  assert.doesNotMatch(html,/foreign-deal|foreign-quote/);
+});
+
+test('Explorer on an issued quote explains the new-revision publication boundary', () => {
+  const deal={id:'deal-demo-1',number:'D-001',title:'Hardware kits',quotes:[{id:'quote-demo-1',label:'Assisted loading',working:{revision:1,status:'issued'}}],evidence:[]};
+  const before=JSON.stringify(deal),html=renderDealExplorer({deal,quoteId:'quote-demo-1'});
+  assert.match(html,/Assisted loading · Rev 1 · Issued/);
+  assert.match(html,/Create a new quote revision to include them in the customer proposal/);
+  assert.match(html,/Published proposal versions stay unchanged/);
+  assert.equal(JSON.stringify(deal),before,'exploring an issued quote does not create or mutate a revision');
+});
+
 test('starting motion from exploration retains the selected component for capture', async () => {
   const state = { model: { id: 'kinetic-01', revision: 'one' }, presentation: { mode: 'explore' }, navigation: { selectedId: 'connecting-rod' }, operation: { status: 'paused' } };
   const request = async (method, params) => {

@@ -18,3 +18,16 @@ Cumulative changes
 Actual rendered-frame readiness, renderer, model geometry, quote permissions and review/confirmation gates are unchanged. The startup fix corrects reproduced mechanisms; it does not establish a cause or universal fix for every historical visible cold-start stall. Native print lifecycle behavior still needs target-browser verification. No network delivery or real quotation is introduced.
 
 Verification for this source: npm run verify passed 1,036 tests, zero failures, one existing skip (1,037 total), with all three builds successful. Source/model/license provenance and final artifact hashes are in build-provenance.json. The prior public release remains preserved in PAC Git main 98f014a56695c0308c0460e4fb8fb09cacb2b757 and gh-pages 39039e3189b823789a96d2468122bc5162c99ed7. This task does not push or deploy.
+
+PAC homepage nameplate adapter (7 November 2026)
+The PAC app additionally owns assets/explorer/pac-entry.js and pac-branding.js.
+index.html uses pac-entry.js instead of directly starting the unchanged upstream
+explorer-DjmcOZCN.js bundle. The entry installs a small AssemblyScene adapter only
+for ?branding=pac, requested by Website's homepage. It applies the existing PAC
+logo as a textured nameplate on the reference mechanism's front deck; this is an
+illustrative brand treatment, not PAC CAD. The mesh follows the parent and is
+included in renderer captures. Original geometry, animations and licenses remain
+unchanged. Reapply these two local files and the index entry after upstream copies.
+The build-provenance.json describes the upstream artifact before this local adapter;
+it is not a checksum assertion for the adapted index or the added files. Verify
+export aliases, deck geometry and load/disposal hooks when upgrading the vendor.

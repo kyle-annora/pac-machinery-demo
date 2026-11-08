@@ -1,8 +1,16 @@
 .DS_Store
 .env
 .env.*
+.dev.vars*
 node_modules/
 work/
+output/
 outputs/
+tmp/
 dist/
 *.log
+*.sqlite*
+*.db
+.openai/
+.sites-runtime/
+.wrangler/
