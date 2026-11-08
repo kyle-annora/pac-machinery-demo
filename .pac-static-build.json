@@ -2,6 +2,14 @@
   "builder": "pac-static/1",
   "base": "/pac-machinery-demo/",
   "catalogRun": "20261107T025439Z-b89403",
+  "deliveryMode": "static-preview",
+  "serviceRequiredFor": [
+    "shared workspace persistence",
+    "account permissions",
+    "customer review links and feedback",
+    "catalog administration",
+    "website inquiry submission"
+  ],
   "catalogManifest": {
     "mode": "runtime field projection",
     "fields": [
@@ -30,7 +38,9 @@
       "annora.options.demo.",
       "annora.impact.demo.",
       "annora-explorer:",
-      "pac.rollbag."
+      "pac.rollbag.",
+      "pac.website.",
+      "pac.customer."
     ],
     "generatedFiles": [
       "explorer/assets/chrome-CY-rkB5I.js",
@@ -47,9 +57,15 @@
       "explorer/assets/studio-V03qXlMX.js",
       "explorer/assets/workspace-entry-BZTseFc7.js",
       "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
+      "index.html",
+      "pitch/runtime-config.js",
+      "review.html",
       "src/app.js",
+      "src/customer-review.js",
       "src/sales-workspace.js",
-      "src/workbench.js"
+      "src/workbench.js",
+      "website/app.js",
+      "website/index.html"
     ],
     "protocolUnchanged": "annora.explorer/0.1-draft"
   },
@@ -595,20 +611,34 @@
     "explorer/examples/embed/index.html",
     "explorer/index.html",
     "explorer/integrations/existing-viewer/assets/index-C0OVTVNG.js",
+    "explorer/pac-branding.js",
     "explorer/presentation-media/index.html",
     "explorer/product-room/index.html",
     "explorer/studio/index.html",
     "explorer/walkthrough/index.html",
     "index.html",
+    "pitch/runtime-config.js",
+    "review.html",
     "src/app.js",
     "src/catalog.js",
+    "src/customer-review.js",
     "src/deal-explorer.js",
+    "src/mercury-views.js",
     "src/sales-workspace.js",
-    "src/workbench.js"
+    "src/workbench.js",
+    "src/workspace-service.js",
+    "src/workspace-tools.js",
+    "website/app.js",
+    "website/data/products.json",
+    "website/explorer.js",
+    "website/home-explorer.js",
+    "website/home-video.js",
+    "website/index.html",
+    "website/model.js"
   ],
   "audit": {
-    "htmlReferences": 137,
-    "distinctResourcePaths": 382,
+    "htmlReferences": 163,
+    "distinctResourcePaths": 406,
     "errors": []
   },
   "files": [
@@ -618,39 +648,169 @@
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "assets/fonts/jetbrains-mono-latin-400.woff2",
-      "bytes": 21168,
-      "sha256": "14425ba9c695763c1547f48a206b7aa60350a33ae23de09f0407877f3fcd89eb"
+      "path": "assets/icons/feather/alert-circle.svg",
+      "bytes": 356,
+      "sha256": "867d6903fe5f36d652053b23a886760e5d50fbd3b8ae5f4f96b14710bf3a5d7d"
     },
     {
-      "path": "assets/fonts/jetbrains-mono-latin-500.woff2",
-      "bytes": 21832,
-      "sha256": "cb182feeed4d798ff6961d3c79f7026279448fca0676438aaecb21f3fc39553a"
+      "path": "assets/icons/feather/arrow-left.svg",
+      "bytes": 312,
+      "sha256": "0f365f8529b575e3ba9b073e9010af028291cf5d509c49685ea2c57ac872f6a8"
     },
     {
-      "path": "assets/fonts/jetbrains-mono-latin-600.woff2",
-      "bytes": 21860,
-      "sha256": "400c6bfda18d5d14acad1c15d6dcb9f8e13c015e7286317e0b9a482539bef147"
+      "path": "assets/icons/feather/arrow-right.svg",
+      "bytes": 314,
+      "sha256": "88f86f0b3d3067d7c9cbe2a646a05c64737bf6c8acf8fe5e13ab8922cfd413ca"
     },
     {
-      "path": "assets/fonts/jetbrains-mono-OFL.txt",
-      "bytes": 4399,
-      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+      "path": "assets/icons/feather/arrow-up-right.svg",
+      "bytes": 314,
+      "sha256": "c6997135a177f53a5b8fc2453c6be0639f0d94a375cd61d0dfa98b5c6ca39414"
     },
     {
-      "path": "assets/fonts/source-sans-3-latin-variable.woff2",
-      "bytes": 28740,
-      "sha256": "7a19a7027e125257d310c6dbd78ae3a30b5ea1e3794d60b12bb28227a003bfda"
+      "path": "assets/icons/feather/box.svg",
+      "bytes": 462,
+      "sha256": "ff0d406389a7808d14f071b79a2e771cea4e5ae90b81190e231dd94cd6f19160"
     },
     {
-      "path": "assets/fonts/source-sans-3-OFL.txt",
-      "bytes": 4486,
-      "sha256": "56af9b9c6715597e458284a474dc118a50a4150e9d547c70f7b4a33c3e6a9328"
+      "path": "assets/icons/feather/calendar.svg",
+      "bytes": 410,
+      "sha256": "bbbcdcd7899b110d246b8d8473eaebe140e6f5cba266a36d936f5aba6a402bec"
     },
     {
-      "path": "assets/fonts/sources.json",
-      "bytes": 1762,
-      "sha256": "218cd2b2f0c4a16345fe9cb1fe9cc9219560b164522b0640459040a439cebcd4"
+      "path": "assets/icons/feather/check.svg",
+      "bytes": 262,
+      "sha256": "2365fb3bc9fa566945a647f69580bd92d7fd25920b0e14114d8593edff66363a"
+    },
+    {
+      "path": "assets/icons/feather/chevron-down.svg",
+      "bytes": 269,
+      "sha256": "152ec8d72f48d669ce1d71b0f0a1e78d3c24346a2c5240a8761945841b94dc15"
+    },
+    {
+      "path": "assets/icons/feather/chevrons-left.svg",
+      "bytes": 318,
+      "sha256": "48ed20c6500192d0a33fc31df42f48a267490bcca2d3df85f2ce6ada3123969f"
+    },
+    {
+      "path": "assets/icons/feather/chevrons-right.svg",
+      "bytes": 318,
+      "sha256": "e98823d7c20c9150275044472b299a1311dbd23f08881abc7100664ed0b11ac5"
+    },
+    {
+      "path": "assets/icons/feather/circle.svg",
+      "bytes": 258,
+      "sha256": "0d2024cc6f6c9b76b5ce28488efc50f8b4272f7590b0efe762232038051191a5"
+    },
+    {
+      "path": "assets/icons/feather/clock.svg",
+      "bytes": 304,
+      "sha256": "cc63049c504b9516c9b84e68ddcb04f8b74db6015238fd73967857a96c95b27b"
+    },
+    {
+      "path": "assets/icons/feather/download.svg",
+      "bytes": 370,
+      "sha256": "79af84d1bdef36f5ac5ed4ebf02afe18f50ac6212e9b3867a7001eb7b5f13bf9"
+    },
+    {
+      "path": "assets/icons/feather/edit-2.svg",
+      "bytes": 291,
+      "sha256": "89ee5ca39c0b3d2f34a3e09c2ab808c814fde96cf2b4d0a37b7dc3a03b57e2a7"
+    },
+    {
+      "path": "assets/icons/feather/external-link.svg",
+      "bytes": 388,
+      "sha256": "a3fb50298000a40f383846a8968e6ada7709a1d8d9f945396e3131e074448fb5"
+    },
+    {
+      "path": "assets/icons/feather/file-text.svg",
+      "bytes": 473,
+      "sha256": "fc90eb41c92f511b6e4076673d2da28476f140e4614522e85511e8215f9f530a"
+    },
+    {
+      "path": "assets/icons/feather/help-circle.svg",
+      "bytes": 365,
+      "sha256": "d5828ed7c2074badfc895bf78e25bc301f6cfa22f32bdef994e40aec9a71e81c"
+    },
+    {
+      "path": "assets/icons/feather/info.svg",
+      "bytes": 347,
+      "sha256": "f49e14b5230773a871e3e945cc092ec4f33649e51345f0ccba5501128d1f77be"
+    },
+    {
+      "path": "assets/icons/feather/LICENSE",
+      "bytes": 1082,
+      "sha256": "308028e93fcf84972523cdf6e616f73168546b4953895f516d01287f16fe7bee"
+    },
+    {
+      "path": "assets/icons/feather/link.svg",
+      "bytes": 371,
+      "sha256": "4333685315826b15412c3332ece9bebfd3a48e97d44cf1f2bd8a4b52d19ac983"
+    },
+    {
+      "path": "assets/icons/feather/menu.svg",
+      "bytes": 346,
+      "sha256": "65a4dcec82e577962d23c5abd093929ac4fc4a9e6e5ba87779b19c585829b45f"
+    },
+    {
+      "path": "assets/icons/feather/message-square.svg",
+      "bytes": 305,
+      "sha256": "e246a6b2aaefce8a62b9bdd2d155d3b4923c3e48325eaef099d509a2d7bb4dd1"
+    },
+    {
+      "path": "assets/icons/feather/monitor.svg",
+      "bytes": 370,
+      "sha256": "89904afc140438b9d82aa26a0f0518bf74d45382054e2ae8bc484ad5829fa046"
+    },
+    {
+      "path": "assets/icons/feather/more-horizontal.svg",
+      "bytes": 343,
+      "sha256": "81a78ac06109da3597d0ee8ce083cd9673c7cf4e0ee2789cedf2836f25365188"
+    },
+    {
+      "path": "assets/icons/feather/plus.svg",
+      "bytes": 304,
+      "sha256": "bbdd3b2aa207053acc46a5a180b94498ee770796be9980191ef8fa8f8b7552f5"
+    },
+    {
+      "path": "assets/icons/feather/save.svg",
+      "bytes": 392,
+      "sha256": "84151475e6f922bb2282b86c5f8e8811d0b3e2522eef2518ae60fd7af304dc88"
+    },
+    {
+      "path": "assets/icons/feather/search.svg",
+      "bytes": 308,
+      "sha256": "24e3b3971d3fddce7a25b26ca41d3f959ffca737af076ceb653e80d788ab5648"
+    },
+    {
+      "path": "assets/icons/feather/sliders.svg",
+      "bytes": 611,
+      "sha256": "fb55324aa009d120b37ae002e909cdf931f30366c98b95fe2dd4b1b4bcbb675c"
+    },
+    {
+      "path": "assets/icons/feather/SOURCE.txt",
+      "bytes": 190,
+      "sha256": "e95ba163df3266f9d2ce784a1ca0f25981cbf4ede1f5abac4153daae076d0cd2"
+    },
+    {
+      "path": "assets/icons/feather/tag.svg",
+      "bytes": 355,
+      "sha256": "90abba3f5d648f98ec5df1f24d40e548377af21f213c5c580352fa9251ba6bf0"
+    },
+    {
+      "path": "assets/icons/feather/trash-2.svg",
+      "bytes": 448,
+      "sha256": "aecd97d08f4133f04d0b9c6614fd19ab9044b6c236a094a3f53213c115a21795"
+    },
+    {
+      "path": "assets/icons/feather/user.svg",
+      "bytes": 313,
+      "sha256": "7c7f08d9c49328e9e469915c0514a89fcdf462f7a56c7c7ee9617cb0d59e2b19"
+    },
+    {
+      "path": "assets/icons/feather/x.svg",
+      "bytes": 299,
+      "sha256": "891da901166c26a96c1bdc1d9be6415a856a722156fc548672629d564b549941"
     },
     {
       "path": "assets/pac-machinery-logo.png",
@@ -2649,8 +2809,8 @@
     },
     {
       "path": "explorer/index.html",
-      "bytes": 24989,
-      "sha256": "b35e425b2bf9461b7c2c59efd2d30273daef87f20877917174d5e82957339ce7"
+      "bytes": 24974,
+      "sha256": "3669bbb9b912c53b4c5f1340e6a97895f167b0412427d194b7303a5ac25444b2"
     },
     {
       "path": "explorer/integration-kit/annora-integration-kit-0.1.0.tgz",
@@ -2708,6 +2868,21 @@
       "sha256": "2ebb982e09d3c3a0643e363de8a881b8aaca09e07e95b56bfc06004919af324f"
     },
     {
+      "path": "explorer/pac-branding.js",
+      "bytes": 3249,
+      "sha256": "6a7f2ec991bf0284011814ffb742470568234f38f8486a8ba65a0461ff75bfd7"
+    },
+    {
+      "path": "explorer/pac-entry.js",
+      "bytes": 842,
+      "sha256": "5e5a4a7c4cb5243f81f1ccfa635605bb21b48045df4d9ca156c32b8939db95a5"
+    },
+    {
+      "path": "explorer/pac-website.css",
+      "bytes": 997,
+      "sha256": "2fffc69ed24790134af687bb7da18be9d9db0b209dfe3a7ce27231fd35bcb048"
+    },
+    {
       "path": "explorer/presentation-media/index.html",
       "bytes": 3978,
       "sha256": "7eaec7d8259388d55771b0ce2e946b5f09abd21c962d7e1b774d720330b0be2c"
@@ -2729,8 +2904,148 @@
     },
     {
       "path": "index.html",
-      "bytes": 877,
-      "sha256": "6eb555033aeb401e548c506a365039afbd7ea206c70c2bb112864913d41140f0"
+      "bytes": 1798,
+      "sha256": "f94675bdffbab37b8f981e80b40ac5804498c86520a03256b2b8d88fea637e2f"
+    },
+    {
+      "path": "NOTICE.txt",
+      "bytes": 1916,
+      "sha256": "86d68404ae454c24f0b494419239644e58af297ee0a863b807a41168df69927e"
+    },
+    {
+      "path": "pitch/assets/annora.svg",
+      "bytes": 8572,
+      "sha256": "cf6f929177233fe13691e27e455bfad044bc38ad5396ce447381ead27efd027e"
+    },
+    {
+      "path": "pitch/assets/archivo.woff2",
+      "bytes": 34940,
+      "sha256": "7150c0ec5ad356453013d11affec1fbab95de0dd2dcecb043b4f1cb7f87c4ba4"
+    },
+    {
+      "path": "pitch/assets/current-proposal-content.png",
+      "bytes": 39866,
+      "sha256": "8a3e33357850225083c74df56c11eb07f0601fa136a539b27d961424df1dee39"
+    },
+    {
+      "path": "pitch/assets/current-website.png",
+      "bytes": 93696,
+      "sha256": "fe0ef9bac89b60751eac02bebe66c38255d7aba2b24cbe4ce54817b26f92c8dd"
+    },
+    {
+      "path": "pitch/assets/current-workspace.png",
+      "bytes": 92352,
+      "sha256": "6b2ae897c2b92bd7df0f38b033afbc69ffe2fc301ed6b00ecb6a57a49fc5a573"
+    },
+    {
+      "path": "pitch/assets/customer-proposal.png",
+      "bytes": 62811,
+      "sha256": "0b2f3383c90c08c4a5fb000f0d114270992dc27aa8cdc79c7c4c5b4f8dac36ff"
+    },
+    {
+      "path": "pitch/assets/fonts/Archivo-Bold.ttf",
+      "bytes": 121396,
+      "sha256": "ec35c66bc42b06a73aeaf895b5326e69cf1f94563caa2beab904fc12cc9a2d2f"
+    },
+    {
+      "path": "pitch/assets/fonts/Archivo-Medium.ttf",
+      "bytes": 121548,
+      "sha256": "bca7dc697e7b851239c90b98f367ed876307a96bfbe5b2561b78652327d8305b"
+    },
+    {
+      "path": "pitch/assets/fonts/Archivo-OFL.txt",
+      "bytes": 4388,
+      "sha256": "108b4e57c9c796d3d38d0428ca7ee39de47ad93187302718d9b2d8864b9b716b"
+    },
+    {
+      "path": "pitch/assets/fonts/Archivo-Regular.ttf",
+      "bytes": 121500,
+      "sha256": "30185d32daad255723528fee2e9064179661332bd0f2aa31bdebd3720b5ada3e"
+    },
+    {
+      "path": "pitch/assets/pac-logo.png",
+      "bytes": 2931,
+      "sha256": "9a2384eb10abad987ae7803483a36f3ac0a581557d05eea1b15aae7482b8a195"
+    },
+    {
+      "path": "pitch/assets/published-proposal.png",
+      "bytes": 72539,
+      "sha256": "9ed3b42c455b439fc7d349b40a828dbf6438cb6c08a0df729335c5989c0dfdf2"
+    },
+    {
+      "path": "pitch/assets/rollbag-r3200.jpg",
+      "bytes": 46635,
+      "sha256": "877f3a8a815e7c9e84a78b3d905b9c0c027de824e79702a1d72d1991f1abc3e7"
+    },
+    {
+      "path": "pitch/assets/saved-revision.png",
+      "bytes": 85548,
+      "sha256": "23380afadb4828209cef0d8502157f5dca962997eef9683345024f8a3a8011e8"
+    },
+    {
+      "path": "pitch/assets/website-explorer.png",
+      "bytes": 70276,
+      "sha256": "37eb243ca73d1049c018fb74d8af9769610479bcab324676396bf5330b71167a"
+    },
+    {
+      "path": "pitch/assets/website-home.png",
+      "bytes": 112042,
+      "sha256": "463b152a6fda930811c654a26e3d56d87e67d58cb47d12a81af1f0485d4562f4"
+    },
+    {
+      "path": "pitch/assets/website-inquiry.png",
+      "bytes": 86518,
+      "sha256": "c76001acfac9e7b97139d185b58293081f3b87e8e4950c08a85f3db4a485f715"
+    },
+    {
+      "path": "pitch/content.json",
+      "bytes": 14399,
+      "sha256": "4e9760d9b943af7d402246ae0517cd4541fad141f6a8a4a62c4de62e5fb07091"
+    },
+    {
+      "path": "pitch/downloads/annora-for-pac.pdf",
+      "bytes": 2464917,
+      "sha256": "e198d7ef11a3248cbd0da42d2fe30b49bae73be0eed1f69eefba30f0bd0be27f"
+    },
+    {
+      "path": "pitch/downloads/manifest.json",
+      "bytes": 1777,
+      "sha256": "348d2bfb2a9291063bd74fb470228176885b4679807fc6f3d84531460e11088f"
+    },
+    {
+      "path": "pitch/downloads/pac-trial-brief.pdf",
+      "bytes": 35975,
+      "sha256": "7fa10cbc67ae93f88cae2c4176b080be25306a8be1284437037607a4b7626fbd"
+    },
+    {
+      "path": "pitch/index.html",
+      "bytes": 2963,
+      "sha256": "4b0c0a4939291b61ea250e5a520b2aae418c319666a22d649763000193fd5fe3"
+    },
+    {
+      "path": "pitch/pitch.css",
+      "bytes": 20607,
+      "sha256": "3ea4758d92101cbf18402b70c9a61d1bea27e7a34d1fe73f1fea187c1f315c96"
+    },
+    {
+      "path": "pitch/pitch.js",
+      "bytes": 14674,
+      "sha256": "b81fabc68fd8bc2f5fa7d0a4e78f0208f8434673b4310078aef49ed7e41f2c44"
+    },
+    {
+      "path": "pitch/refinement.css",
+      "bytes": 9530,
+      "sha256": "fd909d333e3ed4f39ed14e48faf81badfd521a57260322366b06e4bc293c2494"
+    },
+    {
+      "path": "pitch/runtime-config.js",
+      "bytes": 559,
+      "sha256": "a5a260ee7191504d9e72fd03792b903be60cb1321a31cdef15a067bef4c75c43"
+    },
+    {
+      "path": "review.html",
+      "bytes": 1102,
+      "sha256": "aabbc130ea16940ec11eaea8417029b7ec311ba683ca1d79b9bc910c09f2f76a"
     },
     {
       "path": "source/catalog/commercial_terms.json",
@@ -3383,9 +3698,24 @@
       "sha256": "88836415855fc9e38b833a85df8c5c8e461c52aae895382128cf9819629f79df"
     },
     {
+      "path": "src/app-shell.css",
+      "bytes": 13741,
+      "sha256": "2fc017599837e8cba949716212f98fe110ba80930aaacf006ca19b0fda3967f3"
+    },
+    {
       "path": "src/app.js",
-      "bytes": 55619,
-      "sha256": "22d75cddc9c58a3324e29a5a4368f9e2bd3c2eb21a4429b82e8990cab5d8e11c"
+      "bytes": 60201,
+      "sha256": "9868a1be839fc03242da5f643ddda313ec35ee234caf2aeee118a35ba0bb2877"
+    },
+    {
+      "path": "src/application-intake.css",
+      "bytes": 3500,
+      "sha256": "3752c43e63c3ff1ae4dbdecf0fee0ff800c78d635cadc04e824cf4e3f0544fa6"
+    },
+    {
+      "path": "src/application-intake.js",
+      "bytes": 17169,
+      "sha256": "4224f88164d5d1326dd960954eb6306b05f5050d82e7fc14a1ffa823a15ed013"
     },
     {
       "path": "src/catalog.js",
@@ -3393,9 +3723,19 @@
       "sha256": "09661a120f8e2a79a1f8df42f5dc083a9e06bc413bb2d98257a2a06a5bf8f417"
     },
     {
+      "path": "src/customer-review.css",
+      "bytes": 27805,
+      "sha256": "dc1750568cec27341068654c08f4532ebb61f8f315ab16c9fbacba3edf75aa23"
+    },
+    {
+      "path": "src/customer-review.js",
+      "bytes": 32717,
+      "sha256": "9b35b26d903667f005ed13a0fb2c4e4b5b2e22b9f4c14bfbe6d167623a2946a0"
+    },
+    {
       "path": "src/deal-explorer.js",
-      "bytes": 21996,
-      "sha256": "e7001adff31a0675b666f7e2ffaba60aac7284106be9c81d1b76c61d17edba57"
+      "bytes": 23305,
+      "sha256": "af42df3586de585124fdfba1de771e5081851893b53106d4dbab97b221c0c850"
     },
     {
       "path": "src/explorer.js",
@@ -3403,14 +3743,49 @@
       "sha256": "95f46f863b33dd694200f5a8c3c38a7a825d39764a543e3394cf2ee91c221590"
     },
     {
+      "path": "src/mercury-views.js",
+      "bytes": 23308,
+      "sha256": "8846042a6f7b959fa08e2c9cd30e46139c91ce64345a8f4c0ecfa1560c7b19ab"
+    },
+    {
+      "path": "src/mercury-workspace.css",
+      "bytes": 56852,
+      "sha256": "37bf75dc426c57f78973a01550c9a5b21556dab1ea22216c7fd2320ec19669d2"
+    },
+    {
+      "path": "src/pac-product.css",
+      "bytes": 42056,
+      "sha256": "d530e90c4e76baf130260269d20e3b0315c533eee1bfb35af1d7a482a479e4a8"
+    },
+    {
+      "path": "src/proposal-comparison.js",
+      "bytes": 5623,
+      "sha256": "7776c54bbe805712d889a75d8d76625463889726669e6c9250a3ef5f2c174192"
+    },
+    {
+      "path": "src/proposal-print.css",
+      "bytes": 11108,
+      "sha256": "2b12fff95f34f703e888d827080a0c81de3b97b844146f2fc7ba0c27709784ba"
+    },
+    {
+      "path": "src/proposal-resources.js",
+      "bytes": 4581,
+      "sha256": "a7f2f5a43d9fef18255b3b52ff171d48d0eb4044b351dc7a84b490398fe71f38"
+    },
+    {
+      "path": "src/quote-edit-session.js",
+      "bytes": 2861,
+      "sha256": "045541a481bc513a89dc8edb4be24beeba6bcad3b3bd2f43f0313d3756ffa0a3"
+    },
+    {
       "path": "src/sales-domain.js",
-      "bytes": 33239,
-      "sha256": "e61060307ecbf98dd92cdb99768109b4655f083d7698f66df0c87606c90933c8"
+      "bytes": 73985,
+      "sha256": "f91a73e4b916b214ec6725a1bf0deaf1566eca2bca735eb8c257dbc8b8f1b745"
     },
     {
       "path": "src/sales-workspace.js",
-      "bytes": 84082,
-      "sha256": "bb7722a24d8b34fa5d3bf4da439e5a51c915ecd4e4d8a08f62b1871f4bbe27e3"
+      "bytes": 145656,
+      "sha256": "5c8aed785d290e9a1cce6bed5d76217c56214f0506956a595963239a8724a991"
     },
     {
       "path": "src/sales.css",
@@ -3418,24 +3793,354 @@
       "sha256": "62437a2f84b3f26892a3a8e2efb47837d785c6ea8b83a9e3b164b25cb7db62de"
     },
     {
+      "path": "src/service-workspace.css",
+      "bytes": 5869,
+      "sha256": "305bb58e932dcc6dbabc4f5987a0dcd39290ef6b1c27e39392b97a259f91e0d3"
+    },
+    {
       "path": "src/style.css",
       "bytes": 63254,
       "sha256": "dfbe38f4ef87c5f8c16f316d898dd46fc954e747bf3c4cbda4dc779d91f78e56"
     },
     {
-      "path": "src/winter.css",
-      "bytes": 45403,
-      "sha256": "cd3202ca9c2f6667b14c7f9295c8e9a89906ada2449dfbe781e28185bdbc9f9b"
+      "path": "src/workbench.js",
+      "bytes": 14185,
+      "sha256": "ef3fce6025cc7993cca766f05320bdc60f28e57c75c72e19f33acfce080bc6ea"
     },
     {
-      "path": "src/workbench.js",
-      "bytes": 10974,
-      "sha256": "2b26fe6f94b5e564baccecfbad4678cb89544d887f54871576988adf1c56fa7f"
+      "path": "src/workspace-persistence.js",
+      "bytes": 2344,
+      "sha256": "042911a10fdbdbf02234567f914acaa5f5069190874985583e0cb62880ab0437"
+    },
+    {
+      "path": "src/workspace-review-context.js",
+      "bytes": 1929,
+      "sha256": "0cc8c59a0392ff860198f470698c16aac606799745168d3764dc63fbc6c13210"
+    },
+    {
+      "path": "src/workspace-service.js",
+      "bytes": 3935,
+      "sha256": "657351a04c8d35d50747ac2e37baf9e749e952d1a3aef6c0de3e16b7d7fc2193"
+    },
+    {
+      "path": "src/workspace-tools.css",
+      "bytes": 11373,
+      "sha256": "9ffc7d95177d07b8f41ef1b3953225aa444e127c850a6d4f179f9ecd4997603e"
+    },
+    {
+      "path": "src/workspace-tools.js",
+      "bytes": 31873,
+      "sha256": "0518b772aeb553e59f791b947004236428af02538cd64894be9ea78f42ae2c71"
     },
     {
       "path": "src/workspace.css",
       "bytes": 35081,
       "sha256": "e8dfb1554c85a2a054c96c32f988a8bf389710bb3dbfd4422071e65e9ee61dfc"
+    },
+    {
+      "path": "website/app.js",
+      "bytes": 62481,
+      "sha256": "cbdfc8486aa9b8603655a3f8f40a291b56ec3c3f4c4e2f02ac99287ba0899d5f"
+    },
+    {
+      "path": "website/assets/fonts/roboto-latin-900-italic.woff2",
+      "bytes": 18168,
+      "sha256": "644b04e5e8ffb79f4b23a8aaa07a92c3ccf5a3cbc99f9f159f82137275b33019"
+    },
+    {
+      "path": "website/assets/fonts/roboto-latin-normal.woff2",
+      "bytes": 37520,
+      "sha256": "0a44e0bb6ba5c8537e8814c148ef7755f1bce12112361231f595ecc584a18d7a"
+    },
+    {
+      "path": "website/assets/fonts/Roboto-OFL.txt",
+      "bytes": 4394,
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41"
+    },
+    {
+      "path": "website/assets/icons/alert-circle.svg",
+      "bytes": 356,
+      "sha256": "867d6903fe5f36d652053b23a886760e5d50fbd3b8ae5f4f96b14710bf3a5d7d"
+    },
+    {
+      "path": "website/assets/icons/arrow-left.svg",
+      "bytes": 312,
+      "sha256": "0f365f8529b575e3ba9b073e9010af028291cf5d509c49685ea2c57ac872f6a8"
+    },
+    {
+      "path": "website/assets/icons/arrow-right.svg",
+      "bytes": 314,
+      "sha256": "88f86f0b3d3067d7c9cbe2a646a05c64737bf6c8acf8fe5e13ab8922cfd413ca"
+    },
+    {
+      "path": "website/assets/icons/arrow-up-right.svg",
+      "bytes": 314,
+      "sha256": "c6997135a177f53a5b8fc2453c6be0639f0d94a375cd61d0dfa98b5c6ca39414"
+    },
+    {
+      "path": "website/assets/icons/box.svg",
+      "bytes": 462,
+      "sha256": "ff0d406389a7808d14f071b79a2e771cea4e5ae90b81190e231dd94cd6f19160"
+    },
+    {
+      "path": "website/assets/icons/calendar.svg",
+      "bytes": 410,
+      "sha256": "bbbcdcd7899b110d246b8d8473eaebe140e6f5cba266a36d936f5aba6a402bec"
+    },
+    {
+      "path": "website/assets/icons/check.svg",
+      "bytes": 262,
+      "sha256": "2365fb3bc9fa566945a647f69580bd92d7fd25920b0e14114d8593edff66363a"
+    },
+    {
+      "path": "website/assets/icons/chevron-down.svg",
+      "bytes": 269,
+      "sha256": "152ec8d72f48d669ce1d71b0f0a1e78d3c24346a2c5240a8761945841b94dc15"
+    },
+    {
+      "path": "website/assets/icons/chevron-right.svg",
+      "bytes": 270,
+      "sha256": "80459c677f0bbf72b394c9985b2be27266bb561c4a610f5408e7aaa1492effc1"
+    },
+    {
+      "path": "website/assets/icons/chevrons-left.svg",
+      "bytes": 318,
+      "sha256": "48ed20c6500192d0a33fc31df42f48a267490bcca2d3df85f2ce6ada3123969f"
+    },
+    {
+      "path": "website/assets/icons/chevrons-right.svg",
+      "bytes": 318,
+      "sha256": "e98823d7c20c9150275044472b299a1311dbd23f08881abc7100664ed0b11ac5"
+    },
+    {
+      "path": "website/assets/icons/circle.svg",
+      "bytes": 258,
+      "sha256": "0d2024cc6f6c9b76b5ce28488efc50f8b4272f7590b0efe762232038051191a5"
+    },
+    {
+      "path": "website/assets/icons/clock.svg",
+      "bytes": 304,
+      "sha256": "cc63049c504b9516c9b84e68ddcb04f8b74db6015238fd73967857a96c95b27b"
+    },
+    {
+      "path": "website/assets/icons/download.svg",
+      "bytes": 370,
+      "sha256": "79af84d1bdef36f5ac5ed4ebf02afe18f50ac6212e9b3867a7001eb7b5f13bf9"
+    },
+    {
+      "path": "website/assets/icons/edit-2.svg",
+      "bytes": 291,
+      "sha256": "89ee5ca39c0b3d2f34a3e09c2ab808c814fde96cf2b4d0a37b7dc3a03b57e2a7"
+    },
+    {
+      "path": "website/assets/icons/external-link.svg",
+      "bytes": 388,
+      "sha256": "a3fb50298000a40f383846a8968e6ada7709a1d8d9f945396e3131e074448fb5"
+    },
+    {
+      "path": "website/assets/icons/file-text.svg",
+      "bytes": 473,
+      "sha256": "fc90eb41c92f511b6e4076673d2da28476f140e4614522e85511e8215f9f530a"
+    },
+    {
+      "path": "website/assets/icons/help-circle.svg",
+      "bytes": 365,
+      "sha256": "d5828ed7c2074badfc895bf78e25bc301f6cfa22f32bdef994e40aec9a71e81c"
+    },
+    {
+      "path": "website/assets/icons/info.svg",
+      "bytes": 347,
+      "sha256": "f49e14b5230773a871e3e945cc092ec4f33649e51345f0ccba5501128d1f77be"
+    },
+    {
+      "path": "website/assets/icons/LICENSE",
+      "bytes": 1082,
+      "sha256": "308028e93fcf84972523cdf6e616f73168546b4953895f516d01287f16fe7bee"
+    },
+    {
+      "path": "website/assets/icons/link.svg",
+      "bytes": 371,
+      "sha256": "4333685315826b15412c3332ece9bebfd3a48e97d44cf1f2bd8a4b52d19ac983"
+    },
+    {
+      "path": "website/assets/icons/maximize-2.svg",
+      "bytes": 400,
+      "sha256": "299f2f3046bebc37d43427a2f797e95a8fa5c4301e4421291bf0e77fd7806efc"
+    },
+    {
+      "path": "website/assets/icons/menu.svg",
+      "bytes": 346,
+      "sha256": "65a4dcec82e577962d23c5abd093929ac4fc4a9e6e5ba87779b19c585829b45f"
+    },
+    {
+      "path": "website/assets/icons/message-square.svg",
+      "bytes": 305,
+      "sha256": "e246a6b2aaefce8a62b9bdd2d155d3b4923c3e48325eaef099d509a2d7bb4dd1"
+    },
+    {
+      "path": "website/assets/icons/minus.svg",
+      "bytes": 261,
+      "sha256": "ff3bc84553f2be35046def5daf0f95e9fb7d5645c722024bbec0c2428e3775a4"
+    },
+    {
+      "path": "website/assets/icons/monitor.svg",
+      "bytes": 370,
+      "sha256": "89904afc140438b9d82aa26a0f0518bf74d45382054e2ae8bc484ad5829fa046"
+    },
+    {
+      "path": "website/assets/icons/more-horizontal.svg",
+      "bytes": 343,
+      "sha256": "81a78ac06109da3597d0ee8ce083cd9673c7cf4e0ee2789cedf2836f25365188"
+    },
+    {
+      "path": "website/assets/icons/plus.svg",
+      "bytes": 304,
+      "sha256": "bbdd3b2aa207053acc46a5a180b94498ee770796be9980191ef8fa8f8b7552f5"
+    },
+    {
+      "path": "website/assets/icons/save.svg",
+      "bytes": 392,
+      "sha256": "84151475e6f922bb2282b86c5f8e8811d0b3e2522eef2518ae60fd7af304dc88"
+    },
+    {
+      "path": "website/assets/icons/search.svg",
+      "bytes": 308,
+      "sha256": "24e3b3971d3fddce7a25b26ca41d3f959ffca737af076ceb653e80d788ab5648"
+    },
+    {
+      "path": "website/assets/icons/sliders.svg",
+      "bytes": 611,
+      "sha256": "fb55324aa009d120b37ae002e909cdf931f30366c98b95fe2dd4b1b4bcbb675c"
+    },
+    {
+      "path": "website/assets/icons/tag.svg",
+      "bytes": 355,
+      "sha256": "90abba3f5d648f98ec5df1f24d40e548377af21f213c5c580352fa9251ba6bf0"
+    },
+    {
+      "path": "website/assets/icons/trash-2.svg",
+      "bytes": 448,
+      "sha256": "aecd97d08f4133f04d0b9c6614fd19ab9044b6c236a094a3f53213c115a21795"
+    },
+    {
+      "path": "website/assets/icons/user.svg",
+      "bytes": 313,
+      "sha256": "7c7f08d9c49328e9e469915c0514a89fcdf462f7a56c7c7ee9617cb0d59e2b19"
+    },
+    {
+      "path": "website/assets/icons/x.svg",
+      "bytes": 299,
+      "sha256": "891da901166c26a96c1bdc1d9be6415a856a722156fc548672629d564b549941"
+    },
+    {
+      "path": "website/assets/manrope-400.ttf",
+      "bytes": 96200,
+      "sha256": "ed335894f8d954263675f7e457bf657374d8b7be629be4dc43aef97c309ad3ae"
+    },
+    {
+      "path": "website/assets/manrope-500.ttf",
+      "bytes": 96300,
+      "sha256": "437dc9f921739a6893128fa4dfc299424951148475815a9a213a46457878c42b"
+    },
+    {
+      "path": "website/assets/manrope-600.ttf",
+      "bytes": 96348,
+      "sha256": "68ed4be49ec7d32f07b42f9232dc01ca1df7a77be1d9b0731aac74db58235f34"
+    },
+    {
+      "path": "website/assets/manrope-700.ttf",
+      "bytes": 96188,
+      "sha256": "ea1f264039fed13fd36e6d6f49fcae4fe7007def02cf2972b5c7f6d6f1349d06"
+    },
+    {
+      "path": "website/assets/manrope-800.ttf",
+      "bytes": 96816,
+      "sha256": "a8291b05b2732801abdbbb6d06866c57431c3b990638462423e692151b5e0895"
+    },
+    {
+      "path": "website/assets/Manrope-OFL.txt",
+      "bytes": 4387,
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b"
+    },
+    {
+      "path": "website/assets/manrope-source.css",
+      "bytes": 1090,
+      "sha256": "97a5dab6daaf8e2b1756b46da85af7512d97b111b8729ed3451ea39adcdd3d9e"
+    },
+    {
+      "path": "website/assets/r3200-studio-v2.png",
+      "bytes": 1216995,
+      "sha256": "b38e368a4b772610393f3fec78129c3672a69a0a4df04fce3c4a19d6786e4c08"
+    },
+    {
+      "path": "website/content.js",
+      "bytes": 16762,
+      "sha256": "4627f171cdc53dcdc0cd8613bf4e5a89a594dcf3173f3e7635308e20c77a846a"
+    },
+    {
+      "path": "website/data/products.json",
+      "bytes": 120538,
+      "sha256": "ae87450ee032e26e5efa46928e51df3cc7729cb3b2fa95b83e8011d1533a3da2"
+    },
+    {
+      "path": "website/design-iteration.css",
+      "bytes": 16179,
+      "sha256": "5f8e69ef09a2cbb39729f1c258b5c596e5d4e8585311925e4213ff24fc5d52c0"
+    },
+    {
+      "path": "website/explorer.js",
+      "bytes": 13260,
+      "sha256": "8ae2a87bde98cc4ba590bbf3e57f80b1308949737894ddff253bb169dab26908"
+    },
+    {
+      "path": "website/hardware-home.css",
+      "bytes": 26878,
+      "sha256": "c606135818d162bcd2aa6310f5028631973dfe1b758525f2b64de122243655d3"
+    },
+    {
+      "path": "website/home-explorer.js",
+      "bytes": 10733,
+      "sha256": "894a5351f3ca96da1a132ee3b6393aee653bc7a68097ddd5ed84905729089ff1"
+    },
+    {
+      "path": "website/home-refinement.css",
+      "bytes": 13019,
+      "sha256": "cd27771421d6b266ea5c1eaf7916a14928c477fd8adb87891353db96ef4b370e"
+    },
+    {
+      "path": "website/home-type.css",
+      "bytes": 2498,
+      "sha256": "a54401ff1391be60b9b81e5e3bc708b4c71a7bf4b8eb928bf92d6ae938e1d441"
+    },
+    {
+      "path": "website/home-video.css",
+      "bytes": 2406,
+      "sha256": "0847b4782ebb2fb779fe399c58d99343ecc2b151c534a9caf46c1bf8aeb32c50"
+    },
+    {
+      "path": "website/home-video.js",
+      "bytes": 3627,
+      "sha256": "a6be8e0d2f7589df147384dd4907946008def3c9484cc197f4504d4b7f2cdd87"
+    },
+    {
+      "path": "website/index.html",
+      "bytes": 1971,
+      "sha256": "f71173fa92014524045fc8b1f34ebe865ceea5134badd9382f3be8838792031c"
+    },
+    {
+      "path": "website/inquiry-flow.js",
+      "bytes": 4455,
+      "sha256": "a5f30ea7d9095f82dc00c4bed1f1d58962eba2fae2c0ced4789ab774459c6009"
+    },
+    {
+      "path": "website/model.js",
+      "bytes": 8761,
+      "sha256": "43485064dab296224b482db4b45a5be0be02f01aceaac2cea2aa2de1c594969c"
+    },
+    {
+      "path": "website/styles.css",
+      "bytes": 54796,
+      "sha256": "1e5079022dbb93298d33fc1a93049a8f9d5e39ed2401e6dfd51ab82332393e30"
     }
   ]
 }

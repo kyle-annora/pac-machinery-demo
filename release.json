@@ -1,0 +1,9 @@
+{
+  "source_commit": "69ce38930bc4485fdab2f5fbb2bb11e09d8ec8b8",
+  "mode": "github-pages-static-preview",
+  "artifacts": [
+    "website",
+    "workspace",
+    "pitch"
+  ]
+}

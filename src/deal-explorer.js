@@ -94,14 +94,24 @@ function savedMarkup(evidence, dealId) {
 
 export function renderDealExplorer({ deal, quoteId = null, returnHash, evidence = deal.evidence || [] }) {
   check(identifier(deal.id), 'Choose a deal before opening the Explorer.');
-  const back = returnHash && /^#(?:deal|quote)\/[A-Za-z0-9_.:/-]+$/.test(returnHash) ? returnHash : `#deal/${deal.id}`;
-  return `<section class="sw-explorer" id="deal-explorer" data-deal-id="${escapeHTML(deal.id)}" data-quote-id="${escapeHTML(quoteId || '')}">
-    <div class="sw-page-heading"><div><span class="eyebrow">APPLICATION EVIDENCE · ${escapeHTML(deal.number || deal.id)}</span><h1>Explore it. Keep the context.</h1><p>Inspect a component, capture the view, and attach it to ${escapeHTML(deal.title || 'this deal')}.</p></div><a class="secondary" href="${escapeHTML(back)}">Back to deal</a></div>
-    <div class="sw-notice">${REFERENCE_LABEL}. This model demonstrates the workflow; PAC must supply and approve its own model. Capturing a view does not change your quote or add a priced option.</div>
+  const quote = deal.quotes?.find(item => item.id === quoteId);
+  const quoteStatus = quote?.working?.status || '';
+  const quoteLabel = quote?.label || '';
+  const target = quote ? `${quoteLabel} · Rev ${quote.working.revision} · ${quoteStatus === 'draft' ? 'Draft' : 'Issued'}` : 'Deal application · All alternatives';
+  const back = quote ? `#quote/${deal.id}/${quote.id}` : `#deal/${deal.id}`;
+  const publicationNote = quoteStatus === 'issued'
+    ? 'New findings stay with this deal. Create a new quote revision to include them in the customer proposal.'
+    : quoteStatus === 'draft'
+      ? 'Review attached findings with this draft, then issue and publish a new customer proposal version.'
+      : 'Findings are saved to this deal for all alternatives. Include them in a quote revision before publishing to the customer.';
+  return `<section class="sw-explorer" id="deal-explorer" data-deal-id="${escapeHTML(deal.id)}" data-quote-id="${escapeHTML(quoteId || '')}" data-quote-status="${escapeHTML(quoteStatus)}" data-quote-label="${escapeHTML(quoteLabel)}">
+    <header class="sw-page-heading"><div><p class="sw-explorer-customer">${escapeHTML(deal.customer || deal.number || deal.id)} · ${escapeHTML(deal.title || 'Deal application')}</p><h1>Explorer</h1><p>Inspect a component, capture a view and attach the finding to this deal.</p></div><a class="secondary" href="${escapeHTML(back)}">${quote ? 'Return to quote' : 'Back to deal'}</a></header>
+    <div class="sw-explorer-target"><span>Linked to</span><strong>${escapeHTML(deal.number || deal.id)} · ${escapeHTML(target)}</strong><p>${publicationNote} Attaching a finding does not change prices.</p></div>
+    <div class="sw-notice">${REFERENCE_LABEL}. PAC must supply and approve its own model.</div>
     <div class="sw-explorer-layout"><div class="sw-explorer-viewer"><iframe id="deal-explorer-frame" title="3D reference assembly for this PAC deal" src="${escapeHTML(explorerEmbedURL(globalThis.location?.origin || 'http://localhost'))}" allow="fullscreen" allowfullscreen></iframe><div class="sw-explorer-tools"><label for="deal-explorer-component">Component<select id="deal-explorer-component" disabled><option>Loading components…</option></select></label><button class="secondary" type="button" data-explorer-action="frame" disabled>Frame selection</button><button class="secondary" type="button" data-explorer-action="motion" disabled>Play one cycle</button></div></div>
     <aside class="sw-explorer-panel"><span class="eyebrow">CURRENT VIEW</span><h2 id="deal-explorer-selection">Connecting to Explorer…</h2><p id="deal-explorer-pose" class="sw-muted">Choose a component in the assembly, then inspect it from any angle.</p><p id="deal-explorer-status" role="status" aria-live="polite">Loading the reference assembly.</p><button class="primary" type="button" data-explorer-action="capture" disabled>Capture this view</button><button class="text-button" type="button" data-explorer-action="retry" hidden>Reconnect Explorer</button>
     <section id="deal-explorer-candidate" class="sw-capture-review" hidden><h3>Review before attaching</h3><div id="deal-explorer-preview"></div><p id="deal-explorer-capture-label"></p><label for="deal-explorer-note">What should the team discuss?</label><textarea id="deal-explorer-note" rows="3" maxlength="2000" placeholder="Describe the application requirement this view helps explain."></textarea><button class="primary" type="button" data-explorer-action="attach">Attach to this ${quoteId ? 'quote' : 'deal'}</button><p class="sw-muted">This saves a copy. Browsing another component will not replace it.</p></section></aside></div>
-    <section class="sw-section"><div class="sw-section-heading"><div><span class="eyebrow">SAVED WITH THIS DEAL</span><h2>Attached 3D evidence</h2></div><a class="text-button" href="${escapeHTML(back)}">Continue the quote →</a></div><div id="deal-explorer-saved">${savedMarkup(evidence, deal.id)}</div></section>
+    <section class="sw-section"><div class="sw-section-heading"><div><span class="eyebrow">SAVED WITH THIS DEAL</span><h2>Attached findings</h2></div></div><p class="sw-publication-note">${publicationNote} Published proposal versions stay unchanged.</p><div id="deal-explorer-saved">${savedMarkup(evidence, deal.id)}</div></section>
   </section>`;
 }
 
@@ -223,7 +233,7 @@ export function mountDealExplorer({ dealId, quoteId = null, evidence = [], onEvi
         saved.push(copy(result || input)); candidate = null;
         element('deal-explorer-saved').innerHTML = savedMarkup(saved, dealId);
         button('attach').textContent = 'Attached';
-        status(`Reference attached to this ${quoteId ? 'quote' : 'deal'}. Return to the deal to continue quoting.`);
+        status(quoteId ? `Reference saved to this deal and ${root.dataset.quoteLabel || 'this quote'}. ${root.dataset.quoteStatus === 'issued' ? 'Create a new quote revision to include this finding.' : 'Review this finding with the draft before issue.'} Published proposals stay unchanged.` : 'Reference saved to this deal for all alternatives. Include it in a quote revision before publishing to the customer. Published proposals stay unchanged.');
       }
       if (action === 'restore') {
         const item = saved.find(entry => entry.id === target.dataset.evidenceId && entry.deal_id === dealId);
