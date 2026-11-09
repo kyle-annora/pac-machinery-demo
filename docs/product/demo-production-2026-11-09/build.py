@@ -78,7 +78,7 @@ def markdown_step(step):
 
 
 def markdown_script(script):
-    out = [f"# {script['title']}", "**Draft for script approval. Script review only.**", script.get("summary", ""),
+    out = [f"# {script['title']}", "**Approved screenplay for the implemented guided demo. Documentation view only.**", script.get("summary", ""),
            "This document defines the future demonstration. Advancing the review reader changes the script card only; it does not run or approve any action in the Website or Sales Workspace.",
            "## Agreed production boundaries", bullets(script.get("decisions", [])),
            "## Scenario and fixed inputs", bullets(script.get("scenario", {})),
@@ -103,7 +103,7 @@ def markdown_script(script):
 
 
 def markdown_requirements(data):
-    out = ["# PAC requirements coverage", "**Draft production coverage. This is not a claim of implemented functionality.**",
+    out = ["# PAC requirements coverage", "**Original planning traceability. This is not a full requirements completion report.**",
            "Planned proof in the script and the current implementation baseline are recorded separately.",
            "## Coverage definitions", bullets(data.get("coverageDefinitions", {}))]
     for key, heading in [
@@ -125,7 +125,7 @@ def markdown_requirements(data):
 
 
 def markdown_feedback(data):
-    out = ["# Patrick feedback alignment", "**Draft for script approval.**", "## Source register"]
+    out = ["# Patrick feedback alignment", "**Feedback alignment for the approved guided screenplay.**", "## Source register"]
     for source in data.get("sources", []):
         out += [f"### {source['id']} {source.get('title', '')}", bullets({k: v for k, v in source.items() if k not in {"id", "title"}})]
     out.append("## Feedback and production decisions")
@@ -178,7 +178,7 @@ function navigateStep(direction){if(route.type!=='step')return;const step=byId.g
 function filterRequirements(){const q=requirementQuery.trim().toLowerCase(),filtered=requirementList.filter(r=>(requirementCoverage==='all'||r.coverage===requirementCoverage)&&(!q||JSON.stringify(r).toLowerCase().includes(q)));document.getElementById('requirementResults').innerHTML=filtered.map(r=>requirementCard(r)).join('')||'<p class="empty">No matching requirements.</p>';}
 function render(){let hash=decodeURIComponent(location.hash.slice(1)||'overview'),parts=hash.split('/');route=byId.has(hash)?{type:'step',id:hash}:{type:parts[0],id:parts[1]};if(!['step','overview','requirements','feedback','source','files','complete'].includes(route.type))route={type:'overview'};main.classList.toggle('is-step',route.type==='step');if(route.type==='step')main.innerHTML=stepPage(byId.get(route.id));else if(route.type==='requirements')main.innerHTML=requirementsPage(route.id);else if(route.type==='feedback')main.innerHTML=feedbackPage(route.id);else if(route.type==='source')main.innerHTML=`<span class="eyebrow">Source register</span><h1>Source context</h1>${sourceMap.has(route.id)?sourceCard(sourceMap.get(route.id)):'<p class="empty">Source not found.</p>'}<p class="section"><a href="#feedback">← Feedback alignment</a></p>`;else if(route.type==='files')main.innerHTML=filesPage();else if(route.type==='complete')main.innerHTML=finishPage();else main.innerHTML=overview();navigation();document.getElementById('previous')?.addEventListener('click',()=>navigateStep(-1));document.getElementById('next')?.addEventListener('click',()=>navigateStep(1));document.getElementById('printScript')?.addEventListener('click',()=>window.print());document.getElementById('requirementSearch')?.addEventListener('input',event=>{requirementQuery=event.target.value;filterRequirements()});document.getElementById('coverageFilter')?.addEventListener('change',event=>{requirementCoverage=event.target.value;filterRequirements()});if(route.type==='requirements'&&!route.id)filterRequirements();sidebar.classList.remove('open');document.getElementById('navToggle').setAttribute('aria-expanded','false');window.scrollTo(0,0);document.title=(route.type==='step'?byId.get(route.id).id+' · '+byId.get(route.id).title:'PAC demo production script')+' · Script review';document.getElementById('announcer').textContent=route.type==='step'?byId.get(route.id).id+': '+byId.get(route.id).title:pretty(route.type);}
 document.querySelector('[data-view=script]').href='#'+(mainSteps[0]?.id||'overview');document.getElementById('navToggle').addEventListener('click',()=>{const open=sidebar.classList.toggle('open');document.getElementById('navToggle').setAttribute('aria-expanded',String(open))});document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||event.target.isContentEditable||/^(INPUT|SELECT|TEXTAREA)$/.test(event.target.tagName))return;if(event.key==='ArrowRight'&&route.type==='step'){event.preventDefault();navigateStep(1)}if(event.key==='ArrowLeft'&&route.type==='step'){event.preventDefault();navigateStep(-1)}});window.addEventListener('hashchange',render);
-document.getElementById('printBook').innerHTML=`<h1>${escapeHTML(S.title)}</h1><p>Draft for script approval · Script review only</p><p>${escapeHTML(S.summary)}</p><h2>Production boundaries</h2>${tree(S.decisions||[])}<h2>Scenario</h2>${tree(S.scenario||{})}<h2>Playback contract</h2>${tree(S.playback||{})}${steps.map(step=>`<article class="print-step">${stepBody(step,true)}</article>`).join('')}${optionalPresets(true)}<section class="print-section"><h1>Production gates and acceptance</h1>${tree(S.productionGates||[])}${tree(S.acceptance||[])}</section><section class="print-section"><h1>PAC requirements coverage</h1>${requirementContext()}${requirementList.map(req=>requirementCard(req,true)).join('')}</section><section class="print-section"><h1>Patrick feedback alignment</h1>${feedbackList.map(feedbackCard).join('')}<h2>Sources</h2>${sourceList.map(sourceCard).join('')}</section>`;render();
+document.getElementById('printBook').innerHTML=`<h1>${escapeHTML(S.title)}</h1><p>Approved screenplay · Documentation view</p><p>${escapeHTML(S.summary)}</p><h2>Production boundaries</h2>${tree(S.decisions||[])}<h2>Scenario</h2>${tree(S.scenario||{})}<h2>Playback contract</h2>${tree(S.playback||{})}${steps.map(step=>`<article class="print-step">${stepBody(step,true)}</article>`).join('')}${optionalPresets(true)}<section class="print-section"><h1>Production gates and acceptance</h1>${tree(S.productionGates||[])}${tree(S.acceptance||[])}</section><section class="print-section"><h1>PAC requirements coverage</h1>${requirementContext()}${requirementList.map(req=>requirementCard(req,true)).join('')}</section><section class="print-section"><h1>Patrick feedback alignment</h1>${feedbackList.map(feedbackCard).join('')}<h2>Sources</h2>${sourceList.map(sourceCard).join('')}</section>`;render();
 """
 
 
@@ -206,7 +206,7 @@ def main():
     document = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>PAC demo production script · Script review</title><style>{font_css}{CSS}{a11y_css}</style></head>
 <body><header class="masthead"><div class="brand">PAC Machinery <span>Demo production script</span></div><nav class="topnav" aria-label="Review sections"><a data-view="overview" href="#overview">Overview</a><a data-view="script" href="#A01">Script</a><a data-view="requirements" href="#requirements">Requirements</a><a data-view="feedback" href="#feedback">Patrick feedback</a><a data-view="files" href="#files">Files</a></nav></header>
-<div class="review-band"><strong>Draft for script approval · Script review only</strong><span>Next advances this document. No artifact action is executed.</span></div>
+<div class="review-band"><strong>Approved screenplay · Documentation view</strong><span>Next advances this document. No artifact action is executed.</span></div>
 <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="sidebar">Show step navigation</button>
 <div class="shell"><aside class="sidebar" id="sidebar" aria-label="Script steps"></aside><main class="main" id="main"></main></div><div id="announcer" class="sr-only" role="status" aria-live="polite"></div><div id="printBook" class="print-book"></div>
 <script id="reviewData" type="application/json">{payload}</script><script>{JS}</script></body></html>'''

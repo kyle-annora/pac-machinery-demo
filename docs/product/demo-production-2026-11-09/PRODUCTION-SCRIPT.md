@@ -1,6 +1,6 @@
 # PAC two-act demo production script
 
-**Draft for script approval. Script review only.**
+**Approved screenplay for the implemented guided demo. Documentation view only.**
 
 One fictional Harbor sales story, two independently playable acts, and one Next control. This is a production specification and script review, not a functioning guided demo. Audience interfaces and spoken narration are English.
 

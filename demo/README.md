@@ -6,6 +6,22 @@ This is the working, preset walkthrough for Patrick. The Website and Sales Works
 
 The audience interface and presenter script are English. The sample customer is Harbor Components. The main story follows the approved [production script](../docs/product/demo-production-2026-11-09/script.json); the [script review reader](../docs/product/demo-production-2026-11-09/index.html) contains the step-by-step rationale and requirement mappings.
 
+
+## Sharing and pitch entry
+
+Intended public routes for the current release (planned until the publishing owner verifies the deployed pages):
+
+- Pitch: https://kyle-annora.github.io/pac-machinery-demo/presentation/
+- Complete demonstration: https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full#A01
+- Act A: https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=a#A01
+- Act B: https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=b#B01
+- Editable source: https://github.com/kyle-annora/pac-machinery-pitch
+
+Start from pitch slide **7**, **Current prototype screens** (`04b-demo-entry`), using **Open the guided demo**. Run both acts continuously or select either act before starting. The demo’s final **Back to pitch** action returns to slide **16**, **Establish the baseline** (`11-baseline`). Stable scene IDs take precedence if page numbers change. The dated source-route alias is preserved in the packaged site so this return works from both local source and flattened publication layouts.
+
+The public URL runs the real demonstration UI and domain commands with each browser’s own sample data. It is not a shared customer portal or a hosted multi-user sales backend. Sharing a URL does not share the presenter’s local records. The old screenshot gallery remains archived reference, not the current walkthrough.
+
+
 ## Presenting
 
 1. Open the full walkthrough. Use the bottom-left **Choose walkthrough** menu before presenting if you want one act or a different Website entry.

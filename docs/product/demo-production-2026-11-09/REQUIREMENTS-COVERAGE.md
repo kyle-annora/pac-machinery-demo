@@ -1,6 +1,6 @@
 # PAC requirements coverage
 
-**Draft production coverage. This is not a claim of implemented functionality.**
+**Original planning traceability. This is not a full requirements completion report.**
 
 Planned proof in the script and the current implementation baseline are recorded separately.
 

@@ -17,8 +17,8 @@
     },
     {
       "path": "demo/README.md",
-      "sha256": "577e3a943ac4eea4a57eaa7d80d644618eec182180131c33d233ec7793d5700e",
-      "bytes": 10526
+      "sha256": "6b2b6a20521e3bf049ba43a62be492ebcd4b5d022a8f697579d220f3a84a36ae",
+      "bytes": 11873
     },
     {
       "path": "demo/documents/quote-v1.pdf",
@@ -387,13 +387,13 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/FEEDBACK-ALIGNMENT.md",
-      "sha256": "10017d60cf37f03dbd3caf133bca725bc9bc40591c30589e2364bfdccaa3bdb0",
-      "bytes": 24650
+      "sha256": "a44cc2f666dea395fad64a98b5cbc83e2035f1745db3e8cb9458df635fcf74b9",
+      "bytes": 24678
     },
     {
       "path": "docs/product/demo-production-2026-11-09/PRODUCTION-SCRIPT.md",
-      "sha256": "2c74bb40a2e7e7fbafff1951360efdeb286a607f656e81d8ffb0735640297925",
-      "bytes": 79703
+      "sha256": "231cd107a98b688b4b4d2c7ef94ac9b20077566bec1f0ec673b46f8359d6c846",
+      "bytes": 79734
     },
     {
       "path": "docs/product/demo-production-2026-11-09/README.md",
@@ -402,13 +402,13 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/REQUIREMENTS-COVERAGE.md",
-      "sha256": "d6a23e86a470b9f57da737bb43e7ed014a73d6599f27dd6928afadddf63ab202",
-      "bytes": 40442
+      "sha256": "7b7314aca470d154d13365b3e6c67dfb7bcfead026a727ef9dd4246b72369599",
+      "bytes": 40448
     },
     {
       "path": "docs/product/demo-production-2026-11-09/build.py",
-      "sha256": "8ce8dea77410d5a1d0e0d419e6a4bf5b37214568ffac4df6ead0ee7fc8013a7b",
-      "bytes": 40155
+      "sha256": "b4a2d1828282526d563465a4df39f46492b63141b5f16b05edc60dfd527ba933",
+      "bytes": 40208
     },
     {
       "path": "docs/product/demo-production-2026-11-09/feedback.json",
@@ -417,8 +417,8 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/index.html",
-      "sha256": "71e82b9d7abb5e30f6e483106f73e8317c432e8e4a35c06cacccececdabb08d3",
-      "bytes": 393822
+      "sha256": "f34e96ea30850cf1f200078ef317f63c84e31edc46b652694e6fc1d34e849264",
+      "bytes": 393810
     },
     {
       "path": "docs/product/demo-production-2026-11-09/requirements.json",
@@ -545,5 +545,7 @@
       "sha256": "86cf7fc1bf7286155b29553d7936e6651b7544c078390814105a9d358ea5c44a",
       "bytes": 9209
     }
-  ]
+  ],
+  "editableRepository": "https://github.com/kyle-annora/pac-machinery-pitch",
+  "editableSourceCommit": "116b9c29f89540bc8bebc5fbe157c78f79f6f199"
 }

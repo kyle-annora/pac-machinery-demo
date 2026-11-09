@@ -1,6 +1,6 @@
 # Patrick feedback alignment
 
-**Draft for script approval.**
+**Feedback alignment for the approved guided screenplay.**
 
 ## Source register
 
