@@ -23,6 +23,10 @@ The deck uses a fixed 1920 × 1080 stage that scales uniformly. Desktop or a lan
 
 ## Media and typography
 
-Official logos: [Annora current wordmark](https://annora.ai/assets/images/brand/annora-wordmark-ink.png) (lowercase wordmark with brass square) and [PAC Machinery color logo](https://www.pacmachinery.com/wp-content/uploads/2021/05/color-logo.png) (blue wordmark with gray tagline). Both original files are preserved byte-for-byte, at their original aspect ratios, on a light background. No color filters, redrawing, cropping or shape changes. The former hexagon Annora asset is an obsolete brand and must not be reused. Equipment photography: [PAC R3200 product page](https://www.pacmachinery.com/products/rollbag-r3200-and-r3200xl/). [PAC manual-loading demonstration](https://www.youtube.com/watch?v=nYCpXU1llI4).
+Official logos: [Annora current wordmark](https://annora.ai/assets/images/brand/annora-wordmark-ink.png) (lowercase wordmark with brass square) and [PAC Machinery color logo](https://www.pacmachinery.com/wp-content/uploads/2021/05/color-logo.png) (blue wordmark with gray tagline). Both original files are preserved byte-for-byte, at their original aspect ratios, on a continuous light-blue masthead with no separate logo plaque. No color filters, redrawing, cropping or shape changes. The former hexagon Annora asset is an obsolete brand and must not be reused. Equipment photography: [PAC R3200 product page](https://www.pacmachinery.com/products/rollbag-r3200-and-r3200xl/). [PAC manual-loading demonstration](https://www.youtube.com/watch?v=nYCpXU1llI4).
 
 Fonts: Manrope, Barlow Condensed and JetBrains Mono, distributed under the SIL Open Font License; license texts are in `licenses/`. Diagrams are native SVG, editable without a proprietary design tool.
+
+## PAC color treatment
+
+PAC blue and orange-yellow organize the pitch: a light-blue masthead preserves original-color logos, navy frames the presentation, blue panels organize workflows, and orange-yellow identifies actions and the free-evaluation package. Original evidence captures and equipment photography are unchanged.
