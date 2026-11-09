@@ -1,0 +1,1252 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "file": "model.glb",
+    "sha256": "ac4dafa6d4c1b5f4f05a6c081a9a252896d6d44c6834e6e57ffe66a592c9418a"
+  },
+  "contours": {
+    "file": "silhouettes.bin",
+    "compressedFile": "silhouettes.bin.gz",
+    "format": "uint32-oct16-le",
+    "coordinates": "original-mesh-local",
+    "bytesPerSegment": 16,
+    "sha256": "a5274d1923e2712e030ed2f790d81d1b995d21d3b6f91767fa5c201bbf1e82d3"
+  },
+  "stats": {
+    "meshCount": 139,
+    "uniqueGeometryCount": 76,
+    "bytes": 601936,
+    "uniqueSegments": 37621
+  },
+  "geometries": [
+    {
+      "byteOffset": 0,
+      "segmentCount": 12,
+      "geometryId": 0,
+      "sourceGeometrySha256": "70a1c0186657b7e8c5dfac5f94500db7e1b501ffa04abc82ab3a233428af8aa2",
+      "sha256": "4fbb2b0856aa6132f0aa016b2abf17294444bfd8b3fa6ce93ea3856847ac4fa0"
+    },
+    {
+      "byteOffset": 192,
+      "segmentCount": 804,
+      "geometryId": 1,
+      "sourceGeometrySha256": "35751c8f4db7099fbbf4193f70293f20a23e430e49ecac2bafeb6f89a66db291",
+      "sha256": "c236c083f845584bd4810915450c024986bbe3e60bf1a00cb9aaffb94f2ba39b"
+    },
+    {
+      "byteOffset": 13056,
+      "segmentCount": 804,
+      "geometryId": 2,
+      "sourceGeometrySha256": "bb4c8d423d46e11f8b2b98a6d4ff5fe6d1f0ec1d21f9a50c7490399470acfded",
+      "sha256": "319dab5993758b34adaa5819a8a1eb4fcba7f108f1508776b4e67d0952380bee"
+    },
+    {
+      "byteOffset": 25920,
+      "segmentCount": 804,
+      "geometryId": 3,
+      "sourceGeometrySha256": "e9dada6245dd1a117f1eed5de20aba8e555072201cf2751114fd0e158ee6ef6a",
+      "sha256": "ecfa966f6473725e814ae38cd104fbdc573f0296b3fb71a82f62a9c707f745a9"
+    },
+    {
+      "byteOffset": 38784,
+      "segmentCount": 804,
+      "geometryId": 4,
+      "sourceGeometrySha256": "63464596a727603ef2c7756e58a2e49914298b9b13bcc0aa8e82794e8e793af4",
+      "sha256": "2d4d861cea913400e36ec8dcc6836df5639fe13b508ef81598c03952958fd5f9"
+    },
+    {
+      "byteOffset": 51648,
+      "segmentCount": 54,
+      "geometryId": 5,
+      "sourceGeometrySha256": "a54f11f6b717aa4c42c2e41494cb6f7d12e87901390d026667c5322428f64b2a",
+      "sha256": "3a7a5950b8595508217df638766d72e2b3c709b608b797e51513d0745f690186"
+    },
+    {
+      "byteOffset": 52512,
+      "segmentCount": 12,
+      "geometryId": 6,
+      "sourceGeometrySha256": "8c5223ecb33ea0e392a17ddae721c018e596186bc8689a14797c07fe32148bf1",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 52704,
+      "segmentCount": 120,
+      "geometryId": 7,
+      "sourceGeometrySha256": "d01737344c58cbf73b92760cfc128548be3dccb84d315343373a41dcdb0da037",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 54624,
+      "segmentCount": 120,
+      "geometryId": 8,
+      "sourceGeometrySha256": "8179d107bc4b0c9162b265ab75ca74bc64e4b590f010d8be322f78a7d1fd5366",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 56544,
+      "segmentCount": 804,
+      "geometryId": 9,
+      "sourceGeometrySha256": "79486bbdb5e90e5641717b70025aba7e43112ec739498a0719225fb889433c54",
+      "sha256": "b852c15bf93f596ee4a7a34a03fed01b243586b292f9713e29b0d5327cd270c2"
+    },
+    {
+      "byteOffset": 69408,
+      "segmentCount": 804,
+      "geometryId": 10,
+      "sourceGeometrySha256": "a6a6a60ea985639ee10376275e29da8af4295e859da53eaa430448e5ba1ddb5e",
+      "sha256": "c45dd757b44e527ccfa23fe5c5a027d2fc54b8bf47623864efbf8a57b5c0450b"
+    },
+    {
+      "byteOffset": 82272,
+      "segmentCount": 672,
+      "geometryId": 11,
+      "sourceGeometrySha256": "f3226e6761ba44395ed635556bf0f5d5cbd800cd87953685301128f8aeb4beee",
+      "sha256": "195cad87a34600e2c06f6424889158e0ee84e9bcce1ab305ad3d7166274b543d"
+    },
+    {
+      "byteOffset": 93024,
+      "segmentCount": 804,
+      "geometryId": 12,
+      "sourceGeometrySha256": "b0e0efd004cf410f81f110aabd74d097a353e24fb01c8fa5a3efb06c4ee770e4",
+      "sha256": "ecfa966f6473725e814ae38cd104fbdc573f0296b3fb71a82f62a9c707f745a9"
+    },
+    {
+      "byteOffset": 105888,
+      "segmentCount": 804,
+      "geometryId": 13,
+      "sourceGeometrySha256": "aebf4ee9a31309dc1a0fc67e0bd1e110538b7e24d8f2382895d873939e56577d",
+      "sha256": "3123d55e698036527fc241fe40d7513a4d65376c3ba05f18983ead74e7f6caf9"
+    },
+    {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14,
+      "sourceGeometrySha256": "ec7cbb3c4bbe1658d6c6aaf4e6910fca002ac38e9b0fed6c78a5c9aa00086f52",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 120672,
+      "segmentCount": 12,
+      "geometryId": 15,
+      "sourceGeometrySha256": "0c2290d1af0755eda052eee88bc9cbfcaa0e87bec3f173a91e48d9608c2ae32f",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 120864,
+      "segmentCount": 804,
+      "geometryId": 16,
+      "sourceGeometrySha256": "5a429cf383531b24ef317aca935c93f0ebfc3312f9a4a9bf1e01f2803ce4fd59",
+      "sha256": "f76144b11e3acd619f06138cd8e0f0189ca5ff14cdfcba4e21d0e656cc703745"
+    },
+    {
+      "byteOffset": 133728,
+      "segmentCount": 120,
+      "geometryId": 17,
+      "sourceGeometrySha256": "334b4006a9956a41c498776cedf9a3c835b61dd08cdcf9fb900e2f3eb53b68e1",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 135648,
+      "segmentCount": 804,
+      "geometryId": 18,
+      "sourceGeometrySha256": "b76c130b919d85dc6d8c71f6a3a227464bb9de62bc18c8d37b0f3f13de9097d7",
+      "sha256": "f76144b11e3acd619f06138cd8e0f0189ca5ff14cdfcba4e21d0e656cc703745"
+    },
+    {
+      "byteOffset": 148512,
+      "segmentCount": 120,
+      "geometryId": 19,
+      "sourceGeometrySha256": "9d2b2384823a686448e1118438a4dc7f23dedfd65c54523a859227e3b2e44c44",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 150432,
+      "segmentCount": 804,
+      "geometryId": 20,
+      "sourceGeometrySha256": "ef80306b15328071505e98c40219c9e86e83e5cc200faa9ebfa72b156ddab609",
+      "sha256": "8388e1b356cda3505c4bcf96b474602472d50485bf7d777dacaa553860064b6a"
+    },
+    {
+      "byteOffset": 163296,
+      "segmentCount": 120,
+      "geometryId": 21,
+      "sourceGeometrySha256": "db794af7858437e940f4f7515d37d8192274171af23ffe6bf7941afe99ef31f9",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 165216,
+      "segmentCount": 120,
+      "geometryId": 22,
+      "sourceGeometrySha256": "7f16680e20827105794323fa712e4c4d46b31b0306786218f612fa611c59f314",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 167136,
+      "segmentCount": 1462,
+      "geometryId": 23,
+      "sourceGeometrySha256": "d22b426dd67b943626385d10103962245fc8a8fb4cd2de2452a12f34eed6d573",
+      "sha256": "babea264a50f5321a9941fec039820caa4813dfd7b7b955d65d3cbe265a05173"
+    },
+    {
+      "byteOffset": 190528,
+      "segmentCount": 1450,
+      "geometryId": 24,
+      "sourceGeometrySha256": "3dda0d9ed7e21cafccc986d41b0f3418bd77f2b78104147fdef82692dbe35cc7",
+      "sha256": "dcbeb2ad6610023846d9540a27708554600e8df157e4e06cef924ad03828a68e"
+    },
+    {
+      "byteOffset": 213728,
+      "segmentCount": 1418,
+      "geometryId": 25,
+      "sourceGeometrySha256": "38cf8081b91807cca30d35d8d4e154a4bedf7ab491372f7a4510df96e3887679",
+      "sha256": "0d0cea50512fdde3fd62d417c3b7373ed237ad2dc2e662d19f0858a6133d7fbb"
+    },
+    {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26,
+      "sourceGeometrySha256": "0c8a72ca801546e5e3732ad83aba738d04f43b43df26139f588a31aaba2976b2",
+      "sha256": "b5fe91418592dc50ab2b46e42416286061c47c79ce205fa4c66d5f7327c33491"
+    },
+    {
+      "byteOffset": 249280,
+      "segmentCount": 804,
+      "geometryId": 27,
+      "sourceGeometrySha256": "8577192ab42e772fa3ff70c0ade4d988415ebc4e2e25e57682545277e597defd",
+      "sha256": "e1d88e231f8b424166435f759415e0d3d987c0792a565f246aa400fff2fffc57"
+    },
+    {
+      "byteOffset": 262144,
+      "segmentCount": 804,
+      "geometryId": 28,
+      "sourceGeometrySha256": "33209b135746452c45fe1017e3c71a84a1822e556a595b5488baa4ef14ead21c",
+      "sha256": "0b357716128aa83d4cdcde6f7e49b47c5c0aa05b081aaa25330523d52bc3e15e"
+    },
+    {
+      "byteOffset": 275008,
+      "segmentCount": 12,
+      "geometryId": 29,
+      "sourceGeometrySha256": "3d4440b695acefe9afd55e4f8dbae8114ecf8ddca639ff117a801858fa70b8a4",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 275200,
+      "segmentCount": 12,
+      "geometryId": 30,
+      "sourceGeometrySha256": "f894a6f4cb26e58a9723c4217dbd16fbc95bf9013d70747af75faba9744e34ac",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 275392,
+      "segmentCount": 12,
+      "geometryId": 31,
+      "sourceGeometrySha256": "ff51a22a45a4fb66d32579ae26043a7e713b29a073d68ca0313a52f9d50c90e1",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 275584,
+      "segmentCount": 804,
+      "geometryId": 32,
+      "sourceGeometrySha256": "09711ed8e0a94efbf3c9abf9a206df6346a47b16fd37957e146202bd9cc9ac3f",
+      "sha256": "9cadab74563c09f42b8b3f70190de21be48c7463927f5e1e0faaff82b0330dcd"
+    },
+    {
+      "byteOffset": 288448,
+      "segmentCount": 12,
+      "geometryId": 33,
+      "sourceGeometrySha256": "f962bd5da1b0926d25076e3dedc3cac1ede5c8f8819fbebe7c5e8bb99d05015b",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 288640,
+      "segmentCount": 12,
+      "geometryId": 34,
+      "sourceGeometrySha256": "1671a4d9d9f064e73940b0dc6d3bbbd586eb5b3cd1ad36301e42e8e5df5e8547",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 288832,
+      "segmentCount": 804,
+      "geometryId": 35,
+      "sourceGeometrySha256": "8db35553ce0d30e0b46a651fd41532e032bb554f1f3949c7457970011d803334",
+      "sha256": "dd9bd670822d351fa030cb7daec512076e056262408998e8edc5f136783f740c"
+    },
+    {
+      "byteOffset": 301696,
+      "segmentCount": 804,
+      "geometryId": 36,
+      "sourceGeometrySha256": "07f912e9496e48055776097d870dfff87cafc6f3c94e9e6dbed1ba5468dc91c8",
+      "sha256": "6c3822c209e506406296c4c898bcc6e58d402f68790c7e9f69887dcda3896311"
+    },
+    {
+      "byteOffset": 314560,
+      "segmentCount": 804,
+      "geometryId": 37,
+      "sourceGeometrySha256": "f43b56e828e0ef73bc01583f5698f4a6296d1b27549edf0d3703abcafb173456",
+      "sha256": "d9f82ae4c811ef552b65c4cfe8e323291a8cb885d485d3e7fc31620686f2ba95"
+    },
+    {
+      "byteOffset": 327424,
+      "segmentCount": 804,
+      "geometryId": 38,
+      "sourceGeometrySha256": "5ae5558241da9f69ff47676f88bb5f15278813004cce255e7816dc6a8cccb593",
+      "sha256": "b44e360df67392b00a9e87272241676fcdf22378b04ea781b87f9ac16f866136"
+    },
+    {
+      "byteOffset": 340288,
+      "segmentCount": 12,
+      "geometryId": 39,
+      "sourceGeometrySha256": "29f4f5bfddc19d5826ff532cc2ff77c3c7a61a5464b1919bd7466b62c1852dfa",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 340480,
+      "segmentCount": 804,
+      "geometryId": 40,
+      "sourceGeometrySha256": "da80a0ebc2e914e423a761f0c3b02ce182b3a3f290e8a6828416c9c4c3e23d11",
+      "sha256": "60993cf179b22893724ef00c8821f03d8f2af65fa8c291dcd077e5d0aa78e220"
+    },
+    {
+      "byteOffset": 353344,
+      "segmentCount": 804,
+      "geometryId": 41,
+      "sourceGeometrySha256": "40e0743d770f5e9c854467e5f0e314444f3d7575ee8561ac6bf8a6a76361ff47",
+      "sha256": "17856b16713902b6f6131ce2f6e327be69a4ddc6637ce9bd7f3a26872b3f966b"
+    },
+    {
+      "byteOffset": 366208,
+      "segmentCount": 4,
+      "geometryId": 42,
+      "sourceGeometrySha256": "b8ca5afe92a5196b2f89e7d31538fd3a5edca177635e2c56d3352400b4cc5fec",
+      "sha256": "da4ee1f4be4ad0c7f3e2cf9f0b35150fafd23f8f4414ca78904f2d50f392c88f"
+    },
+    {
+      "byteOffset": 366272,
+      "segmentCount": 804,
+      "geometryId": 43,
+      "sourceGeometrySha256": "99db28da2569dccb117d33397fb2641b62fdda7f1bbb4ec8bf42268d3f9aa094",
+      "sha256": "f7b1c8026fd0f2aa0bb9afbc2187efc65111cb81fea7600abfeffe6eb2b82cb2"
+    },
+    {
+      "byteOffset": 379136,
+      "segmentCount": 120,
+      "geometryId": 44,
+      "sourceGeometrySha256": "fdb701d63b0e5a656d66ad5e2ab7eea5e99fb13c83b7f872680e72aae707a184",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 381056,
+      "segmentCount": 120,
+      "geometryId": 45,
+      "sourceGeometrySha256": "42095074171352292724da6a0d2579ef3b05103072738b4d8e71539c739a7f74",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 382976,
+      "segmentCount": 804,
+      "geometryId": 46,
+      "sourceGeometrySha256": "6b17f3cfe4de45a5f6b6740fa44d4d44cc4a029a5feee0956d18878ea39b7705",
+      "sha256": "95b2426671318b319fc839d8e6dc6662e143191d307a01b9b91320709006c8cf"
+    },
+    {
+      "byteOffset": 395840,
+      "segmentCount": 804,
+      "geometryId": 47,
+      "sourceGeometrySha256": "03f0da908694ffd2da5067c3d2af4a358648896b0597c0dff3c12337677b501a",
+      "sha256": "c79e73598bb8d3cd5841bb74f1eb1a8f981099fcd0163e4abfde932b6012cb92"
+    },
+    {
+      "byteOffset": 408704,
+      "segmentCount": 804,
+      "geometryId": 48,
+      "sourceGeometrySha256": "f0e52a5bce70f2cf5ac991d1c89e1fe0073af8517daf438e9ba42937af63da95",
+      "sha256": "9c27223d43d032cef89263e3aecc291f868bb1aac4155eaa7de69358241dc20b"
+    },
+    {
+      "byteOffset": 421568,
+      "segmentCount": 804,
+      "geometryId": 49,
+      "sourceGeometrySha256": "86d50c17e9489d319a1d8ab24c851b6d3a2d3fb308b2eee843e693dbdc3916b2",
+      "sha256": "6976a74e432f09bf82dc2820fa798fe7443553eef2bba1bdc8352f984e4235d5"
+    },
+    {
+      "byteOffset": 434432,
+      "segmentCount": 96,
+      "geometryId": 50,
+      "sourceGeometrySha256": "f2ee45ba63a5fa23d95427d26bcc5869bd6d3140d407075d2ee32ba404c8130b",
+      "sha256": "6957df930f51829763338eb00f8917d284b3e3db8676d117882cced4e311119e"
+    },
+    {
+      "byteOffset": 435968,
+      "segmentCount": 12,
+      "geometryId": 51,
+      "sourceGeometrySha256": "c7f32ef9c0278cf4b301c884f5177c873fd4b184ebc1d89954f49ecda0822613",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 436160,
+      "segmentCount": 12,
+      "geometryId": 52,
+      "sourceGeometrySha256": "e4364b4cc1bee84d80c20ed27b594e85de7ef3643d296bafb62077deeaae61bc",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 436352,
+      "segmentCount": 804,
+      "geometryId": 53,
+      "sourceGeometrySha256": "18b584a77f4901f7eacb7e340469c3bd4c326f50e090543d449f097b409be7b4",
+      "sha256": "8d7816e78b0516e8b0ab6c8690e3fac63a68f19105ba0602d86399807ac8c8ae"
+    },
+    {
+      "byteOffset": 449216,
+      "segmentCount": 804,
+      "geometryId": 54,
+      "sourceGeometrySha256": "02b83461c73725080b667b5cf4f99fca1c8182152c0fa35ff4bcc464ca47cfba",
+      "sha256": "93e5d782afdfdc22920a99c9948b2ea8194e4adab38a6d234de403e7a40f24ce"
+    },
+    {
+      "byteOffset": 462080,
+      "segmentCount": 804,
+      "geometryId": 55,
+      "sourceGeometrySha256": "a2e52e1b28de0787ef0147c22fd257762aa0ac6aad0ccada111e340df12c067b",
+      "sha256": "319dab5993758b34adaa5819a8a1eb4fcba7f108f1508776b4e67d0952380bee"
+    },
+    {
+      "byteOffset": 474944,
+      "segmentCount": 804,
+      "geometryId": 56,
+      "sourceGeometrySha256": "f9bab69a6c327f57cdaaf70a731fcedea295f78000a6ae0eeebc2a9a3e558a80",
+      "sha256": "84edbe25257012c59204ec3a3b4eb882367b38d624165ac6cb4ffa65d5cd05b2"
+    },
+    {
+      "byteOffset": 487808,
+      "segmentCount": 1274,
+      "geometryId": 57,
+      "sourceGeometrySha256": "706e423091ff911be57bfffa9ba58d1feb26bf774a4958e731998acebaa30419",
+      "sha256": "0cd3225ca1a353f088ea0cf9560ef315d7562f58d2a35f278ef20f9fd045b727"
+    },
+    {
+      "byteOffset": 508192,
+      "segmentCount": 120,
+      "geometryId": 58,
+      "sourceGeometrySha256": "26ebcd48786ad8c62ce68f894b146e03cf0d9f8ec64dd0cde66dd77ff7514253",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 510112,
+      "segmentCount": 120,
+      "geometryId": 59,
+      "sourceGeometrySha256": "61d0689e6b4f1ddea7cbc5e46e6ebf168c484b7650093f8517d744d782e7af4f",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 512032,
+      "segmentCount": 120,
+      "geometryId": 60,
+      "sourceGeometrySha256": "969b9f850bbe69f9bb89fbf3d1ac887c86ef6287600d98d34faaf4361fb1b687",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 513952,
+      "segmentCount": 120,
+      "geometryId": 61,
+      "sourceGeometrySha256": "6b81aae60629878a0a92d6654be401eff589cd9c915c72a84232c0b597e98fef",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 515872,
+      "segmentCount": 804,
+      "geometryId": 62,
+      "sourceGeometrySha256": "198704ac988a8ac7703ba45635a3362614b2faf91000a1cc87702de6ec550771",
+      "sha256": "f92add8cb5c78374aa7bddfda9971f419275146450ffc1b7ea5ac0df8b2f5cde"
+    },
+    {
+      "byteOffset": 528736,
+      "segmentCount": 120,
+      "geometryId": 63,
+      "sourceGeometrySha256": "24523742e1d712e4612cb80eeac6506fb6e82d4a6933315d983b8ea8766cacb0",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 530656,
+      "segmentCount": 804,
+      "geometryId": 64,
+      "sourceGeometrySha256": "74c895b49a0d9fddfdac6753afa303917df7bfcf88d59e34c088bc61b0874343",
+      "sha256": "d702e758cc4a0198ff82adc1c0a11402e080d38a89abbe197fa12404a79d168b"
+    },
+    {
+      "byteOffset": 543520,
+      "segmentCount": 804,
+      "geometryId": 65,
+      "sourceGeometrySha256": "b0395b93acd71635173424b67d1b3fe3a95e9857fd535133ed6310411ce7c15d",
+      "sha256": "debb44659ec15186aaa9f3c744ed49d5e49a946a73d583064d82a2bbb5174d09"
+    },
+    {
+      "byteOffset": 556384,
+      "segmentCount": 120,
+      "geometryId": 66,
+      "sourceGeometrySha256": "660651e2eadaa79556b1f93398c7cf2d155db0d9bb868247a9ef8f2ceee891ef",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 558304,
+      "segmentCount": 64,
+      "geometryId": 67,
+      "sourceGeometrySha256": "1b297252662332639a12777a2e74170d8464e6951ab7365f6183c7c7683476a4",
+      "sha256": "dbe454a59a0bea645288c0fff192c78d8438c52780730ec325a0ac2684e8e87d"
+    },
+    {
+      "byteOffset": 559328,
+      "segmentCount": 1463,
+      "geometryId": 68,
+      "sourceGeometrySha256": "99622e611f67ed8e0e312e2784e7c5244aa26d665ab439ea99c556be2db467e4",
+      "sha256": "d1b895407dfdfc8f50845fb989fe3ad04525b1ee70dbd19a7abb6575bfe2aea6"
+    },
+    {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69,
+      "sourceGeometrySha256": "1a954497eb4d6fe32caf733d373b6f9225e842b3c29d03714c416a0363570938",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 584656,
+      "segmentCount": 804,
+      "geometryId": 70,
+      "sourceGeometrySha256": "d42d3a139cde249d9f82e66a2292625cccf375072f150bc1dc4de4a0abb080ea",
+      "sha256": "be6073fae78b57044483466a71085dfe7ba6f92106adc75c0db3be081754e4dc"
+    },
+    {
+      "byteOffset": 597520,
+      "segmentCount": 120,
+      "geometryId": 71,
+      "sourceGeometrySha256": "13aabfa360194e7d93049af9b3a4c11f872cd4eabd47b88e1ac3fc8d7d949ac8",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 599440,
+      "segmentCount": 120,
+      "geometryId": 72,
+      "sourceGeometrySha256": "6d4715e92d9c63173ff41bfc7713520a841d9b69730d3b0d9fd7956dd59e733b",
+      "sha256": "88beb558a80af5ec98732a4754706b1c6aef86c9ec5d58c2a9d78aa58e7d8a3a"
+    },
+    {
+      "byteOffset": 601360,
+      "segmentCount": 12,
+      "geometryId": 73,
+      "sourceGeometrySha256": "f2bf40eab262cf125f2422f652d6ef928b20a675316c31189c6ea327496ada74",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 601552,
+      "segmentCount": 12,
+      "geometryId": 74,
+      "sourceGeometrySha256": "04aee1d6d857c50d1539872a6cb7833411d0c4eaac56710a7d591eb973ffe738",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    },
+    {
+      "byteOffset": 601744,
+      "segmentCount": 12,
+      "geometryId": 75,
+      "sourceGeometrySha256": "e99d47d6127b6aecaaecf64120b917a68bda7bb9a58d55843131e9d5cd76fcf9",
+      "sha256": "b87a02089c3887fc05065933adbaeb69612a3c36042a5d6da6f5b983b73026c5"
+    }
+  ],
+  "meshes": {
+    "mpi_001_left_base_gusset": {
+      "byteOffset": 0,
+      "segmentCount": 12,
+      "geometryId": 0
+    },
+    "mpi_002_right_base_gusset": {
+      "byteOffset": 0,
+      "segmentCount": 12,
+      "geometryId": 0
+    },
+    "mpi_003_base_frame_and_guarding_component_003": {
+      "byteOffset": 192,
+      "segmentCount": 804,
+      "geometryId": 1
+    },
+    "mpi_004_base_frame_and_guarding_component_004": {
+      "byteOffset": 192,
+      "segmentCount": 804,
+      "geometryId": 1
+    },
+    "mpi_005_base_pedestal": {
+      "byteOffset": 13056,
+      "segmentCount": 804,
+      "geometryId": 2
+    },
+    "mpi_006_lower_bolster": {
+      "byteOffset": 25920,
+      "segmentCount": 804,
+      "geometryId": 3
+    },
+    "mpi_007_fixed_platen_body": {
+      "byteOffset": 38784,
+      "segmentCount": 804,
+      "geometryId": 4
+    },
+    "mpi_008_slotted_platen_surface": {
+      "byteOffset": 51648,
+      "segmentCount": 54,
+      "geometryId": 5
+    },
+    "mpi_009_platen_and_tooling_area_component_009": {
+      "byteOffset": 52512,
+      "segmentCount": 12,
+      "geometryId": 6
+    },
+    "mpi_010_platen_and_tooling_area_component_010": {
+      "byteOffset": 52512,
+      "segmentCount": 12,
+      "geometryId": 6
+    },
+    "mpi_011_platen_and_tooling_area_component_011": {
+      "byteOffset": 52512,
+      "segmentCount": 12,
+      "geometryId": 6
+    },
+    "mpi_012_base_frame_and_guarding_component_012": {
+      "byteOffset": 52704,
+      "segmentCount": 120,
+      "geometryId": 7
+    },
+    "mpi_013_base_frame_and_guarding_component_013": {
+      "byteOffset": 54624,
+      "segmentCount": 120,
+      "geometryId": 8
+    },
+    "mpi_014_base_frame_and_guarding_component_014": {
+      "byteOffset": 52704,
+      "segmentCount": 120,
+      "geometryId": 7
+    },
+    "mpi_015_base_frame_and_guarding_component_015": {
+      "byteOffset": 54624,
+      "segmentCount": 120,
+      "geometryId": 8
+    },
+    "mpi_016_base_frame_and_guarding_component_016": {
+      "byteOffset": 52704,
+      "segmentCount": 120,
+      "geometryId": 7
+    },
+    "mpi_017_base_frame_and_guarding_component_017": {
+      "byteOffset": 54624,
+      "segmentCount": 120,
+      "geometryId": 8
+    },
+    "mpi_018_base_frame_and_guarding_component_018": {
+      "byteOffset": 52704,
+      "segmentCount": 120,
+      "geometryId": 7
+    },
+    "mpi_019_base_frame_and_guarding_component_019": {
+      "byteOffset": 54624,
+      "segmentCount": 120,
+      "geometryId": 8
+    },
+    "mpi_020_crown_housing": {
+      "byteOffset": 56544,
+      "segmentCount": 804,
+      "geometryId": 9
+    },
+    "mpi_021_crown_underside": {
+      "byteOffset": 69408,
+      "segmentCount": 804,
+      "geometryId": 10
+    },
+    "mpi_022_base_frame_and_guarding_component_022": {
+      "byteOffset": 82272,
+      "segmentCount": 672,
+      "geometryId": 11
+    },
+    "mpi_023_base_frame_and_guarding_component_023": {
+      "byteOffset": 82272,
+      "segmentCount": 672,
+      "geometryId": 11
+    },
+    "mpi_024_moving_platen_body": {
+      "byteOffset": 93024,
+      "segmentCount": 804,
+      "geometryId": 12
+    },
+    "mpi_025_moving_contact_plate": {
+      "byteOffset": 105888,
+      "segmentCount": 804,
+      "geometryId": 13
+    },
+    "mpi_026_platen_and_tooling_area_component_026": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_027_platen_and_tooling_area_component_027": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_028_platen_and_tooling_area_component_028": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_029_platen_and_tooling_area_component_029": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_030_platen_and_tooling_area_component_030": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_031_platen_and_tooling_area_component_031": {
+      "byteOffset": 118752,
+      "segmentCount": 120,
+      "geometryId": 14
+    },
+    "mpi_032_moving_platen_separation_plate": {
+      "byteOffset": 120672,
+      "segmentCount": 12,
+      "geometryId": 15
+    },
+    "mpi_033_clamp_cylinder_support": {
+      "byteOffset": 120864,
+      "segmentCount": 804,
+      "geometryId": 16
+    },
+    "mpi_034_clamp_cylinder": {
+      "byteOffset": 133728,
+      "segmentCount": 120,
+      "geometryId": 17
+    },
+    "mpi_035_lower_cylinder_end": {
+      "byteOffset": 135648,
+      "segmentCount": 804,
+      "geometryId": 18
+    },
+    "mpi_036_upper_cylinder_end": {
+      "byteOffset": 135648,
+      "segmentCount": 804,
+      "geometryId": 18
+    },
+    "mpi_037_base_frame_and_guarding_component_037": {
+      "byteOffset": 148512,
+      "segmentCount": 120,
+      "geometryId": 19
+    },
+    "mpi_038_base_frame_and_guarding_component_038": {
+      "byteOffset": 148512,
+      "segmentCount": 120,
+      "geometryId": 19
+    },
+    "mpi_039_base_frame_and_guarding_component_039": {
+      "byteOffset": 148512,
+      "segmentCount": 120,
+      "geometryId": 19
+    },
+    "mpi_040_base_frame_and_guarding_component_040": {
+      "byteOffset": 148512,
+      "segmentCount": 120,
+      "geometryId": 19
+    },
+    "mpi_041_valve_manifold": {
+      "byteOffset": 150432,
+      "segmentCount": 804,
+      "geometryId": 20
+    },
+    "mpi_042_base_frame_and_guarding_component_042": {
+      "byteOffset": 163296,
+      "segmentCount": 120,
+      "geometryId": 21
+    },
+    "mpi_043_base_frame_and_guarding_component_043": {
+      "byteOffset": 165216,
+      "segmentCount": 120,
+      "geometryId": 22
+    },
+    "mpi_044_base_frame_and_guarding_component_044": {
+      "byteOffset": 163296,
+      "segmentCount": 120,
+      "geometryId": 21
+    },
+    "mpi_045_base_frame_and_guarding_component_045": {
+      "byteOffset": 165216,
+      "segmentCount": 120,
+      "geometryId": 22
+    },
+    "mpi_046_base_frame_and_guarding_component_046": {
+      "byteOffset": 163296,
+      "segmentCount": 120,
+      "geometryId": 21
+    },
+    "mpi_047_base_frame_and_guarding_component_047": {
+      "byteOffset": 165216,
+      "segmentCount": 120,
+      "geometryId": 22
+    },
+    "mpi_048_base_frame_and_guarding_component_048": {
+      "byteOffset": 163296,
+      "segmentCount": 120,
+      "geometryId": 21
+    },
+    "mpi_049_base_frame_and_guarding_component_049": {
+      "byteOffset": 165216,
+      "segmentCount": 120,
+      "geometryId": 22
+    },
+    "mpi_050_base_frame_and_guarding_component_050": {
+      "byteOffset": 167136,
+      "segmentCount": 1462,
+      "geometryId": 23
+    },
+    "mpi_051_base_frame_and_guarding_component_051": {
+      "byteOffset": 190528,
+      "segmentCount": 1450,
+      "geometryId": 24
+    },
+    "mpi_052_base_frame_and_guarding_component_052": {
+      "byteOffset": 213728,
+      "segmentCount": 1418,
+      "geometryId": 25
+    },
+    "mpi_053_base_frame_and_guarding_component_053": {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26
+    },
+    "mpi_054_base_frame_and_guarding_component_054": {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26
+    },
+    "mpi_055_base_frame_and_guarding_component_055": {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26
+    },
+    "mpi_056_base_frame_and_guarding_component_056": {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26
+    },
+    "mpi_057_base_frame_and_guarding_component_057": {
+      "byteOffset": 236416,
+      "segmentCount": 804,
+      "geometryId": 26
+    },
+    "mpi_058_base_frame_and_guarding_component_058": {
+      "byteOffset": 249280,
+      "segmentCount": 804,
+      "geometryId": 27
+    },
+    "mpi_059_base_frame_and_guarding_component_059": {
+      "byteOffset": 262144,
+      "segmentCount": 804,
+      "geometryId": 28
+    },
+    "mpi_060_base_frame_and_guarding_component_060": {
+      "byteOffset": 262144,
+      "segmentCount": 804,
+      "geometryId": 28
+    },
+    "mpi_061_base_frame_and_guarding_component_061": {
+      "byteOffset": 249280,
+      "segmentCount": 804,
+      "geometryId": 27
+    },
+    "mpi_062_base_frame_and_guarding_component_062": {
+      "byteOffset": 262144,
+      "segmentCount": 804,
+      "geometryId": 28
+    },
+    "mpi_063_base_frame_and_guarding_component_063": {
+      "byteOffset": 262144,
+      "segmentCount": 804,
+      "geometryId": 28
+    },
+    "mpi_064_base_frame_and_guarding_component_064": {
+      "byteOffset": 275008,
+      "segmentCount": 12,
+      "geometryId": 29
+    },
+    "mpi_065_base_frame_and_guarding_component_065": {
+      "byteOffset": 275008,
+      "segmentCount": 12,
+      "geometryId": 29
+    },
+    "mpi_066_base_frame_and_guarding_component_066": {
+      "byteOffset": 275200,
+      "segmentCount": 12,
+      "geometryId": 30
+    },
+    "mpi_067_base_frame_and_guarding_component_067": {
+      "byteOffset": 275392,
+      "segmentCount": 12,
+      "geometryId": 31
+    },
+    "mpi_068_base_frame_and_guarding_component_068": {
+      "byteOffset": 275392,
+      "segmentCount": 12,
+      "geometryId": 31
+    },
+    "mpi_069_rear_shuttle_table": {
+      "byteOffset": 275584,
+      "segmentCount": 804,
+      "geometryId": 32
+    },
+    "mpi_070_platen_and_tooling_area_component_070": {
+      "byteOffset": 288448,
+      "segmentCount": 12,
+      "geometryId": 33
+    },
+    "mpi_071_platen_and_tooling_area_component_071": {
+      "byteOffset": 288640,
+      "segmentCount": 12,
+      "geometryId": 34
+    },
+    "mpi_072_platen_and_tooling_area_component_072": {
+      "byteOffset": 288640,
+      "segmentCount": 12,
+      "geometryId": 34
+    },
+    "mpi_073_front_shuttle_table": {
+      "byteOffset": 275584,
+      "segmentCount": 804,
+      "geometryId": 32
+    },
+    "mpi_074_platen_and_tooling_area_component_074": {
+      "byteOffset": 288448,
+      "segmentCount": 12,
+      "geometryId": 33
+    },
+    "mpi_075_platen_and_tooling_area_component_075": {
+      "byteOffset": 288640,
+      "segmentCount": 12,
+      "geometryId": 34
+    },
+    "mpi_076_platen_and_tooling_area_component_076": {
+      "byteOffset": 288640,
+      "segmentCount": 12,
+      "geometryId": 34
+    },
+    "mpi_077_shuttle_rail_bed": {
+      "byteOffset": 288832,
+      "segmentCount": 804,
+      "geometryId": 35
+    },
+    "mpi_078_base_frame_and_guarding_component_078": {
+      "byteOffset": 301696,
+      "segmentCount": 804,
+      "geometryId": 36
+    },
+    "mpi_079_base_frame_and_guarding_component_079": {
+      "byteOffset": 301696,
+      "segmentCount": 804,
+      "geometryId": 36
+    },
+    "mpi_080_base_frame_and_guarding_component_080": {
+      "byteOffset": 314560,
+      "segmentCount": 804,
+      "geometryId": 37
+    },
+    "mpi_081_base_frame_and_guarding_component_081": {
+      "byteOffset": 327424,
+      "segmentCount": 804,
+      "geometryId": 38
+    },
+    "mpi_082_cabinet_door_reveal": {
+      "byteOffset": 340288,
+      "segmentCount": 12,
+      "geometryId": 39
+    },
+    "mpi_083_cabinet_door": {
+      "byteOffset": 340480,
+      "segmentCount": 804,
+      "geometryId": 40
+    },
+    "mpi_084_control_bezel": {
+      "byteOffset": 353344,
+      "segmentCount": 804,
+      "geometryId": 41
+    },
+    "mpi_085_control_display_surface": {
+      "byteOffset": 366208,
+      "segmentCount": 4,
+      "geometryId": 42
+    },
+    "mpi_086_control_keypad_housing": {
+      "byteOffset": 366272,
+      "segmentCount": 804,
+      "geometryId": 43
+    },
+    "mpi_087_green_control_button": {
+      "byteOffset": 379136,
+      "segmentCount": 120,
+      "geometryId": 44
+    },
+    "mpi_088_upper_control_button": {
+      "byteOffset": 379136,
+      "segmentCount": 120,
+      "geometryId": 44
+    },
+    "mpi_089_lower_control_button": {
+      "byteOffset": 379136,
+      "segmentCount": 120,
+      "geometryId": 44
+    },
+    "mpi_090_stop_button": {
+      "byteOffset": 381056,
+      "segmentCount": 120,
+      "geometryId": 45
+    },
+    "mpi_091_cabinet_handle": {
+      "byteOffset": 382976,
+      "segmentCount": 804,
+      "geometryId": 46
+    },
+    "mpi_092_lower_cabinet_hinge": {
+      "byteOffset": 395840,
+      "segmentCount": 804,
+      "geometryId": 47
+    },
+    "mpi_093_upper_cabinet_hinge": {
+      "byteOffset": 395840,
+      "segmentCount": 804,
+      "geometryId": 47
+    },
+    "mpi_094_cabinet_lower_body": {
+      "byteOffset": 408704,
+      "segmentCount": 804,
+      "geometryId": 48
+    },
+    "mpi_095_cabinet_upper_body": {
+      "byteOffset": 421568,
+      "segmentCount": 804,
+      "geometryId": 49
+    },
+    "mpi_096_cabinet_vented_fascia": {
+      "byteOffset": 434432,
+      "segmentCount": 96,
+      "geometryId": 50
+    },
+    "mpi_097_vent_backing": {
+      "byteOffset": 435968,
+      "segmentCount": 12,
+      "geometryId": 51
+    },
+    "mpi_098_lower_cover_reveal": {
+      "byteOffset": 436160,
+      "segmentCount": 12,
+      "geometryId": 52
+    },
+    "mpi_099_lower_cabinet_cover": {
+      "byteOffset": 436352,
+      "segmentCount": 804,
+      "geometryId": 53
+    },
+    "mpi_100_cabinet_access_detail": {
+      "byteOffset": 449216,
+      "segmentCount": 804,
+      "geometryId": 54
+    },
+    "mpi_101_upper_service_housing": {
+      "byteOffset": 462080,
+      "segmentCount": 804,
+      "geometryId": 55
+    },
+    "mpi_102_service_housing_base": {
+      "byteOffset": 474944,
+      "segmentCount": 804,
+      "geometryId": 56
+    },
+    "mpi_103_service_conduit": {
+      "byteOffset": 487808,
+      "segmentCount": 1274,
+      "geometryId": 57
+    },
+    "mpi_104_side_drive_shaft": {
+      "byteOffset": 508192,
+      "segmentCount": 120,
+      "geometryId": 58
+    },
+    "mpi_105_side_drive_end": {
+      "byteOffset": 510112,
+      "segmentCount": 120,
+      "geometryId": 59
+    },
+    "mpi_106_wax_tank": {
+      "byteOffset": 512032,
+      "segmentCount": 120,
+      "geometryId": 60
+    },
+    "mpi_107_tank_lid": {
+      "byteOffset": 513952,
+      "segmentCount": 120,
+      "geometryId": 61
+    },
+    "mpi_108_wax_supply_support": {
+      "byteOffset": 515872,
+      "segmentCount": 804,
+      "geometryId": 62
+    },
+    "mpi_109_supply_drive_housing": {
+      "byteOffset": 528736,
+      "segmentCount": 120,
+      "geometryId": 63
+    },
+    "mpi_110_upper_carriage_bracket": {
+      "byteOffset": 530656,
+      "segmentCount": 804,
+      "geometryId": 64
+    },
+    "mpi_111_lower_carriage_bracket": {
+      "byteOffset": 543520,
+      "segmentCount": 804,
+      "geometryId": 65
+    },
+    "mpi_112_supply_connection": {
+      "byteOffset": 556384,
+      "segmentCount": 120,
+      "geometryId": 66
+    },
+    "mpi_113_nozzle_tip": {
+      "byteOffset": 558304,
+      "segmentCount": 64,
+      "geometryId": 67
+    },
+    "mpi_114_supply_hose": {
+      "byteOffset": 559328,
+      "segmentCount": 1463,
+      "geometryId": 68
+    },
+    "mpi_115_base_frame_and_guarding_component_115": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_116_base_frame_and_guarding_component_116": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_117_base_frame_and_guarding_component_117": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_118_base_frame_and_guarding_component_118": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_119_base_frame_and_guarding_component_119": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_120_base_frame_and_guarding_component_120": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_121_base_frame_and_guarding_component_121": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_122_base_frame_and_guarding_component_122": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_123_base_frame_and_guarding_component_123": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_124_base_frame_and_guarding_component_124": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_125_base_frame_and_guarding_component_125": {
+      "byteOffset": 582736,
+      "segmentCount": 120,
+      "geometryId": 69
+    },
+    "mpi_126_base_frame_and_guarding_component_126": {
+      "byteOffset": 584656,
+      "segmentCount": 804,
+      "geometryId": 70
+    },
+    "mpi_127_base_frame_and_guarding_component_127": {
+      "byteOffset": 584656,
+      "segmentCount": 804,
+      "geometryId": 70
+    },
+    "mpi_128_base_frame_and_guarding_component_128": {
+      "byteOffset": 597520,
+      "segmentCount": 120,
+      "geometryId": 71
+    },
+    "mpi_129_base_frame_and_guarding_component_129": {
+      "byteOffset": 597520,
+      "segmentCount": 120,
+      "geometryId": 71
+    },
+    "mpi_130_base_frame_and_guarding_component_130": {
+      "byteOffset": 597520,
+      "segmentCount": 120,
+      "geometryId": 71
+    },
+    "mpi_131_base_frame_and_guarding_component_131": {
+      "byteOffset": 597520,
+      "segmentCount": 120,
+      "geometryId": 71
+    },
+    "mpi_132_base_frame_and_guarding_component_132": {
+      "byteOffset": 599440,
+      "segmentCount": 120,
+      "geometryId": 72
+    },
+    "mpi_133_base_frame_and_guarding_component_133": {
+      "byteOffset": 599440,
+      "segmentCount": 120,
+      "geometryId": 72
+    },
+    "mpi_134_fixed_platen_separation_plate": {
+      "byteOffset": 601360,
+      "segmentCount": 12,
+      "geometryId": 73
+    },
+    "mpi_135_base_frame_and_guarding_component_135": {
+      "byteOffset": 601552,
+      "segmentCount": 12,
+      "geometryId": 74
+    },
+    "mpi_136_base_frame_and_guarding_component_136": {
+      "byteOffset": 601552,
+      "segmentCount": 12,
+      "geometryId": 74
+    },
+    "mpi_137_base_frame_and_guarding_component_137": {
+      "byteOffset": 601552,
+      "segmentCount": 12,
+      "geometryId": 74
+    },
+    "mpi_138_base_frame_and_guarding_component_138": {
+      "byteOffset": 601744,
+      "segmentCount": 12,
+      "geometryId": 75
+    },
+    "mpi_139_base_frame_and_guarding_component_139": {
+      "byteOffset": 601744,
+      "segmentCount": 12,
+      "geometryId": 75
+    }
+  }
+}

@@ -1,59 +1,70 @@
-# MPI guided capability example
+# MPI native Explorer · release notes
 
-An isolated, six-scene, approximately 80-second example after the PAC pitch's
-process baseline (page 16). The slide’s Start link begins playback after model loading.
-A direct visit waits for Start. Pause/resume as needed, then return to
-customer outcomes (page 18). Customer outcomes still immediately precede the
-two-week trial offer (page 19). The full deck contains 22 pages.
+This release presents the existing MPI 35 Series study in the native Annora
+Explorer. The five-chapter tour is **24 seconds**. PAC Website and Sales
+Workspace artifacts remain independent and unchanged.
 
-## Authoring
+Publish `notes.html` beside the Explorer entry page to preserve the existing
+`/presentation/mpi-demo/notes.html` presenter-notes URL. The reading page uses
+system fonts and inline CSS, with no external runtime dependencies. Its
+**Open native Explorer** link starts `?model=mpi-35-study&presentation=1&guide=timeline`.
 
-- `sequence.mjs`: canonical English scene titles, durations, spoken script and actions.
-- `index.html`, `demo.css`: audience stage. Same Manrope, original co-brand assets,
-  charcoal, restrained orange and fixed 1920×1080 geometry as the approved pitch.
-- `app.js`: deterministic choreography, explicit start, pause and recorded fallback.
-- `model.js`: the pinned MPI study adapter. See `MODEL-SOURCES.md` for identity and licenses.
-- `notes.html`: separate English presenter script, generated from `sequence.mjs` at runtime.
-- `test.mjs`: clock, pause, transition-settle and safe return-link checks.
+## Five chapters and spoken lines
 
-Run `node --test presentation/mpi-demo/test.mjs` from the source root. Serve the
-root over HTTP and open `presentation/mpi-demo/`. The canonical pitch build
-copies this entire isolated runtime into the published presentation folder.
+1. **00:00–00:04 — Meet the MPI 35 Series.** Full machine overview.
+   Say: “Here is the same MPI study in Annora Explorer.”
+2. **00:04–00:08 — Focus on the working area.** Native isolation frames the
+   platen and tooling; the surrounding machine fades. Hold the starting pose.
+   Say: “Focus on the tooling, with the rest kept in context.”
+3. **00:08–00:14 — Make the movement visible.** Keep the tooling camera stable;
+   the preserved moving platen opens, holds and returns over six seconds.
+   Say: “See the platen open and return. This is an illustrative preview.”
+4. **00:14–00:18 — Find the operator controls.** Native isolation and framing
+   focus the control panel.
+   Say: “Then move directly to the operator controls.”
+5. **00:18–00:24 — Explain the machine. Focus the conversation.** Restore the
+   full assembly.
+   Say: “For PAC, we start with an approved model and help buyers ask more
+   specific questions.”
 
-## Reference lock
+## Presentation controls
 
-The user's accepted PAC pitch and `presentation/system/PITCH-DESIGN-RULES.md`
-are the primary visual target. The existing MPI precision study supplies the
-real model and materials. Refero's Linear Changelog style (source
-https://linear.app/changelog, style ID `11d3e58a-87d7-4a9a-bbf5-720f4fd3ffc6`)
-supports only low-prominence controls, strong text contrast and restrained
-surface separation. Its font, pill buttons and dense text layout are rejected
-in favor of the already-approved PAC rules. No new visual direction is implied.
+Use **Demo**, **Pause**, **Resume**, the chapter controls and the timeline.
+Dragging pauses the guided view; **Explore** allows free inspection. At the
+end, choose **Replay** or **Explore freely**. Reduced-motion visitors receive
+stable views and **Next chapter**. Separation is disabled for this model.
 
-The model and complete text/action column have identical top and bottom edges.
-Their geometry never changes between beats. Spoken narration stays out of the
-audience area. Only the prepared question appears during the final two beats.
+Use the header’s **Return to pitch** link to continue at customer outcomes,
+immediately before the trial offer. The notes page falls back to
+`../?view=present#02-proof`, relative to `/presentation/mpi-demo/`. An optional
+`return` query accepts only a same-origin presentation route ending in
+`/presentation/` or `/presentation/2026-11-08/`, with the exact presentation
+view and proof anchor. No external redirect or storage is used by the notes.
 
-## Playback contract
+## Source, appearance and limits
 
-Start is disabled until the local model and textures are ready. The clock only
-advances while running and waits at scene boundaries for camera transitions.
-Pause freezes both the sequence and scripted model motion. Hiding the tab or
-manually touching the model pauses. Resume continues; Restart clears only this
-example's state. The ending does not navigate automatically.
+The same 139 core source meshes and original moving-platen group are retained.
+This is an existing illustrative study, not MPI engineering CAD, PAC equipment,
+a verified configuration, or evidence that MPI deployed this Explorer. The
+authored six-second motion does not establish cycle time, physical clearance,
+mechanical safety or manufacturing dimensions.
 
-Reduced-motion preference removes slow orbit and smooth camera/opening motion;
-the same six story beats advance automatically with discrete state changes.
-The recorded fallback uses actual captured MPI views, visibly labeled. It does
-not claim a live save or restoration. A missing live renderer offers that
-fallback and always retains a return-to-pitch link.
+The GLB preserves source material colors and opacity. Native Explorer applies
+its engineering finish treatment, so guards can appear opaque. Native assembly
+isolation makes the working area visible without deleting geometry. Two image
+appearances are omitted from the untextured GLB: the original MPI logo decal
+and control-screen bitmap. Original image files and their hashes remain in the
+authoring source; no substitute logo or screen artwork is added.
 
-## Boundaries
+MPI imagery and marks remain their owners’ property. This package asserts no
+general open-source license for the model or media. Three.js software is MIT
+licensed separately. See the authoring package’s `MODEL-NOTICE.txt`,
+`PROVENANCE.json`, source manifest and mesh inventory for the exact snapshot.
 
-The model is an illustrative MPI study, not MPI CAD, PAC equipment or evidence
-of a production Explorer deployment. Saved state is local to
-`pac-pitch-mpi-example-v1` in session storage. The prepared question and real
-view state form only this demonstration's record. No inquiry, deal, quote,
-price, customer message or CRM integration is created. Website, Sales Workspace
-and the existing PAC guided demo stay unchanged. Do not attribute MPI's quoted
-business results to this new example or add 3D modeling to the trial promise.
+Official product context: [MPI 35 Series 4 Post](https://www.mpi-systems.com/machines/wax-injection-equipment/mpi-35-series-4-post/).
+The public product page is a reference, not a license for manufacturer CAD or
+validation of this illustrative study.
+
+The presenter page makes no claim of a live inquiry, quote, proposal, customer
+account, or machine connection. A PAC implementation requires an approved
+equipment model, agreed explanation and appropriate source rights.

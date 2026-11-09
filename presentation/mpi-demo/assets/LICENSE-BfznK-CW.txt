@@ -1,0 +1,21 @@
+MPI 35 Series illustrative study — source and media notice
+
+This model is the existing Annora-authored MPI Website review study, reused for
+the user-authorized customer demonstration. It is not manufacturer-supplied
+engineering CAD and is not a PAC machine. No general open-source license for
+MPI geometry, reference imagery or marks is asserted by this package.
+
+Original MPI marks and control-screen imagery retain their owners' rights.
+The reference-media files are unmodified provenance references. Neither image
+is embedded in the untextured engineering GLB. No recreated logo or substitute
+screen artwork has been added.
+
+Three.js 0.187.0 and its addons are MIT-licensed software. Their software license
+is retained in source/THREE-LICENSE.txt and does not license MPI marks or imagery.
+
+The source geometry, materials and source hierarchy are retained. Zero-area
+triangle references, if present, are removed without changing vertex positions.
+Twenty-six decorative line overlays are omitted; native Explorer derives its
+own linework. Animation is an authored presentation preview of the existing
+moving-platen relation, not a simulation, safety analysis, cycle-time claim,
+manufacturing instruction, installation requirement or verified bill of materials.

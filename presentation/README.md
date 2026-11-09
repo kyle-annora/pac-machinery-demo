@@ -45,11 +45,11 @@ In the live pitch, page 7 launches the guided demonstration: Act A (Website inqu
 
 The authored demo URL is `https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full&entry=product#A01`. On a loopback server, `guided-links.js` resolves the same links to that server’s `/demo/`, supporting both the canonical dated deck and the flattened `/presentation/` alias. The demo returns to `11-baseline` (page 16). Root release verification must confirm the public destination before sharing.
 
-Page 17 launches a separate **six-scene, eighty-second MPI35 example**: whole machine → tooling area → opening study → operator controls → contextual question → restore the saved view. This illustrates equipment understanding with illustrative geometry; it is not PAC equipment, engineering CAD, a configuration approval or an independently verified production result. The existing equipment-photo explanation on backup page 13 stays specific to PAC.
+Page 17 launches a **24-second native Annora Explorer demo** using the MPI 35 Series study: whole machine → isolate the tooling area → authored opening motion → controls → whole machine. The existing Explorer owns the camera, highlighting, animation, timeline and Pause/Resume/Replay/Explore controls. There is no standalone playback wrapper. This is illustrative geometry, not PAC equipment, manufacturer CAD, an engineering approval or evidence of a deployed MPI 3D product.
 
-The MPI entry uses the same approved product-screen composition: a real capture and its complete explanation/CTA share the content boundaries, with Manrope, charcoal, white/gray text and one orange-yellow action. The poster must be captured from the actual viewer at `../mpi-demo/assets/mpi-preview.jpg`; the build rejects a missing capture. Do not substitute a generic mechanism or a fabricated screenshot.
+The MPI entry preserves the approved equal-height product-screen composition and a real screenshot from the native viewer at `../mpi-demo/assets/mpi-preview.jpg`. Keep the original Annora and PAC deck logos. Do not substitute a generic mechanism or a fabricated screenshot.
 
-The published MPI runtime lives at `/presentation/mpi-demo/`. `guided-links.js` resolves loopback links and appends a same-origin return URL to the current deck at `02-proof`. The canonical dated deck and flattened public deck both return to customer proof. The demo validates that return destination. Keep the independent runtime and its source/asset provenance with the pitch package.
+The published native runtime lives at `/presentation/mpi-demo/?model=mpi-35-study&presentation=1&guide=timeline`. It starts automatically after model preparation. `guided-links.js` resolves local rehearsals to the same server and adds only native route options. The plain **Return to pitch** anchor in the native header goes to public customer proof (`02-proof`), as does the native brand link. Editable native source and model authoring inputs live at `../mpi-native-source/`; keep its source and license notices. Native engineering materials omit the source bitmap logo/screen appearances and render guards opaque; the tour uses native isolation to reveal the interior without deleting geometry.
 
 The final scene asks PAC to approve the two-week free trial, with scope, a PAC lead and dates confirmed. It appears in full on arrival. Its speaker script ends with a direct question and a pause; paid work still requires separate mutual agreement. The detailed trial-process diagram remains in the supporting diagram library.
 
@@ -63,7 +63,7 @@ Read [the reusable design rules](../system/PITCH-DESIGN-RULES.md) before editing
 | --- | --- |
 | `content.json` | Scene order, titles/subtitles, visible HTML body copy in `visual`, customer `results`, inquiry `fields`, spoken `narration`, optional `presenterContext` and `sourceLinks`, transitions and navigation labels |
 | `pitch.js` | Scene markup consuming structured content, reveal behavior, explicit mainline navigation and browser-only copy-edit controls |
-| `guided-links.js` | Preserve public demo links; resolve loopback rehearsals and the MPI same-deck return destination |
+| `guided-links.js` | Preserve public demo links; resolve loopback rehearsals and native MPI model/presentation options |
 | `pitch.css` | Deck-specific presentation and supporting-page styles |
 | `../system/layout.css` | Reusable type, alignment, spacing and composition rules |
 | `viewport-base.css` | Fixed-stage viewport behavior |

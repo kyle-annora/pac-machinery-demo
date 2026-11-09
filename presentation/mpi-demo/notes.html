@@ -1,1 +1,75 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MPI guided example · Presenter notes</title><link rel="stylesheet" href="demo.css"></head><body><main class="notes"><nav><a href="index.html">Open guided example</a><a href="MODEL-SOURCES.md">Model sources</a></nav><p class="meta">Annora × PAC Machinery · Independent capability example</p><h1>Make the machine easier to understand.</h1><p>Six scenes, approximately 80 seconds. The pitch’s <strong>Start guided example</strong> link begins playback when the model is ready. On a direct visit, click <strong>Start guided example</strong> once. The model, scenes and prepared question advance automatically. Use <strong>Pause / Resume</strong> if the customer asks a question. The final frame waits for <strong>Continue to customer outcomes</strong>.</p><p>The MPI 35 Series is an illustrative study based on published product information, not MPI engineering CAD or PAC equipment. This example does not establish machine fit or claim that Explorer caused MPI’s reported quoting results.</p><div id="beats"></div><section><h2>Presenter controls</h2><ol><li>Start only after the model is ready.</li><li>Pause with the visible button, Space or Escape. Moving the model or hiding this tab also pauses the sequence.</li><li>Resume continues at the same scene and time. Restart is available while paused or after completion.</li><li>Return to the customer outcomes slide at the end. It remains immediately before the trial offer.</li></ol><p>The saved question and camera state belong to this isolated demonstration. There is no inquiry submission, CRM handoff, change to a PAC quote or order acceptance.</p><p><a href="index.html?recorded=1">Open recorded fallback</a>. Captured views are explicitly labeled. The fallback illustrates the same story and does not claim to save a live 3D state.</p></section><section><h2>Bridge to PAC</h2><p class="spoken">“For PAC, we would start with an approved equipment model and choose the views that help buyers discuss loading, bag handling and access. That is a separate scope decision; it is not automatically included in the two-week quoting evaluation.”</p></section></main><script type="module">import{BEATS}from'./sequence.mjs';let start=0;const fmt=n=>`${Math.floor(n/60)}:${String(n%60).padStart(2,'0')}`;document.getElementById('beats').innerHTML=BEATS.map((b,i)=>{const from=start;start+=b.duration;return`<section><p class="meta">${String(i+1).padStart(2,'0')} · ${fmt(from)}–${start>=60?'1:'+String(start-60).padStart(2,'0'):fmt(start)}</p><h2>${b.title}</h2><p class="spoken">${b.say}</p><p class="cue">On screen: ${b.action}</p></section>`}).join('');</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>MPI native Explorer · Presenter notes</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#20262b;background:#f7f7f4;font-synthesis:none;line-height:1.6}
+    *{box-sizing:border-box}body{margin:0}main{max-width:1040px;padding:48px 28px 72px;margin:auto}a{color:#164d78;text-underline-offset:.2em}a:focus-visible{outline:3px solid #b74727;outline-offset:5px}.skip{position:absolute;left:16px;top:-80px;background:white;padding:8px}.skip:focus{top:12px}
+    nav{display:flex;flex-wrap:wrap;gap:12px 28px;padding-bottom:28px;border-bottom:1px solid #cbd0d2}nav a{display:inline-flex;align-items:center;min-height:44px;font-weight:600}header{padding:34px 0 28px}.eyebrow{margin:0 0 12px;font-size:.875rem;font-weight:600;color:#555f65}h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.1;letter-spacing:-.035em;margin:0 0 18px;max-width:20ch}h2{font-size:1.5rem;line-height:1.25;margin:0 0 16px;letter-spacing:-.02em}h3{font-size:1.125rem;line-height:1.35;margin:0 0 8px}p{margin:0 0 14px}.intro{max-width:65ch;font-size:1.125rem;color:#3d474f}.section{border-top:1px solid #cbd0d2;padding-top:28px;margin-top:28px}.chapters{list-style:none;margin:0;padding:0}.chapter{display:grid;grid-template-columns:100px 1fr;gap:26px;padding:24px 0;border-bottom:1px solid #d8dcde}.time{font-variant-numeric:tabular-nums;font-size:.9375rem;font-weight:600;margin:0;color:#46535c}.label{font-size:.8125rem;color:#58636a;font-weight:600;margin:14px 0 4px}.frame{color:#46535c;max-width:70ch}.spoken{font-size:1.125rem;max-width:65ch;margin:0}.controls{padding-left:20px;max-width:76ch}.controls li{padding:4px 0 8px}.note{border-left:3px solid #b74727;padding:3px 0 3px 18px;max-width:77ch}.note p:last-child{margin-bottom:0}.source{max-width:80ch;color:#46535c}footer{margin-top:32px;font-size:.875rem;color:#58636a}
+    @media(max-width:620px){main{padding:24px 20px 48px}.chapter{grid-template-columns:1fr;gap:7px}header{padding-top:24px}.section{margin-top:22px}}
+    @media print{body{background:white}main{max-width:none;padding:0}nav,.skip{display:none}header{padding-top:0}.chapter{break-inside:avoid}.section{break-inside:avoid}a{color:inherit}footer{margin-top:16px}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#chapters">Skip to the five chapters</a>
+  <main>
+    <nav aria-label="Demo and presentation">
+      <a id="open-demo" href="./?model=mpi-35-study&amp;presentation=1&amp;guide=timeline">Open native Explorer</a>
+      <a id="return-pitch" href="../?view=present#02-proof">Return to pitch</a>
+    </nav>
+    <header>
+      <p class="eyebrow">Presenter notes · 24 seconds · 5 chapters</p>
+      <h1>Explain the machine.<br>Focus the conversation.</h1>
+      <p class="intro">Show the existing MPI 35 Series study inside Annora’s native Explorer, then return to customer outcomes. This is a short product example within the PAC pitch.</p>
+    </header>
+    <section id="chapters" aria-labelledby="chapters-title">
+      <h2 id="chapters-title">The walkthrough</h2>
+      <p>Open <strong>Demo</strong> and let the continuous tour run. The screen content and spoken lines are separated below.</p>
+      <ol class="chapters">
+        <li class="chapter" data-chapter="meet">
+          <p class="time">00:00–00:04</p>
+          <div><h3>Meet the MPI 35 Series.</h3><p class="frame">Full machine overview. On-screen caption: “Illustrative study · not engineering CAD.”</p><p class="label">Say</p><p class="spoken">“Here is the same MPI study in Annora Explorer.”</p></div>
+        </li>
+        <li class="chapter" data-chapter="tooling">
+          <p class="time">00:04–00:08</p>
+          <div><h3>Focus on the working area.</h3><p class="frame">Native isolation focuses the platen and tooling while the surrounding machine fades. The platen holds its starting pose.</p><p class="label">Say</p><p class="spoken">“Focus on the tooling, with the rest kept in context.”</p></div>
+        </li>
+        <li class="chapter" data-chapter="opening">
+          <p class="time">00:08–00:14</p>
+          <div><h3>Make the movement visible.</h3><p class="frame">The camera stays on the tooling as the existing moving platen opens, holds and returns. On-screen caption: “A prepared opening preview, not a cycle-time claim.”</p><p class="label">Say</p><p class="spoken">“See the platen open and return. This is an illustrative preview.”</p></div>
+        </li>
+        <li class="chapter" data-chapter="controls">
+          <p class="time">00:14–00:18</p>
+          <div><h3>Find the operator controls.</h3><p class="frame">Native isolation and framing move to the control panel. This is a model surface, not a functioning machine interface.</p><p class="label">Say</p><p class="spoken">“Then move directly to the operator controls.”</p></div>
+        </li>
+        <li class="chapter" data-chapter="context">
+          <p class="time">00:18–00:24</p>
+          <div><h3>Explain the machine. Focus the conversation.</h3><p class="frame">Return to the full assembly. On-screen caption: “For PAC, begin with an approved equipment model.”</p><p class="label">Say</p><p class="spoken">“For PAC, we start with an approved model and help buyers ask more specific questions.”</p></div>
+        </li>
+      </ol>
+    </section>
+    <section class="section" aria-labelledby="controls-title">
+      <h2 id="controls-title">Use the native controls</h2>
+      <ul class="controls">
+        <li><strong>Demo</strong> opens the authored tour. Use <strong>Pause</strong> or <strong>Resume</strong> to control its pace; chapter controls and the timeline revisit a moment.</li>
+        <li>Dragging takes control and pauses the guided view. Resume to continue, or choose <strong>Explore</strong> to inspect freely with the assembly tree and rendering controls.</li>
+        <li>At the end, use <strong>Replay</strong> to repeat or <strong>Explore freely</strong> for questions. Separation is disabled for this model.</li>
+        <li>With reduced motion enabled, the tour presents stable views; use <strong>Next chapter</strong> rather than expecting continuous animation.</li>
+        <li>Select <strong>Return to pitch</strong> in the header to continue at customer outcomes, immediately before the trial offer. On a narrow mobile screen, tap the ANNORA brand to return. This example does not update a PAC inquiry, quote or proposal.</li>
+      </ul>
+    </section>
+    <section class="section" aria-labelledby="boundaries-title">
+      <h2 id="boundaries-title">What this example establishes</h2>
+      <div class="note"><p>We can make a complex product easier to inspect, explain a prepared movement and focus a conversation on a specific area. A PAC version begins with an approved, usable PAC equipment model and agreed content.</p></div>
+      <p class="source" style="margin-top:18px">The study retains all 139 core source meshes and the original moving-platen group. It is not manufacturer CAD, a PAC model, a verified machine configuration, or evidence that MPI has deployed this Explorer. The six-second motion is authored presentation timing; it does not establish cycle time, clearance or mechanical safety.</p>
+      <p class="source">Native engineering finishes differ from the earlier MPI rendering. Guards can appear opaque; the tour uses native isolation to reveal the working area. The untextured model omits two image appearances: the original MPI logo decal and control-screen bitmap. Their original files remain preserved in the source package; no replacement artwork is invented.</p>
+      <p class="source">MPI marks and imagery retain their owners’ rights. No general open-source license is asserted for this model or media. Three.js is separately MIT licensed. The source package records the geometry snapshot, transformations and asset hashes.</p>
+      <p class="source">Product context: <a href="https://www.mpi-systems.com/machines/wax-injection-equipment/mpi-35-series-4-post/" target="_blank" rel="noopener noreferrer">MPI’s official 35 Series 4 Post page</a>. This reference describes the product; it is not a downloadable CAD license or validation of this study.</p>
+    </section>
+    <footer>Annora · PAC presentation supporting notes · Prepared November 9, 2026</footer>
+  </main>
+</body>
+</html>
