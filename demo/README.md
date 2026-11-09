@@ -24,6 +24,14 @@ Start from pitch slide **7**, **Let’s walk through the sales experience** (`07
 The public URL runs the real demonstration UI and domain commands with each browser’s own sample data. It is not a shared customer portal or a hosted multi-user sales backend. Sharing a URL does not share the presenter’s local records. The old screenshot gallery remains archived reference, not the current walkthrough.
 
 
+## Keep the live presentation in one tab
+
+The pitch launches the guided demonstration in the same audience tab and the final return continues at slide 16. The separate native MPI 3D example is the other main-presentation page departure; it returns to customer outcomes. The Website and Sales Workspace remain independent artifacts inside the guided demonstration. Sharing a presentation tab does not connect their business records.
+
+Keep the operation video and version-bound PDF in their existing page viewers. Patrick does not need to open YouTube, the PAC product website, or a downloaded PDF to complete the scripted walkthrough. Optional original-source links sit under **Reference details** and are available for questions or verification. If the video cannot play, use the equipment photo and continue with Next.
+
+The inline **Presenter notes** panel is sufficient for the walkthrough. A separate presenter window and the production-script link remain optional preparation tools; they are not steps the audience needs to follow.
+
 ## Presenting
 
 1. Open the full walkthrough. Use the bottom-left **Choose walkthrough** menu before presenting if you want one act or a different Website entry.

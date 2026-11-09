@@ -154,3 +154,12 @@ If a change cannot fit these rules, revise the content or introduce a documented
 - Show the complete final frame immediately. Do not require additional reveals to expose the actual ask or its commercial boundary.
 - A prominent decision prompt is not a fake approval control. Do not simulate a signature, acceptance or saved approval unless that capability and action are explicitly in scope.
 - End the speaker script with the exact question and an instruction to pause. Do not label the final cue as a bridge to another scene.
+
+## Keep the live pitch in one tab
+
+- The audience path has only two page exits: the guided product walkthrough and native 3D Explorer. Both open in the current tab and provide an explicit return to the agreed pitch scene.
+- Show search evidence, recorded screenshots and customer-case detail inside a native modal dialog. Keep the original image, necessary qualifications and source provenance; retain original URLs in optional speaker references.
+- Closing a detail view must preserve scene, reveal, presentation mode and keyboard focus. Arrow keys, scrolling and touch gestures inside it must not advance the underlying deck. Test Escape and keyboard focus confinement.
+- Use one full-walkthrough action on its entry slide. Individual acts remain rehearsal choices in the demo menu and notes. Preserve the documented backup-slide skip and return route.
+- Source links, downloads and presenter scripts are optional preparation or follow-up resources, not mandatory audience stops. Embedded third-party video still requires a network connection; keep its photo fallback.
+- Do not imply deployment or public availability from a successful source push. Preserve current repository visibility and check hosting separately.
