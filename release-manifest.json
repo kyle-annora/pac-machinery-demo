@@ -261,8 +261,8 @@
     },
     {
       "path": "presentation/notes.html",
-      "bytes": 397726,
-      "sha256": "184cf702ede019c785d9a2923a6bcd61329269b99147af1cbda6ed6c901ae7e4"
+      "bytes": 398982,
+      "sha256": "25d2a5ba49cb352fff82d53f77b5ab16fb1a23c4cfa33a54c24b252087f90a09"
     },
     {
       "path": "presentation/screens.json",
@@ -296,8 +296,8 @@
     },
     {
       "path": "demo/README.md",
-      "bytes": 12533,
-      "sha256": "7761ce74a5d6fe61869ea9c73c1f1c0dd223d01ce2519215eba3754d1855061b"
+      "bytes": 13033,
+      "sha256": "4948f2be85e31de5385a3b52ca1c89aeb55a79aa168756ac46a14d5602113602"
     },
     {
       "path": "demo/documents/quote-v1.pdf",

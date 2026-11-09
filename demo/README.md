@@ -19,6 +19,8 @@ Established public routes (see the [current release verification record](../pres
 
 Start from pitch slide **7**, **Let’s walk through the sales experience** (`07-demo-routes`), using the guided-demo action. Run both acts continuously or select either act before starting. The demo’s final **Back to pitch** action returns to slide **16**, **Understand where the sales process slows down** (`11-baseline`). Stable scene IDs take precedence if page numbers change. The dated source-route alias is preserved in the packaged site so this return works from both local source and flattened publication layouts.
 
+**Pitch Next and demo Next are different.** At pitch slide 7, click **Start the full walkthrough** to enter the demonstration. Pitch Next intentionally skips backup slides 8–15 and goes directly to slide 16, even before the demo has played. Within the demo, Next executes the prepared action and advances one step. If the pitch was advanced accidentally, Previous from slide 16 returns to slide 7. Individual Act A/B runs each return to slide 16; choose the full walkthrough to run both together.
+
 The public URL runs the real demonstration UI and domain commands with each browser’s own sample data. It is not a shared customer portal or a hosted multi-user sales backend. Sharing a URL does not share the presenter’s local records. The old screenshot gallery remains archived reference, not the current walkthrough.
 
 
