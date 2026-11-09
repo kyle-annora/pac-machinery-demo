@@ -1,0 +1,74 @@
+{
+  "captureDate": "November 8, 2026 · Pacific time",
+  "method": "Two independently submitted exploratory queries in a signed-out Perplexity session. Screenshots are original browser captures. Findings describe these observations only; search answers vary by date, service and context. Public session URLs may expire or require sign-in; preserved captures are the durable reference.",
+  "queries": [
+    {
+      "id": "01",
+      "query": "Who supplies automated bagging equipment for hardware kits?",
+      "sessionUrl": "https://www.perplexity.ai/session/f68f1b7b-fbfb-46cc-b762-a800c9ca9f04",
+      "capturedAt": "2026-11-08T16:04:00-08:00",
+      "observed": [
+        "PAC Machinery appears in the supplier answer.",
+        "The cited PAC example is a Rollbag R1275 integrated kitting system, not evidence of the R3200 configuration."
+      ],
+      "sources": [
+        {
+          "name": "Packaging World · PAC / MSD kitting system",
+          "url": "https://www.packworld.com/flexibles/bagging-pouching/product/22975222/pac-machinery-pac-machinery-msd-sales-partner-to-showcase-integrated-robotic-kitting-and-automatic-bagging-solution-at-pack-expo"
+        },
+        {
+          "name": "Crown Packaging · AUTOBAG",
+          "url": "https://shop.crownpack.com/autobag/"
+        },
+        {
+          "name": "Atlantic Tape · Baggers",
+          "url": "https://www.atlantictape.com/equipment/baggers/"
+        },
+        {
+          "name": "Pro Pac · Autobag baggers",
+          "url": "https://www.propac.com/packaging-equipment/bagging-equipment/baggers/"
+        }
+      ],
+      "service": "Perplexity Search",
+      "account": "Signed out",
+      "model": "Default selector; model name not exposed",
+      "answerImage": "assets/perplexity-01.jpg",
+      "sourceImage": "assets/perplexity-01-sources.jpg",
+      "captureSha256": "1240b8e4d2034e613cf14d21eeb9c560b752ffdd3dc50e0b6b53b440237078b4"
+    },
+    {
+      "id": "02",
+      "query": "What should I compare when choosing an automatic bagger for manually loaded hardware kits?",
+      "sessionUrl": "https://www.perplexity.ai/session/0debf35b-e293-43f2-a1af-ebf272993507",
+      "capturedAt": "2026-11-08T16:06:00-08:00",
+      "observed": [
+        "The answer emphasizes the operator workflow, usable bag opening, package quality and representative trials.",
+        "A PAC automatic-bagger guide appears in the retrieved source list. This does not mean it was the sole source of the answer."
+      ],
+      "sources": [
+        {
+          "name": "Audion · Speedpack",
+          "url": "https://www.audion.com/products/speedpack-automatic-baggers/"
+        },
+        {
+          "name": "Atlantic Tape · Baggers",
+          "url": "https://www.atlantictape.com/equipment/baggers/"
+        },
+        {
+          "name": "Sealed Air · Comparative guide",
+          "url": "https://www.sealedair.com/uk/products/protective-packaging/protective-equipment/bagging-and-printing-systems/automated-bagger-comparative-guide"
+        },
+        {
+          "name": "PAC · Automatic bagger guide",
+          "url": "https://www.pacmachinery.com/blog/the-ultimate-guide-to-automatic-baggers/"
+        }
+      ],
+      "service": "Perplexity Search",
+      "account": "Signed out",
+      "model": "Default selector; model name not exposed",
+      "answerImage": "assets/perplexity-02.jpg",
+      "sourceImage": "assets/perplexity-02-sources.jpg",
+      "captureSha256": "24b5ac922d25600df727beeac64f036ceb793866ed7d308c55dd0f939c2feaec"
+    }
+  ]
+}
