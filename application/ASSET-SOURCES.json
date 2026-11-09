@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-08",
+  "scope": "Source assets for the fresh PAC application. Artwork provenance does not approve an exact quoted configuration.",
+  "noGeneratedImagery": true,
+  "noRemoteMediaDownloadedThisPass": true,
+  "items": [
+    {
+      "file": "assets/pac-logo.png",
+      "bytes": 2931,
+      "sha256": "9a2384eb10abad987ae7803483a36f3ac0a581557d05eea1b15aae7482b8a195",
+      "treatment": "Original bytes copied without modification.",
+      "width": 320,
+      "height": 63,
+      "format": "PNG",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/2021/05/color-logo.png",
+      "sourceHashMatch": true,
+      "sourceLedger": "presentation/2026-11-08/assets/logo-current-sources.json",
+      "review": {
+        "localVisualInspection": "completed",
+        "reviewedDate": "2026-11-08",
+        "remoteDownloadThisPass": false
+      },
+      "usage": "Official colored PAC wordmark and gray tagline; preserve natural aspect ratio.",
+      "limits": [
+        "Do not recolor, redraw, crop, filter, or replace the official artwork.",
+        "Image is 320 \u00d7 63 pixels; avoid enlargement that blurs the tagline."
+      ],
+      "observedOpaqueColors": [
+        {
+          "hex": "#2360a4",
+          "role": "dominant logo blue",
+          "sample": "most frequent fully opaque raster color"
+        },
+        {
+          "hex": "#919395",
+          "role": "tagline gray",
+          "sample": "second most frequent fully opaque raster color"
+        }
+      ],
+      "colorScope": "Raster observations only, not a complete official PAC design token specification.",
+      "originalFilename": "pac-current-original.png"
+    },
+    {
+      "file": "assets/r3200.png",
+      "bytes": 51028,
+      "sha256": "83577f645961426c35a8873039b4784ea1f6708918e958409da20bec01a9158a",
+      "treatment": "Original bytes copied without modification.",
+      "width": 578,
+      "height": 600,
+      "format": "PNG",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/R3200-shdw-900-578x600-4.png",
+      "sourceHashMatch": true,
+      "sourceLedger": "presentation/2026-11-08/assets/media-sources.json",
+      "review": {
+        "localVisualInspection": "completed",
+        "reviewedDate": "2026-11-08",
+        "remoteDownloadThisPass": false
+      },
+      "usage": "R3200 model-reference photograph.",
+      "limits": [
+        "Not a generated rendering of a selected quotation.",
+        "Depicted options must not be interpreted as the complete scope of Quote A or B."
+      ],
+      "originalFilename": "r3200.png"
+    },
+    {
+      "file": "assets/easy-load.jpg",
+      "bytes": 61924,
+      "sha256": "f8b11d22109a75b18890266efa904095624d9cbe93529967b2d4263353d07c0a",
+      "treatment": "Original bytes copied without modification.",
+      "width": 800,
+      "height": 600,
+      "format": "JPEG",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/Easy-Load-Bag-Opener-800x600.9.jpg",
+      "sourceHashMatch": true,
+      "sourceLedger": "presentation/2026-11-08/assets/media-sources.json",
+      "review": {
+        "localVisualInspection": "completed",
+        "reviewedDate": "2026-11-08",
+        "remoteDownloadThisPass": false
+      },
+      "usage": "Easy Load Bag Opener option-reference close-up.",
+      "limits": [
+        "Describes the option, not a verified whole installed configuration.",
+        "Product suitability and prerequisite options remain separate business checks."
+      ],
+      "originalFilename": "easy-load.jpg"
+    },
+    {
+      "file": "assets/r3200-detail.jpg",
+      "bytes": 31261,
+      "sha256": "77af5d392a83b49df118141661591f993bbee7498dce6d2d3433e272841ee7c4",
+      "treatment": "Original bytes copied without modification.",
+      "width": 800,
+      "height": 519,
+      "format": "JPEG",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/Rollbag-R3200-Automatic-Bagger-Close-Up-800x519.3.jpg",
+      "sourceHashMatch": true,
+      "sourceLedger": "presentation/2026-11-08/assets/media-sources.json",
+      "review": {
+        "localVisualInspection": "completed",
+        "reviewedDate": "2026-11-08",
+        "remoteDownloadThisPass": false
+      },
+      "usage": "R3200 operating-area photograph; source URL and visual inspection support model-detail use.",
+      "limits": [
+        "Shows existing hardware in one photographed configuration. Do not use as evidence that a newly quoted custom feature exists.",
+        "Do not infer dimensions or engineering coordinates from image positions."
+      ],
+      "originalFilename": "r3200-detail.jpg"
+    },
+    {
+      "file": "assets/inter-latin-variable.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "treatment": "Original bytes copied without modification.",
+      "type": "font",
+      "family": "Inter",
+      "style": "normal",
+      "weightRange": [
+        100,
+        900
+      ],
+      "licenseFile": "assets/Inter-OFL.txt",
+      "license": "SIL Open Font License 1.1",
+      "upstream": "https://github.com/rsms/inter",
+      "review": {
+        "fontIdentification": "fc-scan reports Inter, named Thin through Black instances and a variable weight instance.",
+        "sourceScope": "Only font binary and its colocated license were read/copied; no previous app stylesheet or design component was imported."
+      },
+      "limits": [
+        "Latin subset; UI copy for this application is English."
+      ],
+      "originalFilename": "inter-latin-wght-normal.woff2"
+    },
+    {
+      "file": "assets/Inter-OFL.txt",
+      "bytes": 4477,
+      "sha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "treatment": "Original bytes copied without modification.",
+      "type": "font-license",
+      "license": "SIL Open Font License 1.1",
+      "usage": "Redistribution license accompanying the Inter font binary.",
+      "originalFilename": "LICENSE"
+    }
+  ]
+}

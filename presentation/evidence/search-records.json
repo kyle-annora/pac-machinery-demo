@@ -94,5 +94,52 @@
       "patrick-chatgpt-answer.jpg": "674b78134f537f4bca20f3289cc6753d72615a77d75a5a36ddfccb500f7b98e4",
       "patrick-chatgpt-suppliers.jpg": "93d33b61909cf45be54828b72a2375f82c5772fd9d0f587506462f9249d7f6ce"
     }
+  },
+  "leadCaptureExample": {
+    "title": "Packaging Equipment Search",
+    "provider": "ChatGPT",
+    "url": "https://chatgpt.com/share/6af17b57-16e4-83eb-b11a-091a431935c6",
+    "providedBy": "Patrick, via Kyle",
+    "retrievedDate": "November 8, 2026",
+    "captureDate": "November 9, 2026",
+    "originalCreationDate": "Not independently established",
+    "model": "Not exposed in shared page",
+    "query": "I'm looking for packaging equipment for my manufacturing company",
+    "followUp": {
+      "packaging": "Shrink",
+      "industry": "Medical",
+      "automation": "Manual"
+    },
+    "observed": [
+      "The initial answer already recommends PAC alongside other suppliers.",
+      "The page asks about packaging type, industry and automation.",
+      "The later explicit prompt specifies shrink packaging, medical industry and manual operation.",
+      "The resulting shortlist includes PAC / Clamco Dempack H30 One Step and 4C Combo, with links to PAC product pages."
+    ],
+    "limits": [
+      "One search interaction is not a visibility audit or evidence of conversion or sales growth.",
+      "The displayed form defaults differ from the later explicit prompt. No controls were changed and no reproduction of the original submission is claimed.",
+      "AI machine recommendations are not verified PAC suitability or compliance decisions.",
+      "The proposed inquiry summary uses an illustrative product selection; it is not an actual buyer submission.",
+      "The later Harbor / R3200 scenario is a separate illustrative sales case."
+    ],
+    "image": "assets/aeo-shortlist.jpg",
+    "original": "assets/aeo-shortlist-original.png",
+    "provenance": "assets/aeo-source-manifest.json",
+    "websiteCheck": {
+      "checkedDate": "November 8, 2026",
+      "sources": [
+        {
+          "name": "PAC Request a Quote",
+          "url": "https://www.pacmachinery.com/request-a-quote/"
+        },
+        {
+          "name": "Dempack H30 product page and Instant Quote",
+          "url": "https://www.pacmachinery.com/products/dempack-h30/"
+        }
+      ],
+      "observed": "The general quote request and product-page Instant Quote entry both exist. The visible Instant Quote form collects contact information and a free-text application description.",
+      "limits": "No submission was made. Backend handling and retained product metadata were not inspected. This is not evidence that product context is lost."
+    }
   }
 }

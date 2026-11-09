@@ -1,0 +1,335 @@
+{
+  "captured": "2026-11-08",
+  "status": "Interactive local prototype; screenshots are recorded evidence",
+  "screens": [
+    {
+      "id": "deals",
+      "title": "Deal directory",
+      "group": "workspace",
+      "route": "#deals",
+      "image": "assets/current-app/deals.jpg",
+      "summary": "One place to find the active opportunity.",
+      "capabilities": [
+        "Find Harbor Components.",
+        "See stage, owner, quote range and next action."
+      ],
+      "limit": "One illustrative Deal; no Website Inbox or CRM sync."
+    },
+    {
+      "id": "overview",
+      "title": "Deal overview",
+      "group": "workspace",
+      "route": "#deal",
+      "image": "assets/current-app/overview.jpg",
+      "summary": "Keep the application, offers and next action together.",
+      "capabilities": [
+        "Open either quote alternative.",
+        "See current proposal and unanswered questions.",
+        "Edit the follow-up owner and date."
+      ],
+      "limit": "The reviewed browser contains Harbor V1–V3; another profile starts with draft data."
+    },
+    {
+      "id": "requirements",
+      "title": "Shared requirements",
+      "group": "workspace",
+      "route": "#requirements",
+      "image": "assets/current-app/requirements.jpg",
+      "summary": "Confirm the facts that both alternatives depend on.",
+      "capabilities": [
+        "Review bag size, material, loading process and target.",
+        "Edit shared requirements; changed quotes require review."
+      ],
+      "limit": "A customer throughput target is not a performance guarantee."
+    },
+    {
+      "id": "builder",
+      "title": "Quote builder",
+      "group": "workspace",
+      "route": "#builder/b",
+      "image": "assets/current-app/builder.jpg",
+      "summary": "Configure A/B inside the complete Deal workspace.",
+      "capabilities": [
+        "Switch between alternatives.",
+        "Create an explicit revision of a published quote.",
+        "Save working changes before approval."
+      ],
+      "limit": "Captured B Rev 2 is published and therefore read-only until revised."
+    },
+    {
+      "id": "builder-a",
+      "title": "Standard loading",
+      "group": "workspace",
+      "route": "#builder/a",
+      "image": "assets/current-app/builder-a.jpg",
+      "summary": "Keep the simpler alternative available for comparison.",
+      "capabilities": [
+        "R3200 plus selected training.",
+        "Own revision and customer-facing note."
+      ],
+      "limit": "The screenshot records the current reviewed prototype; dated sample prices require PAC confirmation."
+    },
+    {
+      "id": "configuration",
+      "title": "Options and totals",
+      "group": "workspace",
+      "route": "#builder/b",
+      "image": "assets/current-app/configuration.jpg",
+      "summary": "Make the commercial difference specific.",
+      "capabilities": [
+        "Opener requires fingers and bag width of at least 10 inches.",
+        "Selected equipment, services and engineering roll into the subtotal."
+      ],
+      "limit": "Detail crop of the published B screen. Initial A $33,060 / B $40,810; the reviewed B includes an illustrative $500 guide."
+    },
+    {
+      "id": "engineering",
+      "title": "Engineering scope",
+      "group": "workspace",
+      "route": "#builder/b",
+      "image": "assets/current-app/engineering.jpg",
+      "summary": "Keep unknown price and timing visible.",
+      "capabilities": [
+        "Add explicit scope, customer price and additional weeks.",
+        "Incomplete engineering work prevents approval."
+      ],
+      "limit": "Detail crop. The $500 and one week shown are illustrative test inputs, not PAC-confirmed estimates."
+    },
+    {
+      "id": "preview",
+      "title": "Draft customer preview",
+      "group": "workspace",
+      "route": "#preview",
+      "image": "assets/current-app/preview.jpg",
+      "summary": "Review the customer presentation before publication.",
+      "capabilities": [
+        "Preview working A/B configurations.",
+        "See the draft banner; customer questions are disabled."
+      ],
+      "limit": "A preview is not an issued customer version."
+    },
+    {
+      "id": "review",
+      "title": "Review and publication",
+      "group": "workspace",
+      "route": "#builder/b",
+      "image": "assets/current-app/review.jpg",
+      "summary": "Separate work in progress from the offer a customer sees.",
+      "capabilities": [
+        "Open Review & publish.",
+        "Save and approve eligible alternatives.",
+        "Publish a frozen customer version."
+      ],
+      "limit": "The captured dialog shows already published revisions; approvals and publication are browser-local and send no email."
+    },
+    {
+      "id": "proposal",
+      "title": "Customer Proposal",
+      "group": "proposal",
+      "route": "?view=customer#proposal",
+      "image": "assets/current-app/proposal.jpg",
+      "summary": "Give the buyer a focused PAC-branded view.",
+      "capabilities": [
+        "Read the application context.",
+        "Navigate between comparison, equipment and conversation.",
+        "Print through the browser Print / PDF action."
+      ],
+      "limit": "The customer-only route removes workspace controls; it is not remote access control. Open an existing publication in the same browser."
+    },
+    {
+      "id": "comparison",
+      "title": "A/B comparison",
+      "group": "proposal",
+      "route": "?view=customer#proposal",
+      "image": "assets/current-app/comparison.jpg",
+      "summary": "Explain what changes and what stays the same.",
+      "capabilities": [
+        "Compare loading approaches, included scope and amounts.",
+        "Open line items and discuss an option."
+      ],
+      "limit": "Captured V3: A Rev 0 $33,060; B Rev 2 $41,310, including the illustrative guide. No final PAC offer is implied."
+    },
+    {
+      "id": "equipment",
+      "title": "Customer equipment details",
+      "group": "proposal",
+      "route": "?view=customer#proposal",
+      "image": "assets/current-app/equipment.jpg",
+      "summary": "Ask about the exact equipment detail under discussion.",
+      "capabilities": [
+        "Switch PAC reference photographs.",
+        "Ask about this detail with option and topic context."
+      ],
+      "limit": "Reference photos are not an exact assembled configuration; internal Explorer findings are not automatically published here."
+    },
+    {
+      "id": "conversation",
+      "title": "Version-specific questions",
+      "group": "proposal",
+      "route": "?view=customer#proposal",
+      "image": "assets/current-app/conversation.jpg",
+      "summary": "Keep questions attached to the offer the buyer reviewed.",
+      "capabilities": [
+        "Choose option and topic.",
+        "Send a question tied to the current version and revision."
+      ],
+      "limit": "Questions are saved in this browser. No email or remote customer service is connected."
+    },
+    {
+      "id": "activity",
+      "title": "Sales activity and replies",
+      "group": "workspace",
+      "route": "#activity",
+      "image": "assets/current-app/activity.jpg",
+      "summary": "Answer the question without reconstructing the context.",
+      "capabilities": [
+        "Reply to a customer question.",
+        "Open its original proposal version.",
+        "Start a specific option revision when needed."
+      ],
+      "limit": "A reply and a new publication are separate actions."
+    },
+    {
+      "id": "history",
+      "title": "Published version history",
+      "group": "workspace",
+      "route": "#proposals",
+      "image": "assets/current-app/history.jpg",
+      "summary": "Change the offer without rewriting the past.",
+      "capabilities": [
+        "Open prior and current proposals.",
+        "Compare the exact revisions and amounts."
+      ],
+      "limit": "V1–V3 are evidence from the reviewed profile, not records that travel with a shared link."
+    },
+    {
+      "id": "explorer-photo",
+      "title": "Explorer · PAC photographs",
+      "group": "explorer",
+      "route": "#explorer",
+      "image": "assets/current-app/explorer-photo.jpg",
+      "summary": "Keep a real equipment reference with the application question.",
+      "capabilities": [
+        "Select equipment or detail.",
+        "Save a title, observation and related quote to the same Deal."
+      ],
+      "limit": "Saving a finding does not select options, change prices or publish internal notes."
+    },
+    {
+      "id": "explorer-3d",
+      "title": "Explorer · interactive reference",
+      "group": "explorer",
+      "route": "#explorer",
+      "image": "assets/current-app/explorer-3d.jpg",
+      "summary": "Show how a specific view can stay with a question.",
+      "capabilities": [
+        "Select, rotate, explode or operate the reference.",
+        "Capture and restore a view."
+      ],
+      "limit": "Generic crank-slider reference, not PAC equipment or PAC CAD. It cannot validate R3200 fit or clearance."
+    },
+    {
+      "id": "explorer-findings",
+      "title": "Saved discoveries",
+      "group": "explorer",
+      "route": "#explorer",
+      "image": "assets/current-app/explorer-findings.jpg",
+      "summary": "Move from investigation to an explicit sales decision.",
+      "capabilities": [
+        "Keep photo and 3D findings with Harbor.",
+        "Create a quote revision or link to a working quote.",
+        "Mark an addressed finding."
+      ],
+      "limit": "Internal Deal context only. The commercial revision uses PAC facts, not geometry inferred from the generic reference."
+    }
+  ],
+  "flows": [
+    {
+      "id": "flow-1",
+      "title": "Prepare a clear offer",
+      "summary": "Requirements → configure → save → review → publish → customer decision.",
+      "steps": [
+        {
+          "screen": "overview",
+          "action": "Open Harbor, then Requirements.",
+          "expect": "One Deal contains the application, alternatives and next action.",
+          "say": "We start with the customer’s process and the facts that change the quote."
+        },
+        {
+          "screen": "requirements",
+          "action": "Review the 12 × 16 in bags, material and loading process.",
+          "expect": "Both alternatives use the same requirements.",
+          "say": "We can compare the loading approach fairly because the application is shared."
+        },
+        {
+          "screen": "configuration",
+          "action": "Open Quotes. Compare A and B. If published, create a revision first. Make a real customer-facing note change, then save.",
+          "expect": "B adds the opener and required fingers. Price and scope stay explicit.",
+          "say": "The machine stays the same. The loading package and commercial scope change."
+        },
+        {
+          "screen": "review",
+          "action": "Open Review & publish. Save and approve eligible alternatives, then publish.",
+          "expect": "A customer version preserves the reviewed scope and prices.",
+          "say": "Unfinished work stays a draft. The customer gets the reviewed offer."
+        },
+        {
+          "screen": "comparison",
+          "action": "Open the new customer Proposal; compare options and line items.",
+          "expect": "Amounts and revision references match the published review.",
+          "say": "The buyer sees what is included, what changes and what still needs confirmation."
+        },
+        {
+          "screen": "conversation",
+          "action": "Ask about the loading area in Option B.",
+          "expect": "The question keeps the proposal version, option, revision and topic.",
+          "say": "Sales receives a question with enough context to answer it."
+        }
+      ]
+    },
+    {
+      "id": "flow-2",
+      "title": "Turn a finding into a revision",
+      "summary": "Inspect → save a finding → revise explicitly → publish → reply → retain history.",
+      "steps": [
+        {
+          "screen": "explorer-photo",
+          "action": "In Explorer, select PAC equipment photos → Loading & sealing area and Related quote B. Save a question about the guide and actual sample parts.",
+          "expect": "A PAC photo finding is attached to the same Deal and quote.",
+          "say": "The equipment reference and application question stay together."
+        },
+        {
+          "screen": "explorer-3d",
+          "action": "Optionally select Slider carriage, Explode, Capture current view, save and Restore view.",
+          "expect": "The reference interaction is captured; the actual commercial quote is unchanged.",
+          "say": "This shows the interaction. An approved PAC model would be needed to explain PAC geometry."
+        },
+        {
+          "screen": "explorer-findings",
+          "action": "Return to the PAC photo finding. Choose Create quote revision or Link to working quote.",
+          "expect": "B opens in explicit revision context; no option is added automatically.",
+          "say": "Sales decides when a discovery should become a change to the offer."
+        },
+        {
+          "screen": "engineering",
+          "action": "Clarify the customer-facing note: PAC will review the actual bags and sample parts with Harbor before finalizing the loading guide scope. Preserve existing options and scope. Save, review and approve changed B, then publish.",
+          "expect": "A real clarification creates a new customer version; price can remain the same.",
+          "say": "We make the resolution explicit and review it again. Unknown scope or timing remains visible."
+        },
+        {
+          "screen": "activity",
+          "action": "Reply to the original customer question and refer to the actual new version.",
+          "expect": "The answer remains with the original version and question.",
+          "say": "Publishing does not finish the conversation. Sales still explains the resolution."
+        },
+        {
+          "screen": "history",
+          "action": "Open the previous and new versions; return to Overview to set the next action.",
+          "expect": "Earlier prices, scope and questions remain available.",
+          "say": "We improve the offer without losing what the customer previously saw."
+        }
+      ],
+      "prerequisite": "Run Flow 1 first, or start with a published proposal and a customer question. Keep the same browser profile."
+    }
+  ]
+}

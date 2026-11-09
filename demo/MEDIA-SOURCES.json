@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-09",
+  "scope": "Guided PAC demonstration. Model and option references do not verify the exact quoted assembly.",
+  "parentAssetLedger": "../application/ASSET-SOURCES.json",
+  "images": [
+    {
+      "file": "../application/assets/pac-logo.png",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/2021/05/color-logo.png",
+      "sha256": "9a2384eb10abad987ae7803483a36f3ac0a581557d05eea1b15aae7482b8a195",
+      "usage": "Official colored PAC wordmark and gray tagline; preserve natural aspect ratio.",
+      "limits": [
+        "Do not recolor, redraw, crop, filter, or replace the official artwork.",
+        "Image is 320 \u00d7 63 pixels; avoid enlargement that blurs the tagline."
+      ]
+    },
+    {
+      "file": "../application/assets/r3200.png",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/R3200-shdw-900-578x600-4.png",
+      "sha256": "83577f645961426c35a8873039b4784ea1f6708918e958409da20bec01a9158a",
+      "usage": "R3200 model-reference photograph.",
+      "limits": [
+        "Not a generated rendering of a selected quotation.",
+        "Depicted options must not be interpreted as the complete scope of Quote A or B."
+      ]
+    },
+    {
+      "file": "../application/assets/easy-load.jpg",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/Easy-Load-Bag-Opener-800x600.9.jpg",
+      "sha256": "f8b11d22109a75b18890266efa904095624d9cbe93529967b2d4263353d07c0a",
+      "usage": "Easy Load Bag Opener option-reference close-up.",
+      "limits": [
+        "Describes the option, not a verified whole installed configuration.",
+        "Product suitability and prerequisite options remain separate business checks."
+      ]
+    },
+    {
+      "file": "../application/assets/r3200-detail.jpg",
+      "sourceURL": "https://www.pacmachinery.com/wp-content/uploads/Rollbag-R3200-Automatic-Bagger-Close-Up-800x519.3.jpg",
+      "sha256": "77af5d392a83b49df118141661591f993bbee7498dce6d2d3433e272841ee7c4",
+      "usage": "R3200 operating-area photograph; source URL and visual inspection support model-detail use.",
+      "limits": [
+        "Shows existing hardware in one photographed configuration. Do not use as evidence that a newly quoted custom feature exists.",
+        "Do not infer dimensions or engineering coordinates from image positions."
+      ]
+    }
+  ],
+  "video": {
+    "sourceURL": "https://www.youtube.com/watch?v=nYCpXU1llI4",
+    "embedURL": "https://www.youtube-nocookie.com/embed/nYCpXU1llI4",
+    "title": "Rollbag R3200 Automatic Bagger - High Speed Manual Auto Bagger",
+    "publisher": "PAC Machinery",
+    "published": "2018-01-02",
+    "usage": "A22: official manual-loading base-machine operation reference. Muted playback is optional and does not block Next.",
+    "fallback": "../application/assets/r3200-detail.jpg",
+    "limits": [
+      "Does not verify every quoted option or the proposed custom loading guide.",
+      "No throughput in this video is a guarantee for the fictional Harbor application.",
+      "Playback requires internet and third-party video availability."
+    ]
+  },
+  "productReference": {
+    "sourceURL": "https://www.pacmachinery.com/products/rollbag-r3200-and-r3200xl/",
+    "verifiedRules": [
+      "Easy Load Bag Opener requires Seal Flattener Fingers.",
+      "Easy Load Bag Opener requires bags at least 10 inches wide."
+    ],
+    "scope": "Model information and option prerequisites; PAC must confirm application suitability."
+  },
+  "geometry": {
+    "actualPACCadAvailable": false,
+    "mainWalkthrough": "Equipment photos with contextual findings",
+    "customGuide": "No final design or drawing is represented."
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "step": "A01",
+    "title": "Begin with the buyer’s application",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A01"
+  },
+  {
+    "step": "A02",
+    "title": "Explain one equipment detail",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A02"
+  },
+  {
+    "step": "A03",
+    "title": "Keep the requested product visible",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A03"
+  },
+  {
+    "step": "A04",
+    "title": "Enter the prepared application request",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A04"
+  },
+  {
+    "step": "A05",
+    "title": "Record the inquiry with a clear next step",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A05"
+  },
+  {
+    "step": "A06",
+    "title": "Move to the prepared sales example",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A06"
+  },
+  {
+    "step": "A07",
+    "title": "Review the opportunity and written scope",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A07"
+  },
+  {
+    "step": "A08",
+    "title": "Show the required-information gate",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A08"
+  },
+  {
+    "step": "A09",
+    "title": "Use a prepared customer clarification",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A09"
+  },
+  {
+    "step": "A10",
+    "title": "Confirm the application facts",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A10"
+  },
+  {
+    "step": "A11",
+    "title": "Create two alternatives in one Deal",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A11"
+  },
+  {
+    "step": "A12",
+    "title": "Select assisted opening and expose its dependency",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A12"
+  },
+  {
+    "step": "A13",
+    "title": "Complete the valid assisted-loading option",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A13"
+  },
+  {
+    "step": "A14",
+    "title": "Discuss the configuration without prices",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A14"
+  },
+  {
+    "step": "A15",
+    "title": "Bring the commercial comparison back",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A15"
+  },
+  {
+    "step": "A16",
+    "title": "Save the working alternatives",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A16"
+  },
+  {
+    "step": "A17",
+    "title": "Review the offer against the application",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A17"
+  },
+  {
+    "step": "A18",
+    "title": "Approve the saved standard option",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A18"
+  },
+  {
+    "step": "A19",
+    "title": "Approve the saved assisted-loading option",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A19"
+  },
+  {
+    "step": "A20",
+    "title": "Publish the first customer version",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A20"
+  },
+  {
+    "step": "A21",
+    "title": "Present what PAC understood",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A21"
+  },
+  {
+    "step": "A22",
+    "title": "Make the equipment understandable",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A22"
+  },
+  {
+    "step": "A23",
+    "title": "Keep the documents with the version",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A23"
+  },
+  {
+    "step": "A24",
+    "title": "Compare the two loading choices",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#A24"
+  },
+  {
+    "step": "B01",
+    "title": "Ask about the missing guide scope",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B01"
+  },
+  {
+    "step": "B02",
+    "title": "Bring the question into sales follow-up",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B02"
+  },
+  {
+    "step": "B03",
+    "title": "Inspect the actual equipment reference",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B03"
+  },
+  {
+    "step": "B04",
+    "title": "Save a finding with the Deal",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B04"
+  },
+  {
+    "step": "B05",
+    "title": "Create a deliberate revision of Option B",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B05"
+  },
+  {
+    "step": "B06",
+    "title": "Describe the engineering requirement",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B06"
+  },
+  {
+    "step": "B07",
+    "title": "Prove incomplete engineering blocks release",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B07"
+  },
+  {
+    "step": "B08",
+    "title": "Price and time the engineering allowance",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B08"
+  },
+  {
+    "step": "B09",
+    "title": "Save the engineering resolution",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B09"
+  },
+  {
+    "step": "B10",
+    "title": "Review only what changed",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B10"
+  },
+  {
+    "step": "B11",
+    "title": "Approve the revised option",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B11"
+  },
+  {
+    "step": "B12",
+    "title": "Publish the revised customer version",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B12"
+  },
+  {
+    "step": "B13",
+    "title": "Answer the original question",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B13"
+  },
+  {
+    "step": "B14",
+    "title": "Show the customer the revised scope",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B14"
+  },
+  {
+    "step": "B15",
+    "title": "Prove the earlier offer is still intact",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B15"
+  },
+  {
+    "step": "B16",
+    "title": "Finish with an owned next action",
+    "url": "http://127.0.0.1:4363/demo/?mode=full&entry=product&run=qa-final-complete#B16"
+  }
+]

@@ -1,0 +1,4 @@
+/* Shared PAC foundation. Website, Workspace and Proposal keep these token roles.
+   Official logos remain unchanged. UI color adaptations are not a PAC brand manual. */
+:root{--pac-blue:#2360a4;--pac-blue-dark:#194e86;--pac-amber:#f5ac0b;--pac-ink:#20272d;--pac-muted:#626c75;--pac-line:#e6e9ec;--pac-soft:#f4f6f7;--pac-blue-soft:#eaf1f8;--pac-font:Inter,system-ui,sans-serif;--pac-control-radius:3px}
+::selection{background:#cde0f3;color:#173b5e}input,textarea{caret-color:var(--pac-blue)}

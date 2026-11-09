@@ -1,0 +1,24 @@
+{
+  "source": "https://chatgpt.com/share/6af17b57-16e4-83eb-b11a-091a431935c6",
+  "title": "Packaging Equipment Search",
+  "retrieved": "2026-11-08 Pacific time",
+  "capture": "2026-11-09",
+  "account": "Signed out",
+  "sourceCreationDate": "Not established",
+  "model": "Not exposed",
+  "original": "aeo-shortlist-original.png",
+  "originalSha256": "4dbd8090cd07da962a3aa3e1f324194979dd88ce8cfafb19bfc2f1a4e4e806b8",
+  "derived": "aeo-shortlist.jpg",
+  "cropBounds": [
+    270,
+    75,
+    1061,
+    454
+  ],
+  "transform": "Crop to original shortlist and its source qualification; JPEG encoding only. No text or emphasis changed.",
+  "limits": [
+    "AI recommendations are observed output, not independently verified equipment-fit claims.",
+    "This medical/manual shrink example is separate from the Harbor R3200 hardware-kit demo.",
+    "No form was submitted and no contact data was transmitted."
+  ]
+}

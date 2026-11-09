@@ -128,3 +128,29 @@ The approved A/B composition uses a 1712 × 584 parent at (104, 384), a 536px me
 8. **Record the result.** Save screenshots, alignment/overflow results and the release revision or receipt under the deck's `verification/` folder. Update the deck README to describe the current system and authoring entry points.
 
 If a change cannot fit these rules, revise the content or introduce a documented, reusable composition. Do not solve it with smaller ad hoc type, extra footnotes or another layer of per-page CSS overrides.
+
+## Current-product evidence and repeatable demo paths
+
+- Keep a structured inventory of every retained page, its captured image, role, route, supported actions and limits. Distinguish a recorded screenshot, a local prototype and a verified public demo.
+- Use the shared **product-screen** composition for screenshots: media and the complete explanation region share the 584px content height. Preserve screenshot aspect ratio and legibility; place long/full-page evidence in the supporting gallery. Crops must be declared in capture provenance and must not hide a material state or warning.
+- Put all retained views in the gallery; select one important screen per audience scene. Do not make a montage the only way to inspect a page.
+- Maintain two separate layers of presenter content: concise spoken narration in the script; exact action, expected state and fallback in the walkthrough. Keep both English and keep operator instructions out of audience slides.
+- A narrative transition between products does not authorize a data integration. Do not revive withdrawn code, records, screenshots or routes to fill a missing artifact slot.
+- A screenshot or a shared static URL does not transfer browser-local records. Local launch buttons must be origin-aware and hidden when the application is absent. Public readiness gates remain unchanged.
+
+## Discovery and inquiry evidence
+
+- Distinguish the buyer who knows a product from the buyer who needs help choosing. When both are in scope, show two clear entry paths converging on one buyer-reviewable inquiry summary, with known facts and open questions visible.
+- A proposed inquiry design is not a submitted record or an implemented data integration. Keep its readiness label visible and state a switch when the subsequent working sales demonstration uses a different example.
+- Preserve the exact submitted prompt when discussing AI evidence. Interactive form defaults in a saved conversation may not match its later user message; do not silently reconstruct a different submission.
+- Verify the existing public experience before describing a gap. If quote forms already exist, describe the specific improvement in product context or requirements capture rather than claiming the site has no inquiry path. Do not infer backend behavior from a public form.
+- Distinguish visibility, inquiry completeness and sales outcomes. One AI answer or a proposed form is not proof of conversion or revenue improvement. Put the measurement plan and source limits in the notes/evidence.
+- For this PAC narrative, customer proof follows the process and baseline, immediately before the two-week Annora offer. The complete customer Proposal remains after sales review and publication. This placement is a PAC decision, not a universal ordering rule for every client.
+
+## A decision-oriented closing scene
+
+- End a selling presentation with the specific decision requested from the audience. Separate what they authorize now from later commercial or launch decisions.
+- Use a closing statement, at most three practical confirmations and one prominent decision prompt. Keep detailed implementation timelines in supporting material when they weaken the close.
+- Show the complete final frame immediately. Do not require additional reveals to expose the actual ask or its commercial boundary.
+- A prominent decision prompt is not a fake approval control. Do not simulate a signature, acceptance or saved approval unless that capability and action are explicitly in scope.
+- End the speaker script with the exact question and an instruction to pause. Do not label the final cue as a bridge to another scene.
