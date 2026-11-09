@@ -4,7 +4,7 @@ Status: the approved main screenplay is implemented in the guided demonstration 
 
 Open `index.html` to review the sequence one step at a time. It is self-contained and can be opened directly, or served from the repository. The review reader’s Next button advances documentation. To operate the actual pages, open `../../../demo/?mode=full#A01`; see `demo/README.md` for controls, isolation and rehearsal checks.
 
-Local review: http://127.0.0.1:4363/docs/product/demo-production-2026-11-09/index.html
+In the editable GitHub source package, run `npm run serve`, then open the printed local origin with `/docs/product/demo-production-2026-11-09/index.html`. The default package port is 4364.
 
 ## The agreed story
 
@@ -38,9 +38,9 @@ Signature and payment remain design-only. CRM, SSO, approval email, remote multi
 
 ## Relationship to the pitch
 
-Enter from pitch slide 7, **Current prototype screens** (`04b-demo-entry`), after the AI-search and Website framing. Clearly distinguish the actual search example from the illustrative Harbor Components sales case. Skip duplicate static screenshots while running the artifacts. A split run can pause at the first A/B comparison and then introduce the customer question before Act B.
+Enter from pitch slide 7, **Let’s walk through the sales experience** (`07-demo-routes`), after the AI-search and Website framing. Clearly distinguish the actual search example from the illustrative Harbor Components sales case. Skip duplicate static screenshots while running the artifacts. A split run can pause at the first A/B comparison and then introduce the customer question before Act B.
 
-Return after Act B to slide 16, **Establish the baseline** (`11-baseline`), then relevant customer proof, trial offer and sign-off. Customer outcomes remain attributed to Patrick and are not PAC forecasts. The free trial is a bounded two-week exercise on agreed machines and cases; review the outputs and gaps together. Paid service starts only after mutual agreement on continuation, scope and terms. The deck sign-off concerns the Annora trial, not acceptance of a machine quote.
+Return after Act B to slide 16, **Understand where the sales process slows down** (`11-baseline`), then the separate 24-second native MPI capability example on slide 17 (`11-mpi-explorer`), customer proof on slide 18 (`02-proof`), the trial offer and sign-off. Customer outcomes remain attributed to Patrick and are not PAC forecasts. The free trial is a bounded two-week exercise on agreed machines and cases; review the outputs and gaps together. Paid service starts only after mutual agreement on continuation, scope and terms. The deck sign-off concerns the Annora trial, not acceptance of a machine quote.
 
 ## Production sequence and future edit loop
 

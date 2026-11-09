@@ -12,7 +12,7 @@ adapter applies those original images to their source surfaces, including the
 original logo decal plane. No redrawn logo or substitute screen artwork is used.
 The original MPI square-field artwork remains a source reference only, not a
 rendered background, machine geometry or evidence of capability. The demo uses
-the native light spatial grid; artwork source and rights remain separate.
+the native perspective grid over a quiet MPI-blue gradient; artwork source and rights remain separate.
 
 Three.js 0.187.0 and its addons are MIT-licensed software. Their software license
 is retained in source/THREE-LICENSE.txt and does not license MPI marks or imagery.

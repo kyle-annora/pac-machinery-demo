@@ -2,14 +2,14 @@
 
 This is the working, preset walkthrough for Patrick. The Website and Sales Workspace are separate artifacts; the presenter tells one customer story across them. Customer Proposal is the Workspace’s published customer-facing output.
 
-**Open locally:** [Full walkthrough](http://127.0.0.1:4363/demo/?mode=full#A01)
+**Open publicly:** [Full walkthrough](https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full#A01). For local source-package rehearsal, run `npm run serve` and use its printed origin with `/demo/?mode=full#A01`.
 
 The audience interface and presenter script are English. The sample customer is Harbor Components. The main story follows the approved [production script](../docs/product/demo-production-2026-11-09/script.json); the [script review reader](../docs/product/demo-production-2026-11-09/index.html) contains the step-by-step rationale and requirement mappings.
 
 
 ## Sharing and pitch entry
 
-Intended public routes for the current release (planned until the publishing owner verifies the deployed pages):
+Established public routes (see the [current release verification record](../presentation/handoff/RELEASE-2026-11-09.md) for the deployed revision and checked scope):
 
 - Pitch: https://kyle-annora.github.io/pac-machinery-demo/presentation/
 - Complete demonstration: https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full#A01
@@ -17,7 +17,7 @@ Intended public routes for the current release (planned until the publishing own
 - Act B: https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=b#B01
 - Editable source: https://github.com/kyle-annora/pac-machinery-pitch
 
-Start from pitch slide **7**, **Current prototype screens** (`04b-demo-entry`), using **Open the guided demo**. Run both acts continuously or select either act before starting. The demo’s final **Back to pitch** action returns to slide **16**, **Establish the baseline** (`11-baseline`). Stable scene IDs take precedence if page numbers change. The dated source-route alias is preserved in the packaged site so this return works from both local source and flattened publication layouts.
+Start from pitch slide **7**, **Let’s walk through the sales experience** (`07-demo-routes`), using the guided-demo action. Run both acts continuously or select either act before starting. The demo’s final **Back to pitch** action returns to slide **16**, **Understand where the sales process slows down** (`11-baseline`). Stable scene IDs take precedence if page numbers change. The dated source-route alias is preserved in the packaged site so this return works from both local source and flattened publication layouts.
 
 The public URL runs the real demonstration UI and domain commands with each browser’s own sample data. It is not a shared customer portal or a hosted multi-user sales backend. Sharing a URL does not share the presenter’s local records. The old screenshot gallery remains archived reference, not the current walkthrough.
 
@@ -32,10 +32,10 @@ The public URL runs the real demonstration UI and domain commands with each brow
 
 Quick entry points:
 
-- [Full story](http://127.0.0.1:4363/demo/?mode=full#A01): 40 main steps, approximately 8 minutes 37 seconds of scripted pacing. Allow about ten minutes before questions.
-- [Act A](http://127.0.0.1:4363/demo/?mode=a#A01): Website inquiry, confirmed application, A/B configuration, review, publication and the first Proposal.
-- [Act B](http://127.0.0.1:4363/demo/?mode=b#B01): Customer question, Explorer finding, engineering, revision, V2 and follow-up. This initializes the prepared V1 case; Act A does not need to have run first.
-- [Help-me-choose entry](http://127.0.0.1:4363/demo/?mode=a&entry=help#H01): four application-led Website steps, then the same explicit sales-role transition.
+- [Full story](https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full#A01): 40 main steps, approximately 8 minutes 37 seconds of scripted pacing. Allow about ten minutes before questions.
+- [Act A](https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=a#A01): Website inquiry, confirmed application, A/B configuration, review, publication and the first Proposal.
+- [Act B](https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=b#B01): Customer question, Explorer finding, engineering, revision, V2 and follow-up. This initializes the prepared V1 case; Act A does not need to have run first.
+- [Help-me-choose entry](https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=a&entry=help#H01): four application-led Website steps, then the same explicit sales-role transition.
 
 The controls are outside the artifacts. Their presence does not create a Website-to-Workspace integration.
 
@@ -102,13 +102,15 @@ The commercial discussion remains **two weeks free**, followed by a mutual decis
 
 ## Running and changing the package
 
-Use the existing repository-root HTTP server on port 4363. If it is stopped, first check for an existing listener, then run from the repository root:
+In the editable GitHub source package, run from the repository root:
 
 ```sh
-python3 -m http.server 4363 --bind 127.0.0.1
+npm run serve
 ```
 
-Use HTTP rather than a file URL because the application uses JavaScript modules. Keep the repository structure, `application/assets`, shared `brand` tokens, script JSON and the `demo/vendor` assets together. No installation or build step is needed to open these static pages. The local preview URL is not a remotely shareable customer service.
+It builds and serves `dist/`, normally at `http://127.0.0.1:4364/`. Open the printed origin with `/demo/?mode=full#A01`; set `PAC_PITCH_PORT` if needed. After source edits, run `npm run build` in another terminal, then refresh. Ordinary pitch/demo builds need Node.js 20+ and Python 3.9+, with no npm dependencies to install.
+
+Use HTTP rather than a file URL because the application uses JavaScript modules. Keep `presentation/`, `demo/`, `application/`, shared `brand` tokens, script JSON and vendor assets in the documented sibling layout. The local preview URL is not remotely shareable.
 
 Key files:
 
@@ -123,4 +125,4 @@ Key files:
 
 When changing a scene, update its script, domain state transition and visible proof together. Do not patch a screenshot or silently substitute a success state for a failed business operation. New demos should keep the shared visual and domain foundations, while supplying their own named scenario, namespace, assets and evidence.
 
-Validation: [browser and domain verification](verification/README.md). The complete 40-step route and 43 domain tests passed; the record also names the deployment and service limits.
+Validation: [current release and verification snapshot](../presentation/handoff/RELEASE-2026-11-09.md). The earlier guided acceptance run covered all 40 main steps and 43 domain tests; the release record distinguishes that retained evidence from current release checks, deployment status and service limits. Large local captures are not bundled in this source package.

@@ -53,7 +53,7 @@ mechanical safety or manufacturing dimensions.
 The GLB preserves source material colors and opacity. The default product
 illustration reuses the original MPI project's fixed face colors, transparent
 guards, original MPI logo and control-screen image. The native world-space perspective
-grid over a quiet MPI-blue gradient is retained, with white UI surfaces and MPI deep-blue accents. Original square-field
+grid over a approved desaturated MPI ink-navy gradient is retained, with white UI surfaces and MPI deep-blue accents. Original square-field
 artwork is retained as reference only. The machine remains native interactive 3D. Original
 logo/display media are applied by a separate demo-local appearance adapter;
 the texture-free geometry importer remains unchanged. The core source meshes
