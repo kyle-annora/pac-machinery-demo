@@ -5,3 +5,5 @@
 /* Closing scenes stay usable on shorter presentation windows. */
 .host-scene{overflow:auto}.complete>.eyebrow,.transition .eyebrow{display:block}
 @media(min-width:581px) and (max-height:780px){.complete{padding:32px 48px}.complete .brand-lock{width:190px;margin-bottom:24px}.complete h1{font-size:38px;margin:12px 0 18px}.complete .lead{font-size:16px}.outcomes{margin-top:24px;gap:28px}.complete a{margin-top:24px}.complete .fine{margin-top:16px}.transition{padding:32px 48px;gap:48px}.transition .brand-lock{margin-bottom:36px}}
+
+body.document-focus #stage{height:100dvh}body.document-focus #controls,body.document-focus #notes-panel{display:none}

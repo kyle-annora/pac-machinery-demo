@@ -136,3 +136,11 @@ Key files:
 When changing a scene, update its script, domain state transition and visible proof together. Do not patch a screenshot or silently substitute a success state for a failed business operation. New demos should keep the shared visual and domain foundations, while supplying their own named scenario, namespace, assets and evidence.
 
 Validation: [current release and verification snapshot](../presentation/handoff/RELEASE-2026-11-09.md). The earlier guided acceptance run covered all 40 main steps and 43 domain tests; the release record distinguishes that retained evidence from current release checks, deployment status and service limits. Large local captures are not bundled in this source package.
+
+## Document review at A23
+
+Use **Document zoom** to fit the page or enlarge it to 125%, 150% or 200%.
+
+The Documents tab now combines the actual downloadable PDF with a discussion sidebar. Select PDF text and choose **Add comment**, or use the toolbar to comment on the current page. A/B page and Proposal V1/V2 context stays on each thread. Reply, Resolve and Reopen operate on the discussion only. **Full screen** expands the same reader; **Exit full screen** or Escape returns without remounting the PDF. Browsers without the Fullscreen API use an expanded in-page reader.
+
+A23 shows a labelled sample planning-time discussion on Option B. No additional presenter click is required. Free-form document threads use `pac-guided-document-review-v1:<runId>` and survive Next/Previous in the same rehearsal. These are local browser records, not messages to PAC or cross-device collaboration. The scripted Act B question remains a separate demonstration. A new run starts a new local review; the same URL does not share comments with Patrick.

@@ -281,13 +281,13 @@
     },
     {
       "path": "demo/AGENTS.md",
-      "bytes": 3639,
-      "sha256": "01c24c4babb5fa0e2310b0d53de8444d308d7cf86e763b1ee657cb2d7bed6bbe"
+      "bytes": 4356,
+      "sha256": "076c2d1a1566c64b3037d5e4e411542eb66c58f2e9d2a25adcf3d7514dfc9c2c"
     },
     {
       "path": "demo/DESIGN-LOCK.md",
-      "bytes": 8026,
-      "sha256": "00b3b9a5bbfe5460cd6102e4a5bf2b5f55396b434dfbfbf8d9b133c23ac19378"
+      "bytes": 8844,
+      "sha256": "82b67ce5825ec07e24a8c44a4a0d647dba0421e3a1dfb47476f523f45d3aa10e"
     },
     {
       "path": "demo/MEDIA-SOURCES.json",
@@ -296,8 +296,23 @@
     },
     {
       "path": "demo/README.md",
-      "bytes": 14070,
-      "sha256": "5a43044f33b75853c13bc1cf7df96336ff3bfcdd926626d911b8551e91d97371"
+      "bytes": 15111,
+      "sha256": "9530664b59605ca203a6b8d91739ff35792c88266a57f9d95a842a7ae06342aa"
+    },
+    {
+      "path": "demo/document-review-domain.mjs",
+      "bytes": 7275,
+      "sha256": "ea51d40d93ea10c0a6aa177435c4f3ed2500871d5e26246b17f5f800dfc823fc"
+    },
+    {
+      "path": "demo/document-review.css",
+      "bytes": 10512,
+      "sha256": "25291dd03ec4f6b37b2fac62761548a2e610571afcbdb009f10cc4a10430eb1c"
+    },
+    {
+      "path": "demo/document-review.js",
+      "bytes": 15881,
+      "sha256": "6ddcddd872998aaf353cace8cf61b8eee9e0817649dd3ab8e04bd257c45c8a12"
     },
     {
       "path": "demo/documents/quote-v1.pdf",
@@ -311,13 +326,13 @@
     },
     {
       "path": "demo/host.css",
-      "bytes": 7605,
-      "sha256": "37ec8e3b18ed7985bd69c1e035c044ad1294683712d89a8a0dd97e5a706bdff8"
+      "bytes": 7724,
+      "sha256": "57fd26e5ede600b50b80eb533a5c2edd074eb20340094d2737a14eb8f94b8d89"
     },
     {
       "path": "demo/host.js",
-      "bytes": 13174,
-      "sha256": "2ece63041087ad4cd7a87a06b97da83471efbfdad8b80ee9baa6716b9c658dc3"
+      "bytes": 13521,
+      "sha256": "3f9666aae178896bab2fa7399b4df088c4dca060429da5d0c30d4b5ce0809e02"
     },
     {
       "path": "demo/index.html",
@@ -326,8 +341,8 @@
     },
     {
       "path": "demo/pdf-preview.mjs",
-      "bytes": 8132,
-      "sha256": "a19c33e492112daaf56eafe427f3dc89d6a9a48bc88217e24a7cc780ba739722"
+      "bytes": 22481,
+      "sha256": "726599a23dd90a3a17e1541de3bf6889a614fdfdcc230c801197f9f3bbc4bd80"
     },
     {
       "path": "demo/pdf.mjs",
@@ -481,13 +496,13 @@
     },
     {
       "path": "demo/workspace.html",
-      "bytes": 774,
-      "sha256": "2c9de43860b582938a56bf940a9549664d1666481d5f2607a6e62f25c7045af1"
+      "bytes": 847,
+      "sha256": "a6ba6ae50ff1c8e8af20b2185831db7abf82db908f99f5f8a23db048cb113fc1"
     },
     {
       "path": "demo/workspace.js",
-      "bytes": 51188,
-      "sha256": "48534e2f1115af8c9942d7036feac0ae9c76056d297b084348f4b9d4dd27be69"
+      "bytes": 51063,
+      "sha256": "dd9da01502744407913db302a6795e1ac9cc3a118e0240eeedb571dc1a858748"
     },
     {
       "path": "application/ASSET-SOURCES.json",
@@ -566,8 +581,8 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/PRODUCTION-SCRIPT.md",
-      "bytes": 79734,
-      "sha256": "231cd107a98b688b4b4d2c7ef94ac9b20077566bec1f0ec673b46f8359d6c846"
+      "bytes": 80494,
+      "sha256": "788e13668c9c47e37562cc58937183922171aaf99122f6d3cf16de0630859501"
     },
     {
       "path": "docs/product/demo-production-2026-11-09/README.md",
@@ -591,8 +606,8 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/index.html",
-      "bytes": 393810,
-      "sha256": "f34e96ea30850cf1f200078ef317f63c84e31edc46b652694e6fc1d34e849264"
+      "bytes": 394573,
+      "sha256": "d01bc64969f5c27ccecd994dd750420eeeb6272b206956c25df4ef0bc57cdfa8"
     },
     {
       "path": "docs/product/demo-production-2026-11-09/requirements.json",
@@ -601,8 +616,8 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/script.json",
-      "bytes": 102735,
-      "sha256": "0dc24c48677f9a7ce0cf6b7556b6ded5a493dc92bf390227253d9790f0bcf045"
+      "bytes": 103534,
+      "sha256": "b38919617b278466c312ba94b1e7a027c0ea569bdd7d13ff182c687cd94a6baf"
     }
   ]
 }

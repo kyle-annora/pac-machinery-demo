@@ -72,3 +72,7 @@ Before delivery, inspect the actual rendered screens at presentation size and a 
 - Keyboard focus is visible, forms have labels and touch controls are usable. Reduced-motion preferences are respected.
 - Next remains available without competing with artifact content; notes are separate from the audience view.
 - A/B, revision, publication version, sample price basis and the visible PDF agree at every relevant step.
+
+## Document reader extension — November 9
+
+Keep the existing PAC tokens and straight document/rail geometry. Woven supplies the interaction model (anchored selection retained when the composer takes focus; threaded reply/resolve), not its visual skin or in-memory persistence. A reviewed Monday file-comment screen (Refero 89a78122-d24e-4311-95a0-03053530710e) supports one file toolbar and a contextual right rail. The Notion style review supports neutral document surfaces with functional blue actions only; its marketing typography, pastel tokens and rounded panels are not adopted. The PDF remains the primary surface, comments are secondary, and supporting references are collapsed. In fullscreen keep the same PDF and controls; at narrow widths place comments below the page and keep a hide-comments control.

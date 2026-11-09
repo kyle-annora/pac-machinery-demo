@@ -22,7 +22,7 @@ async function ensureFrame(artifact){let entry=frameMap.get(artifact);if(entry)r
 async function goStep(id){if(!writer||busy)return;if(id!=='complete'&&!byId.has(id))return;
  if(id.startsWith('H')){preset='help';if(mode==='b')mode='full';sequence=sequenceFor();}
  if(!sequence.includes(id)&&id!=='complete'){mode='full';preset='product';sequence=sequenceFor();}
- busy=true;failedStep=null;updateControls();$('stage').querySelector('.host-error')?.remove();
+ document.body.classList.remove('document-focus');$('controls').inert=false;busy=true;failedStep=null;updateControls();$('stage').querySelector('.host-error')?.remove();
  try{
   if(id==='complete'){
    for(const x of frameMap.values())x.frame.hidden=true;
@@ -46,10 +46,11 @@ window.addEventListener('message',event=>{if(event.origin!==origin)return;const 
  if(d.type==='pac-demo:ready'&&d.artifact===entry.artifact)entry.resolve(entry);
  else if(d.type==='pac-demo:complete'&&pending&&d.requestId===pending.requestId&&d.stepId===pending.stepId)pending.resolve?.();
  else if(d.type==='pac-demo:error'&&pending&&d.requestId===pending.requestId&&d.stepId===pending.stepId)pending.reject?.(Error(d.message||'The page could not complete its action.'));
+ else if(d.type==='pac-demo:document-focus'&&entry.artifact==='workspace'&&!entry.frame.hidden&&typeof d.expanded==='boolean'){document.body.classList.toggle('document-focus',d.expanded);$('controls').inert=d.expanded;}
  else if(d.type==='pac-demo:navigate'&&byId.has(d.stepId))goStep(d.stepId);
  else if(d.type==='pac-demo:next')advance(1);else if(d.type==='pac-demo:previous')advance(-1);
 });
-document.addEventListener('keydown',event=>{if(event.altKey||event.ctrlKey||event.metaKey||event.target.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)||$('chooser').open)return;if(event.key==='ArrowRight'){event.preventDefault();advance(1);}if(event.key==='ArrowLeft'){event.preventDefault();advance(-1);}});
+document.addEventListener('keydown',event=>{if(document.body.classList.contains('document-focus')||event.altKey||event.ctrlKey||event.metaKey||event.target.isContentEditable||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName)||$('chooser').open)return;if(event.key==='ArrowRight'){event.preventDefault();advance(1);}if(event.key==='ArrowLeft'){event.preventDefault();advance(-1);}});
 function startMode(nextMode){if(busy)return;mode=nextMode;preset=$('entry-preset').value;sequence=sequenceFor();$('chooser').close();goStep(sequence[0]);}
 window.addEventListener('hashchange',()=>{const id=decodeURIComponent(location.hash.slice(1));if(writer&&!notesOnly&&current!==id&&(id==='complete'||byId?.has(id)))goStep(id);});
 async function acquireWriter(){

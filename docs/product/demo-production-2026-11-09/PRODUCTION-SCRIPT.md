@@ -1139,7 +1139,7 @@ Open Equipment and play or show the preloaded approved operation segment. Pair o
 
 **Preset action on entry**
 
-Open Documents and show the version-bound quote PDF in an in-page viewer, with supporting sources alongside it.
+Open Documents with the real V1 PDF, its Option B page and a labelled sample discussion. The viewer also supports selected-text comments, replies, resolve/reopen and full-screen reading.
 
 **Prepared input**
 
@@ -1159,12 +1159,12 @@ Open Documents and show the version-bound quote PDF in an in-page viewer, with s
 
 **Audience should see**
 
-- V1 identification, same prices and scope, and document provenance.
-- Supporting files labelled by their real coverage.
+- V1 identification, the same issued prices and scope, and a labelled sample discussion attached to Option B.
+- Comments, Add comment, Download and Full screen in one document toolbar. Supporting references remain available in the sidebar.
 
 **Spoken script**
 
-> The customer still gets the quote document, with supporting material attached to the same version. The numbers and scope match the proposal they just reviewed.
+> The quote stays with the proposal version. Customers can comment on a specific passage, reply and resolve questions without changing the issued document. This demonstration saves those comments only in this browser.
 
 **PAC requirements:** 4.4.1, 4.4.7, 4.4.9, 4.4.10
 
@@ -1172,7 +1172,10 @@ Open Documents and show the version-bound quote PDF in an in-page viewer, with s
 
 **Production notes**
 
-- Persistent version-bound PDF output is a build target; the current browser Print action alone is not sufficient.
+- The PDF is generated from the frozen publication; comments never mutate its contents, quote revisions or approval state.
+- A23 starts on Option B with a labelled sample thread; Patrick can continue with Next without operating the comment controls.
+- Optional: select text and Add comment, reply, resolve/reopen, or enter Full screen. Escape or Exit full screen returns to the same page and scroll position.
+- Comments persist by rehearsal run and publication version in this browser, including when Next reconstructs the commercial script. They are separate from the prepared Act B conversation and are not shared or sent.
 - Do not invent drawings or layouts that PAC has not supplied.
 
 ### A24 Compare the two loading choices
