@@ -1,6 +1,6 @@
 # Annora × PAC Machinery — formal pitch
 
-This directory is the **one canonical source** for the formal PAC pitch: 21 audience scenes, a separate English speaker script, source evidence, a guided live-demo launch, retained prototype screens and editable workflow diagrams. Preview directories and exported HTML are not parallel authoring sources.
+This directory is the **one canonical source** for the formal PAC pitch: 22 audience scenes, a separate English speaker script, source evidence, a guided live-demo launch, retained prototype screens and editable workflow diagrams. Preview directories and exported HTML are not parallel authoring sources.
 
 Website and Sales Workspace are independent product artifacts. Page 7 launches their prepared demonstration, with independent Website and Workspace records. Maintaining the pitch does not authorize changing either product.
 
@@ -34,19 +34,26 @@ Keep the opening concise, then follow the process forward. The complete customer
 14. **Answer the question. Make the change explicit.**
 15. **A new offer. The earlier promise preserved.**
 16. **Understand where the sales process slows down**
-17. **We have delivered this before.**
-18. **Two weeks. Defined work you can evaluate.**
-19. **Your team runs the cases**
-20. **Keep the workflow useful.**
-21. **Let’s put this to work for PAC.**
+17. **Make the machine easier to understand.**
+18. **We have delivered this before.**
+19. **Two weeks. Defined work you can evaluate.**
+20. **Your team runs the cases**
+21. **Keep the workflow useful.**
+22. **Let’s put this to work for PAC.**
 
 In the live pitch, page 7 launches the guided demonstration: Act A (Website inquiry → prepared sales opportunity → published Proposal), followed by Act B (customer question → inspection → revised offer → follow-up). Its primary link opens both acts; quiet secondary links open either act separately. The Website and Workspace remain independent. Normal Next navigation jumps from page 7 to page 16 after the demonstration, and Previous from page 16 returns to page 7. Pages 8–15 remain selectable through Contents and existing deep links as **backup** screen explanations.
 
 The authored demo URL is `https://kyle-annora.github.io/pac-machinery-demo/demo/?mode=full&entry=product#A01`. On a loopback server, `guided-links.js` resolves the same links to that server’s `/demo/`, supporting both the canonical dated deck and the flattened `/presentation/` alias. The demo returns to `11-baseline` (page 16). Root release verification must confirm the public destination before sharing.
 
+Page 17 launches a separate **six-scene, eighty-second MPI35 example**: whole machine → tooling area → opening study → operator controls → contextual question → restore the saved view. This illustrates equipment understanding with illustrative geometry; it is not PAC equipment, engineering CAD, a configuration approval or an independently verified production result. The existing equipment-photo explanation on backup page 13 stays specific to PAC.
+
+The MPI entry uses the same approved product-screen composition: a real capture and its complete explanation/CTA share the content boundaries, with Manrope, charcoal, white/gray text and one orange-yellow action. The poster must be captured from the actual viewer at `../mpi-demo/assets/mpi-preview.jpg`; the build rejects a missing capture. Do not substitute a generic mechanism or a fabricated screenshot.
+
+The published MPI runtime lives at `/presentation/mpi-demo/`. `guided-links.js` resolves loopback links and appends a same-origin return URL to the current deck at `02-proof`. The canonical dated deck and flattened public deck both return to customer proof. The demo validates that return destination. Keep the independent runtime and its source/asset provenance with the pitch package.
+
 The final scene asks PAC to approve the two-week free trial, with scope, a PAC lead and dates confirmed. It appears in full on arrival. Its speaker script ends with a direct question and a pause; paid work still requires separate mutual agreement. The detailed trial-process diagram remains in the supporting diagram library.
 
-Scene IDs remain stable for deep links; their numeric prefixes do not determine the sequence. The order and exact audience titles in `content.json` are authoritative. Customer proof (`02-proof`) follows the baseline discussion and sits immediately before the Annora trial offer (`12-trial`), not before the customer Proposal.
+Scene IDs remain stable for deep links; their numeric prefixes do not determine the sequence. The order and exact audience titles in `content.json` are authoritative. The baseline (`11-baseline`, page 16) leads to the MPI35 guided example (`11-mpi-explorer`, page 17). Customer proof (`02-proof`, page 18) follows that example and remains immediately before the Annora trial offer (`12-trial`, page 19).
 
 ## Authoring sources
 
@@ -54,9 +61,9 @@ Read [the reusable design rules](../system/PITCH-DESIGN-RULES.md) before editing
 
 | Source | Responsibility |
 | --- | --- |
-| `content.json` | Scene order, titles/subtitles, visible HTML body copy in `visual`, customer `results`, inquiry `fields`, spoken `narration`, optional `presenterContext`, transitions and navigation labels |
+| `content.json` | Scene order, titles/subtitles, visible HTML body copy in `visual`, customer `results`, inquiry `fields`, spoken `narration`, optional `presenterContext` and `sourceLinks`, transitions and navigation labels |
 | `pitch.js` | Scene markup consuming structured content, reveal behavior, explicit mainline navigation and browser-only copy-edit controls |
-| `guided-links.js` | Preserve public demo links by default; resolve loopback rehearsals to the same local server |
+| `guided-links.js` | Preserve public demo links; resolve loopback rehearsals and the MPI same-deck return destination |
 | `pitch.css` | Deck-specific presentation and supporting-page styles |
 | `../system/layout.css` | Reusable type, alignment, spacing and composition rules |
 | `viewport-base.css` | Fixed-stage viewport behavior |
@@ -80,9 +87,9 @@ python3 make-diagrams.py
 node build.mjs
 ```
 
-For a separate publication directory, use `node build.mjs --out OUTPUT_DIRECTORY`. The build produces `index.html`, `notes.html`, `demo.html`, `evidence.html`, `journey.html`, exported SVG diagrams and search records. HTML embeds the fonts, imagery, styles and scripts needed by each page. Keep linked supporting pages and exported diagrams together, and include the `licenses/` folder in distributions.
+For a separate publication directory, use `node build.mjs --out OUTPUT_DIRECTORY`. The build produces `index.html`, `notes.html`, `demo.html`, `evidence.html`, `journey.html`, exported SVG diagrams and search records. HTML embeds the fonts, imagery, styles and scripts needed by each page. A separate output build also copies the sibling MPI runtime to `OUTPUT_DIRECTORY/mpi-demo/`, excluding verification captures and test modules. Keep linked supporting pages, the MPI runtime and exported diagrams together, and include their licenses in distributions.
 
-Verify all 21 scenes and every reveal, not only the most recently edited scene. Check image/text top and bottom alignment—including the final condition or action—font consistency, overflow, readable contrast and stable geometry. Inspect screenshots at 1280 × 720 and a phone viewport, then check the supporting pages, deep links and demo destinations. Save screenshots and check results in `verification/`.
+Verify all 22 scenes and every reveal, not only the most recently edited scene. Check image/text top and bottom alignment—including the final condition or action—font consistency, overflow, readable contrast and stable geometry. Inspect screenshots at 1280 × 720 and a phone viewport, then check the supporting pages, deep links and demo destinations. Save screenshots and check results in `verification/`.
 
 When publication is requested, publish the verified package to the existing GitHub Pages destination. Open the public URL after deployment and verify the released scenes, assets and links. Record the commit or deployment receipt with the verification results; a local preview is not the shareable release.
 

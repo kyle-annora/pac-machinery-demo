@@ -1,0 +1,63 @@
+{
+  "captured": "2026-11-09",
+  "method": "Browser screenshots of the real 3D renderer; no synthetic replacement imagery",
+  "poses": {
+    "recorded-01.jpg": "Whole; opening0.22",
+    "recorded-02.jpg": "Tooling; opening0.22",
+    "recorded-03.jpg": "Tooling; opening1",
+    "recorded-04.jpg": "Controls; opening1",
+    "recorded-05.jpg": "Tooling; opening1",
+    "recorded-06.jpg": "Whole; opening0.22"
+  },
+  "images": [
+    {
+      "file": "mpi-preview.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "5ddd4d87a92f087e53ebc317c9c2e256b84debc613b61669f4055f4f152e5258"
+    },
+    {
+      "file": "recorded-01.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "3bbad2db01aa6f2bb5edd17edf38be1ed555702748c92eca21c46e0ec5151d7e"
+    },
+    {
+      "file": "recorded-02.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "9ec6393f0b53cc17e0e1f894a9203404051c897be20291c9222a8bb5f1b9573e"
+    },
+    {
+      "file": "recorded-03.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "370cb03254b7f390dd826f1b579b60a9735e1ade7ff896bb571c73edcf5aa47c"
+    },
+    {
+      "file": "recorded-04.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "0315852e281389545b1023ea86c8360f235222726b0e22dff71e6ec1acb65342"
+    },
+    {
+      "file": "recorded-05.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "22f4b115b4ed28f67f845d019d17a512864a599ea16a9b22e389e9daf6dfe650"
+    },
+    {
+      "file": "recorded-06.jpg",
+      "width": 1152,
+      "height": 608,
+      "source": "Actual pinned MPI35 renderer; verification/capture.html",
+      "sha256": "3bbad2db01aa6f2bb5edd17edf38be1ed555702748c92eca21c46e0ec5151d7e"
+    }
+  ]
+}

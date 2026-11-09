@@ -1,0 +1,50 @@
+{
+  "capturedAt": "2026-11-09",
+  "sourceProject": "MPI Website review",
+  "sourceBaseCommit": "f03145976965f95375ded6fdc33da343f5846179",
+  "sourceWorkingTree": "Active working tree; per-file hashes, not the base commit, pin this snapshot.",
+  "authority": "illustrative-study; not MPI CAD",
+  "threeVersion": "0.187.0",
+  "files": [
+    {
+      "source": "src/catalog/machine-geometry.js",
+      "copiedTo": "vendor/original/machine-geometry.js",
+      "sha256": "3160d06608f103081cf24062b4d52f199ed4dc18b2e8d9e5a5132c024758fbba"
+    },
+    {
+      "source": "src/catalog/render-study.js",
+      "copiedTo": "vendor/original/render-study.js",
+      "sha256": "8a59514974b86147e5db91d361b9a9ec7fc22d6dcae0f6a4478b0a919c301d2c"
+    },
+    {
+      "source": "src/catalog/precision-machine-finish.js",
+      "copiedTo": "vendor/original/precision-machine-finish.js",
+      "sha256": "b512e8c6b7c50dae9153e70e7015c0bed1b7095314d4d930a48b91b1b1bef6b2"
+    },
+    {
+      "source": "src/catalog/complex-graphic-machine.js",
+      "copiedTo": "vendor/original/complex-graphic-machine.js",
+      "sha256": "379cd55e93242c12718f40d86288d09283ba079272152f744670915f9615df91"
+    },
+    {
+      "source": "src/catalog/machine-explorer-engine.js",
+      "copiedTo": "vendor/original/machine-explorer-engine.js",
+      "sha256": "3901d6d5dd6c1fa1374a0afdab099e778df16a22f3154f88740088fb3eb2ee2d"
+    },
+    {
+      "source": "src/catalog/machine-explorer-pack.js",
+      "copiedTo": "vendor/original/machine-explorer-pack.js",
+      "sha256": "e99a3a851efccc0dd67c305eafe49d8196c60083e4bd66e0ec618e875ae5be83"
+    },
+    {
+      "source": "public/assets/mpi-logo.png",
+      "copiedTo": "vendor/assets/mpi-logo.png",
+      "sha256": "6b6e1ad28ad0132629878dcddd25bf2f37444a18ec59ffb9b18b9a0c06843000"
+    },
+    {
+      "source": "public/assets/mpi-control-interface.webp",
+      "copiedTo": "vendor/assets/mpi-control-interface.webp",
+      "sha256": "90417e3285d471b6893ec21314df50027c88f6517a71bce1274f1c9779ce72b7"
+    }
+  ]
+}
