@@ -70,5 +70,29 @@
       "sourceImage": "assets/perplexity-02-sources.jpg",
       "captureSha256": "24b5ac922d25600df727beeac64f036ceb793866ed7d308c55dd0f939c2feaec"
     }
-  ]
+  ],
+  "sharedExample": {
+    "title": "Medical packaging companies",
+    "provider": "ChatGPT",
+    "url": "https://chatgpt.com/share/6af118ad-3508-83ed-8cf7-5fc5ccdf0853",
+    "providedBy": "Patrick, via Kyle",
+    "retrievedDate": "November 8, 2026",
+    "originalCreationDate": "Not independently established",
+    "model": "Not exposed in the shared page",
+    "query": "I'm looking for packaging equipment for a medical application, who is a good company to contact about that",
+    "observed": [
+      "The answer names MULTIVAC, Ossid, Belco Packaging Systems and SelectSeal Packaging Machinery.",
+      "PAC is not among those four suppliers in this shared answer."
+    ],
+    "limits": [
+      "One shared answer is not an audit of PAC visibility.",
+      "Our separate hardware-kit searches did surface PAC.",
+      "This observation does not establish why ChatGPT selected these suppliers.",
+      "The hardware-kit R3200 demo is a separate illustrative application."
+    ],
+    "captures": {
+      "patrick-chatgpt-answer.jpg": "674b78134f537f4bca20f3289cc6753d72615a77d75a5a36ddfccb500f7b98e4",
+      "patrick-chatgpt-suppliers.jpg": "93d33b61909cf45be54828b72a2375f82c5772fd9d0f587506462f9249d7f6ce"
+    }
+  }
 }
