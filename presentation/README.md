@@ -7,7 +7,7 @@ Website and Sales Workspace are independent product artifacts. This pitch descri
 ## Open
 
 - `index.html`: audience presentation. Arrows or Space advance reveals. Contents jumps to a scene. Present hides controls; Escape restores them. Full screen is available in presentation mode.
-- `notes.html`: English narration and transitions, separate from audience copy. Follow slides synchronizes with the deck on the same origin.
+- `notes.html`: Concise English narration and transitions, separate from audience copy; expandable presenter context preserves evidence detail without adding it to the spoken script. Follow slides synchronizes with the deck on the same origin.
 - `demo.html`: explicit plans for Website, Sales Workspace and its customer Proposal view. These are reserved demo destinations, not claims that rebuilt artifacts are complete.
 - `evidence.html`: Patrick’s shared AI-search example, preserved complementary searches, proposed AI / SEO work and official PAC configuration sources.
 - `journey.html`: customer journey, publication boundary, alternatives/revisions and the trial decision, with editable SVG links.
@@ -43,8 +43,8 @@ Read [the reusable design rules](../system/PITCH-DESIGN-RULES.md) before editing
 
 | Source | Responsibility |
 | --- | --- |
-| `content.json` | Scene order, audience copy, narration, transitions and navigation labels |
-| `pitch.js` | Scene markup, reveal behavior, navigation and copy-edit controls |
+| `content.json` | Scene order, titles/subtitles, visible HTML body copy in `visual`, customer `results`, inquiry `fields`, spoken `narration`, optional `presenterContext`, transitions and navigation labels |
+| `pitch.js` | Scene markup consuming structured content, reveal behavior, navigation and browser-only copy-edit controls |
 | `pitch.css` | Deck-specific presentation and supporting-page styles |
 | `../system/layout.css` | Reusable type, alignment, spacing and composition rules |
 | `viewport-base.css` | Fixed-stage viewport behavior |
