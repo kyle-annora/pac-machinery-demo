@@ -311,8 +311,8 @@
     },
     {
       "path": "demo/document-review.js",
-      "bytes": 15881,
-      "sha256": "6ddcddd872998aaf353cace8cf61b8eee9e0817649dd3ab8e04bd257c45c8a12"
+      "bytes": 15903,
+      "sha256": "753424ee65dc55c3d65ea7b756fbf86a7f82e6d02b5b690d3901f96a6e22458a"
     },
     {
       "path": "demo/documents/quote-v1.pdf",
@@ -336,8 +336,8 @@
     },
     {
       "path": "demo/index.html",
-      "bytes": 2479,
-      "sha256": "c5cfc27893b18359ec0a1a0d8426025851395fe2239814bb35ee7660e7d3784c"
+      "bytes": 2497,
+      "sha256": "24ba34a500be8aae0b229a5f4a1b6e80d14cb953888ec2185c5da7d89c854ec2"
     },
     {
       "path": "demo/pdf-preview.mjs",

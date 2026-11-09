@@ -1,4 +1,4 @@
-import {renderPdfPreview} from './pdf-preview.mjs';
+import {renderPdfPreview} from './pdf-preview.mjs?v=20261109-comments-1';
 import {createReviewStore, sanitizeReviewStore, ensureSampleThread, addThread, replyToThread, setThreadResolved, threadsForVersion} from './document-review-domain.mjs';
 
 const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
