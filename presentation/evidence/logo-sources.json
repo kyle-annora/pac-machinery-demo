@@ -1,0 +1,18 @@
+[
+  {
+    "file": "annora-current-original.png",
+    "url": "https://annora.ai/assets/images/brand/annora-wordmark-ink.png",
+    "verified": "2026-11-08",
+    "verification": "Current live header: lowercase annora + brass square. Official transparent PNG matches local current brand asset. Old hex-system explicitly obsolete in official project brand migration audit.",
+    "treatment": "Original bytes and aspect ratio. No recoloring, filters, redraw or cropping.",
+    "sha256": "860ef3029752798e94470332c374fc27aa82d063901f284f0b4ea98fb9f0bc01"
+  },
+  {
+    "file": "pac-current-original.png",
+    "url": "https://www.pacmachinery.com/wp-content/uploads/2021/05/color-logo.png",
+    "verified": "2026-11-08",
+    "verification": "Color logo from live homepage header srcset; blue wordmark and gray tagline. Not the white footer logo.",
+    "treatment": "Original bytes and aspect ratio. No recoloring, filters, redraw or cropping.",
+    "sha256": "9a2384eb10abad987ae7803483a36f3ac0a581557d05eea1b15aae7482b8a195"
+  }
+]
