@@ -31,15 +31,16 @@ system fonts and inline CSS, with no external runtime dependencies. Its
 
 Use **Demo**, **Pause**, **Resume**, the chapter controls and the timeline.
 Dragging pauses the guided view; **Explore** allows free inspection. At the
-end, choose **Replay** or **Explore freely**. Reduced-motion visitors receive
+end, choose **Return to pitch**, or use **Replay** for another pass. **Explore**
+adopts the current view for free inspection, while native resume behavior retains
+the tour context. Reduced-motion visitors receive
 stable views and **Next chapter**. Separation is disabled for this model.
 
-Use the header’s **Return to pitch** link to continue at customer outcomes,
-immediately before the trial offer. The notes page falls back to
-`../?view=present#02-proof`, relative to `/presentation/mpi-demo/`. An optional
-`return` query accepts only a same-origin presentation route ending in
-`/presentation/` or `/presentation/2026-11-08/`, with the exact presentation
-view and proof anchor. No external redirect or storage is used by the notes.
+The chapter selector, caption, playback controls and **Return to pitch** share
+one bottom presentation panel. Use that return link to continue at customer outcomes,
+immediately before the trial offer. The notes page uses
+`../?view=present#02-proof`, relative to `/presentation/mpi-demo/`. It does not
+accept an external return destination or use browser storage.
 
 ## Source, appearance and limits
 
@@ -49,12 +50,18 @@ a verified configuration, or evidence that MPI deployed this Explorer. The
 authored six-second motion does not establish cycle time, physical clearance,
 mechanical safety or manufacturing dimensions.
 
-The GLB preserves source material colors and opacity. Native Explorer applies
-its engineering finish treatment, so guards can appear opaque. Native assembly
-isolation makes the working area visible without deleting geometry. Two image
-appearances are omitted from the untextured GLB: the original MPI logo decal
-and control-screen bitmap. Original image files and their hashes remain in the
-authoring source; no substitute logo or screen artwork is added.
+The GLB preserves source material colors and opacity. The default product
+illustration reuses the original MPI project's fixed face colors, transparent
+guards, original MPI logo and control-screen image, with its original blue
+square-field background. The machine remains native interactive 3D. Original
+logo/display media are applied by a separate demo-local appearance adapter;
+the texture-free geometry importer remains unchanged. The core source meshes
+and authored moving-platen relationship are retained.
+
+Chapter selection, caption and transport use one integrated panel. These are
+bounded patches to the published native Explorer baseline, not a new standalone
+player or a change to the main Explorer project. The native tour remains the
+single source of timing, camera state and movement.
 
 MPI imagery and marks remain their owners’ property. This package asserts no
 general open-source license for the model or media. Three.js software is MIT

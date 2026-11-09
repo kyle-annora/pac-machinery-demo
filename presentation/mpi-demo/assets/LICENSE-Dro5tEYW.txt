@@ -6,9 +6,12 @@ engineering CAD and is not a PAC machine. No general open-source license for
 MPI geometry, reference imagery or marks is asserted by this package.
 
 Original MPI marks and control-screen imagery retain their owners' rights.
-The reference-media files are unmodified provenance references. Neither image
-is embedded in the untextured engineering GLB. No recreated logo or substitute
-screen artwork has been added.
+The original logo and control-screen files remain unmodified. Neither image
+is embedded in the texture-free geometry GLB. The demo-local illustration
+adapter applies those original images to their source surfaces, including the
+original logo decal plane. No redrawn logo or substitute screen artwork is used.
+The original MPI square-field background is presentation artwork, not geometry
+or evidence of machine capability; its source and rights remain separate.
 
 Three.js 0.187.0 and its addons are MIT-licensed software. Their software license
 is retained in source/THREE-LICENSE.txt and does not license MPI marks or imagery.

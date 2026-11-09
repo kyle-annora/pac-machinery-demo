@@ -6,11 +6,11 @@
   <meta name="theme-color" content="#f3f3f1">
   <meta name="description" content="Explore prepared mechanical assemblies, their components and authored motion.">
   <title>Assembly Explorer</title>
-  <script type="module" crossorigin src="./assets/explorer-jhiqSqxx.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/three-C0ynv0Bk.js">
-  <link rel="stylesheet" crossorigin href="./assets/explorer-CYFyWKmR.css">
+  <script type="module" crossorigin src="./assets/explorer-zn6STO0v.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/three-D5-uWptt.js">
+  <link rel="stylesheet" crossorigin href="./assets/explorer-CbQyb_kv.css">
 </head>
-<body data-mode="explore">
+<body data-mode="explore" data-tour-panel="integrated">
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
     <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5m6 6-6-6 6-6"/></symbol>
@@ -89,7 +89,7 @@
     </div>
 
     <div class="appearance-control" style="display:flex;align-items:center;gap:6px">
-      <a id="pitch-return" href="https://kyle-annora.github.io/pac-machinery-demo/presentation/?view=present#02-proof" aria-label="Return to the PAC pitch, customer outcomes" style="display:inline-flex;align-items:center;min-height:44px;padding:0 8px;color:var(--muted);font:500 12px/1.2 var(--sans);white-space:nowrap;text-decoration:none">Return to pitch</a>
+      <a id="pitch-return" href="https://kyle-annora.github.io/pac-machinery-demo/presentation/?view=present#02-proof" aria-label="Return to the PAC pitch, customer outcomes">Return to pitch<svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <button class="appearance-trigger floating-panel" id="theme-trigger" type="button" aria-expanded="false" aria-controls="theme-panel"><svg><use href="#i-appearance"/></svg><span id="theme-label">Appearance</span><svg class="appearance-chevron"><use href="#i-chevron"/></svg></button>
       <section class="theme-panel floating-panel" id="theme-panel" role="dialog" aria-label="Appearance settings" hidden>
         <div class="theme-heading"><h2 class="eyebrow">Appearance</h2><button class="icon-button" id="theme-close" type="button" aria-label="Close appearance settings"><svg><use href="#i-close"/></svg></button></div>
@@ -101,7 +101,7 @@
     </div>
 
       <div class="view-appearance-control">
-          <button id="display-trigger" class="display-trigger" type="button" aria-expanded="false" aria-controls="display-panel"><svg aria-hidden="true"><use id="display-current-icon" href="#i-cube"/></svg><span id="display-current">Engineering</span><svg class="display-chevron" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+          <button id="display-trigger" class="display-trigger" type="button" aria-expanded="false" aria-controls="display-panel"><svg aria-hidden="true"><use id="display-current-icon" href="#i-cube"/></svg><span id="display-current">Product illustration</span><svg class="display-chevron" aria-hidden="true"><use href="#i-chevron"/></svg></button>
         <section id="display-panel" class="display-panel floating-panel" role="dialog" aria-label="Display settings" hidden>
           <div class="panel-heading"><h2 class="eyebrow">Display settings</h2><button id="display-close" class="icon-button" type="button" aria-label="Close display settings"><svg><use href="#i-close"/></svg></button></div>
           <div class="display-camera"><span>Camera view</span>
@@ -139,17 +139,16 @@
       </div>
 
       <section id="tour-panel" class="tour-panel" aria-label="Assembly presentation" hidden>
-        <div id="tour-copy" class="tour-copy">
-        <div class="tour-heading">
-          <button id="tour-chapters-toggle" class="tour-chapters-toggle" type="button" aria-label="Choose tour chapter" aria-expanded="false" aria-controls="tour-chapters"><span id="tour-count">01 / 06</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
-          <span class="tour-mode-label">PRESENTATION</span>
-        </div>
-        <h2 id="tour-title">See how it works.</h2>
-        <p id="tour-caption" class="tour-caption" aria-live="polite" aria-atomic="true">Follow the assembly from its complete form to its moving parts.</p>
-        </div>
-        <nav id="tour-chapters" class="tour-chapters floating-panel" aria-label="Tour chapters" hidden></nav>
         <div class="tour-transport floating-panel">
-          <div class="tour-transport-heading"><span id="tour-status" class="tour-status" role="status">Drag the model to pause and explore.</span><button id="tour-exit" class="icon-button" type="button" title="Return to explorer" aria-label="Return to explorer"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
+          <div id="tour-copy" class="tour-copy">
+            <div class="tour-heading">
+              <button id="tour-chapters-toggle" class="tour-chapters-toggle" type="button" aria-label="Choose tour chapter" aria-expanded="false" aria-controls="tour-chapters"><span id="tour-count">01 / 05</span><svg aria-hidden="true"><use href="#i-chevron"/></svg></button>
+              <h2 id="tour-title">See how it works.</h2>
+            </div>
+            <p id="tour-caption" class="tour-caption" aria-live="polite" aria-atomic="true">Follow the assembly from its complete form to its moving parts.</p>
+          </div>
+          <nav id="tour-chapters" class="tour-chapters floating-panel" aria-label="Tour chapters" hidden></nav>
+          <div class="tour-transport-heading"><span id="tour-status" class="tour-status" role="status">Drag the model to pause and explore.</span><button id="tour-exit" class="icon-button" type="button" title="Return to previous explorer view" aria-label="Return to previous explorer view"><svg aria-hidden="true"><use href="#i-close"/></svg></button></div>
           <div class="tour-playback">
             <button id="tour-prev" class="icon-button" type="button" title="Previous chapter" aria-label="Previous chapter"><svg aria-hidden="true"><use href="#i-back"/></svg></button>
             <button id="tour-play" class="play-button" type="button" aria-label="Pause guided tour"><svg aria-hidden="true"><use href="#i-pause"/></svg><span>Pause</span></button>
@@ -158,6 +157,7 @@
           <div class="tour-timeline"><label class="sr-only" for="tour-progress">Guided tour progress</label><input id="tour-progress" type="range" min="0" max="100" step="0.1" value="0"><output id="tour-time" for="tour-progress">0:00 / 1:00</output></div>
           <div class="tour-completion">
             <button id="tour-replay" class="tour-replay" type="button" aria-label="Replay presentation" hidden><svg aria-hidden="true"><use href="#i-reset"/></svg><span>Replay</span></button>
+            <span id="tour-return-slot"></span>
             <button id="tour-explore" class="tour-free" type="button" hidden><span>Explore freely</span><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
           </div>
         </div>
@@ -173,7 +173,7 @@
           <span class="tool-divider" aria-hidden="true"></span>
           <span class="tool-divider orientation-divider" aria-hidden="true"></span>
           <label hidden class="sr-only" for="render-mode">Rendering style</label>
-          <select hidden class="render-mode" id="render-mode" aria-label="Rendering style"><option value="engineering">Engineering</option><option value="illustration">Technical illustration</option><option value="linework">Linework</option><option value="flat" id="render-flat">Flat Ember</option></select>
+          <select hidden class="render-mode" id="render-mode" aria-label="Rendering style"><option value="engineering">Product illustration</option><option value="illustration">Technical illustration</option><option value="linework">Linework</option><option value="flat" id="render-flat">Flat Ember</option></select>
         </div>
         <p id="operation-availability" class="operation-availability">This package contains a structural model without operating motion.</p>
         <div class="explosion-control" id="explode-controls" hidden>

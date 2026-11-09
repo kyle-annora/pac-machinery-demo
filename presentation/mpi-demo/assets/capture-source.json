@@ -1,12 +1,13 @@
 {
   "capturedAt": "2026-11-09",
-  "runtimeCommit": "31fa39eef6bf7598bd459005a14389dfc0666c12",
+  "runtimeBase": "31fa39eef6bf7598bd459005a14389dfc0666c12",
+  "projectPatches": "RUNTIME-PIN.json",
   "model": "mpi-35-study",
   "viewport": [
     1280,
     720
   ],
   "route": "presentation/mpi-demo/?model=mpi-35-study&presentation=1&guide=timeline",
-  "state": "Native Meet chapter paused at1.92s; full screenshot, JPEG encoding only",
-  "sha256": "cd10777094a134b7c6e1b286dfb6b22dbc7adc021fb6d988174463c1c46c6036"
+  "state": "Native Meet chapter paused at 3.58s; original MPI flat appearance and integrated native controls; full browser screenshot, JPEG encoding only",
+  "sha256": "0f0910966e913784e57fbaaf26a490a2d907a0ef27c368ac1053a218afe7cec7"
 }
