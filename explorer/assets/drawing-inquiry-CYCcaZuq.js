@@ -1,1 +1,0 @@
-import{H as r}from"./project-repository-CYNAz0jU.js";const o="pac-machinery-demo.annora.drawing-preview.projects.v1";function i(e={}){return Object.freeze({...r({...e,key:o,drawingWorkflow:!0}),mode:"drawing-preview",capabilities:Object.freeze({inquiryOnly:!1,drawingWorkflow:!0})})}export{i as c};

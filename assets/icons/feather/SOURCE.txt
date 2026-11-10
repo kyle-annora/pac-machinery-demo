@@ -1,4 +1,0 @@
-Feather Icons 4.29.2
-https://github.com/feathericons/feather
-Source package: https://registry.npmjs.org/feather-icons/-/feather-icons-4.29.2.tgz
-Unmodified SVG subset. MIT license included.
