@@ -532,9 +532,9 @@ detailDialog.querySelector('.detail-close').addEventListener('click',()=>detailD
 detailDialog.addEventListener('close',()=>detailTrigger?.focus({preventScroll:true}));
 // Keep the deck's keyboard shortcuts and slide gestures dormant while reading evidence.
 detailDialog.addEventListener('keydown',event=>event.stopPropagation());
-</script><script>/* Public links are the authored default. Local rehearsals stay on their own server,
+</script><script>/* Keep demonstrations on the current host,
    whether the deck is served at /presentation/ or /presentation/2026-11-08/. */
-if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+{
   const marker = '/presentation/';
   const index = location.pathname.indexOf(marker);
   if (index >= 0) {
@@ -550,7 +550,7 @@ if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
    full-page Demo UI and its own timeline; its return link targets customer proof. */
 document.querySelectorAll('a[data-mpi-demo]').forEach(link => {
   const target = new URL(link.href);
-  if (['localhost', '127.0.0.1', '[::1]'].includes(location.hostname)) {
+  {
     const marker = '/presentation/';
     const index = location.pathname.indexOf(marker);
     if (index >= 0) {

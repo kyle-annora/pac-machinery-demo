@@ -76,8 +76,8 @@
     },
     {
       "path": "presentation/index.html",
-      "bytes": 2680794,
-      "sha256": "78e4a0dd9a6cb6e13eaa1be4c24903da50de9ae79638fe56eb621d577d9e18ee"
+      "bytes": 2680615,
+      "sha256": "99f22aa7b39d942dfe9877c8e5bdc7a788d08ee71bdcc23cbfc16221fb3f6616"
     },
     {
       "path": "presentation/journey.html",
@@ -261,8 +261,8 @@
     },
     {
       "path": "presentation/notes.html",
-      "bytes": 403456,
-      "sha256": "33b36bfdc897bbc3dcecfec41a8ed0c21da9d677679fb893adb02ff111dd3d1d"
+      "bytes": 403277,
+      "sha256": "1d5d4c3c81c7072d55bfa293843d8f77236dda7fc6f01398281b8f15a4b2517f"
     },
     {
       "path": "presentation/screens.json",
