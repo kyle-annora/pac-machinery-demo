@@ -31,8 +31,8 @@
     },
     {
       "path": "presentation/demo.html",
-      "bytes": 2083138,
-      "sha256": "1d097bdca5582ac83c6c0ae686ca98264140c75cbcbef21e4b29b5847c9b9ed5"
+      "bytes": 2083129,
+      "sha256": "a53890002ec1049de635d2823cf6df75c6146247b5fd76df87fd33e33e7c0467"
     },
     {
       "path": "presentation/diagrams/journey.svg",
@@ -46,8 +46,8 @@
     },
     {
       "path": "presentation/diagrams/trial.svg",
-      "bytes": 223565,
-      "sha256": "73b91fe334d3c143e71acdc87990260333ae7568266a7a05e66c462031230e7d"
+      "bytes": 223507,
+      "sha256": "3ec3021a6b9791f331480db7c34132160246933e6524ee962e2cb5fef3dc5b27"
     },
     {
       "path": "presentation/diagrams/versions.svg",
@@ -71,18 +71,18 @@
     },
     {
       "path": "presentation/evidence.html",
-      "bytes": 1398716,
-      "sha256": "8096103deacefadca8db37100d806efee35775ef9c1c7890b9bd64dca6b6d842"
+      "bytes": 1398582,
+      "sha256": "d9951ac094d7e2e8aa7e5c0e40b05b20b714d64978d99a8a0165db7432b67b19"
     },
     {
       "path": "presentation/index.html",
-      "bytes": 2680615,
-      "sha256": "99f22aa7b39d942dfe9877c8e5bdc7a788d08ee71bdcc23cbfc16221fb3f6616"
+      "bytes": 2680746,
+      "sha256": "95488a29a3952d0f2808b494ef0b0b8372025723ab1c9c1b375ef1bb98a3d46d"
     },
     {
       "path": "presentation/journey.html",
-      "bytes": 370049,
-      "sha256": "e5ec6db919f855373720be3d76c718702bb0b9f6c188cc7465ab2081827b2f77"
+      "bytes": 369982,
+      "sha256": "725c569bf5825c3dc1cbf73350bf7f1842e93da3e9e8ac02728d2592966ec83d"
     },
     {
       "path": "presentation/licenses/manrope-OFL.txt",
@@ -115,6 +115,11 @@
       "sha256": "0663f1e4a77c3181657d5204ba55dc7d706c9e32b678edd5d818a441c7095a32"
     },
     {
+      "path": "presentation/mpi-demo/assets/assembly-linework-BijVNo2g.js",
+      "bytes": 16515,
+      "sha256": "660a0e1c4308a4d3721b1e07138104ff37ebe1e7645e0d0b31d97746f3482fb5"
+    },
+    {
       "path": "presentation/mpi-demo/assets/capture-source.json",
       "bytes": 526,
       "sha256": "bd3157717aa1a232408bc113bfed599a8be91547d9cf01f967ad5d7f3d40a5ba"
@@ -145,6 +150,11 @@
       "sha256": "3879564a2b744fe81851c94083da859f1cb2e82558afa71bc80968cf8e855415"
     },
     {
+      "path": "presentation/mpi-demo/assets/embedded-inquiry-DLouzko2.js",
+      "bytes": 380478,
+      "sha256": "66918307e75eb8e62712e5aa518bcdef81eab284c920d4aa8f2428522edf7a50"
+    },
+    {
       "path": "presentation/mpi-demo/assets/explorer-Bs1BDO9p.css",
       "bytes": 147253,
       "sha256": "c22d08ea62b2872994f3c74a286b2255f61cb90278eeaf196168a980b659cbf0"
@@ -153,6 +163,16 @@
       "path": "presentation/mpi-demo/assets/explorer-DVPWraGj.js",
       "bytes": 324608,
       "sha256": "416661c6871ecce02130f0e12eda519ca2dd9a1f7f829ccaef4e8c50dd43059e"
+    },
+    {
+      "path": "presentation/mpi-demo/assets/explorer-KFeCcu2B.js",
+      "bytes": 324634,
+      "sha256": "d310490749bdb2d85bd05261b7040dabf956dd87ed9e329b8d7828488ec49ca8"
+    },
+    {
+      "path": "presentation/mpi-demo/assets/explorer-inquiry-context-C3sbueOO.js",
+      "bytes": 136654,
+      "sha256": "dd5cc1a7059de2d1d49403ca1daa5b549f002079664fd57195de9e1759d3348d"
     },
     {
       "path": "presentation/mpi-demo/assets/explorer-inquiry-context-DWZVZhxr.js",
@@ -210,6 +230,11 @@
       "sha256": "ccf7949b9c419ca2e92204ab82ba81574616c03ebf93e25e16bd58d275c64f81"
     },
     {
+      "path": "presentation/mpi-demo/assets/release-content-B40Se5wm.js",
+      "bytes": 6378,
+      "sha256": "789cad50365baa625fea081b9b45a317aa8903eb9895189f9c5601154794ba33"
+    },
+    {
       "path": "presentation/mpi-demo/assets/release-content-fwUcHq_P.js",
       "bytes": 6378,
       "sha256": "6527e6f99be8770785abce4559af09f3e64d183a57ca307cb4c906f078dbe2b4"
@@ -240,6 +265,11 @@
       "sha256": "33ddb8ffbb1af7e80cd4ac1f056bfa6fd62a656f0b55aea0cf2630a890349f71"
     },
     {
+      "path": "presentation/mpi-demo/assets/ui-BNfc1QQA.js",
+      "bytes": 68828,
+      "sha256": "862cb7fdc04d89aca58c55c2d3651ecd632133625dc24a0a054fabf26988cd2f"
+    },
+    {
       "path": "presentation/mpi-demo/assets/ui-CLjaD6J-.css",
       "bytes": 23829,
       "sha256": "5c563887c90d7391c4d70a7640d20f2a1b31bf6ec6867cf36f2f226196f9e753"
@@ -261,8 +291,8 @@
     },
     {
       "path": "presentation/notes.html",
-      "bytes": 403277,
-      "sha256": "1d5d4c3c81c7072d55bfa293843d8f77236dda7fc6f01398281b8f15a4b2517f"
+      "bytes": 400583,
+      "sha256": "fece00cb3cf5f37b07b69bcf0e56638ba40fcafb12293616bc7bff649a9923b4"
     },
     {
       "path": "presentation/screens.json",
