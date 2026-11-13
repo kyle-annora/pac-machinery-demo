@@ -351,8 +351,8 @@
     },
     {
       "path": "demo/scenario.mjs",
-      "bytes": 22186,
-      "sha256": "0dcdd2b930cea4dfb9419eb8ee17bdbbd88e9002d05b6a5e6c5df154f9c2d6ce"
+      "bytes": 22768,
+      "sha256": "da8e864731814dcb8a9a7e3dbe80d5474efc637dc7166b0f43e8041163f5ae4b"
     },
     {
       "path": "demo/vendor/PDF-LIB-LICENSE.md",
@@ -501,8 +501,8 @@
     },
     {
       "path": "demo/workspace.js",
-      "bytes": 51063,
-      "sha256": "dd9da01502744407913db302a6795e1ac9cc3a118e0240eeedb571dc1a858748"
+      "bytes": 50838,
+      "sha256": "ec6b0f2613c9099136299f3b00bf32873c11b4fa0b1c6169265515f00ab9a46d"
     },
     {
       "path": "application/ASSET-SOURCES.json",
@@ -586,8 +586,8 @@
     },
     {
       "path": "docs/product/demo-production-2026-11-09/README.md",
-      "bytes": 8030,
-      "sha256": "5b50f86884fb5d8f2e4f6887b09594ce10d62aebab6038d874fc1676fd885c4b"
+      "bytes": 26004,
+      "sha256": "74d22496f12ba96da624226fa262888da6b44ad039864da3b39eaaba26841b4c"
     },
     {
       "path": "docs/product/demo-production-2026-11-09/REQUIREMENTS-COVERAGE.md",

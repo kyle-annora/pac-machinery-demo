@@ -112,13 +112,25 @@ function issued(s, stepId) {
   return withResources;
 }
 
-/** The quote-creation gate is independent of UI visibility. */
-export function createAlternatives(state) {
-  const scope = state.scope || {};
-  require(Number(scope.width) > 0 && Number(scope.length) > 0, 'Confirm bag width and length before preparing quote alternatives.');
+function validateApplication(scope) {
+  require(Number.isFinite(Number(scope.width)) && Number(scope.width) > 0 && Number.isFinite(Number(scope.length)) && Number(scope.length) > 0, 'Confirm bag width and length before preparing quote alternatives.');
   require(typeof scope.material === 'string' && scope.material.trim(), 'Confirm the bag material before preparing quote alternatives.');
   require(typeof scope.target === 'string' && scope.target.trim(), 'Confirm the customer target before preparing quote alternatives.');
-  require(Boolean(state.deal?.opportunityReference), 'Record the opportunity reference before preparing quote alternatives.');
+}
+
+export function confirmRequirements(state, values) {
+  require(!state.publications.length, 'Use the quote revision workflow to change published application scope.');
+  const scope = { ...state.scope, ...values };
+  validateApplication(scope);
+  state.scope = scope;
+  state.meta.requirementsConfirmed = true;
+}
+
+/** The quote-creation gate is independent of UI visibility. */
+export function createAlternatives(state) {
+  validateApplication(state.scope || {});
+  require(typeof state.deal?.opportunityReference === 'string' && state.deal.opportunityReference.trim(), 'Record the opportunity reference before preparing quote alternatives.');
+  require(Boolean(state.meta?.requirementsConfirmed), 'Confirm the application facts before preparing quote alternatives.');
   state.meta.quotesCreated = true;
   state.deal.stage = 'Configuring';
   return state.quotes;
@@ -144,8 +156,8 @@ function apply(s, stepId) {
       s.meta.clarification = { text: CLARIFICATION, suggested: { width: 12, length: 16, material: 'Polyethylene', target: '20 bags/min' }, confirmed: false, source: 'Prepared customer message · demo' };
       screen = view('requirements', { section: 'clarification' }); break;
     case 'A10':
-      Object.assign(s.scope, { width: 12, length: 16, notes: 'Irregular hardware kits; manual loading; 12 × 16-inch polyethylene bags. Customer target: 20 bags/min. PAC to confirm application fit with representative bags and parts.' });
-      s.meta.requirementsConfirmed = true; s.meta.clarification.confirmed = true;
+      confirmRequirements(s, { width: 12, length: 16, notes: 'Irregular hardware kits; manual loading; 12 × 16-inch polyethylene bags. Customer target: 20 bags/min. PAC to confirm application fit with representative bags and parts.' });
+      s.meta.clarification.confirmed = true;
       s.meta.waitingOn = 'PAC configuration review';
       updateDealDetails(s, { nextAction: 'Prepare standard and assisted-loading alternatives.' });
       screen = view('requirements', { section: 'confirmed' });

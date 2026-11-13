@@ -6,6 +6,99 @@ Open `index.html` to review the sequence one step at a time. It is self-containe
 
 In the editable GitHub source package, run `npm run serve`, then open the printed local origin with `/docs/product/demo-production-2026-11-09/index.html`. The default package port is 4364.
 
+## Active execution plan — November 13, 2026
+
+**Owner-approved scope:** Monday, November 16 focuses on Rollbag R3200 and the complete two-act walkthrough. Other product lines are deferred. This section owns the current execution backlog; the older requirement matrix remains historical planning traceability. The current candidate includes the M02 fix; publication remains pending and this scope does not establish that PAC has signed the trial.
+
+**Meeting outcome:** PAC can assess an accurate, reviewable quotation process and decide whether to sign the two-week free trial, nominate a contact and confirm the cases and inputs. A machine-proposal comment or preference is not the Annora trial sign-off.
+
+### Monday delivery boundary
+
+| Surface | Included on Monday | Completion boundary |
+| --- | --- | --- |
+| Website | R3200 discovery; visible product-request and help-me-choose entries; requirements summary and local inquiry receipt | Run the product-request entry in the main story. Keep help-me-choose as a rehearsed alternate entry. A06 explicitly changes to a separately prepared Deal. |
+| Sales Workspace | One illustrative Harbor Components Deal; R3200 A/B alternatives; required facts; options and dependencies; saving, review, publication; engineering and revision | One model with two configurations does not establish support for the whole Rollbag catalog or comparison across machine families. |
+| Customer Proposal | Application, matching equipment context, A/B comparison, version-bound PDF and local comments, customer question, V1/V2 and follow-up | Customer Proposal is the Workspace's published customer view. No internal costs/findings are exposed; no shared multi-user service is implied. |
+| Pitch and presenter controls | Approved forward narrative; Next-driven Acts A/B; English notes; explicit return; customer proof; trial deliverables, acceptance and sign-off | Retain the approved visual system and original logos. One audience tab; main exits remain the guided demo and native MPI example. |
+| Explorer | PAC photo-based finding inside Act B; existing independent native MPI example after the baseline | No new PAC CAD work is required to complete Monday. MPI remains an illustrative capability example, not PAC equipment or proof of a customer deployment. |
+
+The two acts contain 40 main steps: A01–A24 and B01–B16. Reserve about ten minutes for the walkthrough, plus the existing 24-second MPI segment and discussion. Patrick uses Next/right-arrow for the PAC main route; no live typing or branch selection is required. Manual controls remain usable for questions.
+
+Other product lines, a broad catalog import, real CRM/email/SSO, shared customer records, production signatures/payments and a complete replacement of PAC's website are outside Monday's completion claim. The new non-CAD quotation documents can inform a scoped R3200 source check; they do not automatically expand the demonstration.
+
+### Current evidence and gaps
+
+The [November 13 execution update](../../../presentation/handoff/RELEASE-2026-11-09.md#november-13-execution-update--release-pending) records the latest checks and supersedes the earlier preflight. Candidate publication and final public verification remain pending. Use **confirmed defect**, **verification pending**, **input pending** and **implemented/tested** separately.
+
+| ID | Priority / current status | Evidence and required action | Acceptance / dependency |
+| --- | --- | --- | --- |
+| M01 | P0 · Pages access restored; candidate publication pending | Public hosting repository and Pages `gh-pages` restored; anonymous Pitch and Demo requests returned HTTP 200 for the prior runtime `5703d`. The private source repository remains private. Vercel remains protected by owner choice. | Publish the candidate and verify signed-out actual pages, assets, PDF and same-host returns. An HTTP 200 login page is not sufficient. |
+| M02 | P0 · implemented; focused browser checks passed | Manual preparation uses the shared validated command. Browser checks covered dimensions, material and target errors, successful confirmation, and the option-dependency save/approval block; tests cover missing opportunity reference and atomic state. | Retest the final release candidate and preserve A08/A10/A11 and published-scope protection. |
+| M03 | P0 · input/consistency check pending | Freeze the exact R3200 sample source, media and commercial assumptions. Patrick identifies the 2025 machine quotes folder as containing the new documents; verify only relevant non-CAD R3200 inputs before changing the current sample. An unapproved source change must not silently alter totals. | One documented basis agrees across builder, review, Proposal and PDF. Keep the existing dated sample if current values are not confirmed. Training charged once; freight/tax remain outside the displayed subtotal. Current sample totals: A $33,060; B $40,810; revised B $41,310. $500 engineering and 6/7-week planning times stay illustrative unless explicitly replaced and rechecked everywhere. |
+| M04 | P0 · main path traversed locally | Actual browser traversal completed A01–A24 within the full candidate walkthrough. | Verify final published candidate and any remaining detailed acceptance items. |
+| M05 | P0 · main path traversed locally | Actual browser traversal completed B01–B16 within the full candidate walkthrough. | Independently exercise Act B and verify the final published candidate and remaining version-specific acceptance. |
+| M06 | P0 · verification pending | Exercise presenter reliability, independent storage and recovery on the candidate. | Full run and direct A/B entry succeed. Refresh, Previous, restart and repeated Next do not duplicate comments/revisions/publications or import Website records. Media failure has a photo fallback. Pitch 7 → Demo → 16 and MPI → 18 work in one audience tab. No unexpected application errors. |
+| M07 | P1 · visual/readability verification pending | Inspect all 40 main states and the four alternate inquiry states with the approved design. Check the customer/PDF reader on desktop and phone; review the affected pitch transitions and closing copy. | At 1280×720, host controls do not cover results or actions. Financial rows, text and media align; no clipped text, unreadable labels or new visual style. PDF selection/comments retain anchors through A/B navigation, zoom, fullscreen, Escape and narrow layout. Any defect hiding information or breaking an action becomes P0. |
+| M08 | P0 · meeting readiness pending | Reconcile the English talk track, source labels, demo limits and actual trial ask. Rehearse with Patrick and record timing/recovery. | Patrick completes both acts using Next, then returns to the agreed close. Trial deliverables and separate paid agreement are clear. No simulated machine signature/payment is presented as real. Depends on M01 and M04–M07. |
+| M09 | P1 · handoff/documentation | Keep current entry points, approved scope, test receipts and known limits easy to find. | START-HERE links this plan and the latest verification. Record the candidate source/runtime commit and rehearsal outcome. Historical screenshots/status remain labelled as historical. |
+
+**Priority rule:** P0 blocks declaring the Monday package ready. P1 must be reviewed before release; a remaining cosmetic issue can be explicitly recorded if it does not affect correctness or comprehension. P2 work belongs to the separately agreed trial or later backlog. A planned check is not a confirmed product defect.
+
+### Acceptance for Act A
+
+1. **A01–A05, discovery and inquiry:** product context, known application facts and open questions survive into the buyer summary and a single local receipt. The alternate H01–H04 path does not invent a selected model. There is no claim of an externally delivered inquiry.
+2. **A06–A11, independent sales case:** the presenter explicitly switches to the prepared Harbor Deal. A08 shows the missing-input blocker; the prepared clarification permits creation. Manual entry enforces the same rule. A sample opportunity reference is not live CRM integration.
+3. **A12–A15, configuration:** opener/fingers and minimum-width constraints behave correctly. Options update only their intended quote; training is counted once. Price hide/show changes visibility, not values. Application targets are not equipment guarantees.
+4. **A16–A20, saved/reviewed/published:** saved drafts, approvals and publication are distinct. A changed quote requires fresh review. V1 contains exactly the reviewed A Rev 0 / B Rev 0 and cannot be issued from incomplete engineering or stale approval.
+5. **A21–A24, customer decision:** the customer can understand the application and A/B difference, inspect relevant media and the actual issued PDF, and open its local discussion. Equipment reference media is not represented as a verified custom configuration. Internal estimates, findings and review records remain outside customer output.
+
+### Acceptance for Act B
+
+1. **B01–B04, question and finding:** the question identifies V1 / Option B / Rev 0. The PAC photograph and saved finding support the discussion; recording a finding does not alter quoted scope or generate geometry.
+2. **B05–B09, controlled engineering change:** create B Rev 1 from the issued quote; retain what changes and why. Unknown estimate, customer price or timing stays pending and blocks release at B07. The prepared estimate separates hours/rate/materials from the reviewed selling-price decision. Save before review.
+3. **B10–B12, review and V2:** show old/new scope, amount and timing; record fresh approval; publish V2 with A Rev 0 unchanged and B Rev 1. V1 and its PDF remain intact.
+4. **B13–B16, response and next action:** reply to the original question and point to V2. The original question and PDF comments retain their version anchors; V2 does not inherit V1 document threads. Record an owner and next action. The case is not automatically won, signed or paid.
+
+### Execution order, owners and schedule
+
+These are target work windows, not promises of unmeasured effort. Preserve the current implementation owner. Suggested contributors are not assignments already accepted by Patrick, Wes or PAC.
+
+| Window | Work and dependency | Proposed accountable role | Exit condition |
+| --- | --- | --- | --- |
+| Fri Nov 13 | Scope lock, source/test preflight, M01 access diagnosis, M03 input decisions and one backlog | Kyle / current project owner; Patrick for narration; Wes for source processing questions | R3200/two-act boundary recorded; verified issues separated from unverified checks; one sample basis selected. |
+| Sat Nov 14 | M02 repair; M04/M05 full flow and focused retests; M07 defects as observed. Resolve M01 in parallel. | Current implementation owner, coordinated by Kyle | Candidate passes both acts, negative cases and version/PDF checks; affected fixes have meaningful regression coverage. |
+| Sun Nov 15 | M06 recovery/returns; M07 visual review; M08 English rehearsal; M09 release handoff | Kyle + implementation owner; Patrick for presenter rehearsal | One reviewed release candidate. Run `npm run release`, inspect the runtime manifest, then publish through the established runtime workflow. Anonymous verification on both hosts passes. Freeze unrelated changes. |
+| Mon Nov 16, before meeting | Fresh signed-out smoke check, clean run, notes and fallback preparation | Presenter + current release owner | Primary URL opens; Act A and direct Act B initialize; PDF/video fallback/MPI/return work. Known recovery actions are rehearsed. |
+| Mon Nov 16, meeting | Show two acts, related capability/proof, trial acceptance and sign-off request | Patrick; Kyle supports | Record PAC's actual decision, proposed trial dates/contact, input delivery and agreement status. A meeting date is not evidence of a signed trial. |
+
+If source confirmation is late, keep explicitly dated illustrative inputs; do not invent current prices or shipping promises. If hosting is blocked, a rehearsed local audience session is a meeting contingency only: it does not satisfy the shareable-delivery gate. No additional product line or PAC CAD work enters this sequence.
+
+### Separate two-week trial delivery plan
+
+The current offer is a free trial on the **Rollbag product line**, with proposed kickoff November 16 and final review November 30. PAC's signature, participants and dates still need confirmation. Monday's R3200-only demonstration does not silently narrow this offer to one hard-coded scenario, and receipt of all product files does not extend it to all PAC product lines. Agree an explicit first-release Rollbag model/option list at kickoff and record any coverage adjustment with PAC.
+
+The following are proposed operational acceptance criteria for the five existing deliverables, to agree with PAC at kickoff. They are not already accepted customer commitments beyond the current offer.
+
+| Trial output | Required work and input | Proposed acceptance | Suggested contributors |
+| --- | --- | --- | --- |
+| T01 · Sales history and ROI report | Obtain PAC's past quotes/orders, ideally 24 months in available formats; define quote, win, turnaround and manual-effort measures | Trace results to records, document gaps and assumptions, establish the baseline and improvement hypotheses. Missing data is an explicit dependency; never substitute demo records for business history. | Annora analysis owner; PAC data owner to confirm |
+| T02 · AEO report | Inspect agreed buyer questions and search evidence; map relevant PAC content and inquiry destinations | Report observed results with dates/queries, source limits and prioritized content/measurement changes. Do not promise rankings, mentions or sales uplift. | Annora discovery/content owner; PAC reviewer |
+| T03 · Rollbag lead-capture test system | Configure product-specific and application-led entries, summary and the agreed handling destination | PAC can submit controlled test inquiries and verify retained context and receipt/routing. Select and test the storage/notification route explicitly. Publication on PAC's website requires PAC approval. | Annora implementation owner; PAC website and sales owners |
+| T04 · Rollbag Sales Workspace quoting system | Validate agreed catalog/prices/dependencies, approver and engineering ownership; provide the agreed test environment and data persistence | PAC users execute real standard, engineering and customer-revision cases. Compare outputs against approved quote references, verify permissions/review/version history, and record results and open issues. Next-only sample replay is not trial acceptance. | Annora implementation owner; Wes for approved input processing; Evan/sales reviewers subject to PAC confirmation |
+| T05 · Final review and written continuation proposal | Review T01–T04, adoption feedback, open issues and remaining launch work | Deliver two written options, Partnership and Software, with explicit scope/fees/support and the ROI basis. Both include ongoing improvement and the AI agent as described in the current offer. Paid service starts only under a separately signed agreement; no automatic charges. | Patrick + Kyle; PAC decision owner |
+
+Before real-case testing, select the minimum authenticated access, durable storage, customer-sharing and approval behavior required for the chosen test mode. Browser-local demo records are not evidence of remote collaboration. PAC's CRM identity, quote-number ownership, SSO tenant, notification channel, roles, override rules and website publishing authority remain decisions to scope; do not declare all those integrations included or exclude a dependency needed to run an agreed case. Signature/payment services are not part of Monday's main route and are not separately promised by these five outputs.
+
+**Proposed trial sequence, conditional on kickoff confirmation:** Nov 16–17 agree coverage, inputs, baseline and test access; Nov 18–20 prepare catalog/quote and lead-capture slices while analysis proceeds; Nov 23 review progress with PAC and resolve rules; Nov 24–27 run the three real cases and address blocking findings; Nov 30 review all five outputs and the written continuation options. Confirm PAC availability for the Thanksgiving week; move test sessions with PAC rather than assuming attendance.
+
+The pricing aim remains about 10% of delivered value, using the ROI report as a starting point; it is neither a cap nor a guaranteed result, and the deck does not display unapproved prices. If PAC stops, PAC retains the ROI/AEO reports and the systems are switched off under the current offer. Final dates and rollout commitments belong in the agreed trial record, not in a demo success label.
+
+### Data handling and later scope
+
+Apply [AGENTS.md](../../../AGENTS.md#pac-step-data-boundary--confirmed-november-13-2026): AI may only author local rendering scripts without reading PAC STEP/STP files. The user runs them locally. File contents, headers, parsed metadata, entity information and derived textual summaries must not enter model/tool/subagent context or be uploaded. No STEP work is authorized by this plan.
+
+Other PAC product lines, broad catalog administration, cross-family quoting, new CAD/3D production and further production integrations remain a separate scoped backlog. Wes's possible Fireworks processing for additional lines is a dependency to confirm later, not Monday work already assigned. Retain the existing accepted design and project history.
+
 ## The agreed story
 
 **Act A — From inquiry to a clear proposal:** Website discovery and a contextual inquiry; an explicit presenter transition to a separately prepared sales example; confirmed requirements; two valid alternatives; save, review, approval and publication; a customer-facing proposal with equipment, documents and a comparison. 24 steps, approximately 5 minutes 9 seconds.
@@ -24,7 +117,7 @@ Start at **A01**, then use Next or the right arrow. Every card separates the pag
 
 The key narrative checkpoints are **A05–A07** (capture and independent transition), **A12–A20** (configuration through publication), **A21–A24** (customer persuasion), **B03–B12** (Explorer, engineering and revision), and **B13–B16** (reply, version history and follow-up). The reader can link directly to any of these step IDs.
 
-The Requirements view covers **all 41 numbered requirements**, with 19 in the main path, 10 partially covered, five in supplementary demonstrations, six requiring integrations and one scoped to design. These are the original planned coverage levels, not completion claims. Requirement-level currentStatus entries preserve the planning baseline; implemented guided behavior and verification are recorded in `demo/README.md` and `demo/verification/README.md`. The Patrick view contains 18 feedback mappings with sources and explicit treatment of superseded directions.
+The Requirements view covers **all 41 numbered requirements**, with 19 in the main path, 10 partially covered, five in supplementary demonstrations, six requiring integrations and one scoped to design. These are the original planned coverage levels, not completion claims. Requirement-level currentStatus entries preserve the planning baseline; implemented guided behavior is recorded in [demo/README.md](../../../demo/README.md), with retained verification in the [release record](../../../presentation/handoff/RELEASE-2026-11-09.md), [document-review receipt](../../../presentation/handoff/DOCUMENT-REVIEW-2026-11-09.md) and [cleanup receipt](../../../presentation/handoff/CLEANUP-2026-11-10.md). The Patrick view contains 18 feedback mappings with sources and explicit treatment of superseded directions.
 
 ## Scenario boundaries to preserve
 
@@ -43,6 +136,8 @@ Enter from pitch slide 7, **Let’s walk through the sales experience** (`07-dem
 Return after Act B to slide 16, **Understand where the sales process slows down** (`11-baseline`), then the separate 24-second native MPI capability example on slide 17 (`11-mpi-explorer`), customer proof on slide 18 (`02-proof`), the trial offer and sign-off. Customer outcomes remain attributed to Patrick and are not PAC forecasts. The free trial is a bounded two-week exercise on agreed machines and cases; review the outputs and gaps together. Paid service starts only after mutual agreement on continuation, scope and terms. The deck sign-off concerns the Annora trial, not acceptance of a machine quote.
 
 ## Production sequence and future edit loop
+
+The original production sequence below is a maintenance reference. The main guided flow already exists; execute the current M01–M09 backlog above instead of restarting the build from these historical steps.
 
 1. Lock the scenario, exact media, price basis, approval examples and visual rules. List the already working domain behaviors and the missing ones; use the current approved application direction, not withdrawn pages.
 2. Build the Website scenes and independent inquiry capture; complete Workspace and Customer Proposal scenes against the specified before/after states. Finish visible validation, saved, loading and fallback states as part of each page.
